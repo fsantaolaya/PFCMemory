@@ -1,0 +1,112 @@
+\documentclass[b5paper,10pt,twoside]{book}
+\usepackage[inner=1.5cm,outer=2cm,tmargin=1.5cm,bmargin=2cm]{geometry}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{fancyhdr}
+\usepackage[nottoc]{tocbibind}
+\usepackage[square,numbers]{natbib}
+\bibliographystyle{abbrvnat}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{Share\LaTeX}
+\fancyhead[RE,LO]{\leftmark}
+
+\fancyfoot[LE,RO]{\thepage}
+
+\title{Proyecto Fin carrera}
+\author{Fernando Santa Olaya Rodríguez \\
+	\and 
+	Rubén Toquero González}
+
+\date{Septiembre 31, 2015}
+
+\begin{document}
+	\maketitle
+	\chapter*{Agradecimientos}
+	\textit{A pepito porque lo quiero con locura blabla bla} Queda formatearlo a la derecha y  formatear bien los titulos
+	\chapter*{Resumen}
+	 	El presente proyecto implementa una aplicación móvil como micro asistente virtual a personas que padezcan la lacra moderna del cáncer y una aplicación en servidor con la que se comunica la app y recopila estadísticas de actividades y estados de animo de los usuarios para su posibles estudios relacionados con la enfermedad. Ademas provee de una plataforma con la que se puede interactuar fácilmente con los usuarios de la misma por un operador de la misma. 
+	 
+	\chapter*{Abstract}
+	 	This project implents an mobile app wich is an micro virtual assitant for those people who are suffering the modern doom of cancer and on the other hand a server aplication which comunicates with the app on order to acquire data for statistic uses of the data involved with this illnes. 
+	
+	\tableofcontents
+	
+	\chapter{INTRODUCCIÓN}
+	
+	\section{Antecedentes y Motivación del proyecto}
+	El cáncer es una gran lacra en nuestros días \cite{OMS} y uno de los aspectos importantes en el tratamiento de este grupo de enfermedades, es la buena disposición y estado mental positivo del enfermo. No cura la enfermedad pero ayuda a superar los duros tratamientos a los que se ven sometidos los enfermos.
+	
+	Por otro lado, de un tiempo a esta parte las aplicaciones móviles o apps forman parte de nuestros smartphones y por tanto de nuestras vidas. Son tan comunes que para cada ámbito o actividad existe una app que apoya, ayuda, informa o al menos lo pretende con mayor o menor éxito.
+	
+	Dentro de las apps relacionadas con la salud ninguna o muy pocas de esas tratan sobre esta enfermedad o grupo de enfermedades. Debido a que ambos fuimos tocados de cerca por esta enfermedad y que a la Asociación Española contra el Cáncer le surgió la necesidad decidimos apoyar de la mejor manera que podemos que es escuchando sus necesidades e implementandolas en una app para el sistema operativo móvil Android y aconsejándoles las mejores alternativas en ese sentido. 
+	
+	Mediante el desarrollo de esta aplicación pretendemos hacer más llevaderos los procesos que ocurren a continuación de pasar por el postraumático tratamiento y cicatrices visibles o no que deja esta enfermedad y devolver la normalidad a esos pacientes que quieren continuar de una manera normal con sus vidas. Haciéndoles más llevaderas algunas de las tareas de obligado cumplimiento 'posterior' que deben realizar estos verdaderos luchadores y supervivientes.
+	Sin ánimo de ser victimistas, nosotros mismos conocemos de primera mano todo el sufrimiento que se genera, la angustia y el dolor que causa esta lacra y una de las principales causas de muerte en el mundo.
+	
+	\section{Ámbito de trabajo}
+	
+	En el desarrollo de este proyecto hay dos ámbitos de trabajo, cercanos, pero ligeramente diferenciados.
+	
+	El primero de ellos es el de una app de lo que podríamos usuario final, para el uso que el propio usuario crea conveniente dentro de las capacidades de la misma. Es por eso que la usabilidad, el diseño, los tutoriales, ayudas etc deben ir en linea con que el espectro de usuarios potenciales es muy amplio, y que ademas están atravesando un trance complicado.
+	
+	El segundo ámbito de trabajo se enmarca en la parte servidora, por usuarios de la misma, aunque en este caso podemos presuponer cierto entrenamiento y hábito en el uso de herramientas web, además de que desde la propia AECC se formará a quienes estén manejando esta web y que hemos denominado agentes.
+	
+	En resumen el uso y ámbito de trabajo donde general es el de uso publico por usuarios no categorizados ni expertos por un lado, y usuario final con entrenamiento y conocimiento por otro.
+	
+	\section{Objetivos del proyecto}
+	El objetivo principal del proyecto es servir de apoyo a las acciones emprendidas por la AECC en el marco de la nueva estrategia de identidad digital mediante aplicaciones útiles para cada una de sus iniciativas y las de apoyo general e las acciones de la asociación.
+	
+	Por tanto uno de los objetivos del proyecto por tanto será el desarrollo de una app móvil denominada "Diario de un Superviviente" que sirva a los intereses de la AEEC en la línea de apps en los stores y presencia corporativa e imagen digital. Es por esto que no solamente será el objetivo de este proyecto la realización de la app, sino que la ayuda a la campaña en la web mediante banners, y desarrollo de la propia sección en la Play store, quedando para futuras evoluciones el desarrollo y la inclusión en la tienda del sistema operativo iOS.
+	
+	En este sentido el otro gran objetivo es desarrollar una parte servidora, en forma de API REST, para realizar sincronizaciones entre dispositivos, recogida de estadísticas, seguimiento por parte del agente asignado, estos últimos puntos además presentados en una web para dicho agente aprovechando la API antes mencionada, quedando también para futuras lineas la implementación de apps que sirvan a los agentes en las tareas que ahora realizan con la web.
+	
+	\section{Estructura del proyecto}
+	
+	Para el desarrollo de este aplicativo se seguirán las pautas generales del Agile Manifesto, siguiendo la metodología conocida como Scrum, ya que nos permite desarrollar siempre sobre algo ejecutable y tiene una buena "pelea contra el tiempo" o "timeboxing" ya que al final de cada sprint hay que hacer una retrospectiva sobre lo que ya se ha construido y entregado. Hablar someramente de scrum
+	
+	\section{Estructura de la memoria}
+	
+	Esta memoria se distribuye en X capítulos etc etc etc 
+	
+	\chapter{Visión general del Proyecto}
+	El concepto de aplicación es un asistente-diario para un enfermo de cáncer en la parte de la app móvil y una parte servidora que se encarga de sincronizar datos entre diferentes dispositivo, una base datos para dar apoyo a esto y que ademas reciba datos estadísticos de la app, por si alguna vez pueden extraer conclusiones tras un tratamiento estadístico de los mismos. Además se incluye un servicio de comunicación con los usuarios mediante notificaciones push a los dispositivos
+	
+	\section{Parte App móvil}
+	
+	En la parte de la app móvil hay 5 funcionalidades, aparte de los ajustes y preferencias, Personas Implicadas, Calendario de Citas y Posologia, Seguimiento de Análisis, Rutina Diaria y Hablar con un agente, además de notificaciones locales preguntando por diferentes cosas, para mantener al usuario tanto en la ap como con la moral lo más alta posible.
+	
+	Personas Implicadas es una mini agenda personal, con el numero de teléfono o correo electrónico u otras formas de contacto de las personas que estén mas implicadas para el enfermo, como pueden ser su oncologo, el agente de la AECC, un psicólogo propio, familiares o amigos de confianza con los que el agente de la AECC pueda contactar, previo consentimiento de estos y del paciente. En fin personas con interés en apoyar al enfermo en su duro trance de la enfermedad
+	
+	Calendario de Citas y Posologia sirve para tener apuntadas las citas importantes relacionadas con el proceso del enfermo, como pueda ser revisiones, sesiones de quimio, entrega de análisis, ingresos, operaciones, etc Para que el enfermo disponga en un lugar de toda la información referente a su caso. Si toma algún medicamento, analgésico etc también se reflejar aquí como parte importante del proceso puramente médico en sí.
+	
+	Seguimiento de análisis permite tener un pequeño histórico para el usuario de los análisis que le hayan sido realizados, permitiendo fotografiar los mismos para poder consultarlo siempre y ademas introducir que parámetros quiere obtener un especial seguimiento y gráfico de los mismos, para ir comprobando su evolución 
+	
+	Rutina Diaria tiene como finalidad la de ser un horario semanal de actividades, tanto dentro de la AECC como fuera con la finalidad de que mediante la rutina y la realización de actividades el enfermo se encuentre mejor psicologimante, además de físicamente en el caso de actividades físicas, y que mediante la rutina y relaizacion activa de actividades consiga apartar de la mente la enfermedad.
+	
+	Hablar con un agente permite durante ciertas horas del día que el enfermo pueda consultar o incluso simplemente charlar con el agente asignado de la AECC, para que sienta que siempre dispone de alguien que lo apoye desde el lado de la asociación 
+	  
+	Ademas de esto la app dispone de preferencias tanto de sonidos y notificaciones como aspecto, así como justes de usuario borrar cuenta, etc
+	
+	Por ultimo la app funcionará mucho en base a la información recolectada en esta parte para lanzar notificaciones locales preguntando por diferentes cosas al enfermo, desde como te encuentras esta mañana? a la hora aproximada que en Rutina Diaria el usuario haya establecido como hora de despertar a has ido hoy a bailes de salón? el día que tenga marcado que tiene que ir a bailes pasando que animo tienes? tras haber salido de una sesión de quimioterapia. Todos estos datos desagregados del usuario se envían a la parte servidora para tratarlos con fines estadísticos y ponerlos a disposición de investigadores en el campo de la enfermedad.
+	
+	\section{Parte Servidora}
+	
+	La parte servidor lo primero que proporciona es una API REST(posible referencia) para interactuar con los recursos que ofrecerá.
+	
+	Por una parte permite la sincronización de la información entre los diferentes dispositivos  que un mismo enfermo pueda disponer. Esto lo hace de manera silenciosa enviando cada cambio al servidor, y este en cada conexión de un dispositivo pregunta por su estado de sioncronización.
+	
+	Por otro ofrece servicios para que cada dispositivo envíe la información estadística pertinente, ademas la almacenará en una base de datos, haciendo anónimos esos datos en el proceso por confidencialidad hacia el usuario, y permitiendo después su consulta mediante servicio web o en la web donde este alojada la parte servidora, para la monitorización de los mismos.
+	
+	Dispondrá de control de usuarios, esto es que existirá un usuario encargado de ir asignando a los distintos agentes, generalmente por proximidad geográfica, para que este sea el encargado de monitorizar la actividad de sus enfermos 
+	
+	Se le ofrecerá al agente los contactos de cada enfermo que tenga asignado para en el caso de que necesitase conversare de alguna manera con alguno de ellos, bien sean familiares o el oncologo si por ejemplo se encuentra en algún ensayo poder contrastar información
+	
+	En relación a esto ultimo la parte servidora dispondrá de un chat que permita comunicar directamente al agente con el enfermo, bajo ciertas premisas 
+	
+	
+	
+	\bibliography{bibliography}
+\end{document} 
