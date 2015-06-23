@@ -11,8 +11,7 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[LE,RO]{Share\LaTeX}
-\fancyhead[RE,LO]{\leftmark}
+\fancyhead[L]{Diario de un superviviente}
 
 \fancyfoot[LE,RO]{\thepage}
 
@@ -21,7 +20,7 @@
 	\and 
 	Rubén Toquero González}
 
-\date{Septiembre 31, 2015}
+\date{Septiembre, 2015}
 
 \begin{document}
 	\maketitle
@@ -35,13 +34,38 @@
 	
 	\tableofcontents
 	
+	\listoffigures
+	
+	\listoftables
+	
 	\chapter{INTRODUCCIÓN}
 	
 	\subfile{./1-Introduccion/introduccion}
 	
 	\chapter{Visión general del Proyecto}
 
-	\subfile{./2-vision/vision}
+	\subfile{./2-Vision/vision}
+	
+	\chapter{Análisis y Metodología}
+	
+	\subfile{./3-Analisis/analisis}
+	
+	\chapter{Planificación}
+	
+	\subfile{./4-Planificacion/planificacion}
+	
+	\chapter{Diseño}
+	
+	\subfile{./5-Diseno/diseno}
+	
+	\chapter{Pruebas}
+	
+	\subfile{./6-Pruebas/pruebas}
+	
+	\chapter{Conclusiones y trabajo futuro}
+	
+	\subfile{./7-Conclusiones/conclusiones}
+	
 		
 	\bibliography{bibliography}
 \end{document} 

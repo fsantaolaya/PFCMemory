@@ -1,11 +1,28 @@
 \select@language {spanish}
-\contentsline {chapter}{\numberline {1}INTRODUCCI\IeC {\'O}N}{11}
-\contentsline {section}{\numberline {1.1}Antecedentes y Motivaci\IeC {\'o}n del proyecto}{11}
-\contentsline {section}{\numberline {1.2}\IeC {\'A}mbito de trabajo}{11}
-\contentsline {section}{\numberline {1.3}Objetivos del proyecto}{12}
-\contentsline {section}{\numberline {1.4}Estructura del proyecto}{12}
-\contentsline {section}{\numberline {1.5}Estructura de la memoria}{12}
-\contentsline {chapter}{\numberline {2}Visi\IeC {\'o}n general del Proyecto}{13}
-\contentsline {section}{\numberline {2.1}Parte App m\IeC {\'o}vil}{13}
-\contentsline {section}{\numberline {2.2}Parte Servidora}{14}
-\contentsline {chapter}{Bibliograf\'{\i }a}{15}
+\contentsline {chapter}{\'{I}ndice de figuras}{11}
+\contentsline {chapter}{\'{I}ndice de cuadros}{13}
+\contentsline {chapter}{\numberline {1}INTRODUCCI\IeC {\'O}N}{15}
+\contentsline {section}{\numberline {1.1}Antecedentes y Motivaci\IeC {\'o}n del proyecto}{15}
+\contentsline {section}{\numberline {1.2}\IeC {\'A}mbito de trabajo}{15}
+\contentsline {section}{\numberline {1.3}Objetivos del proyecto}{16}
+\contentsline {section}{\numberline {1.4}Estructura del proyecto}{16}
+\contentsline {section}{\numberline {1.5}Estructura de la memoria}{16}
+\contentsline {chapter}{\numberline {2}Visi\IeC {\'o}n general del Proyecto}{17}
+\contentsline {section}{\numberline {2.1}Parte App m\IeC {\'o}vil}{17}
+\contentsline {section}{\numberline {2.2}Parte Servidora}{18}
+\contentsline {chapter}{\numberline {3}An\IeC {\'a}lisis y Metodolog\IeC {\'\i }a}{19}
+\contentsline {section}{\numberline {3.1}Parte App m\IeC {\'o}vil}{19}
+\contentsline {section}{\numberline {3.2}Parte Servidora}{20}
+\contentsline {chapter}{\numberline {4}Planificaci\IeC {\'o}n}{21}
+\contentsline {section}{\numberline {4.1}Parte App m\IeC {\'o}vil}{21}
+\contentsline {section}{\numberline {4.2}Parte Servidora}{22}
+\contentsline {chapter}{\numberline {5}Dise\IeC {\~n}o}{23}
+\contentsline {section}{\numberline {5.1}Parte App m\IeC {\'o}vil}{23}
+\contentsline {section}{\numberline {5.2}Parte Servidora}{24}
+\contentsline {chapter}{\numberline {6}Pruebas}{25}
+\contentsline {section}{\numberline {6.1}Parte App m\IeC {\'o}vil}{25}
+\contentsline {section}{\numberline {6.2}Parte Servidora}{26}
+\contentsline {chapter}{\numberline {7}Conclusiones y trabajo futuro}{27}
+\contentsline {section}{\numberline {7.1}Parte App m\IeC {\'o}vil}{27}
+\contentsline {section}{\numberline {7.2}Parte Servidora}{28}
+\contentsline {chapter}{Bibliograf\'{\i }a}{29}
