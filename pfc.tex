@@ -7,6 +7,8 @@
 \usepackage{fancyhdr}
 \usepackage[nottoc]{tocbibind}
 \usepackage[square,numbers]{natbib}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
 \bibliographystyle{abbrvnat}
 
 \pagestyle{fancy}
@@ -24,10 +26,20 @@
 
 \begin{document}
 	\maketitle
+	
 	\chapter*{Agradecimientos}
 	\textit{A pepito porque lo quiero con locura blabla bla} Queda formatearlo a la derecha y  formatear bien los títulos
+	
+
 	\chapter*{Resumen}
 	 	El presente proyecto implementa una aplicación móvil como micro asistente virtual a personas que padezcan la lacra moderna del cáncer y una aplicación en servidor con la que se comunica la app y recopila estadísticas de actividades y estados de animo de los usuarios para su posibles estudios relacionados con la enfermedad. Ademas provee de una plataforma con la que se puede interactuar fácilmente con los usuarios de la misma por un operador de la misma. 
+	 	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.25\textwidth]{fotointro}
+		\caption{Portada del folleto.}
+		\label{fig:mesh1}
+	\end{figure}
 	 
 	\chapter*{Abstract}
 	 	This project implents an mobile app wich is an micro virtual assitant for those people who are suffering the modern doom of cancer and on the other hand a server aplication which comunicates with the app on order to acquire data for statistic uses of the data involved with this illnes. 
