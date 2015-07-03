@@ -11,18 +11,18 @@
 \contentsline {section}{\numberline {2.1}Parte App m\IeC {\'o}vil}{17}
 \contentsline {section}{\numberline {2.2}Parte Servidora}{18}
 \contentsline {chapter}{\numberline {3}An\IeC {\'a}lisis y Metodolog\IeC {\'\i }a}{19}
-\contentsline {section}{\numberline {3.1}Parte App m\IeC {\'o}vil}{19}
-\contentsline {section}{\numberline {3.2}Parte Servidora}{20}
-\contentsline {chapter}{\numberline {4}Planificaci\IeC {\'o}n}{21}
-\contentsline {section}{\numberline {4.1}Parte App m\IeC {\'o}vil}{21}
-\contentsline {section}{\numberline {4.2}Parte Servidora}{22}
-\contentsline {chapter}{\numberline {5}Dise\IeC {\~n}o}{23}
-\contentsline {section}{\numberline {5.1}Parte App m\IeC {\'o}vil}{23}
-\contentsline {section}{\numberline {5.2}Parte Servidora}{24}
-\contentsline {chapter}{\numberline {6}Pruebas}{25}
-\contentsline {section}{\numberline {6.1}Parte App m\IeC {\'o}vil}{25}
-\contentsline {section}{\numberline {6.2}Parte Servidora}{26}
-\contentsline {chapter}{\numberline {7}Conclusiones y trabajo futuro}{27}
-\contentsline {section}{\numberline {7.1}Parte App m\IeC {\'o}vil}{27}
-\contentsline {section}{\numberline {7.2}Parte Servidora}{28}
-\contentsline {chapter}{Bibliograf\'{\i }a}{29}
+\contentsline {section}{\numberline {3.1}An\IeC {\'a}lisis}{19}
+\contentsline {section}{\numberline {3.2}Prototipado}{21}
+\contentsline {chapter}{\numberline {4}Planificaci\IeC {\'o}n}{23}
+\contentsline {section}{\numberline {4.1}Parte App m\IeC {\'o}vil}{23}
+\contentsline {section}{\numberline {4.2}Parte Servidora}{24}
+\contentsline {chapter}{\numberline {5}Dise\IeC {\~n}o}{25}
+\contentsline {section}{\numberline {5.1}Parte App m\IeC {\'o}vil}{25}
+\contentsline {section}{\numberline {5.2}Parte Servidora}{26}
+\contentsline {chapter}{\numberline {6}Pruebas}{27}
+\contentsline {section}{\numberline {6.1}Parte App m\IeC {\'o}vil}{27}
+\contentsline {section}{\numberline {6.2}Parte Servidora}{28}
+\contentsline {chapter}{\numberline {7}Conclusiones y trabajo futuro}{29}
+\contentsline {section}{\numberline {7.1}Parte App m\IeC {\'o}vil}{29}
+\contentsline {section}{\numberline {7.2}Parte Servidora}{30}
+\contentsline {chapter}{Bibliograf\'{\i }a}{31}

@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.6.10)  3 JUL 2015 17:16
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.6.10)  3 JUL 2015 17:15
 entering extended mode
-**pfc.tex
-(H:\proyecto\AECC\Memoria\Repositorio\PFCMemory\pfc.tex
+**analisis.tex
+(H:\proyecto\AECC\Memoria\Repositorio\PFCMemory\3-Analisis\analisis.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,6 +13,16 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfiles\subfiles.cls"
+Document Class: subfiles 2012/05/23 Federico Garcia
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks14
+\verbatim@line=\toks15
+\verbatim@in@stream=\read1
+)
+Preamble taken from file `../pfc.tex'
+(H:\proyecto\AECC\Memoria\Repositorio\PFCMemory\pfc.tex
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\book.cls"
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\bk10.clo"
@@ -36,7 +46,7 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks14
+\KV@toks@=\toks16
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
@@ -60,13 +70,13 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutheight=\dimen108
 \Gm@layouthoffset=\dimen109
 \Gm@layoutvoffset=\dimen110
-\Gm@dimlist=\toks15
+\Gm@dimlist=\toks17
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks16
-\inpenc@posthook=\toks17
+\inpenc@prehook=\toks18
+\inpenc@posthook=\toks19
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
@@ -298,7 +308,7 @@ File: babel.def 2008/07/08 v3.8m Babel common definitions
 \U@D=\dimen111
 )
 \es@datefmt=\count92
-\es@quottoks=\toks18
+\es@quottoks=\toks20
 \es@quotdepth=\count93
 Package babel Info: Making " an active character on input line 492.
 Package babel Info: Making . an active character on input line 585.
@@ -307,13 +317,7 @@ Package babel Info: Making > an active character on input line 630.
 ))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfiles\subfiles.sty"
 Package: subfiles 2012/05/23 Federico Garcia
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
-Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks19
-\verbatim@line=\toks20
-\verbatim@in@stream=\read1
-))
+)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
 \fancy@headwidth=\skip43
 \f@ncyO@elh=\skip44
@@ -366,30 +370,26 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
-)
-(H:\proyecto\AECC\Memoria\Repositorio\PFCMemory\pfc.aux
-
-LaTeX Warning: Label `fig:mesh1' multiply defined.
-
-)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+)))
+(H:\proyecto\AECC\Memoria\Repositorio\PFCMemory\3-Analisis\analisis.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: b5paper
+* paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: twoside 
@@ -432,134 +432,22 @@ LaTeX Font Info:    ... okay on input line 27.
 \MPnumerator=\count100
 \makeMPintoPDFobject=\count101
 \everyMPtoPDFconversion=\toks22
-)
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 28.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 28.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 28.
- [1
+) [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
+] [2]
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
+! LaTeX Error: File `flasher_pantalla_carga' not found.
 
-] [3] [4
-
-]
-<images/fotointro.jpg, id=19, 195.3699pt x 300.1614pt>
-File: images/fotointro.jpg Graphic file (type jpg)
-
-<use images/fotointro.jpg>
-Package pdftex.def Info: images/fotointro.jpg used on input line 39.
-(pdftex.def)             Requested size: 100.29596pt x 154.09248pt.
- [5 <H:/proyecto/AECC/Memoria/Repositorio/PFCMemory/images/fotointro.jpg>] [6
-
-] [7] [8
-
-]
-(H:\proyecto\AECC\Memoria\Repositorio\PFCMemory\pfc.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 5.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 5.
-)
-\tf@toc=\write3
- [9] [10
-
-]
-(H:\proyecto\AECC\Memoria\Repositorio\PFCMemory\pfc.lof
-! Missing $ inserted.
-<inserted text> 
-                $
-l.6 ...{\ignorespaces flasher_pantalla_carga}}{21}
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
                                                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<argument> ...ignorespaces flasher_pantalla_carga}
+l.121 ...h=0.25\textwidth]{flasher_pantalla_carga}
                                                   
-l.6 ...{\ignorespaces flasher_pantalla_carga}}{21}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@dottedtocline ...\nobreak \hskip -\leftskip {#4}
-                                                  \nobreak \leaders \hbox {$...
-l.6 ...{\ignorespaces flasher_pantalla_carga}}{21}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.6 ...{\ignorespaces flasher_pantalla_carga}}{21}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-)
-\tf@lof=\write4
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.49 	\listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.49 	\listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[11] [12
-
-] (H:\proyecto\AECC\Memoria\Repositorio\PFCMemory\pfc.lot)
-\tf@lot=\write5
- [13]
-[14
-
-]
-Cap\'{\i }tulo 1.
-
-(H:\proyecto\AECC\Memoria\Repositorio\PFCMemory\1-Introduccion\introduccion.tex
-[15]) [16]
-Cap\'{\i }tulo 2.
-(H:\proyecto\AECC\Memoria\Repositorio\PFCMemory\2-Vision\vision.tex [17
-
-])
-[18]
-Cap\'{\i }tulo 3.
-(H:\proyecto\AECC\Memoria\Repositorio\PFCMemory\3-Analisis\analisis.tex
-[19
-
-] [20] <images/flasher_pantalla_carga.png, id=75, 1204.5pt x 1927.2pt>
-File: images/flasher_pantalla_carga.png Graphic file (type png)
-
-<use images/flasher_pantalla_carga.png>
-Package pdftex.def Info: images/flasher_pantalla_carga.png used on input line 1
-21.
-(pdftex.def)             Requested size: 100.29596pt x 160.47217pt.
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 ! Missing $ inserted.
 <inserted text> 
@@ -569,6 +457,10 @@ l.122 			\caption{pantalla_carga}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 122.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 122.
 ! Extra }, or forgotten $.
 \sbox ...hbox {\color@setgroup #2\color@endgroup }
                                                   
@@ -599,62 +491,22 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-) [21 <H:/proyecto/AECC/Memoria/Repositorio/PFCMemory/images/flasher_pantalla_c
-arga.png>] [22
-
-]
-Cap\'{\i }tulo 4.
-
-(H:\proyecto\AECC\Memoria\Repositorio\PFCMemory\4-Planificacion\planificacion.t
-ex [23]) [24]
-Cap\'{\i }tulo 5.
-(H:\proyecto\AECC\Memoria\Repositorio\PFCMemory\5-Diseno\diseno.tex [25
-
-])
-[26]
-Cap\'{\i }tulo 6.
-(H:\proyecto\AECC\Memoria\Repositorio\PFCMemory\6-Pruebas\pruebas.tex [27
-
-])
-[28]
-Cap\'{\i }tulo 7.
-
-(H:\proyecto\AECC\Memoria\Repositorio\PFCMemory\7-Conclusiones\conclusiones.tex
-[29
-
-]) (H:\proyecto\AECC\Memoria\Repositorio\PFCMemory\pfc.bbl [30]
-Underfull \hbox (badness 10000) in paragraph at lines 9--12
-[]\OT1/cmr/m/n/10 O. M. de la Sa-lud.  Cancer, no-ta des-crip-ti-va 297.  URL
- []
-
-) [31
-
-] (H:\proyecto\AECC\Memoria\Repositorio\PFCMemory\pfc.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+[3] (H:\proyecto\AECC\Memoria\Repositorio\PFCMemory\3-Analisis\analisis.aux) ) 
 Here is how much of TeX's memory you used:
- 3130 strings out of 493921
- 42077 string characters out of 3144876
- 108744 words of memory out of 3000000
- 6350 multiletter control sequences out of 15000+200000
- 9314 words of font info for 33 fonts, out of 3000000 for 9000
+ 3045 strings out of 493921
+ 39743 string characters out of 3144876
+ 109733 words of memory out of 3000000
+ 6306 multiletter control sequences out of 15000+200000
+ 4553 words of font info for 17 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,11n,43p,714b,298s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on pfc.pdf (31 pages, 1336516 bytes).
+ 36i,10n,45p,507b,205s stack positions out of 5000i,500n,10000p,200000b,50000s
+<
+C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on analisis.pdf (3 pages, 53841 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
+ 24 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

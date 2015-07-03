@@ -1,39 +1,130 @@
 	\documentclass[../pfc.tex]{subfiles}
+
 	
 	\begin{document}
 	
-	El concepto de aplicación es un asistente-diario para un enfermo de cáncer en la parte de la app móvil y una parte servidora que se encarga de sincronizar datos entre diferentes dispositivo, una base datos para dar apoyo a esto y que ademas reciba datos estadísticos de la app, por si alguna vez pueden extraer conclusiones tras un tratamiento estadístico de los mismos. Además se incluye un servicio de comunicación con los usuarios mediante notificaciones push a los dispositivos
+	La aplicación básicamente proviene de un librito que utiliza la AECC llamado \textbf{MIS CUIDADOS DIARIO DE SALUD DE UN SUPERVIVIENTE DE CANCER} y que se utiliza de manera general sobre enfermos de cancer que han superado esta enfermedad.
 	
-	\section{Parte App móvil}
+	\section{Análisis}
 	
-	En la parte de la app móvil hay 5 funcionalidades, aparte de los ajustes y preferencias, Personas Implicadas, Calendario de Citas y Posología, Seguimiento de Análisis, Rutina Diaria y Hablar con un agente, además de notificaciones locales preguntando por diferentes cosas, para mantener al usuario tanto en la ap como con la moral lo más alta posible.
+	Tras un exhaustivo estudio de las funcionalidades que podrian resultar útiles para los pacientes de Cancer, y de acuerdo con las especificaciones de la AECC hemos decidido incluir en la misma las siguientes:
 	
-	Personas Implicadas es una mini agenda personal, con el numero de teléfono o correo electrónico u otras formas de contacto de las personas que estén mas implicadas para el enfermo, como pueden ser su oncologo, el agente de la AECC, un psicólogo propio, familiares o amigos de confianza con los que el agente de la AECC pueda contactar, previo consentimiento de estos y del paciente. En fin personas con interés en apoyar al enfermo en su duro trance de la enfermedad
+	AVATAR -> 		Editar el perfil, Foto, nombre, apellidos, edad, cumpleaños... (1 pantalla), ¿Grupo sanguineo y alergenos tampoco estaría mal pero es informacion de otro nivel LOPD?
+	PROYECTO AMPLIACION (asignar un agente personalizado para poder atender de manera personalizada al paciente Superviviente)
 	
-	Calendario de Citas y Posología sirve para tener apuntadas las citas importantes relacionadas con el proceso del enfermo, como pueda ser revisiones, sesiones de quimio, entrega de análisis, ingresos, operaciones, etc Para que el enfermo disponga en un lugar de toda la información referente a su caso. Si toma algún medicamento, analgésico etc también se reflejar aquí como parte importante del proceso puramente médico en sí.
+	PRINCIPAL-> 	Vista de Rutina proxima, citas, Se debería ver lo que realmente interesa ¿Noticias AECC tipo RSS, Twitter, Facebook? (1 pantalla)
 	
-	Seguimiento de análisis permite tener un pequeño histórico para el usuario de los análisis que le hayan sido realizados, permitiendo fotografiar los mismos para poder consultarlo siempre y ademas introducir que parámetros quiere obtener un especial seguimiento y gráfico de los mismos, para ir comprobando su evolución 
+	HORARIO -> 		Vista dia, mes, con las actividades, citas, ¿Cumpleaños, aniverssario de enfermedad...?  
+	al pinchar en una hora, dia, se podrá añadir rutina o cita, iria a la correspondiente lista de creacion de una nueva (1 pantalla)
+	Deberian aparecer las citas y rutinas ocupando el espacio destinado a la duracion de las mismas.
+	Revisar esta página
+	https://code.google.com/p/yadview/
 	
-	Rutina Diaria tiene como finalidad la de ser un horario semanal de actividades, tanto dentro de la AECC como fuera con la finalidad de que mediante la rutina y la realización de actividades el enfermo se encuentre mejor psicológicamente, además de físicamente en el caso de actividades físicas, y que mediante la rutina y realización activa de actividades consiga apartar de la mente la enfermedad.
+	RUTINA -> 		Lista de rutinas,
+	Desde la propia vista se podrán añadir rutinas, al pulsar sobre la opción correspondiente nos llevará al listado de estás opciones añadiendose así.
+	Se podra ordenar por fecha, asc y desc, duracion de la actividad asc y desc pero sobre todo se podrá ordenar por satisfaccion de la misma.
 	
-	Hablar con un agente permite durante ciertas horas del día que el enfermo pueda consultar o incluso simplemente charlar con el agente asignado de la AECC, para que sienta que siempre dispone de alguien que lo apoye desde el lado de la asociación 
-	  
-	Ademas de esto la app dispone de preferencias tanto de sonidos y notificaciones como aspecto, así como justes de usuario borrar cuenta, etc
 	
-	Por ultimo la app funcionará mucho en base a la información recolectada en esta parte para lanzar notificaciones locales preguntando por diferentes cosas al enfermo, desde como te encuentras esta mañana? a la hora aproximada que en Rutina Diaria el usuario haya establecido como hora de despertar a has ido hoy a bailes de salón? el día que tenga marcado que tiene que ir a bailes pasando que animo tienes? tras haber salido de una sesión de quimioterapia. Todos estos datos desagregados del usuario se envían a la parte servidora para tratarlos con fines estadísticos y ponerlos a disposición de investigadores en el campo de la enfermedad.
+	Añadir rutina, , en esta pantalla se permite ver al pinchar sobre el propio item de la lista ,editar, o pulsando el botón añadir del final de la lista crear una nueva,
+	Valorar si deberiamos gestionar la repeticion de los elementos					
+	dentro de la rutina (añadir) se podrán añadir personajes y asignar una alarma personalizable (avisar) con antelacion, se puede ver sin editar(2 pantallas)
+	con una hora de aviso, hora de empiece de la actividad. Duración de las misma en horas, satisfaccion de 0 a 10
+	Dentro se va a valorar tambien la satisfacción personal que se produce al hacer esto, podrá ser de 0 a 10
 	
-	\section{Parte Servidora}
+	AMPLIACION DE PROYECTO: Poder variar los avisos para que se hagan de manera repetitiva, por ejemplo repetir de manera semanal los jueves al estilo TICK TICK, llamarlo actividades en vez de Rutina 
 	
-	La parte servidor lo primero que proporciona es una API REST(posible referencia) para interactuar con los recursos que ofrecerá.
+	CITAS -> 		Lista de citas Nombre de la cita, fecha y hora.
+	Desde el propio item de la lista se podran añadir medicamentos, personas, sintomas y/o pruebas, al pulsar sobre la opción correspondiente nos llevará al listado de estás opciones añadiendose así.
 	
-	Por una parte permite la sincronización de la información entre los diferentes dispositivos  que un mismo enfermo pueda disponer. Esto lo hace de manera silenciosa enviando cada cambio al servidor, y este en cada conexión de un dispositivo pregunta por su estado de sincronización.
+	Añadir cita, en esta pantalla se permite ver al pinchar sobre el propio item de la lista ,editar, o pulsando el botón añadir del final de la lista crear una nueva, 
+	dentro de la cita (añadir) se podrán añadir ubicación, personajes, medicamentos, pruebas y sintomas y asignar una alarma personalizable con fecha y hora (avisar) con antelacion.
+	se puede ver sin editar
+	Deberíamos añadir duración?
+	Valorar si deberiamos gestionar la repeticion de los eventos
+	¿En la ubicación se podria comunicar con google maps?
+	¿Deberiamos mostrar en el item de la cita si ya poseee personas, pruebas, sintomas o medicacion?
 	
-	Por otro ofrece servicios para que cada dispositivo envíe la información estadística pertinente, ademas la almacenará en una base de datos, haciendo anónimos esos datos en el proceso por confidencialidad hacia el usuario, y permitiendo después su consulta mediante servicio web o en la web donde este alojada la parte servidora, para la monitorización de los mismos.
+	PROYECTO AMPLIACION Poder exportar e importar a google maps, conectar la ubicacion con google maps para poder ir
 	
-	Dispondrá de control de usuarios, esto es que existirá un usuario encargado de ir asignando a los distintos agentes, generalmente por proximidad geográfica, para que este sea el encargado de monitorizar la actividad de sus enfermos 
+	MEDICACION -> 	Lista de medicamentos, lista de los medicamentos que tengamos con el boton de añadir al final y en la barra la posibilidad de ordenar en principio por orden ascendente o descendente,
+	al pinchar sobre el elemento se visualiza, 
+	en las opciones de cada elemento se puede añadir a la cita, editar y borrar (confirmacion para borrar)
 	
-	Se le ofrecerá al agente los contactos de cada enfermo que tenga asignado para en el caso de que necesitase conversare de alguna manera con alguno de ellos, bien sean familiares o el oncólogo si por ejemplo se encuentra en algún ensayo poder contrastar información
+	Añadir medicamento, , en esta pantalla se permite ver al pinchar sobre el propio item de la lista ,editar, o pulsando el botón añadir del final de la lista crear una nueva, 
+	dentro del medicamento (añadir) se podrá asignar una foto personalizable, o bien hacerla o añadirla de la galeria, viene una por defecto
+	nombre, descripcion, 
+	una alarma personalizable que avisar con antelacion, fecha inicio, hora inicio, fecha fin, hora fin, repetir cada tantas horas, dias, semanas, (esto se valorará)
+	REVISAR LA FUNCION DE ALARMA EN ANDROID http://developer.android.com/reference/android/app/AlarmManager.html
+	boton guardar 
+	se puede ver sin editar, 
+	dentro de la edición y visionado se podra añadir a una cita
+	Se puede añadir el numero de medicamentos al drawer (se estudiará)
 	
-	En relación a esto ultimo la parte servidora dispondrá de un chat que permita comunicar directamente al agente con el enfermo, bajo ciertas premisas 
+	PROYECTO AMPLIACION Llevar el stock de lo que lleva consumido el paciente y generar alertas para cuando se le acabe, duplicar tratamiento, para ahorrar trabajo, opciones de dosis.
+	
+	PERSONAJES -> 	Lista de personajes que tengamos con el boton de añadir al final y en la barra la posibilidad de ordenar en principio por orden ascendente o descendente,
+	al pinchar sobre el elemento se visualiza, 
+	en las opciones de cada elemento se puede añadir a la cita, a la rutina, editar y borrar confirmacion para borrar
+	
+	Añadir persona, , en esta pantalla se permite ver al pinchar sobre el propio item de la lista ,editar, o pulsando el botón añadir del final de la lista crear una nueva, 
+	dentro de la persona(añadir) se podrá asignar una foto personalizable, o bien hacerla o añadirla de la galeria, viene una por defecto
+	nombre apellidos, puesto / tipo (doctor, oncologo, cirujano, farmaceutico, enfermero, medico cabecera, familiar, amigo,AECC, otro), telefono (posibilidad de llamar desde la visualizacion)
+	se puede ver sin editar, dentro de la edición y visionado se podra añadir a una cita, o a una rutina ejemplo (paseo por la playa) o a cita con el oncólogo
+	Se puede añadir el numero al drawer
+	
+	PROYECTO AMPLIACION llevarnos ese contacto a la agenda o traernosle de ella
+	
+	PRUEBAS -> 	 	Lista de personajes que tengamos con el boton de añadir al final y en la barra la posibilidad de ordenar en principio por orden de fecha ascendente o descendente,
+	al pinchar sobre el elemento se visualiza, 
+	en las opciones de cada elemento se puede añadir a la cita, editar y borrar confirmacion para borrar
+	
+	Añadir prueba, , en esta pantalla se permite ver al pinchar sobre el propio item de la lista ,editar, o pulsando el botón añadir del final de la lista crear una nueva, 
+	dentro de la prueba (añadir) se podrá asignar una foto personalizable, o bien hacerla o añadirla de la galeria, viene una por defecto
+	nombre, descripcion,
+	fecha y hora de la misma
+	se puede ver sin editar, dentro de la edición y visionado se podra añadir a una cita por ejemplo visita al oncólogo
+	Se puede añadir el numero al drawer
+	
+	PROYECTO AMPLIACION poder subir documentos tipo pdf para no depender de la fotografia solo, llevar estadísticas
+	
+	SINTOMAS ->  	Lista de síntomas que tengamos con el boton de añadir al final y en la barra la posibilidad de ordenar en principio por orden de fecha ascendente o descendente,
+	al pinchar sobre el elemento se visualiza, 
+	en las opciones de cada elemento se puede añadir a la cita, editar y borrar confirmacion para borrar
+	
+	Añadir sintoma, , en esta pantalla se permite ver al pinchar sobre el propio item de la lista ,editar, o pulsando el botón añadir del final de la lista crear una nueva, 
+	dentro de la prueba (añadir) se podrá asignar una foto personalizable, o bien hacerla o añadirla de la galeria, viene una por defecto
+	nombre, descripcion de los sintomas,
+	fecha y hora de la misma
+	se puede ver sin editar, dentro de la edición y visionado se podra añadir a una cita por ejemplo visita al oncólogo
+	Se puede añadir el numero al drawer
+	
+	PROYECTO AMPLIACION poder subir documentos tipo pdf para no depender de la fotografia solo, llevar estadísticas, poder conectar con los centros de salud, hospitales, 
+	
+	RECURSOS  -> 	Dentro de los resursos aparece meditacion con musica relajante e instrucciones para ello
+	consejos generales, de alimentacion, de vida, de salud...
+	telefonos de interés generales (DEBEMOS DECIDIR SI SE PUEDEN PERSONALIZAR)
+	Noticias (podemos añadir el blog de la AECC o la cuenta de twitter que no esta nada mal)
+	
+	AJUSTES  ->  	Editar el perfil, 
+	tamaño de letra, 	
+	tono para alertas de citas y rutinas, 
+	color del led de notificación, 
+	posibilidad de feedback,
+	quienes somos o motivaciones (¿? pantallas)
+	NO VOY A AÑADIR MÁS PANTALLAS AL RESPECTO, SE HABLARÁ
+	
+	\section{Prototipado}
+	Pantallas iniciales y flujo de la aplicación que de manera inicial hemos planteado para la misma.
+	
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.25\textwidth]{flasher_pantalla_carga}
+			\caption{pantalla_carga}
+			\label{fig:mesh1}
+		\end{figure}
+	
+		
+
+		
 	
 \end{document}
