@@ -7,6 +7,9 @@
 \usepackage{fancyhdr}
 \usepackage[nottoc]{tocbibind}
 \usepackage[square,numbers]{natbib}
+
+
+
 \usepackage{graphicx}
 \graphicspath{ {images/} }
 \bibliographystyle{abbrvnat}
@@ -23,6 +26,7 @@
 	Rubén Toquero González}
 
 \date{Septiembre, 2015}
+
 
 \begin{document}
 	\maketitle
@@ -50,6 +54,7 @@
 	
 	\listoftables
 	
+
 	\chapter{INTRODUCCIÓN}
 	
 	\subfile{./1-Introduccion/introduccion}
@@ -58,13 +63,13 @@
 
 	\subfile{./2-Vision/vision}
 	
-	\chapter{Análisis y Metodología}
-	
-	\subfile{./3-Analisis/analisis}
-	
 	\chapter{Planificación}
 	
-	\subfile{./4-Planificacion/planificacion}
+	\subfile{./3-Planificacion/planificacion}
+	
+	\chapter{Análisis y Metodología}
+	
+	\subfile{./4-Analisis/analisis}
 	
 	\chapter{Diseño}
 	
@@ -77,6 +82,11 @@
 	\chapter{Conclusiones y trabajo futuro}
 	
 	\subfile{./7-Conclusiones/conclusiones}
+	
+	\chapter{ANEXO I: INSTALACIÓN Y MANUAL DE USUARIO }
+		
+	\subfile{./8-Anexoi/anexoi}
+		
 	
 		
 	\bibliography{bibliography}

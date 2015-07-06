@@ -2,38 +2,30 @@
 	
 	\begin{document}
 	
-	El concepto de aplicación es un asistente-diario para un enfermo de cáncer en la parte de la app móvil y una parte servidora que se encarga de sincronizar datos entre diferentes dispositivo, una base datos para dar apoyo a esto y que ademas reciba datos estadísticos de la app, por si alguna vez pueden extraer conclusiones tras un tratamiento estadístico de los mismos. Además se incluye un servicio de comunicación con los usuarios mediante notificaciones push a los dispositivos
 	
 	\section{Parte App móvil}
 	
-	En la parte de la app móvil hay 5 funcionalidades, aparte de los ajustes y preferencias, Personas Implicadas, Calendario de Citas y Posología, Seguimiento de Análisis, Rutina Diaria y Hablar con un agente, además de notificaciones locales preguntando por diferentes cosas, para mantener al usuario tanto en la ap como con la moral lo más alta posible.
+	\section{Documento de diseño}
 	
-	Personas Implicadas es una mini agenda personal, con el numero de teléfono o correo electrónico u otras formas de contacto de las personas que estén mas implicadas para el enfermo, como pueden ser su oncologo, el agente de la AECC, un psicólogo propio, familiares o amigos de confianza con los que el agente de la AECC pueda contactar, previo consentimiento de estos y del paciente. En fin personas con interés en apoyar al enfermo en su duro trance de la enfermedad
+	\section{Arquitectura}
 	
-	Calendario de Citas y Posología sirve para tener apuntadas las citas importantes relacionadas con el proceso del enfermo, como pueda ser revisiones, sesiones de quimio, entrega de análisis, ingresos, operaciones, etc Para que el enfermo disponga en un lugar de toda la información referente a su caso. Si toma algún medicamento, analgésico etc también se reflejar aquí como parte importante del proceso puramente médico en sí.
+	\section{Tecnologia}
 	
-	Seguimiento de análisis permite tener un pequeño histórico para el usuario de los análisis que le hayan sido realizados, permitiendo fotografiar los mismos para poder consultarlo siempre y ademas introducir que parámetros quiere obtener un especial seguimiento y gráfico de los mismos, para ir comprobando su evolución 
+	\section{Diagrama de Clases}
 	
-	Rutina Diaria tiene como finalidad la de ser un horario semanal de actividades, tanto dentro de la AECC como fuera con la finalidad de que mediante la rutina y la realización de actividades el enfermo se encuentre mejor psicológicamente, además de físicamente en el caso de actividades físicas, y que mediante la rutina y realización activa de actividades consiga apartar de la mente la enfermedad.
+	\section{Diagrama de secuencia}
 	
-	Hablar con un agente permite durante ciertas horas del día que el enfermo pueda consultar o incluso simplemente charlar con el agente asignado de la AECC, para que sienta que siempre dispone de alguien que lo apoye desde el lado de la asociación 
-	  
-	Ademas de esto la app dispone de preferencias tanto de sonidos y notificaciones como aspecto, así como justes de usuario borrar cuenta, etc
+	\section{Diseño de la base de datos}
 	
-	Por ultimo la app funcionará mucho en base a la información recolectada en esta parte para lanzar notificaciones locales preguntando por diferentes cosas al enfermo, desde como te encuentras esta mañana? a la hora aproximada que en Rutina Diaria el usuario haya establecido como hora de despertar a has ido hoy a bailes de salón? el día que tenga marcado que tiene que ir a bailes pasando que animo tienes? tras haber salido de una sesión de quimioterapia. Todos estos datos desagregados del usuario se envían a la parte servidora para tratarlos con fines estadísticos y ponerlos a disposición de investigadores en el campo de la enfermedad.
+	\section{Diagramas de estado}
 	
-	\section{Parte Servidora}
+	\section{Prototipado}
 	
-	La parte servidor lo primero que proporciona es una API REST(posible referencia) para interactuar con los recursos que ofrecerá.
+		\subsection{Material Design}
+		
+		\subsection{Pantallas Principales}
+		
+	\section{Flujo de navegación}
 	
-	Por una parte permite la sincronización de la información entre los diferentes dispositivos  que un mismo enfermo pueda disponer. Esto lo hace de manera silenciosa enviando cada cambio al servidor, y este en cada conexión de un dispositivo pregunta por su estado de sincronización.
-	
-	Por otro ofrece servicios para que cada dispositivo envíe la información estadística pertinente, ademas la almacenará en una base de datos, haciendo anónimos esos datos en el proceso por confidencialidad hacia el usuario, y permitiendo después su consulta mediante servicio web o en la web donde este alojada la parte servidora, para la monitorización de los mismos.
-	
-	Dispondrá de control de usuarios, esto es que existirá un usuario encargado de ir asignando a los distintos agentes, generalmente por proximidad geográfica, para que este sea el encargado de monitorizar la actividad de sus enfermos 
-	
-	Se le ofrecerá al agente los contactos de cada enfermo que tenga asignado para en el caso de que necesitase conversare de alguna manera con alguno de ellos, bien sean familiares o el oncólogo si por ejemplo se encuentra en algún ensayo poder contrastar información
-	
-	En relación a esto ultimo la parte servidora dispondrá de un chat que permita comunicar directamente al agente con el enfermo, bajo ciertas premisas 
 	
 \end{document}
