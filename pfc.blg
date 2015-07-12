@@ -5,6 +5,11 @@ Warning--entry type for "OMS" isn't style-file defined
 --line 1 of file bibliography.bib
 Warning--entry type for "SHAREESP" isn't style-file defined
 --line 7 of file bibliography.bib
+I was expecting a `,' or a `}'---line 21 of file bibliography.bib
+ :  author 
+ :         = {Kent Beck, Robert C. Martin et alters},
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "agile"
 Warning--empty year in OMS
 Warning--empty year in SHAREESP
-(There were 4 warnings)
+(There was 1 error message)
