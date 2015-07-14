@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.6.10)  13 JUL 2015 21:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.6.10)  14 JUL 2015 20:19
 entering extended mode
 **pfc.tex
 (H:\proyecto\AECC\Memoria\Repositorio\PFCMemory\pfc.tex
@@ -580,26 +580,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
-) [17] [18
 
-]
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+
+ []
+
+) [18]
 Cap\'{\i }tulo 2.
-(H:\proyecto\AECC\Memoria\Repositorio\PFCMemory\2-Vision\vision.tex [19])
+(H:\proyecto\AECC\Memoria\Repositorio\PFCMemory\2-Vision\vision.tex [19
+
+])
 [20]
 Cap\'{\i }tulo 3.
 
 (H:\proyecto\AECC\Memoria\Repositorio\PFCMemory\3-Planificacion\planificacion.t
-ex
+ex [21
 
-Package natbib Warning: Citation `agile' on page 21 undefined on input line 7.
-
-
-Underfull \vbox (badness 6412) has occurred while \output is active []
-
- [21
-
-])
-[22]
+]) [22]
 Cap\'{\i }tulo 4.
 (H:\proyecto\AECC\Memoria\Repositorio\PFCMemory\4-Analisis\analisis.tex
 [23
@@ -639,30 +671,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--12
 []\OT1/cmr/m/n/10 O. M. de la Sa-lud.  Cancer, no-ta des-crip-ti-va 297.  URL
  []
 
-)
-
-Package natbib Warning: There were undefined citations.
-
-[35] (H:\proyecto\AECC\Memoria\Repositorio\PFCMemory\pfc.aux) ) 
+) [35] (H:\proyecto\AECC\Memoria\Repositorio\PFCMemory\pfc.aux) ) 
 Here is how much of TeX's memory you used:
- 3153 strings out of 493921
- 42647 string characters out of 3144876
- 109713 words of memory out of 3000000
- 6362 multiletter control sequences out of 15000+200000
+ 3158 strings out of 493921
+ 42724 string characters out of 3144876
+ 109737 words of memory out of 3000000
+ 6367 multiletter control sequences out of 15000+200000
  9727 words of font info for 35 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  27i,11n,43p,705b,331s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/latxfont/lasy10.pfb>
-Output written on pfc.pdf (35 pages, 767763 bytes).
+<C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/public/amsfonts/latxfont/lasy10.pfb>
+Output written on pfc.pdf (35 pages, 770717 bytes).
 PDF statistics:
  154 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

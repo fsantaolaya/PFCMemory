@@ -16,10 +16,9 @@
 \contentsline {section}{\numberline {3.1}Plan de desarrollo de software (revisar la fase de inicio lo de Mariete)}{21}
 \contentsline {section}{\numberline {3.2}Prop\IeC {\'o}sito general de la planificaci\IeC {\'o}n}{21}
 \contentsline {section}{\numberline {3.3}Scrum, sprints, estimaciones,... }{21}
-\contentsline {section}{\numberline {3.4}Roles y responsabilidades}{22}
-\contentsline {section}{\numberline {3.5}Planificaci\IeC {\'o}n completa}{22}
-\contentsline {section}{\numberline {3.6}Versionado}{22}
-\contentsline {section}{\numberline {3.7}Recursos necesarios}{22}
+\contentsline {section}{\numberline {3.4}Roles y responsabilidades}{21}
+\contentsline {section}{\numberline {3.5}Planificaaci\IeC {\'o}n completa}{22}
+\contentsline {section}{\numberline {3.6}Recursos necesarios}{22}
 \contentsline {chapter}{\numberline {4}An\IeC {\'a}lisis y Metodolog\IeC {\'\i }a}{23}
 \contentsline {section}{\numberline {4.1}An\IeC {\'a}lisis}{23}
 \contentsline {section}{\numberline {4.2}Documento de An\IeC {\'a}lisis}{25}
