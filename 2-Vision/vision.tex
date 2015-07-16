@@ -5,9 +5,40 @@
 	El concepto de aplicación es un asistente-diario para un enfermo de cáncer en la parte de la app móvil y una parte servidora que se encarga de sincronizar datos entre diferentes dispositivo, una base datos para dar apoyo a esto y que ademas reciba datos estadísticos de la app, por si alguna vez pueden extraer conclusiones tras un tratamiento estadístico de los mismos. Además se incluye un servicio de comunicación con los usuarios mediante notificaciones push a los dispositivos
 	
 	
-	\section{Fundamentos Teóricos}
+	\section{Estado del arte de la movilidad}
+	Dentro del concepto Movilidad se agrupan, tanto el hardware como el software de pequeños dispositivos portables o dispositivos móviles. Podríamos definir a estos últimos como “aparatos de pequeño tamaño, con algunas capacidades de procesamiento, con conexión permanente o intermitente a una red, con memoria limitada, diseñados específicamente para una función, pero que pueden llevar a cabo otras funciones más generales.”
 	
+	De entre los elementos que pueden llegar a ser un dispositivo móvil (una PDA, un teléfono móvil, un lector de libros electrónico o un ordenador portátil) destaca, sin lugar a dudas, el teléfono móvil como el dispositivo más utilizado de entre todos. Y entre los teléfonos móviles destacan los denominados "SmartPhones y Tabletas" por ser tener unas capacidades y potencia de ejecución de aplicaciones complejas de consumo de lo más variadas, desde reproductores de todo tipo de media, hasta mensajería instantáneas, llamadas apps. Es el desarrollo de estas apps y su comercialización por parte de grandes compañías tecnológicas como Google, Apple y Microsoft lo que ha devenido en todo un nuevo mercado de de desarrollo de software de todo tipo, no solo para grandes compañías sino también para pequeños grupos de desarrollo o incluso de desarrolladores indies. 
+	
+	\subsection{Smartphones}
+	
+	Un Smartphone (cuya traducción sería “teléfono inteligente”) “es una evolución del teléfono móvil tradicional que cuenta con ciertas características y prestaciones que lo acercan más a un ordenador personal que a un teléfono tradicional.”
+	Entre dichas prestaciones y características, se encuentran una amplia mejora del almacenamiento de datos, conexión a Internet mediante una tarifa contratada o haciendo uso de redes WIFI, acelerómetro, pantalla táctil, teclado QWERTY...y un sinfín de aplicaciones de usuario, además de la posibilidad de descarga de nuevas aplicaciones.
+	Todas estas prestaciones y características de los Smartphone estarían desaprovechadas sin software que las saque partido. Por ello los Smartphone llevan un SO (Sistema Operativo) que les permite realizar todas estas tareas de una forma rápida y sencilla, además de optimizando el consumo energético ya que dependen de una batería para ello la mayoría de las veces. 
+	En el siguiente apartado, realizaremos una breve descripción de los SO para dispositivos móviles y Smartphone más importantes que se encuentran en el mercado a día de hoy.
+	
+	\subsection{Sistemas operativos Móviles}
+	Partiendo de una definición de sistema operativo: “Capa compleja entre el hardware y el usuario, concebible también como una máquina virtual, que facilita al usuario o al programador las herramientas e interfaces adecuadas para realizar sus tareas informáticas, abstrayéndole de los complicados procesos necesarios para llevarlas a cabo.”
+	
+	Por ende, un sistema operativo móvil es un sistema operativo que controla un dispositivo móvil. Sin embargo, estos son mucho muy diferentes a los tradicionales SO de equipos de escritorio, para empezar hay mucha mas variedad, pero es que la interacción con el usuario, la gestión de la memoria, las tareas de llamadas que deben ser prioritarias, etc
+	
+	El sistema operativo destinado a controlar un dispositivo móvil necesita ser fiable y tener una gran estabilidad, ya que incidencias habituales y toleradas en ordenadores personales como reinicios o caídas no tienen cabida en un dispositivo de estas características. Además, a de adaptarse adecuadamente a las consabidas limitaciones de memoria y procesamiento de datos, proporcionando una ejecución exacta y excepcionalmente rápida al usuario.
+	
+	Estos sistemas han de estar perfectamente testeados y libres de errores antes de incorporarse definitivamente a la línea de producción. Las posibilidades que existen en un ordenador estándar de realizar actualizaciones e incluso reinstalar mejores versiones del sistema para cubrir fallos o deficiencias son más limitadas en un dispositivo móvil.
+	Es posible incluso que un aparato de esta naturaleza deba estar funcionando ininterrumpidamente durante semanas e incluso meses antes de ser apagado y reiniciado, a diferencia de lo que ocurre con un ordenador personal. El consumo de energía es otro tema muy delicado: es importante que el sistema operativo haga un uso lo más racional y provechoso posible de la batería, ya que esta es limitada y el usuario siempre exige una mayor autonomía.
+	
+	En la actualidad, existen varios sistemas operativos para toda la gama de dispositivos móviles. Más adelante veremos por qué se ha elegido Android para la realización de este proyecto fin de carrera, pero antes veamos las características más importantes de los principales sistemas operativos móviles.
+	
+	En 2015 en España y el mundo dentro de este mercado de SO de la movilidad se pueden encontrar diferentes actores que proveen de lo que denominamos sistemas operativos móviles, existiendo desde los provistos por las antes mencionadas grandes compañías tecnológicas hasta aquellos provistos por fundaciones, empresas que han perdido gran parte del negocio o empresas compradas por alguna de las grandes compañias, un repaso somero de los distintos SO móviles que podemos encontrar hoy día nos arroja nombres como Android, iOS, Windows Phone, Balckberry, Symbian, Firefox OS, Ubuntu Touch, etc
+		
 	\section{¿Porqué Android?}
+	Dentro del mercado de SO móviles solamente Android e iOs pueden considerarse grandes actores propiamente dichos pues entre ambos copan cerca del 90\% del mercado de Smartphones en España y cerca del 80\% mundial. El resto algunas tuvieron gran peso pero hoy están en franca retirada (Blackberry), no terminan de funcionar todo lo bien que se desea entre el gran público (Windows Phone), son de dispositivos de "otra era" y no están pensados para la movilidad moderna (Symbian), o no terminan de salir del halo de prototipo y aun deben pasar ciclos en fases beta para  poder ser pasadas al gran público (Ubuntu Touch, Firefox OS).
+	
+	Así pues la elección se encontraba entre Android e iOS de cara a afrontar este proyecto. Si tenemos en cuenta la cuota de mercado de cada uno de ellos ¡, Android sin duda alguna es el gran vencedor, pero es que ademas la gama de dispositivos que ofrece dicho SO es bastante más amplia y con mayor variabilidad en el precio de los terminales, permitiendo que más y más personas accediesen a la app. 
+	
+	A esto hay que añadir los costes de desarrollo, ya que para publicar aplicaciones en las tiendas de las mismas de los SO móviles se necesita de un proceso de registro como tal desarrollador en las tiendas, y este proceso no es gratuito. Para ser claros diremos que el coste en iOS es de 99 dólares anuales, además de disponer de un hardware especifico para realizar el desarrollo y compilación de la app. Mientras que en Android el coste de de 25 dólares en un pago único y el desarrollo y compilación puede llevarse a cabo con casi cualquier infraestructura de SO, hardware etc. 
+	
+	Es por eso que para este piloto de la iniciativa de la Asociación Española contra el Cáncer se haya optado por un desarrollo más económico, y tras analizar los resultados si evalúa la iniciativa como positiva y avanza del estadio de piloto, se planteará por parte de la AECC futuros desarrollos en ese sentido, pero eso queda fuera del alcance y ámbito de este proyecto. 
 
 	\section{Parte App móvil}
 	

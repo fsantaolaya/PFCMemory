@@ -7,7 +7,7 @@
 \usepackage{fancyhdr}
 \usepackage[nottoc]{tocbibind}
 \usepackage[square,numbers]{natbib}
-
+\usepackage{titling}
 
 
 \usepackage{graphicx}
@@ -27,6 +27,13 @@
 
 \date{Septiembre, 2015}
 
+\pretitle{%
+	\begin{center}
+		\includegraphics[width=0.5\linewidth]{../images/logo_uva}
+		
+	}
+\posttitle{\end{center}}
+
 
 \begin{document}
 	\maketitle
@@ -35,7 +42,12 @@
 	\chapter*{Agradecimientos}
 
 	
-	\textit{A pepito porque lo quiero con locura blabla bla\\
+	\textit{A mis padres Fernando y Filomena que me dieron a mí y a mis hermanos todo lo que ellos no tuvieron y por lo que se desvivieron trabajando, sin ellos no sería quien soy. Y a mis hermanos y hermana, David, Marta y Jose Ignacio, porque sin ellos mi vida hubiera sido muchísimo más aburrida y tampoco sería el hombre que hoy soy si ellos no hubiesen estado a mi lado.\\\\
+		También quiero agradecer a nuestro tutor Fernando de Prada Moraga por toda la paciencia que ha tenido con nosotros, la comprensión y la ayuda que nos ha brindado tantas veces con este y otros asuntos durante la etapa estudiantil.\\\\
+		A la familia más extensa, tíos, tías, primos etc por apoyarme y animarme cada vez que nos juntábamos.\\\\\\
+		A mis amigos y compañeros de clase, la familia que eliges, por todos los sin sabores que me han acompañado a transitar en estos años y no mandarme muy lejos casi nunca.\\\\\\
+		A Rubén por ser mi motor en esta última etapa y forzarme a empujar un poco más cada día y robar tiempo de donde no lo había.\\\\\\
+		Por último a todos aquellos profesores que me ayudaron a llegar aquí, desde EGB hasta este último proyecto, por saber despertar la curiosidad y ansia de saber y por su dedicación a mi formación no sólo como ingeniero sino también como persona.
 		Fernando Santa Olaya Rodríguez\\\\\\
 		Quiero agradecer a mi familia todo el apoyo que me han dado durante todos estos años, a los que están y a los que ya no están, a los que dedico este trabajo por razones obvias.\\\\
 		También quiero agradecer al tutor Fernando de Prada Moraga toda la paciencia que ha tenido con nosotros, nos ha comprendido y nos ha ayudado a llevar a cabo esta necesaria tarea.\\\\
@@ -56,7 +68,7 @@
 	\end{figure}
 	 
 	\chapter*{Abstract}
-	 	This project implents an mobile app wich is an micro virtual assitant for those people who are suffering the modern doom of cancer and on the other hand a server aplication which comunicates with the app on order to acquire data for statistic uses of the data involved with this illnes. Indeed the app serve a platform to interact on an easy way with the users by an operator. All of this is included on the inciative "Survivor's Diary" of the  Asociación Española contra el Cáncer\cite{SHAREESP}
+	 	This project implements a mobile application as micro virtual assistant to people suffering from the modern scourge of cancer and an application server with the app communicates and gathers statistics activities and moods of users for possible studies related to the disease. Also provides a platform that can easily interact with users of the same for the same operator. All this is included in the "Diary of a Survivor" initiative of the Spanish Association Against Cancer. This project implements a mobile application as micro virtual assistant to people suffering from the modern scourge of cancer and an application server with the app communicates and gathers statistics activities and moods of users for possible studies related to the disease. Also provides a platform that can easily interact with users of the same for the same operator. All this is included in the "Diary of a Survivor" initiative of the Spanish Association Against Cancer.\cite{SHAREESP}
 	
 	\tableofcontents
 	

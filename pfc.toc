@@ -8,69 +8,73 @@
 \contentsline {section}{\numberline {1.4}Estructura del proyecto}{17}
 \contentsline {section}{\numberline {1.5}Estructura de la memoria}{17}
 \contentsline {chapter}{\numberline {2}Visi\IeC {\'o}n general del Proyecto}{19}
-\contentsline {section}{\numberline {2.1}Fundamentos Te\IeC {\'o}ricos}{19}
-\contentsline {section}{\numberline {2.2}\IeC {\textquestiondown }Porqu\IeC {\'e} Android?}{19}
-\contentsline {section}{\numberline {2.3}Parte App m\IeC {\'o}vil}{19}
-\contentsline {section}{\numberline {2.4}Parte Servidora}{20}
-\contentsline {chapter}{\numberline {3}Planificaci\IeC {\'o}n}{21}
-\contentsline {section}{\numberline {3.1}Plan de desarrollo de software (revisar la fase de inicio lo de Mariete)}{21}
-\contentsline {section}{\numberline {3.2}Prop\IeC {\'o}sito general de la planificaci\IeC {\'o}n}{21}
-\contentsline {section}{\numberline {3.3}Scrum, sprints, estimaciones,... }{21}
-\contentsline {section}{\numberline {3.4}Roles y responsabilidades}{21}
-\contentsline {section}{\numberline {3.5}Planificaaci\IeC {\'o}n completa}{22}
-\contentsline {section}{\numberline {3.6}Recursos necesarios}{22}
-\contentsline {chapter}{\numberline {4}An\IeC {\'a}lisis y Metodolog\IeC {\'\i }a}{23}
-\contentsline {section}{\numberline {4.1}An\IeC {\'a}lisis}{23}
-\contentsline {section}{\numberline {4.2}Documento de An\IeC {\'a}lisis}{25}
-\contentsline {subsection}{\numberline {4.2.1}Descripcion de objetivos de manera detallada}{25}
-\contentsline {subsection}{\numberline {4.2.2}Captura de Requisitos}{25}
-\contentsline {subsubsection}{Requisitos de informaci\IeC {\'o}n}{25}
-\contentsline {subsubsection}{Requisitos Funcionales}{25}
-\contentsline {subsubsection}{Requisitos No Funcionales}{25}
-\contentsline {subsection}{\numberline {4.2.3}Identificaci\IeC {\'o}n de actores}{25}
-\contentsline {subsection}{\numberline {4.2.4}Diagrama de casos de uso }{25}
-\contentsline {subsection}{\numberline {4.2.5}Descripci\IeC {\'o}n de Casos de Uso}{25}
-\contentsline {subsection}{\numberline {4.2.6}Diagrama de clases de an\IeC {\'a}lisis}{25}
-\contentsline {subsection}{\numberline {4.2.7}Diagrama Entidad-Relaci\IeC {\'o}n de la base de datos}{25}
-\contentsline {subsection}{\numberline {4.2.8}Modelo relacional del an\IeC {\'a}lisis}{25}
-\contentsline {section}{\numberline {4.3}Prototipado}{25}
-\contentsline {chapter}{\numberline {5}Dise\IeC {\~n}o}{27}
-\contentsline {section}{\numberline {5.1}Parte App m\IeC {\'o}vil}{27}
-\contentsline {section}{\numberline {5.2}Documento de dise\IeC {\~n}o}{27}
-\contentsline {section}{\numberline {5.3}Arquitectura}{27}
-\contentsline {section}{\numberline {5.4}Tecnologia}{27}
-\contentsline {section}{\numberline {5.5}Diagrama de Clases}{27}
-\contentsline {section}{\numberline {5.6}Diagrama de secuencia}{27}
-\contentsline {section}{\numberline {5.7}Dise\IeC {\~n}o de la base de datos}{27}
-\contentsline {section}{\numberline {5.8}Diagramas de estado}{27}
-\contentsline {section}{\numberline {5.9}Prototipado}{27}
-\contentsline {subsection}{\numberline {5.9.1}Material Design}{27}
-\contentsline {subsection}{\numberline {5.9.2}Pantallas Principales}{27}
-\contentsline {section}{\numberline {5.10}Flujo de navegaci\IeC {\'o}n}{27}
-\contentsline {chapter}{\numberline {6}Pruebas}{29}
-\contentsline {section}{\numberline {6.1}Construcci\IeC {\'o}n y Pruebas}{29}
-\contentsline {section}{\numberline {6.2}Estructura de la aplicaci\IeC {\'o}n}{29}
-\contentsline {section}{\numberline {6.3}Plan de desarrollo, }{29}
-\contentsline {section}{\numberline {6.4}SVN, GIT,}{29}
-\contentsline {section}{\numberline {6.5}Plan de trabajo y comunicaciones}{29}
-\contentsline {section}{\numberline {6.6}Pruebas}{29}
-\contentsline {subsection}{\numberline {6.6.1}Plan de pruebas}{29}
-\contentsline {subsection}{\numberline {6.6.2}Tipos de pruebas}{29}
-\contentsline {subsection}{\numberline {6.6.3}Baterias de pruebas}{29}
-\contentsline {subsection}{\numberline {6.6.4}Pruebas en el dispositivo}{29}
-\contentsline {section}{\numberline {6.7}Puesta en producci\IeC {\'o}n}{29}
-\contentsline {chapter}{\numberline {7}Conclusiones y trabajo futuro}{31}
-\contentsline {section}{\numberline {7.1}Conclusiones y trabajo futuro}{31}
-\contentsline {section}{\numberline {7.2}Conclusiones}{31}
-\contentsline {section}{\numberline {7.3}Dificultades encontradas}{31}
-\contentsline {section}{\numberline {7.4}Consecuci\IeC {\'o}n de Objetivos}{31}
-\contentsline {section}{\numberline {7.5}Conocimientos adquiridos}{31}
-\contentsline {section}{\numberline {7.6}Trabajo futuro}{31}
-\contentsline {chapter}{\numberline {8}ANEXO I: INSTALACI\IeC {\'O}N Y MANUAL DE USUARIO }{33}
-\contentsline {section}{\numberline {8.1}Conclusiones y trabajo futuro}{33}
-\contentsline {section}{\numberline {8.2}Conclusiones}{33}
-\contentsline {section}{\numberline {8.3}Dificultades encontradas}{33}
-\contentsline {section}{\numberline {8.4}Consecuci\IeC {\'o}n de Objetivos}{33}
-\contentsline {section}{\numberline {8.5}Conocimientos adquiridos}{33}
-\contentsline {section}{\numberline {8.6}Trabajo futuro}{33}
-\contentsline {chapter}{Bibliograf\'{\i }a}{35}
+\contentsline {section}{\numberline {2.1}Estado del arte de la movilidad}{19}
+\contentsline {subsection}{\numberline {2.1.1}Smartphones}{19}
+\contentsline {subsection}{\numberline {2.1.2}Sistemas operativos M\IeC {\'o}viles}{20}
+\contentsline {section}{\numberline {2.2}\IeC {\textquestiondown }Porqu\IeC {\'e} Android?}{20}
+\contentsline {section}{\numberline {2.3}Parte App m\IeC {\'o}vil}{21}
+\contentsline {section}{\numberline {2.4}Parte Servidora}{22}
+\contentsline {chapter}{\numberline {3}Planificaci\IeC {\'o}n}{23}
+\contentsline {section}{\numberline {3.1}Plan de desarrollo de software (revisar la fase de inicio lo de Mariete)}{23}
+\contentsline {section}{\numberline {3.2}Prop\IeC {\'o}sito general de la planificaci\IeC {\'o}n}{23}
+\contentsline {section}{\numberline {3.3}Metodolog\IeC {\'\i }a }{23}
+\contentsline {subsection}{\numberline {3.3.1}SCRUM}{23}
+\contentsline {subsection}{\numberline {3.3.2}Roles y responsabilidades}{25}
+\contentsline {subsection}{\numberline {3.3.3}Eventos y rituales}{25}
+\contentsline {section}{\numberline {3.4}Planificaaci\IeC {\'o}n completa}{26}
+\contentsline {section}{\numberline {3.5}Recursos necesarios}{26}
+\contentsline {chapter}{\numberline {4}An\IeC {\'a}lisis y Metodolog\IeC {\'\i }a}{27}
+\contentsline {section}{\numberline {4.1}An\IeC {\'a}lisis}{27}
+\contentsline {section}{\numberline {4.2}Documento de An\IeC {\'a}lisis}{29}
+\contentsline {subsection}{\numberline {4.2.1}Descripcion de objetivos de manera detallada}{29}
+\contentsline {subsection}{\numberline {4.2.2}Captura de Requisitos}{29}
+\contentsline {subsubsection}{Requisitos de informaci\IeC {\'o}n}{29}
+\contentsline {subsubsection}{Requisitos Funcionales}{29}
+\contentsline {subsubsection}{Requisitos No Funcionales}{29}
+\contentsline {subsection}{\numberline {4.2.3}Identificaci\IeC {\'o}n de actores}{29}
+\contentsline {subsection}{\numberline {4.2.4}Diagrama de casos de uso }{29}
+\contentsline {subsection}{\numberline {4.2.5}Descripci\IeC {\'o}n de Casos de Uso}{29}
+\contentsline {subsection}{\numberline {4.2.6}Diagrama de clases de an\IeC {\'a}lisis}{29}
+\contentsline {subsection}{\numberline {4.2.7}Diagrama Entidad-Relaci\IeC {\'o}n de la base de datos}{29}
+\contentsline {subsection}{\numberline {4.2.8}Modelo relacional del an\IeC {\'a}lisis}{29}
+\contentsline {section}{\numberline {4.3}Prototipado}{29}
+\contentsline {chapter}{\numberline {5}Dise\IeC {\~n}o}{31}
+\contentsline {section}{\numberline {5.1}Parte App m\IeC {\'o}vil}{31}
+\contentsline {section}{\numberline {5.2}Documento de dise\IeC {\~n}o}{31}
+\contentsline {section}{\numberline {5.3}Arquitectura}{31}
+\contentsline {section}{\numberline {5.4}Tecnologia}{31}
+\contentsline {section}{\numberline {5.5}Diagrama de Clases}{31}
+\contentsline {section}{\numberline {5.6}Diagrama de secuencia}{31}
+\contentsline {section}{\numberline {5.7}Dise\IeC {\~n}o de la base de datos}{31}
+\contentsline {section}{\numberline {5.8}Diagramas de estado}{31}
+\contentsline {section}{\numberline {5.9}Prototipado}{31}
+\contentsline {subsection}{\numberline {5.9.1}Material Design}{31}
+\contentsline {subsection}{\numberline {5.9.2}Pantallas Principales}{31}
+\contentsline {section}{\numberline {5.10}Flujo de navegaci\IeC {\'o}n}{31}
+\contentsline {chapter}{\numberline {6}Pruebas}{33}
+\contentsline {section}{\numberline {6.1}Construcci\IeC {\'o}n y Pruebas}{33}
+\contentsline {section}{\numberline {6.2}Estructura de la aplicaci\IeC {\'o}n}{33}
+\contentsline {section}{\numberline {6.3}Plan de desarrollo, }{33}
+\contentsline {section}{\numberline {6.4}SVN, GIT,}{33}
+\contentsline {section}{\numberline {6.5}Plan de trabajo y comunicaciones}{33}
+\contentsline {section}{\numberline {6.6}Pruebas}{33}
+\contentsline {subsection}{\numberline {6.6.1}Plan de pruebas}{33}
+\contentsline {subsection}{\numberline {6.6.2}Tipos de pruebas}{33}
+\contentsline {subsection}{\numberline {6.6.3}Baterias de pruebas}{33}
+\contentsline {subsection}{\numberline {6.6.4}Pruebas en el dispositivo}{33}
+\contentsline {section}{\numberline {6.7}Puesta en producci\IeC {\'o}n}{33}
+\contentsline {chapter}{\numberline {7}Conclusiones y trabajo futuro}{35}
+\contentsline {section}{\numberline {7.1}Conclusiones y trabajo futuro}{35}
+\contentsline {section}{\numberline {7.2}Conclusiones}{35}
+\contentsline {section}{\numberline {7.3}Dificultades encontradas}{35}
+\contentsline {section}{\numberline {7.4}Consecuci\IeC {\'o}n de Objetivos}{35}
+\contentsline {section}{\numberline {7.5}Conocimientos adquiridos}{35}
+\contentsline {section}{\numberline {7.6}Trabajo futuro}{35}
+\contentsline {chapter}{\numberline {8}ANEXO I: INSTALACI\IeC {\'O}N Y MANUAL DE USUARIO }{37}
+\contentsline {section}{\numberline {8.1}Conclusiones y trabajo futuro}{37}
+\contentsline {section}{\numberline {8.2}Conclusiones}{37}
+\contentsline {section}{\numberline {8.3}Dificultades encontradas}{37}
+\contentsline {section}{\numberline {8.4}Consecuci\IeC {\'o}n de Objetivos}{37}
+\contentsline {section}{\numberline {8.5}Conocimientos adquiridos}{37}
+\contentsline {section}{\numberline {8.6}Trabajo futuro}{37}
+\contentsline {chapter}{Bibliograf\'{\i }a}{39}
