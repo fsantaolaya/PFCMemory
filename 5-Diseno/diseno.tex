@@ -21,9 +21,152 @@
 	
 	\section{Prototipado}
 	
+	En la fase de diseño, el propósito del prototipo es obtener una primera versión de la apariencia de la interfaz de usuario así como de la funcionalidad incluida (mostrar las ventanas, su navegación, interacción, controles y botones). Con esto se pretende que el cliente tenga una primera toma de contacto con la futura aplicación antes de su desarrollo final, para así reducir o eliminar todas aquellas disconformidades y cambios en fases futuras.
+	
 		\subsection{Material Design}
 		
+		Es un diseño donde la profundidad, las superficies, los bordes, las sombras y los colores juegan un papel principal.
+		
+		Precisamente este diseño basado en objetos es una manera de intentar aproximarse a la realidad, algo que en un mundo donde todo es táctil y virtual es difícil. Material Design quiere guiarse por las leyes de la física, donde las animaciones sean lógicas, los objetos se superpongan pero no puedan atravesarse el uno al otro y demás.
+		
+		Material Design es un diseño con una tipografía clara, casillas bien ordenadas, colores e imágenes llamativos para no perder el foco y un sentido del orden y la jerarquía muy marcado. Estas ideas ya se aplican en muchos diseños, pero en Material Design Google ha creado unas normas muy claras de como llevarlo a la práctica.
+		
 		\subsection{Pantallas Principales}
+		
+			Pantallas iniciales y flujo de la aplicación que de manera inicial hemos planteado para la misma.
+			No es la versión final de la aplicación pero si se aproxima y nos da una idea clara de lo que deberia ser o a lo que debería parecerse.
+			Estos prototipos, sirven para orientarnos a la hora de construir la aplicación
+			
+			\textbf{Pantalla Principal y Drawer menú}
+			El usuario, al ejecutar la aplicación accede a una pantalla cuyo contenido es el listado de las actividades próximas a realizar, ya sea una cita médica o una rutina.
+			El drawer nos permite navegar entre actividades, desde la pantalla principal podemos añadir citas y acceder de manera individual a las mismas.
+			 
+			
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.7\linewidth]{../images/principal_2}
+				\caption[Drawer menu y Pantalla principal]{Descripcion de la pantalla principal y Drawer menú}
+				\label{fig:principal}
+			\end{figure}
+			
+			
+			\textbf{Pantallas referentes a la programación de actividades}
+			Desde estás pantallas tenemos una vision de la acupación diaria del paciente y de la ocupación mensual, desde la vista mensual al menos se podrán añadir nuevas citas médicas o rutinas para ese paciente.
+
+			
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.7\linewidth]{../images/horario_2}
+				\caption{Pantallas con los horarios y ocupación del paciente}
+				\label{fig:horario_2}
+			\end{figure}
+			
+			
+			\textbf{Pantallas referentes a la rutina diaria}
+			Listado de las rutinas diarias que tiene ese paciente y representación de la introducción de una nueva rutina para ese paciente.
+			Dentro de la introducción de la rutina se podrán añadir nuevos personajes que acompañarán a ese paciente y le harán más fácil recordar con quien quedó y para qué.
+
+			
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.7\linewidth]{../images/rutina}
+				\caption{Pantalla con la interfaz para las rutinas}
+				\label{fig:rutina}
+			\end{figure}
+						
+			
+			\textbf{Pantallas referentes a las citas médicas}
+			Listado de las citas medicas de ese paciente e introducción de la cita en si de manera individual.
+			De funcionamiento similar a las pantallas anteriores pero con diferencias sustanciales en la funcionalidad de la introducción de información, se pueden añadir personajes, síntomas, medicamentos y pruebas, de manera que el paciente cuando acuda a la cita lleve de manera ordenada toda esta información.
+			
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.7\linewidth]{../images/citas}
+				\caption{Pantalla con la actividad de las citas}
+				\label{fig:citas}
+			\end{figure}
+			
+			
+			\textbf{Pantallas referentes a la medicación}
+			El usuario introduce los medicamentos que toma, de manera que puede añadir alertas a los mismos para que se le avise de que ha llegad la hora de la dosis con una notificación.
+			Se podrán introducir otros datos del medicamento como pueden ser los intervalos entre dosis, indicaciones...
+			
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.7\linewidth]{../images/medicacion}
+				\caption{Pantalla con la actividad de la medicacion}
+				\label{fig:medicacion}
+			\end{figure}
+			
+			
+			\textbf{Pantallas de gestion de personajes}
+			El usuario puede añadir a la aplicación su lista de amigos, personal médico que le atiende, asistentes, etc, con sus datos personales, de manera que a la hora de hacer una rutina (actividad) o acudir a una cita, puedan ser añadidos.
+			
+			
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.7\linewidth]{../images/personajes}
+				\caption{Pantalla con la actividad de los personajes}
+				\label{fig:personajes}
+			\end{figure}
+			
+			
+			\textbf{Pantallas de gestion de pruebas médicas}
+			Se facilita el poder llevar las pruebas médicas en forma de archivo fotográfico para poder consultarse en alguna de las citas medicas a las que acuda, tales como revisiones, visitas al fisio, a la enfermera. Listado del mismo.
+			
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.7\linewidth]{../images/pruebas}
+				\caption{Pantalla con la actividad de las pruebas}
+				\label{fig:pruebas}
+			\end{figure}
+			
+			
+			\textbf{Pantallas de gestión de los síntomas}
+			El usuario puede tomar nota de los síntomas, molestias, efectos secundarios negativos o positivos que le acontecen, para poder asignarles despues a una cita médica y poder completar de manera más eficiente las mismas, pudiendo aportar información adicional que ayude a su médico a mejorar el diagnóstico.
+			
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.7\linewidth]{../images/sintomas}
+				\caption{Pantalla con la actividad de los sintomas}
+				\label{fig:sintomas}
+			\end{figure}
+			
+			
+			\textbf{Pantallas de Recursos}
+			Estas pantallas están pensadas para que el paciente disponga de ayuda adicional, y una serie de recursos de fácil acceso así como una sección de noticias de la AECC para que puedan ser consultadas por el paciente.
+			Sección de meditación, consejos generales que le puedan ser de ayuda, noticias y teléfonos de interés. 
+			
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.7\linewidth]{../images/recursos}
+				\caption{Pantalla con la actividad de los recursos}
+				\label{fig:recursos}
+			\end{figure}
+			
+			
+			\textbf{Pantalla de perfil de usuario}
+			El usuario podrá introducir sus datos personales para que la aplicación pueda tratarle de manera personalizada.
+			
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.7\linewidth]{../images/perfil_2}
+				\caption{Pantalla con la actividad conf del perfil}
+				\label{fig:perfil_2}
+			\end{figure}
+			
+			
+			\textbf{Otros: Pantalla de presentación y carga}
+			Pantalla inicial de carga, se utiliza para aportar más identidad a la aplicación y a modo de pequeña intro.
+			
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.3\linewidth]{../images/flasher_pantalla_carga}
+				\caption{Pantalla con la actividad de las citas}
+				\label{fig:flasher_pantalla_carga}
+			\end{figure}
+			
+			
 		
 	\section{Flujo de navegación}
 	

@@ -1,12 +1,74 @@
 \documentclass[../pfc.tex]{subfiles}
 	
 \begin{document}
+
 	
 	\section{Construcción y Pruebas}
 	
 	\section{Estructura de la aplicación}
 	
-	\section{Plan de desarrollo, }
+	\section{Plan de desarrollo}
+	Pasos para el desarrollo de la aplicación móvil "Diario de un Superviviente":\\
+	
+	\textbf{Idea Inicial}
+	
+	Partimos de la 'idea' conformada junto a la AECC de una aplicación Android  que permitiese a los enfermos de cáncer llevar de una manera mucho mas sencilla el control de las acciones que acontecen de manera rutinaria en su día a día, tales como la toma de medicamentos, asistencia a citas médicas, control de sintomas y pruebas, rutinas diarias beneficiosas.
+	
+	Para ello la AECC puso a nuestra disposición un folleto que forma parte de esta iniciativa, pero que dadas sus carácterísticas fisicas se que da algo corto en su planteamiento.\\
+	
+	\textbf{Captura de requisitos}
+	
+	El proyecto debe estar bien definido, tanto sus objetivos como las funcionalidades que se requieren para que cumpla su cometido. Cuanta mejor definido esté más cerca estaremos de cumplir sus objetivos.
+	
+	Está tarea, se ha realizado estudiando de manera pormenorizada la documentación que puso a nuestra disposición la AECC dividiendo en partes bien diferenciadas las funcionalidades de cada una de las partes de las que se compone esta documentación.
+	
+	A través del cruce de correos y de alguna que otra reunión presencial se han limado distintas formas de ver algunas partes.\\
+	
+		
+	Con la definición del proyecto terminada, es necesario saber el tiempo que nos va a llevar en horas, por lo que hay que valorar el desarrollo. Para ello, será necesario contabilizar y estimar los plazos en horas que nos va a costar cada parte del proyecto. Tanto el plazo como el precio dependerán totalmente de las funcionalidades y del tipo de desarrollo elegido, pues no es lo mismo (ni se obtiene un proyecto de igual calidad) desarrollar apps nativas que híbridas, ni que el proyecto requiera de un complejo backend orientado a móviles o no requiera siquiera esta parte.\\
+	
+	\textbf{Planificación} 
+		
+	Es la primera fase del desarrollo del proyecto. Consiste en tener un programa de trabajo con un desglose de todas las actividades que se van a realizar (desde el diseño hasta las pruebas finales), el plazo estimado de horas que se le va a dedicar cada una de ellas y estableciendo los medios humanos que se van a dedicar para alcanzar los objetivos que se hayan propuesto. En este proceso, que ha de ser continuo se han de reflejar\\
+	
+	-Equipos, programas, licencias etc que se vayan a emplear.
+	
+	-Requerimientos gráficos y fechas límite.
+	
+	-Necesidades que dependan del cliente (AECC) y fechas para tenerlos disponibles.
+	
+	-Cambios que puedan ocurrir durante el desarrollo de la app.
+	
+	Una buena planificación y su actualización es clave para el correcto desarrollo de la aplicación móvil y para su puesta en funcionamiento en la fecha prevista.\\  
+	
+	\textbf{Diseño UI/UX}
+	
+	Previo a la implementación es necesario tener totalmente definido el diseño estructural de la app y su comportamiento. Para ello hemos utilizado Photoshop para el diseño inicial, el cual nos mostrará el aspecto y la usabilidad de la aplicación.
+	
+	El diseño consiste tanto  en la confección del aspecto y usabilidad como en la correcta aplicación de las guidelines de diseño de google de material design\cite(materialStructure),  además de la correcta adaptación a todas las densidades de pantallas (recordemos que por ejemplo Android tiene MDPI(160 DPI), HDPI(240 DPI), XHDPI(320 DPI), XXHDPI(480 DPI), XXHDPI (640 DPI) y su tratamiento para que sean aptas para la programación.\\
+	
+
+	\textbf{Desarrollo}
+	
+	Es la programación del proyecto. Esta fase se hará de acuerdo a la tecnología que se haya decidido emplear para cada plataforma de programación y los entornos de desarrollo empleados serán acordes con ello (Android Studio); recordemos que se pueden desarrollar apps nativas o híbridas , y llevará mayor esfuerzo de trabajo en función de lo anterior. A la vista de lo anterior el equipo de desarrollo, de una aplicación, por muy sencilla que sea, puede llegar a estar compuesto por 5 ingenieros informáticos (Android, iOS, Windows Phone, Backend, Frontend) y un diseñador, además del director del proyecto que coordine a todos ellos. De ahí que el coste de una app sea totalmente dependiente de la tecnología que empleemos en el desarrollo y de la complejidad del proyecto en sí.\\
+	
+	\textbf{Testing}
+	
+	Una vez desarrollada la app es necesario hacer un testing profundo de todas las partes del mismo. El testeo se puede dividir en:
+	-Testeo funcional: para asegurar que la aplicación trabaja como debería y sigue todos los flijos debidos.
+	-Testeo de rendimiento: para comprobar que el comportamiento de la aplicación bajo ciertas condiciones (múltiples peticiones de acceso simultáneas, poca cobertura, poca batería…) es el correcto.
+	-Comprobaciones de fugas de memoria, cruciales en móviles pues los recursos son mucho más limitados que en programas para ordenadores de sobremesa. Para esta tarea se utilizan habitualmente programas automatizadores de tareas y programas que reportan el código de error, además del testeo manual intensivo.\\
+	
+	\textbf{Distribución pre-lanzamiento}
+	
+	Previo a la subida a los markets de aplicaciones móviles se pueden hacer distribuciones de las aplicaciones móviles. En Android se puede hacer utilizando el entorno beta de desarrollo  Android disponible en la consola de desarrollador.\\
+	
+	\textbf{Implantación y distribución}
+	
+	A la finalización del desarrollo, el último paso será subirlo a los markets correspondientes. Para este último paso habrá que firmar digitalmente las apps con la cuenta de desarrollador, compilar el paquete y subirlo a Google Play, así como preparar el resto de requisitos necesarios tales como las imágenes, logos, descripciones etc. Requeridos por los markets de apps.\\
+	A partir de este momento comienza la etapa de manteniminiento de la aplicacion, y su escalabilidad, dependiendo de los requerimientos y necesidadeds futuras de los usuarios o del propio cliente en  nuestro caso de la AECC.
+	
+	Esperamos que aclare las dudas que podáis tener cuando penséis en desarrollar una aplicación móvil.
 	
 	\section{SVN, GIT,}
 	
@@ -14,13 +76,13 @@
 	
 	\section{Pruebas}
 	
-		\subsection{Plan de pruebas}
+	\subsection{Plan de pruebas}
+	
+	\subsection{Tipos de pruebas}
 		
-		\subsection{Tipos de pruebas}
+	\subsection{Baterias de pruebas}
 		
-		\subsection{Baterias de pruebas}
-		
-		\subsection{Pruebas en el dispositivo}
+	\subsection{Pruebas en el dispositivo}
 	
 	\section{Puesta en producción}
 	
