@@ -20,61 +20,88 @@ La fase de análisis y el proceso de Ingeniería de Requisitos, parten básicame
 	Usualmente el cliente/usuario tiene una visión incompleta/inexacta de lo que necesita y es necesario ayudarle para obtener la visión completa de los requerimientos.  El contenido de comunicación en esta etapa es muy intenso ya que el objetivo es eliminar la ambigüedad en la medida de lo posible.\\
 	Partiendo de un exhaustivo estudio de las funcionalidades que podrian resultar útiles para los pacientes de Cancer, y de acuerdo con las especificaciones de la AECC hemos decidido incluir en la misma las siguientes:\\
 
+	\section{Explicación detallada de las funcionalidades de la aplicación}
+
+
+	\textbf{AVATAR}
 	
-	AVATAR -> 		Editar el perfil, Foto, nombre, apellidos, edad, cumpleaños... (1 pantalla), ¿Grupo sanguineo y alergenos tampoco estaría mal pero es informacion de otro nivel LOPD?
-	PROYECTO AMPLIACION (asignar un agente personalizado para poder atender de manera personalizada al paciente Superviviente)
+	Editar el perfil, Foto, nombre, apellidos, edad, cumpleaños... (1 pantalla), ¿Grupo sanguineo y alergenos tampoco estaría mal pero es informacion de otro nivel LOPD?
 	
-	PRINCIPAL-> 	Vista de Rutina proxima, citas, Se debería ver lo que realmente interesa ¿Noticias AECC tipo RSS, Twitter, Facebook? (1 pantalla)
+	PROYECTO AMPLIACION (asignar un agente personalizado para poder atender de manera personalizada al paciente Superviviente)\\
 	
-	HORARIO -> 		Vista dia, mes, con las actividades, citas, ¿Cumpleaños, aniverssario de enfermedad...?  
+
+	\textbf{PRINCIPAL}
+	
+	Vista de Rutina proxima, citas, Se debería ver lo que realmente interesa ¿Noticias AECC tipo RSS, Twitter, Facebook? (1 pantalla)\\
+	
+
+	\textbf{HORARIO}
+	
+	Vista dia, mes, con las actividades, citas, ¿Cumpleaños, aniverssario de enfermedad...?  
 	al pinchar en una hora, dia, se podrá añadir rutina o cita, iria a la correspondiente lista de creacion de una nueva (1 pantalla)
+	
 	Deberian aparecer las citas y rutinas ocupando el espacio destinado a la duracion de las mismas.
+	
 	Revisar esta página
-	https://code.google.com/p/yadview/
+	https://code.google.com/p/yadview/\\
 	
-	RUTINA -> 		Lista de rutinas,
-	Desde la propia vista se podrán añadir rutinas, al pulsar sobre la opción correspondiente nos llevará al listado de estás opciones añadiendose así.
+
+	\textbf{RUTINA}
+	Lista de rutinas, desde la propia vista se podrán añadir rutinas, al pulsar sobre la opción correspondiente nos llevará al listado de estás opciones añadiendose así.
+	
 	Se podra ordenar por fecha, asc y desc, duracion de la actividad asc y desc pero sobre todo se podrá ordenar por satisfaccion de la misma.
-	
 	
 	Añadir rutina, , en esta pantalla se permite ver al pinchar sobre el propio item de la lista ,editar, o pulsando el botón añadir del final de la lista crear una nueva,
 	Valorar si deberiamos gestionar la repeticion de los elementos					
 	dentro de la rutina (añadir) se podrán añadir personajes y asignar una alarma personalizable (avisar) con antelacion, se puede ver sin editar(2 pantallas)
 	con una hora de aviso, hora de empiece de la actividad. Duración de las misma en horas, satisfaccion de 0 a 10
+	
 	Dentro se va a valorar tambien la satisfacción personal que se produce al hacer esto, podrá ser de 0 a 10
 	
-	AMPLIACION DE PROYECTO: Poder variar los avisos para que se hagan de manera repetitiva, por ejemplo repetir de manera semanal los jueves al estilo TICK TICK, llamarlo actividades en vez de Rutina 
+	AMPLIACION DE PROYECTO: Poder variar los avisos para que se hagan de manera repetitiva, por ejemplo repetir de manera semanal los jueves al estilo TICK TICK, llamarlo actividades en vez de Rutina\\ 
 	
-	CITAS -> 		Lista de citas Nombre de la cita, fecha y hora.
+
+	\textbf{CITAS}
+	
+	Lista de citas Nombre de la cita, fecha y hora.
 	Desde el propio item de la lista se podran añadir medicamentos, personas, sintomas y/o pruebas, al pulsar sobre la opción correspondiente nos llevará al listado de estás opciones añadiendose así.
 	
 	Añadir cita, en esta pantalla se permite ver al pinchar sobre el propio item de la lista ,editar, o pulsando el botón añadir del final de la lista crear una nueva, 
 	dentro de la cita (añadir) se podrán añadir ubicación, personajes, medicamentos, pruebas y sintomas y asignar una alarma personalizable con fecha y hora (avisar) con antelacion.
 	se puede ver sin editar
+	
 	Deberíamos añadir duración?
+	
 	Valorar si deberiamos gestionar la repeticion de los eventos
+	
 	¿En la ubicación se podria comunicar con google maps?
+	
 	¿Deberiamos mostrar en el item de la cita si ya poseee personas, pruebas, sintomas o medicacion?
 	
-	PROYECTO AMPLIACION Poder exportar e importar a google maps, conectar la ubicacion con google maps para poder ir
+	PROYECTO AMPLIACION Poder exportar e importar a google maps, conectar la ubicacion con google maps para poder ir\\
 	
-	MEDICACION -> 	Lista de medicamentos, lista de los medicamentos que tengamos con el boton de añadir al final y en la barra la posibilidad de ordenar en principio por orden ascendente o descendente,
-	al pinchar sobre el elemento se visualiza, 
-	en las opciones de cada elemento se puede añadir a la cita, editar y borrar (confirmacion para borrar)
+	
+	\textbf{MEDICACION}
+	Lista de medicamentos, lista de los medicamentos que tengamos con el boton de añadir al final y en la barra la posibilidad de ordenar en principio por orden ascendente o descendente,
+	al pinchar sobre el elemento se visualiza, en las opciones de cada elemento se puede añadir a la cita, editar y borrar (confirmacion para borrar)
 	
 	Añadir medicamento, , en esta pantalla se permite ver al pinchar sobre el propio item de la lista ,editar, o pulsando el botón añadir del final de la lista crear una nueva, 
 	dentro del medicamento (añadir) se podrá asignar una foto personalizable, o bien hacerla o añadirla de la galeria, viene una por defecto
 	nombre, descripcion, 
 	una alarma personalizable que avisar con antelacion, fecha inicio, hora inicio, fecha fin, hora fin, repetir cada tantas horas, dias, semanas, (esto se valorará)
+
 	REVISAR LA FUNCION DE ALARMA EN ANDROID http://developer.android.com/reference/android/app/AlarmManager.html
 	boton guardar 
 	se puede ver sin editar, 
 	dentro de la edición y visionado se podra añadir a una cita
 	Se puede añadir el numero de medicamentos al drawer (se estudiará)
 	
-	PROYECTO AMPLIACION Llevar el stock de lo que lleva consumido el paciente y generar alertas para cuando se le acabe, duplicar tratamiento, para ahorrar trabajo, opciones de dosis.
+	PROYECTO AMPLIACION Llevar el stock de lo que lleva consumido el paciente y generar alertas para cuando se le acabe, duplicar tratamiento, para ahorrar trabajo, opciones de dosis.\\
 	
-	PERSONAJES -> 	Lista de personajes que tengamos con el boton de añadir al final y en la barra la posibilidad de ordenar en principio por orden ascendente o descendente,
+	
+	\textbf{PERSONAJES}
+	
+	Lista de personajes que tengamos con el boton de añadir al final y en la barra la posibilidad de ordenar en principio por orden ascendente o descendente,
 	al pinchar sobre el elemento se visualiza, 
 	en las opciones de cada elemento se puede añadir a la cita, a la rutina, editar y borrar confirmacion para borrar
 	
@@ -84,9 +111,12 @@ La fase de análisis y el proceso de Ingeniería de Requisitos, parten básicame
 	se puede ver sin editar, dentro de la edición y visionado se podra añadir a una cita, o a una rutina ejemplo (paseo por la playa) o a cita con el oncólogo
 	Se puede añadir el numero al drawer
 	
-	PROYECTO AMPLIACION llevarnos ese contacto a la agenda o traernosle de ella
+	PROYECTO AMPLIACION llevarnos ese contacto a la agenda o traernosle de ella\\
 	
-	PRUEBAS -> 	 	Lista de personajes que tengamos con el boton de añadir al final y en la barra la posibilidad de ordenar en principio por orden de fecha ascendente o descendente,
+	
+	\textbf{PRUEBAS}
+	
+	Lista de personajes que tengamos con el boton de añadir al final y en la barra la posibilidad de ordenar en principio por orden de fecha ascendente o descendente,
 	al pinchar sobre el elemento se visualiza, 
 	en las opciones de cada elemento se puede añadir a la cita, editar y borrar confirmacion para borrar
 	
@@ -97,9 +127,12 @@ La fase de análisis y el proceso de Ingeniería de Requisitos, parten básicame
 	se puede ver sin editar, dentro de la edición y visionado se podra añadir a una cita por ejemplo visita al oncólogo
 	Se puede añadir el numero al drawer
 	
-	PROYECTO AMPLIACION poder subir documentos tipo pdf para no depender de la fotografia solo, llevar estadísticas
+	PROYECTO AMPLIACION poder subir documentos tipo pdf para no depender de la fotografia solo, llevar estadísticas\\
 	
-	SINTOMAS ->  	Lista de síntomas que tengamos con el boton de añadir al final y en la barra la posibilidad de ordenar en principio por orden de fecha ascendente o descendente,
+	
+	\textbf{SINTOMAS}
+	
+	Lista de síntomas que tengamos con el boton de añadir al final y en la barra la posibilidad de ordenar en principio por orden de fecha ascendente o descendente,
 	al pinchar sobre el elemento se visualiza, 
 	en las opciones de cada elemento se puede añadir a la cita, editar y borrar confirmacion para borrar
 	
@@ -110,20 +143,24 @@ La fase de análisis y el proceso de Ingeniería de Requisitos, parten básicame
 	se puede ver sin editar, dentro de la edición y visionado se podra añadir a una cita por ejemplo visita al oncólogo
 	Se puede añadir el numero al drawer
 	
-	PROYECTO AMPLIACION poder subir documentos tipo pdf para no depender de la fotografia solo, llevar estadísticas, poder conectar con los centros de salud, hospitales, 
+	PROYECTO AMPLIACION poder subir documentos tipo pdf para no depender de la fotografia solo, llevar estadísticas, poder conectar con los centros de salud, hospitales, \\
 	
-	RECURSOS  -> 	Dentro de los resursos aparece meditacion con musica relajante e instrucciones para ello
+	
+	\textbf{RECURSOS}
+	Dentro de los resursos aparece meditacion con musica relajante e instrucciones para ello
 	consejos generales, de alimentacion, de vida, de salud...
 	telefonos de interés generales (DEBEMOS DECIDIR SI SE PUEDEN PERSONALIZAR)
 	Noticias (podemos añadir el blog de la AECC o la cuenta de twitter que no esta nada mal)
 	
-	AJUSTES  ->  	Editar el perfil, 
+	
+	\textbf{AJUSTES}
+	Editar el perfil, 
 	tamaño de letra, 	
 	tono para alertas de citas y rutinas, 
 	color del led de notificación, 
 	posibilidad de feedback,
-	quienes somos o motivaciones (¿? pantallas)
-	NO VOY A AÑADIR MÁS PANTALLAS AL RESPECTO, SE HABLARÁ
+	quienes somos o motivaciones (¿? pantallas)\\\\
+
 	
 	\section{Documento de Análisis}
 	
@@ -149,11 +186,154 @@ La fase de análisis y el proceso de Ingeniería de Requisitos, parten básicame
 			
 	
 	\subsubsection{Requisitos Funcionales}
+	
+	
+	El usuario podra acceder a un menú de navegación
+	
+	
+	El usuario podrá introducir sus datos personales en la aplicación
+	
+	El usuario podra visualizar sus datos personales
+	
+	Es usuario podrá ver/editar sus datos personales
+	
+	
+	
+	El usuario al acceder a la aplicación podra visualizar de un vistazo su actividad para hoy
+	
+	El usuario podrá acceder desde la pantalla principal a sus citas medicas
+	
+	El usuario podrá acceder desde la pantalla principal a sus rutinas diarias						
+	
+	
+	
+	La aplicación mostrará una vista del dia actual con actividades del usuario de ese dia (citas y rutinas)
+	
+	La aplicación mostrará una vista del mes actual para las actividades del usuario de ese mes (citas y rutinas)
+	
+	El usuario podrá añadir una cita desde cualquiera de las vistas mensual/diaria
+	
+	El usuario podrá añadir una rutina para ese dia desde cualquiera de las vistas mensual/diaria
+	
+	El usuario podrá visualizar/editar la cita desde cualquiera de esas vistas
+	
+	El usuario podrá visualizar/editar la rutina desde cualquiera de esas vistas
+	
+	
+	
+	El usuario podrá acceder a la lista de citas medicas
+	
+	El usuario podrá añadir desde la lista una nueva cita medica
+	
+	El usuario podrá añadir alertas y notificaciones a una cita médica
+	
+	El usuario podrá añadir personajes a una cita medica
+	
+	El usuario podrá añadir pruebas a una cita medica
+	
+	El usuario podrá añadir medicamentos a una cita medica
+	
+	El usuario podrá añadir duración a una cita médica
+	
+	El usuario podrá añadir síntomas a una cita medica
+	
+	El usuario podrá visualizar/editar la cita medica
+	
+	
+	
+	El usuario podrá acceder a la lista de rutinas
+	
+	El usuario podrá añadir desde la lista una nueva rutina
+	
+	El usuario podrá añadir alertas y notificaciones a una rutina
+	
+	El usuario podrá añadir duración a una rutina
+	
+	El usuario podrá añadir personajes a una rutina
+	
+	El usuario podrá visualizar/editar la rutina
+	
+	
+	
+	El usuario podrá acceder a la lista de medicamentos
+	
+	El usuario podrá añadir desde la lista un nuevo medicamento
+	
+	El usuario podra añadir información importante respecto a ese medicamento
+	
+	El usuario podrá añadir alertas y notificaciones a medicamento
+	
+	El usuario podrá visualizar/editar el medicamento
+	
+	
+	
+	Lo mismo con personajes, sintomas, pruebas
+	
+	
+	El usuario podrá acceder a recuersos relaccionados con el autocontrol y la meditacion
+	
+	El usuario tendrá acceso a telefonos de interés
+	
+	El usuario tendrá acceso a consejos que le proporcionen bienestar
+	
+	El usuario tendrá acceso a noticias relativas a la AECC
+	
+	
+	
+	La aplicación notificará al paciente a peticion citas y rutinas
+	
+	Las listas seran ordenable segun diferentes criterios
+	
+	La aplicacion contendrá ajustes que faciliten su manejo al usuario
+	
+	
+	
+	
+
+	
+
+		\begin{tabular}{|ll|l|}
+			\hline \textbf{FRQ-001} & \textbf{DESCRIPCIÓN} \\
 			
-			
+			\hline que tal & que tal \\ 
+			\hline  &  \\ 
+			\hline  &  \\ 
+			\hline  &  \\ 
+			\hline  &  \\ 
+			\hline  &  \\ 
+			\hline  &  \\ 
+			\hline  &  \\ 
+			\hline  &  \\ 
+			\hline 
+		\end{tabular} 
+		
+	
+
 
 	\subsubsection{Requisitos No Funcionales}
 	
+		La aplicacion será un apoyo y una ayuda para el paciente
+		
+		La aplicación debe ser coherente con el programa de Diario de Salud de la AECC.
+		
+		La aplicacion sera amigable para usuarios no avanzados
+		
+		La aplicacion cumplira las guias de estilo fijadas por la AECC
+		
+		La aplicación proporcionará recursos de valor para los enfermos de cancer.
+		
+		La aplicación será mantenible y escalable a petición del cliente.
+		
+		La aplicación facilitara las visitas médicas
+		
+		La aplicacion incentivará la realizacion de actividades placenteras para el paciente
+		
+		La aplicacion facilitara la organizacion de los compromisos del usuario
+		
+		La aplicación será segura y confiable
+		
+	
+
 	\subsection{Identificación de actores}
 		
 	\subsection{Diagrama de casos de uso }
