@@ -8,8 +8,9 @@
 \usepackage[nottoc]{tocbibind}
 \usepackage[square,numbers]{natbib}
 \usepackage{titling}
-
-
+\usepackage[export]{adjustbox}
+\usepackage{titlesec} 
+\usepackage{lipsum} 
 \usepackage{graphicx}
 \graphicspath{ {images/} }
 \bibliographystyle{abbrvnat}
@@ -17,7 +18,7 @@
 \setcounter{secnumdepth}{3} 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{Diario de un superviviente}
+\fancyhead[LE,RO]{Diario de un superviviente}
 
 \fancyfoot[LE,RO]{\thepage}
 
@@ -27,19 +28,15 @@
 	Rubén Toquero González}
 
 \date{Septiembre, 2015}
-
-\pretitle{%
-	\begin{center}
-		\includegraphics[width=0.5\linewidth]{../images/logo_uva}
-		
-	}
-\posttitle{\end{center}}
-
-
+\titleformat{\chapter}[display]
+{\bfseries\Large}
+{\filright\MakeUppercase{\chaptertitlename} \Huge\thechapter}
+{1ex}
+{\titlerule\vspace{1ex}\filleft}
+[\vspace{1ex}\titlerule]
 \begin{document}
-	\maketitle
 	
-
+\subfile{./title}
 	\chapter*{Agradecimientos}
 
 	
@@ -78,7 +75,7 @@
 	\listoftables
 	
 
-	\chapter{INTRODUCCIÓN}
+	\chapter{Introducción}
 	
 	\subfile{./1-Introduccion/introduccion}
 	
@@ -106,12 +103,16 @@
 	
 	\subfile{./7-Conclusiones/conclusiones}
 	
-	\chapter{ANEXO I: INSTALACIÓN Y MANUAL DE USUARIO }
+	\chapter{Bibliografía}
+	
+	\bibliography{bibliography}
+	
+	\chapter*{ANEXO I: INSTALACIÓN Y MANUAL DE USUARIO }
 		
 	\subfile{./8-Anexoi/anexoi}
-		
 	
+	\chapter*{GLOSARIO}
+	
+	\subfile{./Glosario/glosario}
 		
-	\bibliography{bibliography}
-
 \end{document} 
