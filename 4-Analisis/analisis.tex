@@ -183,6 +183,26 @@ La fase de análisis y el proceso de Ingeniería de Requisitos, parten básicame
 	
 	\textbf{OBJ-001}	La aplicacion debera poder administrar un perfil de usuario\\*
 	
+		\begin{table}[!hbt]
+			\centering
+			\begin{tabular}[t]{|l|l|}
+				\hline \textbf{OBJ-001} & \textbf{PERFIL DE USUARIO} \\*
+				\hline\hline \textbf{Versión} & 1.0 \\ *
+				\hline\textbf{Autores} 	& Fernando Santa Olaya Rodríguez \\*
+				& Rubén Toquero González\\*
+				\hline \textbf{Descripción} & La aplicacion debera poder administrar un perfil de usuario\\* 
+				\hline \textbf{Subobjetivos} & El usuario padrá introducir una foto, nombre, fecha de nacimiento \\* 
+				\hline \textbf{Importacia} & Importante \\* 			
+				\hline \textbf{Urgencia} & Inmediatamente \\* 
+				\hline \textbf{Estado} & En construcción \\* 
+				\hline \textbf{Estabilidad} & Estable \\* 
+				\hline \textbf{Comentarios} & En la cabecera del drawer aparecerá el nombre y la foto \\* 
+				\hline 
+			\end{tabular}
+			\caption{Menú drawer.}
+			\label{tabla:req001}
+		\end{table}
+	
 	\textbf{OBJ-002}	La aplicacion será facil de navegar para usuarios no avanzados\\*
 	
 	\textbf{OBJ-003}	La aplicacion facilitará la gestion de las actividades diarias de un usuario (medicas/rutinarias)\\*
@@ -216,25 +236,7 @@ La fase de análisis y el proceso de Ingeniería de Requisitos, parten básicame
 	\textbf{OBJ-016}	La aplicación se integrará perfectamente dentro de la iniciativa de la AECC\\*
 	
 	
-	\begin{table}
-		\centering
-		\begin{tabular}[t]{|l|l|}
-			\hline \textbf{OBJ-001} & \textbf{PERFIL DE USUARIO} \\*
-			\hline\hline \textbf{Versión} & 1.0 \\ *
-			\hline\textbf{Autores} 	& Fernando Santa Olaya Rodríguez \\*
-			& Rubén Toquero González\\*
-			\hline \textbf{Descripción} & La aplicacion debera poder administrar un perfil de usuario\\* 
-			\hline \textbf{Subobjetivos} & El usuario padrá introducir una foto, nombre, fecha de nacimiento \\* 
-			\hline \textbf{Importacia} & Importante \\* 			
-			\hline \textbf{Urgencia} & Inmediatamente \\* 
-			\hline \textbf{Estado} & En construcción \\* 
-			\hline \textbf{Estabilidad} & Estable \\* 
-			\hline \textbf{Comentarios} & En la cabecera del drawer aparecerá el nombre y la foto \\* 
-			\hline 
-		\end{tabular}
-		\caption{Menú drawer.}
-		\label{tabla:req001}
-	\end{table}
+
 	
 	
 	\subsection{Captura de Requisitos}
@@ -266,6 +268,26 @@ La fase de análisis y el proceso de Ingeniería de Requisitos, parten básicame
 	
 	
 	\textbf{FRQ-001}	El usuario podra acceder a un menú de navegación	\textbf{OBJ-002}\\*
+
+	\begin{table}[!hbt]
+		\centering
+		\begin{tabular}[t]{|l|l|}
+			\hline \textbf{FRQ-001} & \textbf{DRAWER MENÚ} \\*
+			\hline\hline \textbf{Versión} & 1.0 \\ *
+			\hline\textbf{Autores} 	& Fernando Santa Olaya Rodríguez\\*
+			& Rubén Toquero González\\*
+			\hline \textbf{Dependencias} & OBJ-002\\* 			
+			\hline \textbf{Descripción} & El usuario podrá acceder a un menú de navegación \\* 
+			\hline \textbf{Importancia} & Vital \\* 
+			\hline \textbf{Urgencia} & Inmediatamente \\* 
+			\hline \textbf{Estado} & En construcción \\* 
+			\hline \textbf{Estabilidad} & Estable \\* 
+			\hline \textbf{Comentarios} & El menú será visible al desplazar el dedo de izquierda a derecha de la pantalla \\* 
+			\hline 
+		\end{tabular}
+		\caption{Menú drawer.}
+		\label{tabla:req001}
+	\end{table}
 	
 	
 	\textbf{FRQ-002}	El usuario podrá introducir sus datos personales en la aplicación 	\textbf{OBJ-001}
@@ -375,25 +397,7 @@ La fase de análisis y el proceso de Ingeniería de Requisitos, parten básicame
 	
 
 	
-	\begin{table}
-		\centering
-		\begin{tabular}[t]{|l|l|}
-			\hline \textbf{FRQ-001} & \textbf{DRAWER MENÚ} \\*
-			\hline\hline \textbf{Versión} & 1.0 \\ *
-			\hline\textbf{Autores} 	& Fernando Santa Olaya Rodríguez\\*
-									& Rubén Toquero González\\*
-			\hline \textbf{Dependencias} & OBJ-002\\* 			
-			\hline \textbf{Descripción} & El usuario podrá acceder a un menú de navegación \\* 
-			\hline \textbf{Importancia} & Vital \\* 
-			\hline \textbf{Urgencia} & Inmediatamente \\* 
-			\hline \textbf{Estado} & En construcción \\* 
-			\hline \textbf{Estabilidad} & Estable \\* 
-			\hline \textbf{Comentarios} & El menú será visible al desplazar el dedo de izquierda a derecha de la pantalla \\* 
-			\hline 
-		\end{tabular}
-		\caption{Menú drawer.}
-		\label{tabla:req001}
-	\end{table}
+	
 		
 	
 		 
@@ -484,11 +488,89 @@ La fase de análisis y el proceso de Ingeniería de Requisitos, parten básicame
 	
 	CASOS DE USO\\*
 	
-	\textbf{CU-001} CREACION DE PERFIL - insercion de perfil\\*
+	\textbf{CU-001} CREACIÓN DE PERFIL - Inserción de perfil\\*
+	
+	\begin{table}[!hbt]
+		\centering
+		\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
+				\hline \textbf{CU-001} & \textbf{CREAR PERFIL - INSERCIÓN} \\*
+				\hline\hline \textbf{Versión} & 1.0 \\ *
+				\hline\hline \textbf{Fecha} & 23/07/2015 \\ *
+				\hline\textbf{Actores} 	& Usuario\\*
+				\hline \textbf{Objetivo} & Incluir en el sistema los datos personales del usuario\\* 			
+				\hline \textbf{Precondición} & Los datos del usuario están sin completar \\* 
+				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
+											 & 2.- Pulsamos el circulo que está al principio del menú \\*	
+											 & 3.- Rellenamos los datos personales del usuario\\*	
+				\hline \textbf{Flujo alternativo} & 1.- Desplegamos el menú drawer \\* 
+ 												  & 2.- Pulsamos la opcion ajustes \\*	
+												  & 3.- Pulsamos la opción en pantalla "Perfil" \\*	
+												  & 3.- Rellenamos los datos personales del usuario \\*	
+				\hline \textbf{Postcondición} & El usuario posee sus datos personales en la aplicación \\* 
+				\hline \textbf{Comentarios}   & A la hora de introducir la fotografía dentro de los datos personales, podrá elegir entre las que tenga en la galeria del propio terminal o acceder a la aplicación de cámara para hacer una nueva fotografía\\*
+				\hline
+			\end{tabular}
+			\caption{Creación del perfil - Inserción}
+			\label{tabla:caso001}
+	\end{table}
 	
 	\textbf{CU-002}	CREACION DE PERFIL - edicion de perfil\\*
 	
+	\begin{table}[!hbt]
+		\centering
+		\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
+			\hline \textbf{CU-002} & \textbf{CREAR PERFIL - EDICIÓN} \\*
+			\hline\hline \textbf{Versión} & 1.0 \\ *
+			\hline\hline \textbf{Fecha} & 23/07/2015 \\ *
+			\hline\textbf{Actores} 	& Usuario\\*
+			\hline \textbf{Objetivo} & Incluir en el sistema los datos personales del usuario\\* 			
+			\hline \textbf{Precondición} & Los datos del usuario están sin completar \\* 
+			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
+			& 2.- Pulsamos el circulo que está al principio del menú \\*	
+			& 3.- Rellenamos los datos personales del usuario\\*	
+			\hline \textbf{Flujo alternativo} & 1.- Desplegamos el menú drawer \\* 
+			& 2.- Pulsamos la opcion ajustes \\*	
+			& 3.- Pulsamos la opción en pantalla "Perfil" \\*	
+			& 3.- Rellenamos los datos personales del usuario \\*	
+			\hline \textbf{Postcondición} & El usuario posee sus datos personales en la aplicación \\* 
+			\hline \textbf{Comentarios}   & A la hora de introducir la fotografía dentro de los datos personales, podrá elegir entre las que tenga en la galeria del propio terminal o acceder a la aplicación de cámara para hacer una nueva fotografía\\*
+			\hline
+		\end{tabular}
+		\caption{Creación del perfil - Inserción}
+		\label{tabla:caso002}
+	\end{table}
+
+
+		
 	\textbf{CU-003}	CREACION DE PERFIL - visualizacion de perfil\\*
+
+	\begin{table}[!hbt]
+		\centering
+		\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
+			\hline \textbf{CU-003} & \textbf{CREAR PERFIL - BORRADO} \\*
+			\hline\hline \textbf{Versión} & 1.0 \\ *
+			\hline\hline \textbf{Fecha} & 23/07/2015 \\ *
+			\hline\textbf{Actores} 	& Usuario\\*
+			\hline \textbf{Objetivo} & Incluir en el sistema los datos personales del usuario\\* 			
+			\hline \textbf{Precondición} & Los datos del usuario están sin completar \\* 
+			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
+			& 2.- Pulsamos el circulo que está al principio del menú \\*	
+			& 3.- Rellenamos los datos personales del usuario\\*	
+			\hline \textbf{Flujo alternativo} & 1.- Desplegamos el menú drawer \\* 
+			& 2.- Pulsamos la opcion ajustes \\*	
+			& 3.- Pulsamos la opción en pantalla "Perfil" \\*	
+			& 3.- Rellenamos los datos personales del usuario \\*	
+			\hline \textbf{Postcondición} & El usuario posee sus datos personales en la aplicación \\* 
+			\hline \textbf{Comentarios}   & A la hora de introducir la fotografía dentro de los datos personales, podrá elegir entre las que tenga en la galeria del propio terminal o acceder a la aplicación de cámara para hacer una nueva fotografía\\*
+			\hline
+		\end{tabular}
+		\caption{Creación del perfil - Inserción}
+		\label{tabla:caso003}
+	\end{table}
+	
+	
+	
+	
 	
 	
 	
