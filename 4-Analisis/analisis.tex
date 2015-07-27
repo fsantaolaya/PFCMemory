@@ -484,16 +484,19 @@ La fase de análisis y el proceso de Ingeniería de Requisitos, parten básicame
 		
 	\subsection{Diagrama de casos de uso }
 		
+
+
+
 	\subsection{Descripción de Casos de Uso}
 	
 	CASOS DE USO\\*
 	
-	\textbf{CU-001} CREACIÓN DE PERFIL - Inserción de perfil\\*
+	\textbf{CU-001} PERFIL DE USUARIO - Inserción de perfil\\*
 	
 	\begin{table}[!hbt]
 		\centering
 		\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
-				\hline \textbf{CU-001} & \textbf{CREAR PERFIL - INSERCIÓN} \\*
+				\hline \textbf{CU-001} & \textbf{PERFIL DE USUARIO- INSERCIÓN} \\*
 				\hline\hline \textbf{Versión} & 1.0 \\ *
 				\hline\hline \textbf{Fecha} & 23/07/2015 \\ *
 				\hline\textbf{Actores} 	& Usuario\\*
@@ -510,17 +513,18 @@ La fase de análisis y el proceso de Ingeniería de Requisitos, parten básicame
 				\hline \textbf{Comentarios}   & A la hora de introducir la fotografía dentro de los datos personales, podrá elegir entre las que tenga en la galeria del propio terminal o acceder a la aplicación de cámara para hacer una nueva fotografía\\*
 				\hline
 			\end{tabular}
-			\caption{Creación del perfil - Inserción}
+			\caption{Prefil de usuario - Inserción}
 			\label{tabla:caso001}
 	\end{table}
 	
-	\textbf{CU-002}	CREACION DE PERFIL - edicion de perfil\\*
 	
+	
+	\textbf{CU-002}PERFIL DE USUARIO - edicion de perfil\\*
 	
 	\begin{table}[!hbt]
 		\centering
 		\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
-			\hline \textbf{CU-002} & \textbf{CREAR PERFIL - EDICIÓN} \\*
+			\hline \textbf{CU-002} & \textbf{PERFIL DE USUARIO - EDICIÓN} \\*
 			\hline\hline \textbf{Versión} & 1.0 \\ *
 			\hline\hline \textbf{Fecha} & 24/07/2015 \\ *
 			\hline\textbf{Actores} 	& Usuario\\*
@@ -530,30 +534,32 @@ La fase de análisis y el proceso de Ingeniería de Requisitos, parten básicame
 			& 2.- Pulsamos el circulo que está al principio del menú \\*	
 			& 3.- Rellenamos los datos personales del usuario\\*	
 			\hline \textbf{Flujo alternativo} & 1.- Desplegamos el menú drawer \\* 
-			& 2.- Pulsamos la opcion ajustes \\*	
+			& 2.- Pulsamos la opción ajustes \\*	
 			& 3.- Pulsamos la opción en pantalla "Perfil" \\*	
 			& 3.- Rellenamos los datos personales del usuario \\*	
 			\hline \textbf{Postcondición} & El usuario posee sus datos personales modificados\\* 
-			\hline \textbf{Comentarios}   & El usuario puede a su eleccion dejar los dtos tal y como estuviesen en un principio\\*
+			\hline \textbf{Comentarios}   & El usuario puede a su elección dejar los datos tal y como estuviesen en un principio\\*
 			\hline
 		\end{tabular}
-		\caption{Creación del perfil - Edición}
+		\caption{Perfil de usuario - Edición}
 		\label{tabla:caso002}
 	\end{table}
 	
+
 	
-	\textbf{CU-002A}	CREACION DE PERFIL - visualizacion de perfil\\*
+	\textbf{CU-002A}	PERFIL DE USUARIO - visualizacion de perfil\\*
 
-	La visualizacion del perfil pude ser un caso de uso que converge con el anterior, comparten pre y post condición, y el flujo de acceso es practicamente el mismo (Se estudiará)
+	La visualización del perfil pude ser un caso de uso que converge con el anterior, comparten pre y post condición, y el flujo de acceso es prácticamente el mismo (Se estudiará)
 
-
+	
+	
 		
-	\textbf{CU-003}	CREACION DE PERFIL - Borrado de perfil\\*
+	\textbf{CU-003}	PERFIL DE USUARIO - Borrado de perfil\\*
 
 	\begin{table}[!hbt]
 		\centering
 		\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
-			\hline \textbf{CU-003} & \textbf{CREAR PERFIL - BORRADO} \\*
+			\hline \textbf{CU-003} & \textbf{PERFIL DE USUARIO - BORRADO} \\*
 			\hline\hline \textbf{Versión} & 1.0 \\ *
 			\hline\hline \textbf{Fecha} & 24/07/2015 \\ *
 			\hline\textbf{Actores} 	& Usuario\\*
@@ -570,73 +576,159 @@ La fase de análisis y el proceso de Ingeniería de Requisitos, parten básicame
 			\hline \textbf{Comentarios}   &  \\*
 			\hline
 		\end{tabular}
-		\caption{Creación del perfil - Borrado}
+		\caption{Perfil de usuario - Borrado}
 		\label{tabla:caso003}
 	\end{table}
 	
 	
 	
+
+	\textbf{CU-004}	CITA MEDICA - Inserción de cita médica\\*
+	
+	\begin{table}[!hbt]
+		\centering
+		\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
+			\hline \textbf{CU-004} & \textbf{CITA MÉDICA - INSERCIÓN} \\*
+			\hline\hline \textbf{Versión} & 1.0 \\ *
+			\hline\hline \textbf{Fecha} & 27/07/2015 \\ *
+			\hline\textbf{Actores} 	& Usuario\\*
+			\hline \textbf{Objetivo} & Insertar en la aplicación una cita médica que tiene el usuario\\* 			
+			\hline \textbf{Precondición} & La cita médica no existe en la aplicación\\* 
+			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
+			& 2.- Pulsamos la opción CITA MEDICA\\*	
+			& 3.- Pulsamos el icono +\\*	
+			& 4.- Rellenamos los datos pertinentes de la cita médica\\*	
+			\hline \textbf{Flujo alternativo} & 1a.- Desplegamos el menú drawer \\* 
+			& 2a.- Pulsamos la opción Principal \\*	
+			& 3a.- Elegimos la opción "añadir cita" al pulsar el icono +\\*	
+			& 4a.- Completamos los datos de la cita\\*	
+			& 1b.- Desplegamos el menú drawer \\* 
+			& 2b.- Pulsamos la opción Horario \\*	
+			& 3b.- Elegimos la opción "añadir cita" al pulsar el icono +\\*	
+			& 4b.- Completamos los datos de la cita\\*	
+			& 5b.- Sobre la vista mensual se puede añadir una cita al pulsar sobre el dia del mes y continuando con el flujo anteriormente indicado\\*	
+			\hline \textbf{Postcondición} & El usuario ya posee los datos de la cita en la aplicación \\* 
+			\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser rellenados, el sistema avisará con un mensaje de error y no se podrá guardar la misma.\\*
+			\hline
+		\end{tabular}
+		\caption{Cita médica - Inserción}
+		\label{tabla:caso004}
+	\end{table}
+
+
+
+
+	\textbf{CU-005}	CITA MEDICA - edicion de cita médica\\*
+	
+		\begin{table}[!hbt]
+			\centering
+			\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
+				\hline \textbf{CU-005} & \textbf{CITA MÉDICA - Edición} \\*
+				\hline\hline \textbf{Versión} & 1.0 \\ *
+				\hline\hline \textbf{Fecha} & 27/07/2015 \\ *
+				\hline\textbf{Actores} 	& Usuario\\*
+				\hline \textbf{Objetivo} & Editar una cita médica que ya posee el usuario\\* 			
+				\hline \textbf{Precondición} & La cita médica existe en la aplicación\\* 
+				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
+				& 2.- Pulsamos la opción CITA MEDICA\\*	
+				& 3.- Pulsamos sobre los tres puntos a la derecha de la cita médica que queremos editar\\*	
+				& 4.- Seleccionamos la opción editar\\*	
+				& 5.- Modificamos los datos pertinentes de la cita médica que queramos cambiar\\*	
+				\hline \textbf{Flujo alternativo} & 1.- Desplegamos el menú drawer \\* 
+				& 2.- Pulsamos la opcion Horario \\*	
+				& 3.- Pulsamos sobre el icono de los tres puntos de cita que queramos modificar \\*	
+				& 4.- Elegimos la opcion "editar"\\*	
+				& 5.- Modificamos los datos de la cita\\*	
+				\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la cita en la aplicación \\* 
+				\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser completados, el sistema avisará con un mensaje de error y no se podrá guardar la misma.\\*
+				\hline
+			\end{tabular}
+			\caption{Cita médica - Edición}
+			\label{tabla:caso005}
+		\end{table}
+		
+	
+	\textbf{CU-006}	CITA MEDICA - visualizacion de cita médica\\*
 	
 	
 	
+	\textbf{CU-007}	CITA MEDICA - borrado de cita médica\\*
 	
-	\textbf{CU-004}	CREACION CITA MEDICA - insercion de cita médica\\*
+		\begin{table}[!hbt]
+			\centering
+			\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
+				\hline \textbf{CU-005} & \textbf{CITA MÉDICA - Borrado} \\*
+				\hline\hline \textbf{Versión} & 1.0 \\ *
+				\hline\hline \textbf{Fecha} & 27/07/2015 \\ *
+				\hline\textbf{Actores} 	& Usuario\\*
+				\hline \textbf{Objetivo} & Borrar una cita médica que ya posee el usuario\\* 			
+				\hline \textbf{Precondición} & La cita médica existe en la aplicación\\* 
+				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
+				& 2.- Pulsamos la opción CITA MEDICA\\*	
+				& 3.- Pulsamos sobre los tres puntos a la derecha de la cita médica que queremos eliminar dentro del listado\\*	
+				& 4.- Seleccionamos la opción eliminar\\*	
+				\hline \textbf{Flujo alternativo} & 1.- Desplegamos el menú drawer \\* 
+				& 2.- Pulsamos la opción Horario \\*	
+				& 3.- Pulsamos sobre el icono de los tres puntos de cita que queramos eliminar \\*	
+				& 4.- Elegimos la opción "Eliminar"\\*	
+				& 5.- Modificamos los datos de la cita\\*	
+				\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la cita en la aplicación \\* 
+				\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser completados, el sistema avisará con un mensaje de error y no se podrá guardar la misma.\\*
+				\hline
+			\end{tabular}
+			\caption{Cita médica - Edición}
+			\label{tabla:caso007}
+		\end{table}
+		
+		
 	
-	\textbf{CU-005}	CREACION CITA MEDICA - edicion de cita médica\\*
+	\textbf{CU-008}	RUTINA - insercion de rutina\\*
 	
-	\textbf{CU-006}	CREACION CITA MEDICA - visualizacion de cita médica\\*
+	\textbf{CU-009}	RUTINA - edicion de rutina\\*
 	
-	\textbf{CU-007}	CREACION CITA MEDICA - borrado de cita médica\\*
+	\textbf{CU-010}	RUTINA - visualizacion de rutina\\*
 	
-	
-	
-	\textbf{CU-008}	CREACION RUTINA - insercion de rutina\\*
-	
-	\textbf{CU-009}	CREACION RUTINA - edicion de rutina\\*
-	
-	\textbf{CU-010}	CREACION RUTINA - visualizacion de rutina\\*
-	
-	\textbf{CU-011}	CREACION RUTINA - borrado de rutina\\*
-	
-	
-	
-	\textbf{CU-012}	CREACION MEDICAMENTO - insercion de medicamento\\*
-	
-	\textbf{CU-013}	CREACION MEDICAMENTO - edicion de medicamento\\*
-	
-	\textbf{CU-014}	CREACION MEDICAMENTO - visualizacion de medicamento\\*
-	
-	\textbf{CU-015}	CREACION MEDICAMENTO - borrado de medicamento\\*
-	
-	
-	
-	\textbf{CU-016}	CREACION PERSONAJE - insercion de personajes\\*
-	
-	\textbf{CU-017}	CREACION PERSONAJE - edicion de personajes\\*
-	
-	\textbf{CU-018}	CREACION PERSONAJE - visualizacion de personajes\\*
-	
-	\textbf{CU-019}	CREACION PERSONAJE - borrado de personajes\\*
-	
-	
-	
-	\textbf{CU-020}	CREACION SINTOMA - insercion de síntoma\\*
-	
-	\textbf{CU-021}	CREACION SINTOMA - edicion de síntoma\\*
-	
-	\textbf{CU-022}	CREACION SINTOMA - visualizacion de síntoma\\*
-	
-	\textbf{CU-023}	CREACION SINTOMA - borrado de síntoma\\*
+	\textbf{CU-011}	RUTINA - borrado de rutina\\*
 	
 	
 	
-	\textbf{CU-024}	CREACION PRUEBA -insercion de pruebas\\*
+	\textbf{CU-012}	MEDICAMENTO - insercion de medicamento\\*
 	
-	\textbf{CU-025}	CREACION PRUEBA -edicion de pruebas\\*
+	\textbf{CU-013}	 MEDICAMENTO - edicion de medicamento\\*
 	
-	\textbf{CU-026}	CREACION PRUEBA -visualizacion de pruebas\\*
+	\textbf{CU-014}	 MEDICAMENTO - visualizacion de medicamento\\*
 	
-	\textbf{CU-027}	CREACION PRUEBA -borrado de pruebas\\*
+	\textbf{CU-015}	 MEDICAMENTO - borrado de medicamento\\*
+	
+	
+	
+	\textbf{CU-016}	 PERSONAJE - insercion de personajes\\*
+	
+	\textbf{CU-017}	 PERSONAJE - edicion de personajes\\*
+	
+	\textbf{CU-018}	 PERSONAJE - visualizacion de personajes\\*
+	
+	\textbf{CU-019}	 PERSONAJE - borrado de personajes\\*
+	
+	
+	
+	\textbf{CU-020}	 SINTOMA - insercion de síntoma\\*
+	
+	\textbf{CU-021}	 SINTOMA - edicion de síntoma\\*
+	
+	\textbf{CU-022}	 SINTOMA - visualizacion de síntoma\\*
+	
+	\textbf{CU-023}	 SINTOMA - borrado de síntoma\\*
+	
+	
+	
+	\textbf{CU-024}	 PRUEBA -insercion de pruebas\\*
+	
+	\textbf{CU-025}	 PRUEBA -edicion de pruebas\\*
+	
+	\textbf{CU-026}	 PRUEBA -visualizacion de pruebas\\*
+	
+	\textbf{CU-027}	 PRUEBA -borrado de pruebas\\*
 	
 	
 	
