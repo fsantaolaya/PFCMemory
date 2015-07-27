@@ -516,15 +516,16 @@ La fase de análisis y el proceso de Ingeniería de Requisitos, parten básicame
 	
 	\textbf{CU-002}	CREACION DE PERFIL - edicion de perfil\\*
 	
+	
 	\begin{table}[!hbt]
 		\centering
 		\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
 			\hline \textbf{CU-002} & \textbf{CREAR PERFIL - EDICIÓN} \\*
 			\hline\hline \textbf{Versión} & 1.0 \\ *
-			\hline\hline \textbf{Fecha} & 23/07/2015 \\ *
+			\hline\hline \textbf{Fecha} & 24/07/2015 \\ *
 			\hline\textbf{Actores} 	& Usuario\\*
-			\hline \textbf{Objetivo} & Incluir en el sistema los datos personales del usuario\\* 			
-			\hline \textbf{Precondición} & Los datos del usuario están sin completar \\* 
+			\hline \textbf{Objetivo} & Modificar en el sistema los datos personales del usuario\\* 			
+			\hline \textbf{Precondición} & Los datos del usuario existen en la aplicación \\* 
 			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
 			& 2.- Pulsamos el circulo que está al principio del menú \\*	
 			& 3.- Rellenamos los datos personales del usuario\\*	
@@ -532,27 +533,32 @@ La fase de análisis y el proceso de Ingeniería de Requisitos, parten básicame
 			& 2.- Pulsamos la opcion ajustes \\*	
 			& 3.- Pulsamos la opción en pantalla "Perfil" \\*	
 			& 3.- Rellenamos los datos personales del usuario \\*	
-			\hline \textbf{Postcondición} & El usuario posee sus datos personales en la aplicación \\* 
-			\hline \textbf{Comentarios}   & A la hora de introducir la fotografía dentro de los datos personales, podrá elegir entre las que tenga en la galeria del propio terminal o acceder a la aplicación de cámara para hacer una nueva fotografía\\*
+			\hline \textbf{Postcondición} & El usuario posee sus datos personales modificados\\* 
+			\hline \textbf{Comentarios}   & El usuario puede a su eleccion dejar los dtos tal y como estuviesen en un principio\\*
 			\hline
 		\end{tabular}
-		\caption{Creación del perfil - Inserción}
+		\caption{Creación del perfil - Edición}
 		\label{tabla:caso002}
 	\end{table}
+	
+	
+	\textbf{CU-002A}	CREACION DE PERFIL - visualizacion de perfil\\*
+
+	La visualizacion del perfil pude ser un caso de uso que converge con el anterior, comparten pre y post condición, y el flujo de acceso es practicamente el mismo (Se estudiará)
 
 
 		
-	\textbf{CU-003}	CREACION DE PERFIL - visualizacion de perfil\\*
+	\textbf{CU-003}	CREACION DE PERFIL - Borrado de perfil\\*
 
 	\begin{table}[!hbt]
 		\centering
 		\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
 			\hline \textbf{CU-003} & \textbf{CREAR PERFIL - BORRADO} \\*
 			\hline\hline \textbf{Versión} & 1.0 \\ *
-			\hline\hline \textbf{Fecha} & 23/07/2015 \\ *
+			\hline\hline \textbf{Fecha} & 24/07/2015 \\ *
 			\hline\textbf{Actores} 	& Usuario\\*
-			\hline \textbf{Objetivo} & Incluir en el sistema los datos personales del usuario\\* 			
-			\hline \textbf{Precondición} & Los datos del usuario están sin completar \\* 
+			\hline \textbf{Objetivo} & Borrar del sistema los datos personales del usuario\\* 			
+			\hline \textbf{Precondición} & Los datos del usuario existen en la aplicación \\* 
 			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
 			& 2.- Pulsamos el circulo que está al principio del menú \\*	
 			& 3.- Rellenamos los datos personales del usuario\\*	
@@ -560,11 +566,11 @@ La fase de análisis y el proceso de Ingeniería de Requisitos, parten básicame
 			& 2.- Pulsamos la opcion ajustes \\*	
 			& 3.- Pulsamos la opción en pantalla "Perfil" \\*	
 			& 3.- Rellenamos los datos personales del usuario \\*	
-			\hline \textbf{Postcondición} & El usuario posee sus datos personales en la aplicación \\* 
-			\hline \textbf{Comentarios}   & A la hora de introducir la fotografía dentro de los datos personales, podrá elegir entre las que tenga en la galeria del propio terminal o acceder a la aplicación de cámara para hacer una nueva fotografía\\*
+			\hline \textbf{Postcondición} & El usuario ya NO posee sus datos personales en la aplicación \\* 
+			\hline \textbf{Comentarios}   &  \\*
 			\hline
 		\end{tabular}
-		\caption{Creación del perfil - Inserción}
+		\caption{Creación del perfil - Borrado}
 		\label{tabla:caso003}
 	\end{table}
 	
