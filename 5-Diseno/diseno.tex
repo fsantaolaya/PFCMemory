@@ -5,15 +5,17 @@
 	
 	\section{Parte App móvil}
 	
-	\section{Documento de diseño}
-	
 	\section{Arquitectura}
+	
+	Como se ha comentado antes en este documento Scrum y las tecnologías ágiles, por su forma de enfocar las tareas y el propio desarrollo, si no se introducen medidas paliativas que corrijan esto, suelen obtener diseños arquitecturales de clases un poco pobres, tendentes al acoplamiento y poco cohesionado. Para paliar esto se suelen introducir historias de usuario de reducción de deuda técnica, o de refactorización de todo el código existente, así como herramientas que detecten "code smells"(cita o algo) o malas practicas de desarrollo. Estas herramientas de análisis estático de código pueden advertirnos sobre puntuales problemas dentro de una clase, pero poco hay a nivel de las relaciones entre las mismas, fuera del uso de patrones de diseño conocidos, y aun en las relaciones entre estos patrones que son bloques más grandes de código. Es por eso que creemos que hay que establecer unas líneas base al principio del proyecto sobre la arquitectura de la propia aplicación. En principio serán ciertamente vaguedades y lugares comunes sobre el desarrollo en capas, aislamiento de las mismas etc, pero si a través de los sprints reservamos un poco de tiempo en la reunión de sprint planning para conversar sobre las historias del propio sprint, en que capa encajan, como deberían hablar las capas entre sí si son mas de una las involucradas en la historia, etc ademas de con las historias de deuda técnica si fuesen necesarias creemos que puede solventarse en gran medida esa falta de bueno diseño y arquitectura que se achaca a las metodologías ágiles.\\
+	
+	Para hablar de arquitectura hemos tomado como referencia Clean Architecture(cita) propuesta por Robert C. Martin aunque es muy similar a la Arquitectura Cebolla de Kent Beck (comporbar) o la Arquitectura Hexagonal de Alaister Cockburn. Todas ellas se basan por hacer capas fuertemente cohesionadas dentro de cada una pero con nulo conocimiento fuera de las mismas que se comunican mediante interfaces públicos ofrecidos al resto de capas. Esto y la propagación hacia el interior, esto es que cada capa solo hablara con la que tiene arquitecturalmente en un nivel superior o inferior. Esto es la capa de UI que es la que interactuá con el usuario solamente invocará métodos de la interfaz de la capa de vista que es la que conceptualmente tiene justo encima. Esta solamente interactuará con la capa de UI antes mencionada y con la capa del presentador, y así sucesivamente. 
+	
+	
 	
 	\section{Tecnologia}
 	
 	\section{Diagrama de Clases}
-	
-	\section{Diagrama de secuencia}
 	
 	\section{Diseño de la base de datos}
 	
@@ -24,6 +26,7 @@
 	En la fase de diseño, el propósito del prototipo es obtener una primera versión de la apariencia de la interfaz de usuario así como de la funcionalidad incluida (mostrar las ventanas, su navegación, interacción, controles y botones). Con esto se pretende que el cliente tenga una primera toma de contacto con la futura aplicación antes de su desarrollo final, para así reducir o eliminar todas aquellas disconformidades y cambios en fases futuras.
 	
 		\subsection{Material Design}
+		Material Design es la nueva metáfora visual de Matias Duarte para el sistema operativo móvil Android, en su version 5.0 y posteriores, y todo el ecosistema Google en web y supone una pequeña ruptura con la anterior metáfora de Android llamada Holo. 
 		
 		Es un diseño donde la profundidad, las superficies, los bordes, las sombras y los colores juegan un papel principal.
 		
