@@ -11,12 +11,6 @@ Una vez las historias tienen una forma más o menos fija, recordemos que uno de 
 En el momento de redactar las historias de usuario conviene que de algún modo alguien, típicamente el scrum master o el product owner, se encargue de recordar los grandes objetivos del proyecto. Estos objetivos son los objetivos claros, concisos y lo mas sencillos posibles que mueven al cliente a dar comienzo al proyecto. Todas las historias de usuario, asi como las acciones que se lleven a cabo, deben alinearse con estos objetivos.
 
 Para llevar a cabo todo este proceso se llevaron a cabo varias reuniones con el personal de la AECC, se cruzaron correos con historias redactadas, se conversó vía Hangout, Skype, Whatsapp, etc se volvió a reunir las veces que hicieron falta, hasta que dicho personal, que en este caso hacía el papel de product owner,  se sintió lo suficientemente cómodo con el redactado inicial de las historias de usuario y su priorización, sabiendo que después estas podrían modificarse. 
-
- 
-
--Por una parte de las reuniones mantenidas con el cliente, en este caso la AECC.
-
--Por otra parte del libro que utiliza la AECC llamado \textbf{MIS CUIDADOS, DIARIO DE SALUD DE UN SUPERVIVIENTE DE CANCER} y que se utiliza de manera general sobre enfermos de cáncer que han superado esta enfermedad y sobre otros que todavía la siguen padeciendo.\\\\
 	
 
 	\section{Explicación detallada de las funcionalidades de la aplicación}
@@ -42,367 +36,125 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 	\textbf{CITAS}
 	
 	Es una funcionalidad para introducir citas médicas en un calendario. En las mismas se podrá añadir al profesional que nos atiende si es que se conoce. 
-	Poco después de una cita se generará una notificación preguntando por la misma, en la que se preguntará si la cita ha generado nuevas citas, momento en que se pasará a la pantalla para crear una nueva cita, cambios en la medicación, yendo a la lista de medicamentos para añadir o cambiar la dosis de los mismos, 
+	Poco después de una cita se generará una notificación preguntando por la misma, en la que se preguntará si la cita ha generado nuevas citas, momento en que se pasará a la pantalla para crear una nueva cita, si ha habido cambios en la medicación, yendo a la lista de medicamentos para añadir o cambiar la dosis de los mismos.
+	Poco antes de la cita y siguiendo las pautas marcadas en el folleto se guiará al usuario en las actividades o como afrontar la cita.
 	Lista de citas Nombre de la cita, fecha y hora.
 	Desde el propio item de la lista se podran añadir medicamentos, personas, sintomas y/o pruebas, al pulsar sobre la opción correspondiente nos llevará al listado de estás opciones añadiendose así.
 	
-	Añadir cita, en esta pantalla se permite ver al pinchar sobre el propio item de la lista ,editar, o pulsando el botón añadir del final de la lista crear una nueva, 
-	dentro de la cita (añadir) se podrán añadir ubicación, personajes, medicamentos, pruebas y sintomas y asignar una alarma personalizable con fecha y hora (avisar) con antelacion.
-	se puede ver sin editar
-
-	
-	Deberíamos añadir duración?
-
-	
-	Valorar si deberiamos gestionar la repeticion de los eventos
-
-	
-	¿En la ubicación se podria comunicar con google maps?
-
-	
-	¿Deberiamos mostrar en el item de la cita si ya poseee personas, pruebas, sintomas o medicacion?
-
-
-
-
-
-
-
 	\textbf{AVATAR}
 	
-	Editar el perfil, Foto, nombre, apellidos, edad, cumpleaños... (1 pantalla), ¿Grupo sanguineo y alergenos tampoco estaría mal pero es informacion de otro nivel LOPD?
-	
-	PROYECTO AMPLIACION (asignar un agente personalizado para poder atender de manera personalizada al paciente Superviviente)\\
-	
-
-
-
-
-
-	
-
-	\textbf{HORARIO}
-
-
-	Vista dia, mes, con las actividades, citas, ¿Cumpleaños, aniverssario de enfermedad...?  
-	al pinchar en una hora, dia, se podrá añadir rutina o cita, iria a la correspondiente lista de creacion de una nueva (1 pantalla)
-	
-	Deberian aparecer las citas y rutinas ocupando el espacio destinado a la duracion de las mismas.
-	
-	Revisar esta página
-	https://code.google.com/p/yadview/\\
-	
+	En esta funcionalidad se permite crear un perfil de registro al usuario de la app para acceder a alguna funcionalidad mas, como compartir los datos entre dispositivos, mediante el uso de un servicio de back end que almacene los nuevos datos cuando se disponga de conectividad. El acceso a trarar con un agente com pate del piloto del proyecto, pudiendole dejar alguna pregunta que desde la parte servidora se encargara de responder.
 
 	\textbf{RUTINA}
-	Lista de rutinas, desde la propia vista se podrán añadir rutinas, al pulsar sobre la opción correspondiente nos llevará al listado de estás opciones añadiendose así.
-	
-	Se podra ordenar por fecha, asc y desc, duracion de la actividad asc y desc pero sobre todo se podrá ordenar por satisfaccion de la misma.
-	
-	Añadir rutina, , en esta pantalla se permite ver al pinchar sobre el propio item de la lista ,editar, o pulsando el botón añadir del final de la lista crear una nueva,
-	Valorar si deberiamos gestionar la repeticion de los elementos					
-	dentro de la rutina (añadir) se podrán añadir personajes y asignar una alarma personalizable (avisar) con antelacion, se puede ver sin editar(2 pantallas)
-	con una hora de aviso, hora de empiece de la actividad. Duración de las misma en horas, satisfaccion de 0 a 10
-	
-	Dentro se va a valorar tambien la satisfacción personal que se produce al hacer esto, podrá ser de 0 a 10
-	
-	AMPLIACION DE PROYECTO: Poder variar los avisos para que se hagan de manera repetitiva, por ejemplo repetir de manera semanal los jueves al estilo TICK TICK, llamarlo actividades en vez de Rutina\\ 
-	
-
-	\textbf{CITAS}
-	
-	Lista de citas Nombre de la cita, fecha y hora.
-	Desde el propio item de la lista se podran añadir medicamentos, personas, sintomas y/o pruebas, al pulsar sobre la opción correspondiente nos llevará al listado de estás opciones añadiendose así.
-	
-	Añadir cita, en esta pantalla se permite ver al pinchar sobre el propio item de la lista ,editar, o pulsando el botón añadir del final de la lista crear una nueva, 
-	dentro de la cita (añadir) se podrán añadir ubicación, personajes, medicamentos, pruebas y sintomas y asignar una alarma personalizable con fecha y hora (avisar) con antelacion.
-	se puede ver sin editar
-	
-	Deberíamos añadir duración?
-	
-	Valorar si deberiamos gestionar la repeticion de los eventos
-	
-	¿En la ubicación se podria comunicar con google maps?
-	
-	¿Deberiamos mostrar en el item de la cita si ya poseee personas, pruebas, sintomas o medicacion?
-	
-	PROYECTO AMPLIACION Poder exportar e importar a google maps, conectar la ubicacion con google maps para poder ir\\
-	
+	La rutina es una vista semanal de actividades programadas y de ritmo de vida. Se pueden introducir actividades reiterativas y en que consisten, si se hacen solo o en grupo y la satisfaccion que el usuario estima que producen. De vez en cuando apareceran notificaciones que pregunten si se realizo o no una actividad determinada, si esta causo satisfaccion etc. Puede marcarse en este horario la hora en la que el usuario se levanta y acuesta para excluir notificaciones en ese horario de descanso. 
+	Revisar esta página
+	https://code.google.com/p/yadview/\\
+		
 	
 	\textbf{MEDICACION}
-	Lista de medicamentos, lista de los medicamentos que tengamos con el boton de añadir al final y en la barra la posibilidad de ordenar en principio por orden ascendente o descendente,
-	al pinchar sobre el elemento se visualiza, en las opciones de cada elemento se puede añadir a la cita, editar y borrar (confirmacion para borrar)
-	
-	Añadir medicamento, , en esta pantalla se permite ver al pinchar sobre el propio item de la lista ,editar, o pulsando el botón añadir del final de la lista crear una nueva, 
-	dentro del medicamento (añadir) se podrá asignar una foto personalizable, o bien hacerla o añadirla de la galeria, viene una por defecto
-	nombre, descripcion, 
-	una alarma personalizable que avisar con antelacion, fecha inicio, hora inicio, fecha fin, hora fin, repetir cada tantas horas, dias, semanas, (esto se valorará)
-
-	REVISAR LA FUNCION DE ALARMA EN ANDROID http://developer.android.com/reference/android/app/AlarmManager.html
-	boton guardar 
-	se puede ver sin editar, 
-	dentro de la edición y visionado se podra añadir a una cita
-	Se puede añadir el numero de medicamentos al drawer (se estudiará)
-	
-	PROYECTO AMPLIACION Llevar el stock de lo que lleva consumido el paciente y generar alertas para cuando se le acabe, duplicar tratamiento, para ahorrar trabajo, opciones de dosis.\\
-	
-	
-\textbf{PERSONAJES}
-	
-	Lista de personajes que tengamos con el boton de añadir al final y en la barra la posibilidad de ordenar en principio por orden ascendente o descendente,
-	al pinchar sobre el elemento se visualiza, 
-	en las opciones de cada elemento se puede añadir a la cita, a la rutina, editar y borrar confirmacion para borrar
-	
-	Añadir persona, , en esta pantalla se permite ver al pinchar sobre el propio item de la lista ,editar, o pulsando el botón añadir del final de la lista crear una nueva, 
-	dentro de la persona(añadir) se podrá asignar una foto personalizable, o bien hacerla o añadirla de la galeria, viene una por defecto
-	nombre apellidos, puesto / tipo (doctor, oncologo, cirujano, farmaceutico, enfermero, medico cabecera, familiar, amigo,AECC, otro), telefono (posibilidad de llamar desde la visualizacion)
-	se puede ver sin editar, dentro de la edición y visionado se podra añadir a una cita, o a una rutina ejemplo (paseo por la playa) o a cita con el oncólogo
-	Se puede añadir el numero al drawer
-	
-	PROYECTO AMPLIACION llevarnos ese contacto a la agenda o traernosle de ella\\
-	
-	
-
-
-
-	
-
-
-
-
-
-	
-
-
+	Es un gestor de aquellos medicamentos que debe tomar el enfermo y en que cantidades, así como historico de las tomas de los mismo o de alguno que no tengan prescrito como pudieran ser analgesicos, antidepresivos, etc La app debe avisar con una notificacion de la necesidad de toma de aquellos medicamentos que se marquen como prescritos por el facultativo, a partir de la posologia indicada para el mismo. 
 
 	\textbf{PRUEBAS}
 	
-	Lista de personajes que tengamos con el boton de añadir al final y en la barra la posibilidad de ordenar en principio por orden de fecha ascendente o descendente,
-	al pinchar sobre el elemento se visualiza, 
-	en las opciones de cada elemento se puede añadir a la cita, editar y borrar confirmacion para borrar
-	
-	Añadir prueba, , en esta pantalla se permite ver al pinchar sobre el propio item de la lista ,editar, o pulsando el botón añadir del final de la lista crear una nueva, 
-	dentro de la prueba (añadir) se podrá asignar una foto personalizable, o bien hacerla o añadirla de la galeria, viene una por defecto
-	nombre, descripcion,
-	fecha y hora de la misma
-	se puede ver sin editar, dentro de la edición y visionado se podra añadir a una cita por ejemplo visita al oncólogo
-	Se puede añadir el numero al drawer
-	
-	PROYECTO AMPLIACION poder subir documentos tipo pdf para no depender de la fotografia solo, llevar estadísticas\\
+	Es una funcionalidad para llevar un registro de las pruebas que se han realizado al paciente clasificadas por tipos y llegado el caso hacer seguimiento de los valores clave en cada prueba diagnostica o analisis. Se podran adjuntar fotografias de los resultados en papel si es que se dispone de ellos para disponer de un pequeño "registro documental".
 	
 	
-	\textbf{SINTOMAS}
-	
-	Lista de síntomas que tengamos con el boton de añadir al final y en la barra la posibilidad de ordenar en principio por orden de fecha ascendente o descendente,
-	al pinchar sobre el elemento se visualiza, 
-	en las opciones de cada elemento se puede añadir a la cita, editar y borrar confirmacion para borrar
-	
-	Añadir sintoma, , en esta pantalla se permite ver al pinchar sobre el propio item de la lista ,editar, o pulsando el botón añadir del final de la lista crear una nueva, 
-	dentro de la prueba (añadir) se podrá asignar una foto personalizable, o bien hacerla o añadirla de la galeria, viene una por defecto
-	nombre, descripcion de los sintomas,
-	fecha y hora de la misma
-	se puede ver sin editar, dentro de la edición y visionado se podra añadir a una cita por ejemplo visita al oncólogo
-	Se puede añadir el numero al drawer
-	
-	PROYECTO AMPLIACION poder subir documentos tipo pdf para no depender de la fotografia solo, llevar estadísticas, poder conectar con los centros de salud, hospitales, \\
+	\textbf{SINTOMAS y ANOTACIONES}
+	Esta funcionalidad cubre anotaciones de sintomas, sensaciones y cualquier cosa que el paciente crea conveniente anotar. Antes de una cita le reocrdará que tiene anotaciones por si quisiese comentarselas al profesional y tambien permitira pasar una anotacion para la siguiente cita.
 	
 	
-	\textbf{RECURSOS}
-	Dentro de los resursos aparece meditacion con musica relajante e instrucciones para ello
-	consejos generales, de alimentacion, de vida, de salud...
-	telefonos de interés generales (DEBEMOS DECIDIR SI SE PUEDEN PERSONALIZAR)
-	Noticias (podemos añadir el blog de la AECC o la cuenta de twitter que no esta nada mal)
+	\textbf{INFORMACIÓN ÚTIL}
+	Una sección con los consejos de vida sana, meditación, relajacion etc que tambien disponen en el folleto. 
 	
+	\textbf{PARTE SERVIDORA}
+	El back end almacenara los datos que los usuarios registrados envien desde sus dispositivos y los devolverá hacia aquellos que no se encuentren sincronizados. Ademas permitira a un rol supervisor provincia asociar a un usuario registrado a un agente que desde ese momento velara por el. Dicho agente podra comunicarse con el usuario de manera directa y tambien respondiendo a sus preguntas.  
 	
-	\textbf{AJUSTES}
-	Editar el perfil, 
-	tamaño de letra, 	
-	tono para alertas de citas y rutinas, 
-	color del led de notificación, 
-	posibilidad de feedback,
-	quienes somos o motivaciones (¿? pantallas)\\\\
-
 	
 	\section{Documento de Análisis}
 	
-	Aunque utilizamos una metología ágil, hay puntos en los que no nos podemos separar de la metodología tradicional.
 			
-	Es difícil capturar todos los requisitos a partir de unas cuantas reuniones, para nuestro caso, pudimos contar con la ayuda del libro "Mis Cuidados, diario de salud para supervivientes de cáncer"
+	Como se ha comentado anteriormente es difícil capturar todos los requisitos y el contexto de la aplicación a partir de una reunión, en nuestro caso mantuvimos al menos cuatro reuniones presenciales y al menos casi otras tantas por medios telematicos al residir en provincias diferentes y además contamos con la ayuda del folleto que querian "digitalizar" "Mis Cuidados, diario de salud para supervivientes de cáncer"
 			
 	Una de las ventajas de utilizar este primer tipo de metodología, es el de poder adaptar de una manera mucho más eficiente los recursos a las fechas y a los requisitos, y poder modificar estos requisitos de manera "ágil" debido al panorama cambiante que podemos tener de cara al cliente.
 			
-	\begin{figure}
-		\centering
-		\includegraphics[width=0.5\linewidth]{../images/paradigmaRequisitos}
-		\caption{Paradigma captura de requisitos método tradicional vs. ágil}
-		\label{fig:paradigmaRequisitos}
-	\end{figure}
-			
-			
+		
 	\subsection{Descripción de objetivos de manera detallada}
 	
 	
-	\textbf{OBJ-001}	La aplicacion debera poder administrar un perfil de usuario\\*
+	\textbf{OBJ-001}	La aplicacion debera poder usarse en un dispositivo sin registro y sin conexión.\\*
 	
-		\begin{table}[H]
-			\centering
-			\begin{tabular}[t]{|l|l|}
-				\hline \textbf{OBJ-001} & \textbf{PERFIL DE USUARIO} \\*
-				\hline\hline \textbf{Versión} & 1.0 \\ *
-				\hline\textbf{Autores} 	& Fernando Santa Olaya Rodríguez \\*
-				& Rubén Toquero González\\*
-				\hline \textbf{Descripción} & La aplicacion debera poder administrar un perfil de usuario\\* 
-				\hline \textbf{Subobjetivos} & El usuario padrá introducir una foto, nombre, fecha de nacimiento \\* 
-				\hline \textbf{Importacia} & Importante \\* 			
-				\hline \textbf{Urgencia} & Inmediatamente \\* 
-				\hline \textbf{Estado} & En construcción \\* 
-				\hline \textbf{Estabilidad} & Estable \\* 
-				\hline \textbf{Comentarios} & En la cabecera del drawer aparecerá el nombre y la foto \\* 
-				\hline 
-			\end{tabular}
-			\caption{Menú drawer.}
-			\label{tabla:req001}
-		\end{table}
+	\textbf{OBJ-002}	La aplicacion debe ser facil de usar para usuarios no avanzados y mayores\\*
 	
-	\textbf{OBJ-002}	La aplicacion será facil de navegar para usuarios no avanzados\\*
+	\textbf{OBJ-003}	Cualquier opción que se pueda realizar en el folleto debe estar cubierta por alguna funcionalidad de la app\\*
 	
-	\textbf{OBJ-003}	La aplicacion facilitará la gestion de las actividades diarias de un usuario (medicas/rutinarias)\\*
-	
-	\textbf{OBJ-004}	La aplicacion permitirá gestionar de manera organizada las citas médicas de un usuario\\*
-	
-	\textbf{OBJ-005}	La aplicacion permitirá gestionar de manera organizada las rutinas diarias de un usuario\\*
-	
-	\textbf{OBJ-006}	La aplicacion permitirá gestionar de manera organizada los medicamentos asignados a un usuario\\*
-	
-	\textbf{OBJ-007}	La aplicacion permitirá gestionar de manera organizada los personajes que interactuan en las
-	 actividades de un usuario\\*
-	
-	\textbf{OBJ-008}La aplicacion permitirá gestionar de manera organizada los síntomas que acontecen a un usuario\\*
-	
-	\textbf{OBJ-009}	La aplicacion permitirá gestionar de manera organizada las pruebas médicas a las que se somete un
-	 usuario\\*
-	
-	\textbf{OBJ-010}	La aplicacion proporcionará recursos de ayuda para el bienestar del usuario\\*
-	
-	\textbf{OBJ-011}	La aplicación permitirá ajustes que mejoren la experiencia del usuario\\*
-	
-	\textbf{OBJ-012}	La aplicación deberá tener una base de datos para almacenar toda la informacion del usuario\\*
-	
-	\textbf{OBJ-013}	La aplicación deberá contar con un manual de usuario para facilitar su comprension y uso\\*
-	
-	\textbf{OBJ-014}	La aplicación soportará el mayor número de dispositivos android posibles\\*
-	
-	\textbf{OBJ-015}	La aplicación será de verdadera ayuda para usuarios incluidos dentro de la iniciativa de la AECC\\*
-	
-	\textbf{OBJ-016}	La aplicación se integrará perfectamente dentro de la iniciativa de la AECC\\*
-	
-	
+	\textbf{OBJ-004}	Se hará enfasis en que el registro proporciona grandes ventajas, a pesar de poder usarse sin el\\*
 
+	\textbf{OBJ-005}	El estilo gráfico de la app sera coherente con el marcado por el folleto de la AECC\\*
+	
+	\textbf{OBJ-006}	En definitiva la app será algo util por su funcionalidad pero tambien por su usabilidad y facilidad de manejo\\*
 	
 	
 	\subsection{Captura de Requisitos}
 	
 	Como consecuencia de las diferentes reuniones realizadas con el cliente se elabora un
 	documento de especificación de requisitos con el propósito de describir las funcionalidades
-	necesarias para poder validar el producto final.\\*
+	necesarias para poder validar el producto final. Estos requisitos se escriben aqui como historias de usuario con un id, un titulo y una descripción para ser implementadas. \\*
 	
-	\subsubsection{Requisitos de información}
+	\subsubsection{Historias de usuario}
 			
+	\textbf{Historia 1: Navegación}
+		Como usuario quiero poder acceder al menú de nevegación desde cualquier punto del primer nivel de la misma, mediante la pulsación en el icono de tres lineas en la izquierda de la pantalla, para poder navegar entre las distintas opciones de la app. Dejando en el resto de niveles de navegacion una flecha para volver al nivel 1.
+		
+	\textbf{Historia 2: Registro}	
+		Como usuario quiero poder registrarme, acceder y modificar mas tarde estos datos para poder acceder a las funcionalidades de sincronizacióm y consulta con agente.
 	
-	\subsubsection{Requisitos Funcionales}
+	\textbf{Historia 3: Personas}	
+		Como usuario quiero poder añadir, consultar, modificar y borrar uno de los contactos de la lista de personas relacionadas desde la app y que estos cambios se reflejen tambien en la app de contactos para poder tener un listado de personas importantes.
 	
-	A continuación se describirán los requisitos para este proyecto. Se tendrán dos tipos de
-	requisitos: requisitos funcionales, que serán aquellos obtenidos a partir de los objetivos principales
-	y secundarios del apartado anterior; y requisitos no funcionales, obtenidos de las especificaciones
-	citadas a lo largo de la memoria y que precisen ser descritas como requisitos.\\*
+	\textbf{Historia 4: Citas}	
+		Como usuario quiero poder añadir, consultar modificar y borrar citas medicas con los datos de lugar, fecha, hora, espcialista para poder tener un control de mis citas y que estas pasen a la app calendario del dispositivo. 
+		
+	\textbf{Historia 5: Notificaciones citas}	
+		Como usuario quiero que la app me avise de las citas proximas en la manera en la que el folleto lo indica para poder preparar la cita de cara a sacarle el máximo partido.
 	
-	Este tipo de requisitos declaran los servicios que debe proporcionar la aplicación, como debe
-	reaccionar a una entrada particular y cómo se debe de comportar ante situaciones particulares.
-	Describen el funcionamiento dla aplicación.\\*
+	\textbf{Historia 6: Principal}
+		Como usuario al entrar en la aplicación quiero que me muestre el siguiente evento hoy si lo hubiese de cada una de las categorias: citas, medicación, horarios, etc para poder tener una idea aproximada del día.
 	
-	Los requisitos de información llevarán un nombre descriptivo y un número para identificarlos.
-	Este número tendrá el formato IRQ - <id> donde id será el número del requisito de información.
-	Además se indicarán los requisitos asociados, una descripción y cualquier información que sea
-	relevante para una mayor claridad.\\*
+	\textbf{Historia 7: Rutina}
+		Como usuario quiero poder añadir, consultar, modificar y borrar elementos en el calendario semanal de rutinas para poder planificar mis actividades semanales.
 	
-	Los requisitos funcionales que debe cumplir la aplicación son los siguientes\\*
+	\textbf{Historia 8: Notificaciones Rutinas}
+		Como usuario quiero que me la app me avise de el comienzo de alguna actividad del horario semanal, así como que me pregunte por algunas de ellas para recabar información de mi estado de animo y como me favorece la rutina. 
 	
+	\textbf{Historia 9: Medicación}	La aplicación mostrará una vista del mes actual para las actividades del usuario de ese mes (citas y rutinas)	\textbf{OBJ-003}
 	
-	\textbf{FRQ-001}	El usuario podra acceder a un menú de navegación	\textbf{OBJ-002}\\*
-
-	\begin{table}[H]
-		\centering
-		\begin{tabular}[t]{|l|l|}
-			\hline \textbf{FRQ-001} & \textbf{DRAWER MENÚ} \\*
-			\hline\hline \textbf{Versión} & 1.0 \\ *
-			\hline\textbf{Autores} 	& Fernando Santa Olaya Rodríguez\\*
-			& Rubén Toquero González\\*
-			\hline \textbf{Dependencias} & OBJ-002\\* 			
-			\hline \textbf{Descripción} & El usuario podrá acceder a un menú de navegación \\* 
-			\hline \textbf{Importancia} & Vital \\* 
-			\hline \textbf{Urgencia} & Inmediatamente \\* 
-			\hline \textbf{Estado} & En construcción \\* 
-			\hline \textbf{Estabilidad} & Estable \\* 
-			\hline \textbf{Comentarios} & El menú será visible al desplazar el dedo de izquierda a derecha de la pantalla \\* 
-			\hline 
-		\end{tabular}
-		\caption{Menú drawer.}
-		\label{tabla:req001}
-	\end{table}
+	\textbf{Historia 10}	El usuario podrá añadir una cita desde cualquiera de las vistas mensual/diaria
 	
+	\textbf{Historia 11}	El usuario podrá añadir una rutina para ese dia desde cualquiera de las vistas mensual/diaria
 	
-	\textbf{FRQ-002}	El usuario podrá introducir sus datos personales en la aplicación 	\textbf{OBJ-001}
+	\textbf{Historia 12}	El usuario podrá visualizar/editar la cita desde cualquiera de esas vistas
 	
-	\textbf{FRQ-003}	El usuario podra visualizar sus datos personales	\textbf{OBJ-001}
+	\textbf{Historia 13}	El usuario podrá visualizar/editar la rutina desde cualquiera de esas vistas\\*
 	
-	\textbf{FRQ-004}	Es usuario podrá ver/editar sus datos personales	\textbf{OBJ-001}\\*
+	\textbf{Historia 14}	El usuario podrá acceder a la lista de citas medicas
 	
+	\textbf{Historia 15}	El usuario podrá añadir desde la lista una nueva cita medica
 	
+	\textbf{Historia 16}	El usuario podrá añadir alertas y notificaciones a una cita médica
 	
-	\textbf{FRQ-005}	El usuario al acceder a la aplicación podra visualizar de un vistazo su actividad para hoy 		\textbf{OBJ-003}
+	\textbf{Historia 17}	El usuario podrá añadir personajes a una cita medica
 	
-	\textbf{FRQ-006}	El usuario podrá acceder desde la pantalla principal a sus citas medicas	\textbf{OBJ-003 OBJ-004}
+	\textbf{Historia 18}	El usuario podrá añadir pruebas a una cita medica
 	
-	\textbf{FRQ-007}	El usuario podrá acceder desde la pantalla principal a sus rutinas diarias	\textbf{OBJ-003}  \textbf{OBJ-005}\\*					
+	\textbf{Historia 19}	El usuario podrá añadir medicamentos a una cita medica
 	
+	\textbf{Historia 20}	El usuario podrá añadir duración a una cita médica
 	
-	AFECTADAS POR EL OBJETIVO \textbf{OBJ-004}\\*
-	\textbf{FRQ-008}	La aplicación mostrará una vista del dia actual con actividades del usuario de ese dia (citas y rutinas)
+	\textbf{Historia 21}	El usuario podrá añadir síntomas a una cita medica
 	
-	\textbf{FRQ-009}	La aplicación mostrará una vista del mes actual para las actividades del usuario de ese mes (citas y rutinas)	\textbf{OBJ-003}
+	\textbf{Historia 22}	El usuario podrá visualizar/editar la cita medica\\*
 	
-	\textbf{FRQ-010}	El usuario podrá añadir una cita desde cualquiera de las vistas mensual/diaria
-	
-	\textbf{FRQ-011}	El usuario podrá añadir una rutina para ese dia desde cualquiera de las vistas mensual/diaria
-	
-	\textbf{FRQ-012}	El usuario podrá visualizar/editar la cita desde cualquiera de esas vistas
-	
-	\textbf{FRQ-013}	El usuario podrá visualizar/editar la rutina desde cualquiera de esas vistas\\*
-	
-	
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-004}\\*
-	
-	\textbf{FRQ-014}	El usuario podrá acceder a la lista de citas medicas
-	
-	\textbf{FRQ-015}	El usuario podrá añadir desde la lista una nueva cita medica
-	
-	\textbf{FRQ-016}	El usuario podrá añadir alertas y notificaciones a una cita médica
-	
-	\textbf{FRQ-017}	El usuario podrá añadir personajes a una cita medica
-	
-	\textbf{FRQ-018}	El usuario podrá añadir pruebas a una cita medica
-	
-	\textbf{FRQ-019}	El usuario podrá añadir medicamentos a una cita medica
-	
-	\textbf{FRQ-020}	El usuario podrá añadir duración a una cita médica
-	
-	\textbf{FRQ-021}	El usuario podrá añadir síntomas a una cita medica
-	
-	\textbf{FRQ-022}	El usuario podrá visualizar/editar la cita medica\\*
-	
-	
-	
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-005}\\*
-	\textbf{FRQ-023}	El usuario podrá acceder a la lista de rutinas
+	\textbf{Historia 23}	El usuario podrá acceder a la lista de rutinas
 	
 	\textbf{FRQ-024}	El usuario podrá añadir desde la lista una nueva rutina
 	
@@ -414,10 +166,6 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 	
 	\textbf{FRQ-028}	El usuario podrá visualizar/editar la rutina\\*
 	
-	
-	
-	
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-006}\\*
 	\textbf{FRQ-029}	El usuario podrá acceder a la lista de medicamentos
 	
 	\textbf{FRQ-030}	El usuario podrá añadir desde la lista un nuevo medicamento
@@ -428,14 +176,8 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 	
 	\textbf{FRQ-033}	El usuario podrá visualizar/editar el medicamento\\*
 	
-	
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-007}
-	
 	\textbf{FRQ-034 A FRQ-049}	Lo mismo con personajes, sintomas, pruebas\\*
 	
-	
-	
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-010}\\*
 	\textbf{FRQ-050}	El usuario podrá acceder a recursos relaccionados con el autocontrol y la meditacion
 	
 	\textbf{FRQ-051}	El usuario tendrá acceso a telefonos de interés
@@ -444,103 +186,13 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 	
 	\textbf{FRQ-053}	El usuario tendrá acceso a noticias relativas a la AECC\\*
 	
-	
-	
 	\textbf{FRQ-054}	La aplicación notificará al paciente a peticion citas y rutinas\\*
 	
 	\textbf{FRQ-055}	Las listas seran ordenable segun diferentes criterios\\*
 	
-	
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-011}\\*
 	\textbf{FRQ-056}	La aplicacion contendrá ajustes que faciliten su manejo al usuario\\*
 	
-	
-
-
-
-
-
-
-
-
-
-
-
-
-	\subsubsection{Requisitos No Funcionales}
-	
-	Este tipo de requisitos define las propiedades emergentes dla aplicación, tales como el tiempo de
-	respuesta, las necesidades de almacenamiento, la fiabilidad.\\*
-	
-	Pueden especificar también la utilización de una herramienta CASE en particular, un lenguaje
-	de programación o un método del desarrollo.\\*
-	
-	En este apartado se detalla el catálogo de requisitos no funcionales. Estos requisitos pueden
-	ser más críticos que los requisitos funcionales, ya que son a los que normalmente debe apuntar la
-	arquitectura y si estos no son cumplidos, el software puede no funcionar o el cliente simplemente
-	no acepta el producto.\\*
-	
-	Estos requisitos se puede decir que no están relacionados directamente con la funcionalidad
-	dla aplicación. Con esto no se pretende decir que no sean necesarios para la funcionalidad dla aplicación,
-	pero sí que no pueden asociarse a ningún caso de uso en particular. Hay distintas categorías y tipos
-	de requisitos no funcionales: hardware, plataforma software, comunicaciones, de interfaz, de
-	seguridad, de control de concurrencia, de persistencia…etc.\\*
-	
-	Los requisitos no funcionales llevarán un nombre descriptivo y un número para identificarlos.
-	Este número tendrá el formato NFRQ - <id> donde id será el número del requisito de información.
-	Además se indicará una descripción y cualquier información que sea relevante para una mayor
-	claridad.\\*
-	
-	Algunos requisitos no funcionales identificados para el desarrollo del presente proyecto son
-	los siguientes:\\*
-
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-015}\\*
 		
-	\textbf{NFRQ-001}		La aplicacion será un apoyo y una ayuda para el paciente\\*
-	
-	
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-016}\\*
-		
-	\textbf{NFRQ-002}		La aplicación debe ser coherente con el programa de Diario de Salud de la AECC.
-	
-	
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-013 OBJ-015}\\*		
-	\textbf{NFRQ-003}		La aplicacion sera amigable para usuarios no avanzados
-	
-	
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-016}\\*	
-	\textbf{NFRQ-004}		La aplicacion cumplira las guias de estilo fijadas por la AECC
-	
-	
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-015}\\*		
-	\textbf{NFRQ-005}		La aplicación proporcionará recursos de valor para los enfermos de cancer.
-	
-	
-		
-	\textbf{NFRQ-006}		La aplicación será mantenible y escalable a petición del cliente.
-
-
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-004}\\*	
-	\textbf{NFRQ-007}		La aplicación facilitara las visitas médicas
-
-
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-005}\\*			
-	\textbf{NFRQ-008}		La aplicacion incentivará la realizacion de actividades placenteras para el paciente
-
-
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-003}\\*		
-	\textbf{NFRQ-009}		La aplicacion facilitara la organizacion de los compromisos del usuario
-
-
-		
-	\textbf{NFRQ-010}		La aplicación será segura y confiable
-	
-	
-	\textbf{NFRQ-011}		La aplicación estará finalizada antes del dia 9 de septiembre
-
-
-
-	
 
 	\subsection{Identificación de actores}
 		
