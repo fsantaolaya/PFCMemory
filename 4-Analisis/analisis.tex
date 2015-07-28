@@ -1,6 +1,5 @@
 	\documentclass[../pfc.tex]{subfiles}
-	\usepackage{float}
-	
+		
 	\begin{document}
 	
 Para la fase de análisis dentro de las metodologías ágiles no existen preceptos firmes a cumplir, pero dado que se valora mucho la comunicación y las relaciones interpersonales, se establece que debería haber una serie de reuniones previas al inicio de los sprints para que el equipo pueda obtener contexto del proyecto y del dominio del mismo, así como ir escribiendo las historias de usuario y rellenar y priorizar el product backlog. En estas reuniones idealmente asistirían tanto el product owner, el scrum master y el equipo, pero con el prodcut owner, el scrum master y aquel del equipo que mejor pueda ayudar a escribir las historias puede ser suficiente, recordemos que no se está estimando, simplemente se escuchan las necesidades del product owner y estas se traducen en funcionalidades y estas a su vez en requisitos mediante historias de usuario. \\
@@ -14,6 +13,7 @@ En el momento de redactar las historias de usuario conviene que de algún modo a
 Para llevar a cabo todo este proceso se llevaron a cabo varias reuniones con el personal de la AECC, se cruzaron correos con historias redactadas, se conversó vía Hangout, Skype, Whatsapp, etc se volvió a reunir las veces que hicieron falta, hasta que dicho personal, que en este caso hacía el papel de product owner,  se sintió lo suficientemente cómodo con el redactado inicial de las historias de usuario y su priorización, sabiendo que después estas podrían modificarse. 
 
  
+
 -Por una parte de las reuniones mantenidas con el cliente, en este caso la AECC.
 
 -Por otra parte del libro que utiliza la AECC llamado \textbf{MIS CUIDADOS, DIARIO DE SALUD DE UN SUPERVIVIENTE DE CANCER} y que se utiliza de manera general sobre enfermos de cáncer que han superado esta enfermedad y sobre otros que todavía la siguen padeciendo.\\\\
@@ -49,14 +49,24 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 	Añadir cita, en esta pantalla se permite ver al pinchar sobre el propio item de la lista ,editar, o pulsando el botón añadir del final de la lista crear una nueva, 
 	dentro de la cita (añadir) se podrán añadir ubicación, personajes, medicamentos, pruebas y sintomas y asignar una alarma personalizable con fecha y hora (avisar) con antelacion.
 	se puede ver sin editar
+
 	
 	Deberíamos añadir duración?
+
 	
 	Valorar si deberiamos gestionar la repeticion de los eventos
+
 	
 	¿En la ubicación se podria comunicar con google maps?
+
 	
 	¿Deberiamos mostrar en el item de la cita si ya poseee personas, pruebas, sintomas o medicacion?
+
+
+
+
+
+
 
 	\textbf{AVATAR}
 	
@@ -66,9 +76,13 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 	
 
 
+
+
+
 	
 
 	\textbf{HORARIO}
+
 
 	Vista dia, mes, con las actividades, citas, ¿Cumpleaños, aniverssario de enfermedad...?  
 	al pinchar en una hora, dia, se podrá añadir rutina o cita, iria a la correspondiente lista de creacion de una nueva (1 pantalla)
@@ -132,9 +146,34 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 	PROYECTO AMPLIACION Llevar el stock de lo que lleva consumido el paciente y generar alertas para cuando se le acabe, duplicar tratamiento, para ahorrar trabajo, opciones de dosis.\\
 	
 	
+\textbf{PERSONAJES}
+	
+	Lista de personajes que tengamos con el boton de añadir al final y en la barra la posibilidad de ordenar en principio por orden ascendente o descendente,
+	al pinchar sobre el elemento se visualiza, 
+	en las opciones de cada elemento se puede añadir a la cita, a la rutina, editar y borrar confirmacion para borrar
+	
+	Añadir persona, , en esta pantalla se permite ver al pinchar sobre el propio item de la lista ,editar, o pulsando el botón añadir del final de la lista crear una nueva, 
+	dentro de la persona(añadir) se podrá asignar una foto personalizable, o bien hacerla o añadirla de la galeria, viene una por defecto
+	nombre apellidos, puesto / tipo (doctor, oncologo, cirujano, farmaceutico, enfermero, medico cabecera, familiar, amigo,AECC, otro), telefono (posibilidad de llamar desde la visualizacion)
+	se puede ver sin editar, dentro de la edición y visionado se podra añadir a una cita, o a una rutina ejemplo (paseo por la playa) o a cita con el oncólogo
+	Se puede añadir el numero al drawer
+	
+	PROYECTO AMPLIACION llevarnos ese contacto a la agenda o traernosle de ella\\
 	
 	
+
+
+
 	
+
+
+
+
+
+	
+
+
+
 	\textbf{PRUEBAS}
 	
 	Lista de personajes que tengamos con el boton de añadir al final y en la barra la posibilidad de ordenar en principio por orden de fecha ascendente o descendente,
@@ -417,6 +456,17 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 	
 	
 
+
+
+
+
+
+
+
+
+
+
+
 	\subsubsection{Requisitos No Funcionales}
 	
 	Este tipo de requisitos define las propiedades emergentes dla aplicación, tales como el tiempo de
@@ -487,6 +537,8 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 	
 	
 	\textbf{NFRQ-011}		La aplicación estará finalizada antes del dia 9 de septiembre
+
+
 
 	
 
@@ -583,9 +635,17 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 		\end{tabular}
 		\caption{Perfil de usuario - Edición}
 		\label{tabla:caso003}
+
 	\end{table}
 	
+
 	
+
+
+
+
+
+
 		
 	\textbf{CU-004}	PERFIL DE USUARIO - Borrado de perfil\\*
 
@@ -611,6 +671,7 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 		\end{tabular}
 		\caption{Perfil de usuario - Borrado}
 		\label{tabla:caso004}
+
 	\end{table}
 	
 	
@@ -650,6 +711,7 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 		\end{tabular}
 		\caption{Cita médica - Inserción}
 		\label{tabla:caso005}
+
 	\end{table}
 
 
@@ -744,12 +806,14 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\end{tabular}
 			\caption{Cita médica - Edición}
 			\label{tabla:caso008}
+
 		\end{table}
 		
 		
 		
 		
 	
+
 	
 	\textbf{RUTINA DIARIA}\\*
 		
@@ -878,8 +942,11 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\caption{Rutina - Edición}
 			\label{tabla:caso012}
 		\end{table}
+
 	
+
 	
+
 	
 		
 		
@@ -1223,7 +1290,9 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 		
 		
 	
+
 	
+
 	
 		
 		
@@ -1338,24 +1407,59 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 		
 		
 		
+
 	
+
 	
 	
 	\textbf{CU-029}	ORDENAR LISTAS\\*
 	
+
 	
+
 	
 	\textbf{CU-030}	VISUALIZAR LISTAS\\*
 	
+
 	
 	
 	\textbf{CU-031}	CONFIGURAR NOTIFICACIONES\\*
 	
+
 	
+
 	
 	\textbf{CU-032}	AJUSTAR LA APLICACION\\*
 	
+
 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		
 	\subsection{Diagrama de clases de análisis}
 		
