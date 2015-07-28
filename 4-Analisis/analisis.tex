@@ -3,25 +3,60 @@
 	
 	\begin{document}
 	
-La fase de análisis y el proceso de Ingeniería de Requisitos, parten básicamente de dos contextos bien diferenciados:\\
+Para la fase de análisis dentro de las metodologías ágiles no existen preceptos firmes a cumplir, pero dado que se valora mucho la comunicación y las relaciones interpersonales, se establece que debería haber una serie de reuniones previas al inicio de los sprints para que el equipo pueda obtener contexto del proyecto y del dominio del mismo, así como ir escribiendo las historias de usuario y rellenar y priorizar el product backlog. En estas reuniones idealmente asistirían tanto el product owner, el scrum master y el equipo, pero con el prodcut owner, el scrum master y aquel del equipo que mejor pueda ayudar a escribir las historias puede ser suficiente, recordemos que no se está estimando, simplemente se escuchan las necesidades del product owner y estas se traducen en funcionalidades y estas a su vez en requisitos mediante historias de usuario. \\
+
+Para acometer el trabajo y dividirlo en trozos mas manejables en estos casos se suele recurrir a escribir historias épicas, que más tarde ya si pueden particionar el scrum master y el equipo para posteriormente remitirlas al product owner para que este exprese su conformidad o sus matices a las historias de usuario ya redactadas en piezas manejables y que priorice el prodcut backlog inicial, teniendo en cuenta que tras la estimación inicial puede haber algún reordenamiento para aprovechar mejor los tiempos del sprint. 
+
+Una vez las historias tienen una forma más o menos fija, recordemos que uno de los fines del agilismo es responder al cambio y más al cambio en los requisitos, se hace una reunión de estimación de las mismas. Como ya se ha comentado existen varias maneras de estimar la complejidad que suponen las historias de usuario, casi todas basadas en variaciones del poker planning que se explicó anteriormente. 
+
+En el momento de redactar las historias de usuario conviene que de algún modo alguien, típicamente el scrum master o el product owner, se encargue de recordar los grandes objetivos del proyecto. Estos objetivos son los objetivos claros, concisos y lo mas sencillos posibles que mueven al cliente a dar comienzo al proyecto. Todas las historias de usuario, asi como las acciones que se lleven a cabo, deben alinearse con estos objetivos.
+
+Para llevar a cabo todo este proceso se llevaron a cabo varias reuniones con el personal de la AECC, se cruzaron correos con historias redactadas, se conversó vía Hangout, Skype, Whatsapp, etc se volvió a reunir las veces que hicieron falta, hasta que dicho personal, que en este caso hacía el papel de product owner,  se sintió lo suficientemente cómodo con el redactado inicial de las historias de usuario y su priorización, sabiendo que después estas podrían modificarse. 
+
+ 
 -Por una parte de las reuniones mantenidas con el cliente, en este caso la AECC.
 
 -Por otra parte del libro que utiliza la AECC llamado \textbf{MIS CUIDADOS, DIARIO DE SALUD DE UN SUPERVIVIENTE DE CANCER} y que se utiliza de manera general sobre enfermos de cáncer que han superado esta enfermedad y sobre otros que todavía la siguen padeciendo.\\\\
 	
-	\section{¿El porqué?}
-	
-	Desde el punto de vista de la definición clásica:
-	
-	La ingeniería del software es el proceso formal de desarrollo de software en el que las necesidades del usuario se traducen en requisitos, estos se transforman en diseño que se implementa en código que se prueba, documenta y se certifica para su uso operativo. Según la definición del IEEE la ingeniería del software se define como “(1) la aplicación de un método sistemático, disciplinado y cuantificable al desarrollo, operación y mantenimiento de software, esto es, la aplicación de la ingeniería al software” y “(2) el estudio de los métodos de (1)”\\
-	
-	El proceso requiere una metodología con 5 etapas:
-	
-	Análisis de requisitos: Se extraen los requisitos del producto de software. En esta etapa la habilidad y experiencia en la ingeniería del software es crítica para reconocer requisitos incompletos, ambiguos o contradictorios.\\
-	Usualmente el cliente/usuario tiene una visión incompleta/inexacta de lo que necesita y es necesario ayudarle para obtener la visión completa de los requerimientos.  El contenido de comunicación en esta etapa es muy intenso ya que el objetivo es eliminar la ambigüedad en la medida de lo posible.\\
-	Partiendo de un exhaustivo estudio de las funcionalidades que podrian resultar útiles para los pacientes de Cancer, y de acuerdo con las especificaciones de la AECC hemos decidido incluir en la misma las siguientes:\\
 
 	\section{Explicación detallada de las funcionalidades de la aplicación}
 
+Este sería el proceso donde algún miembro del equipo ganaría contexto por parte del product owner, al este describirle lo que quiere, vamos a pasar al redactado final de las necesidades que se expresaron, pues debido a la inexperiencia de los miembros de la AECC en el mundo de la movilidad el punto de partida del proyecto estaba mucho más alejado de aquí. Esto en el argot del agilismo se llama educar al cliente, y como siempre se basa en la comunicación, las relaciones interpersonales y en la confianza mutua.
+
+\textbf{USO SIN REGISTRO}
+
+En todo momento se debe poder usar la app sin hacer ningún tipo de registro previo. Solamente algunas funcionalidades especificas necesitarán del mismo. Para ello los datos serán almacenados en el dispositivo, sin perjuicio de que puedan una vez registrado ser compartidos en "la nube" y se carguen en varios dispositivos.\\
+
+	\textbf{PRINCIPAL}
+	
+	Este será el punto de entrada habitual a la aplicación. salvo la primera vez que se ofrecerá la posibilidad de realizar un pequeño tutorial en la misma. Al entrar en la misma se obtiene un pequeño resumen con los eventos de todo tipo proximos en el día de hoy o un texto que nos informe de la ausencia de algún tipo de evento para el día de hoy.\\
+	
+	\textbf{PERSONAJES}
+	
+	Una pequeña lista de contactos importantes relacionados con la enfermedad, como puedan ser el oncólogo, el psicólogo, familiares de especial relevancia, etc.
+	
+	Como toda lista de contactos podrán añadirse, modificarse, borrarse y consultarse cada uno de los ítems que la componen de una manera sencilla, siguiendo los lineamientos del SO en cuestión.
+	
+	Por cuestiones de practicidad y simplicidad, si se añade un contacto o se modifica en esta parte, lo hará también en la app general de contactos del SO. Esto es así para que en cualquiera de las listas el usuario pueda encontrar al contacto que busque y no se sienta desorientado manejando varias listas de contactos en el dispositivo móvil. \\
+	
+	\textbf{CITAS}
+	
+	Es una funcionalidad para introducir citas médicas en un calendario. En las mismas se podrá añadir al profesional que nos atiende si es que se conoce. 
+	Poco después de una cita se generará una notificación preguntando por la misma, en la que se preguntará si la cita ha generado nuevas citas, momento en que se pasará a la pantalla para crear una nueva cita, cambios en la medicación, yendo a la lista de medicamentos para añadir o cambiar la dosis de los mismos, 
+	Lista de citas Nombre de la cita, fecha y hora.
+	Desde el propio item de la lista se podran añadir medicamentos, personas, sintomas y/o pruebas, al pulsar sobre la opción correspondiente nos llevará al listado de estás opciones añadiendose así.
+	
+	Añadir cita, en esta pantalla se permite ver al pinchar sobre el propio item de la lista ,editar, o pulsando el botón añadir del final de la lista crear una nueva, 
+	dentro de la cita (añadir) se podrán añadir ubicación, personajes, medicamentos, pruebas y sintomas y asignar una alarma personalizable con fecha y hora (avisar) con antelacion.
+	se puede ver sin editar
+	
+	Deberíamos añadir duración?
+	
+	Valorar si deberiamos gestionar la repeticion de los eventos
+	
+	¿En la ubicación se podria comunicar con google maps?
+	
+	¿Deberiamos mostrar en el item de la cita si ya poseee personas, pruebas, sintomas o medicacion?
 
 	\textbf{AVATAR}
 	
@@ -30,13 +65,11 @@ La fase de análisis y el proceso de Ingeniería de Requisitos, parten básicame
 	PROYECTO AMPLIACION (asignar un agente personalizado para poder atender de manera personalizada al paciente Superviviente)\\
 	
 
-	\textbf{PRINCIPAL}
-	
-	Vista de Rutina proxima, citas, Se debería ver lo que realmente interesa ¿Noticias AECC tipo RSS, Twitter, Facebook? (1 pantalla)\\
+
 	
 
 	\textbf{HORARIO}
-	
+
 	Vista dia, mes, con las actividades, citas, ¿Cumpleaños, aniverssario de enfermedad...?  
 	al pinchar en una hora, dia, se podrá añadir rutina o cita, iria a la correspondiente lista de creacion de una nueva (1 pantalla)
 	
@@ -99,19 +132,7 @@ La fase de análisis y el proceso de Ingeniería de Requisitos, parten básicame
 	PROYECTO AMPLIACION Llevar el stock de lo que lleva consumido el paciente y generar alertas para cuando se le acabe, duplicar tratamiento, para ahorrar trabajo, opciones de dosis.\\
 	
 	
-	\textbf{PERSONAJES}
 	
-	Lista de personajes que tengamos con el boton de añadir al final y en la barra la posibilidad de ordenar en principio por orden ascendente o descendente,
-	al pinchar sobre el elemento se visualiza, 
-	en las opciones de cada elemento se puede añadir a la cita, a la rutina, editar y borrar confirmacion para borrar
-	
-	Añadir persona, , en esta pantalla se permite ver al pinchar sobre el propio item de la lista ,editar, o pulsando el botón añadir del final de la lista crear una nueva, 
-	dentro de la persona(añadir) se podrá asignar una foto personalizable, o bien hacerla o añadirla de la galeria, viene una por defecto
-	nombre apellidos, puesto / tipo (doctor, oncologo, cirujano, farmaceutico, enfermero, medico cabecera, familiar, amigo,AECC, otro), telefono (posibilidad de llamar desde la visualizacion)
-	se puede ver sin editar, dentro de la edición y visionado se podra añadir a una cita, o a una rutina ejemplo (paseo por la playa) o a cita con el oncólogo
-	Se puede añadir el numero al drawer
-	
-	PROYECTO AMPLIACION llevarnos ese contacto a la agenda o traernosle de ella\\
 	
 	
 	\textbf{PRUEBAS}
