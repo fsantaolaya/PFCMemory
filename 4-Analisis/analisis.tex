@@ -67,7 +67,7 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 	
 	
 	\textbf{INFORMACIÓN ÚTIL}
-	Una sección con los consejos de vida sana, meditación, relajación etc que también disponen en el folleto. 
+	Una sección con los consejos de vida sana, meditación, relajación etc que también disponen en el folleto.\\* 
 	
 	\textbf{PARTE SERVIDORA}
 
@@ -375,6 +375,7 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			& 5c.- Completamos los datos de la cita\\*	
 			\hline \textbf{Postcondición} & El usuario ya posee los datos de la cita en la aplicación \\* 
 			\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser rellenados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
+			& En la sección de medicamentos de los datos de la cita médica, al pulsar el icono + podemos crear un nuevo medicamento o seleccionar uno de los ya existentes. Esto es similar para las secciones de personajes, síntomas y pruebas.\\*
 			\hline
 		\end{tabular}
 		\caption{Cita médica - Inserción}
@@ -447,6 +448,7 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 				& 5.- Modificamos los datos de la cita\\*	
 				\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la cita en la aplicación \\* 
 				\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
+				& En la sección de medicamentos de los datos de la cita médica, al pulsar el icono + podemos crear un nuevo medicamento o seleccionar uno de los ya existentes. Esto es similar para las secciones de personajes, síntomas y pruebas.\\*
 				\hline
 			\end{tabular}
 			\caption{Cita médica - Edición}
@@ -521,6 +523,7 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 				& 5c.- Completamos los datos de la rutina\\*	
 				\hline \textbf{Postcondición} & El usuario ya posee la nueva rutina en la aplicación \\* 
 				\hline \textbf{Comentarios}   & Los valores de la fecha de la rutina y el nombre de la misma son obligatorios, en caso de no ser rellenados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
+				& En la sección de personajes de los datos de la rutina, al pulsar el icono + podemos crear un nuevo personaje o seleccionar uno de los ya existentes.\\*
 				\hline
 			\end{tabular}
 			\caption{Rutina - Inserción}
@@ -592,6 +595,7 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 				& 5.- Modificamos los datos de la rutina\\*	
 				\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la rutina en la aplicación \\* 
 				\hline \textbf{Comentarios}   & Los valores de la fecha de la rutina y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
+				& En la sección de personajes de los datos de la rutina, al pulsar el icono + podemos crear un nuevo personaje o seleccionar uno de los ya existentes.\\*
 				\hline
 			\end{tabular}
 			\caption{Rutina - Edición}
@@ -627,7 +631,7 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\label{tabla:caso012}
 		\end{table}
 		
-		
+		\clearpage
 		
 		\textbf{MEDICAMENTO}\\*
 		
@@ -646,16 +650,17 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 				& 2.- Pulsamos la opción MEDICAMENTO\\*	
 				& 3.- Pulsamos el icono + \\*	
 				& 4.- Completamos los datos pertinentes al medicamento\\*	
-				\hline \textbf{Flujo alternativo} & \textbf{Partiendo de CU-005} Inserción de datos de la cita\\* 
+				\hline \textbf{Flujo alternativo} & \textbf{Partiendo de CU-005} en Inserción de datos de la cita\\* 
 				& 1.- Pulsamos el icono + de la sección de medicamentos\\*	
 				& 2.- Seleccionamos la opción 'Nuevo medicamento'\\*
 				& 3.- Completamos los datos pertinentes al medicamento\\*
-				& \textbf{Partiendo de CU-007} Edición de datos de la cita\\* 
+				& \\*
+				& \textbf{Partiendo de CU-007} en Edición de datos de la cita\\* 
 				& 1.- Pulsamos el icono + de la sección de medicamentos\\*	
 				& 2.- Seleccionamos la opción 'Nuevo medicamento'\\*
 				& 3.- Completamos los datos pertinentes al medicamento\\*
 				\hline \textbf{Postcondición} & El usuario ya posee el medicamento en la aplicación \\* 
-				\hline \textbf{Comentarios}   & Los valores de la posología del medicamento y el nombre de la misma son obligatorios, en caso de no ser rellenados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
+				\hline \textbf{Comentarios}   & Los valores de la posología del medicamento y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
 				\hline
 			\end{tabular}
 			\caption{MEDICAMENTO - Inserción}
@@ -672,15 +677,22 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 				\hline\hline \textbf{Fecha} & 27/07/2015 \\*
 				\hline\textbf{Actores} 	& Usuario\\*
 				\hline \textbf{Objetivo} & Consultar un medicamento que ya posee el usuario\\* 			
-				\hline \textbf{Precondición} & Se quiere acceder a un medicamento existente en la aplicación\\* 
+				\hline \textbf{Precondición} & El medicamento existe en la aplicación\\* 
 				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
 				& 2.- Pulsamos la opción MEDICAMENTO\\*	
-				& 3.- Pulsamos sobre los tres puntos a la derecha del medicamento que queremos editar\\*	
-				& 4.- Seleccionamos la opción editar\\*	
-				\hline \textbf{Flujo alternativo} & \textbf{Partiendo de CU-005} \\* 
-				& \textbf{Partiendo de CU-007} \\* 
+				& 3.- Pulsamos sobre el medicamento que queremos consultar\\*	
+				\hline \textbf{Flujo alternativo} & \textbf{Partiendo de CU-005} en Inserción de datos de la cita\\* 
+				& 1.- Pulsamos el icono del medicamento ya asociado\\*	
+				& 2.- Seleccionamos la opción 'Ver medicamento'\\*
+				& \\*
+				& \textbf{Partiendo de CU-006} en Consulta de datos de la cita\\* 
+				& 1.- Pulsamos el icono del medicamentos asociado a la cita\\*	
+				& \\*
+				& \textbf{Partiendo de CU-007} en Edición de datos de la cita\\* 
+				& 1.- Pulsamos el icono del medicamento ya asociado\\*	
+				& 2.- Seleccionamos la opción 'Ver medicamento'\\*
 				\hline \textbf{Postcondición} & El usuario ya ha accedido a la información sobre ese medicamento \\* 
-				\hline \textbf{Comentarios}   & \\*
+				\hline \textbf{Comentarios}   & El flujo alternativo requiere que el medicamento este asociado previamente a la cita médica\\*
 				\hline
 			\end{tabular}
 			\caption{MEDICAMENTO - Consulta}
@@ -697,15 +709,15 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 				\hline\hline \textbf{Fecha} & 27/07/2015 \\*
 				\hline\textbf{Actores} 	& Usuario\\*
 				\hline \textbf{Objetivo} & Editar un medicamento que ya posee el usuario\\* 			
-				\hline \textbf{Precondición} & Se quiere modificar la informacion de un medicamento existente en la aplicación\\* 
+				\hline \textbf{Precondición} & Se quiere modificar la información de un medicamento existente en la aplicación\\* 
 				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
 				& 2.- Pulsamos la opción MEDICAMENTO\\*	
 				& 3.- Pulsamos sobre los tres puntos a la derecha del medicamento que queremos editar\\*	
 				& 4.- Seleccionamos la opción 'editar'\\*	
 				& 5.- Modificamos los datos pertinentes del medicamento que queramos cambiar\\*	
-				\hline \textbf{Flujo alternativo} & No se contempla \\* 
+				\hline \textbf{Flujo alternativo} & No se contempla en esta versión de la aplicación\\* 
 				\hline \textbf{Postcondición} & La información de un medicamento existente en la aplicación ha sido modificada \\* 
-				\hline \textbf{Comentarios}   & Los valores de la fecha del medicamento y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
+				\hline \textbf{Comentarios}   & Los valores de la posología del medicamento y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
 				\hline
 			\end{tabular}
 			\caption{MEDICAMENTO - Edición}
@@ -729,9 +741,9 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 				& 2.- Pulsamos la opción MEDICAMENTO\\*	
 				& 3.- Pulsamos sobre los tres puntos a la derecha del medicamento que queremos eliminar dentro del listado\\*	
 				& 4.- Seleccionamos la opción 'eliminar'\\*	
-				\hline \textbf{Flujo alternativo} & No se contempla \\* 
-				\hline \textbf{Postcondición} & El medicamento que se queria eliminar ya no existe en la aplicación \\* 
-				\hline \textbf{Comentarios}   & \\*
+				\hline \textbf{Flujo alternativo} & No se contempla en esta versión de la aplicación\\* 
+				\hline \textbf{Postcondición} & El medicamento que se quería eliminar ya no existe en la aplicación \\* 
+				\hline \textbf{Comentarios}   & El medicamento que se ha eliminado desaparece de todas las citas médicas, así como sus notificaciones\\*
 				\hline
 			\end{tabular}
 			\caption{MEDICAMENTO - Borrado}
@@ -751,21 +763,36 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 				\hline\hline \textbf{Versión} & 1.0 \\*
 				\hline\hline \textbf{Fecha} & 28/07/2015 \\*
 				\hline\textbf{Actores} 	& Usuario\\*
-				\hline \textbf{Objetivo} & Insertar en la aplicación un personaje que tiene el usuario\\* 			
-				\hline \textbf{Precondición} & La rutina no existe en la aplicación\\* 
+				\hline \textbf{Objetivo} & Insertar en la aplicación un personaje que conoce el usuario\\* 			
+				\hline \textbf{Precondición} & El personaje no existe en la aplicación\\* 
 				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
 				& 2.- Pulsamos la opción PERSONAJE\\*	
 				& 3.- Pulsamos el icono +\\*	
-				& 4.- Completamos los datos pertinentes de la rutina\\*	
-				\hline \textbf{Flujo alternativo} & \textbf{Partiendo de CU-005} \\* 
-				& \textbf{Partiendo de CU-007} \\*
-				& \textbf{Partiendo de CU-009} \\* 
-				& \textbf{Partiendo de CU-011} \\*
-				\hline \textbf{Postcondición} & El usuario ya posee los datos de la rutina en la aplicación \\* 
-				\hline \textbf{Comentarios}   & Los valores de la fecha de la rutina y el nombre de la misma son obligatorios, en caso de no ser rellenados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
+				& 4.- Completamos los datos pertinentes del personaje\\*	
+				\hline \textbf{Flujo alternativo} & \textbf{Partiendo de CU-005} en Inserción de datos de la cita\\* 
+				& 1.- Pulsamos el icono + de la sección de personajes\\*	
+				& 2.- Seleccionamos la opción 'Nuevo personaje'\\*
+				& 3.- Completamos los datos pertinentes al personaje\\*
+				& \\*
+				& \textbf{Partiendo de CU-007} en Edición de datos de la cita\\* 
+				& 1.- Pulsamos el icono + de la sección de personajes\\*	
+				& 2.- Seleccionamos la opción 'Nuevo personaje'\\*
+				& 3.- Completamos los datos pertinentes al personaje\\*
+				& \\*
+				& \textbf{Partiendo de CU-009} en Inserción de datos de la rutina\\* 
+				& 1.- Pulsamos el icono + de la sección de personajes\\*	
+				& 2.- Seleccionamos la opción 'Nuevo personaje'\\*
+				& 3.- Completamos los datos pertinentes al personaje\\*
+				& \\*
+				& \textbf{Partiendo de CU-011} en Edición de datos de la rutina\\* 
+				& 1.- Pulsamos el icono + de la sección de personajes\\*	
+				& 2.- Seleccionamos la opción 'Nuevo personaje'\\*
+				& 3.- Completamos los datos pertinentes al personaje\\*
+				\hline \textbf{Postcondición} & El usuario ya posee los datos del personaje  en la aplicación \\* 
+				\hline \textbf{Comentarios}   & Los valores del nombre y la relación son obligatorios, en caso de no ser rellenados, la aplicación avisará con un mensaje de error y no se podrá guardar el mismo.\\*
 				\hline
 			\end{tabular}
-			\caption{Rutina - Inserción}
+			\caption{Personaje - Inserción}
 			\label{tabla:caso017}
 		\end{table}
 		
@@ -780,22 +807,34 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 				\hline\hline \textbf{Versión} & 1.0 \\*
 				\hline\hline \textbf{Fecha} & 27/07/2015 \\*
 				\hline\textbf{Actores} 	& Usuario\\*
-				\hline \textbf{Objetivo} & Editar un personaje que ya posee el usuario\\* 			
+				\hline \textbf{Objetivo} & Consultar un personaje que ya posee el usuario\\* 			
 				\hline \textbf{Precondición} & El personaje existe en la aplicación\\* 
-				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-				& 2.- Pulsamos la opción PERSONAJE\\*	
-				& 3.- Pulsamos sobre los tres puntos a la derecha del personaje que queremos editar\\*	
-				& 4.- Seleccionamos la opción 'editar'\\*	
-				& 5.- Modificamos los datos pertinentes del personaje que queramos cambiar\\*	
-				\hline \textbf{Flujo alternativo} & \textbf{Partiendo de CU-005} \\* 
-				& \textbf{Partiendo de CU-007} \\*
-				& \textbf{Partiendo de CU-009} \\* 
-				& \textbf{Partiendo de CU-011} \\*
-				\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados del personaje en la aplicación \\* 
-				\hline \textbf{Comentarios}   & \\*
+				\hline \textbf{Flujo alternativo} & \textbf{Partiendo de CU-005} en Inserción de datos de la cita\\* 
+				& 1.- Pulsamos el icono del síntoma ya asociado\\*	
+				& 2.- Seleccionamos la opción 'Ver personaje'\\*
+				& \\*
+				& \textbf{Partiendo de CU-006} en Consulta de datos de la cita\\* 
+				& 1.- Pulsamos el icono del personaje asociado a la cita\\*	
+				& \\*
+				& \textbf{Partiendo de CU-007} en Edición de datos de la cita\\* 
+				& 1.- Pulsamos el icono del personaje ya asociado\\*	
+				& 2.- Seleccionamos la opción 'Ver personaje'\\*
+				& \\*
+				& \textbf{Partiendo de CU-009} en Inserción de datos de la rutina\\* 
+				& 1.- Pulsamos el icono del personaje ya asociado\\*	
+				& 2.- Seleccionamos la opción 'Ver personaje'\\*
+				& \\*
+				& \textbf{Partiendo de CU-010} en Consulta de datos de la rutina\\* 
+				& 1.- Pulsamos el icono del personaje asociado a la rutina\\*	
+				& \\*
+				& \textbf{Partiendo de CU-011} en Edición de datos de la rutina\\* 
+				& 1.- Pulsamos el icono del personaje ya asociado\\*	
+				& 2.- Seleccionamos la opción 'Ver personaje'\\*
+				\hline \textbf{Postcondición} & El usuario ya ha consultado los datos del personaje en la aplicación \\* 
+				\hline \textbf{Comentarios}   & El flujo alternativo requiere que el personaje este asociado previamente a una cita o a una rutina dependiendo del flujo\\*
 				\hline
 			\end{tabular}
-			\caption{PERSONAJE - Consulta}
+			\caption{Personaje - Consulta}
 			\label{tabla:caso018}
 		\end{table}
 		
@@ -815,9 +854,9 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 				& 3.- Pulsamos sobre los tres puntos a la derecha del personaje que queremos editar\\*	
 				& 4.- Seleccionamos la opción 'editar'\\*	
 				& 5.- Modificamos los datos pertinentes del personaje que queramos cambiar\\*	
-				\hline \textbf{Flujo alternativo} & No se contempla \\* 
+				\hline \textbf{Flujo alternativo} & No se contempla en esta versión de la aplicación \\* 
 				\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados del personaje en la aplicación \\* 
-				\hline \textbf{Comentarios}   & Los valores de la fecha de el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
+				\hline \textbf{Comentarios}   & Los valores del nombre y la relación son obligatorios, en caso de no ser rellenados, la aplicación avisará con un mensaje de error y no se podrá guardar el mismo.\\*
 				\hline
 			\end{tabular}
 			\caption{Personaje - Edición}
@@ -839,9 +878,9 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 				& 2.- Pulsamos la opción PERSONAJE\\*	
 				& 3.- Pulsamos sobre los tres puntos a la derecha del personaje que queremos eliminar dentro del listado\\*	
 				& 4.- Seleccionamos la opción 'eliminar'\\*	
-				\hline \textbf{Flujo alternativo} & No se contempla \\* 
-				\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados del personaje en la aplicación \\* 
-				\hline \textbf{Comentarios}   & \\*
+				\hline \textbf{Flujo alternativo} & No se contempla en esta versión de la aplicación \\* 
+				\hline \textbf{Postcondición} & El personaje que se quería borrar ya no existe en la aplicación \\* 
+				\hline \textbf{Comentarios}   & El Personaje borrado desaparece de todas las citas médicas o rutinas en las que pudiera aparecer\\*
 				\hline
 			\end{tabular}
 			\caption{Personaje - Borrado}
@@ -862,17 +901,25 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\hline\hline \textbf{Fecha} & 27/07/2015 \\*
 			\hline\textbf{Actores} 	& Usuario\\*
 			\hline \textbf{Objetivo} & Insertar en la aplicación una síntoma que tiene el usuario\\* 			
-			\hline \textbf{Precondición} & La síntoma no existe en la aplicación\\* 
+			\hline \textbf{Precondición} & El síntoma no existe en la aplicación\\* 
 			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
 			& 2.- Pulsamos la opción SÍNTOMA\\*	
 			& 3.- Pulsamos el icono +\\*	
-			& 4.- Completamos los datos pertinentes de la síntoma\\*	
-			\hline \textbf{Flujo alternativo} & No se contempla \\* 
+			& 4.- Completamos los datos pertinentes del síntoma\\*	
+			\hline \textbf{Flujo alternativo} & \textbf{Partiendo de CU-005} en Inserción de datos de la cita\\* 
+			& 1.- Pulsamos el icono + de la sección de síntomas\\*	
+			& 2.- Seleccionamos la opción 'Nuevo síntoma'\\*
+			& 3.- Completamos los datos pertinentes al síntoma\\*
+			& \\*
+			& \textbf{Partiendo de CU-007} en Edición de datos de la cita\\* 
+			& 1.- Pulsamos el icono + de la sección de síntomas\\*	
+			& 2.- Seleccionamos la opción 'Nuevo síntoma'\\*
+			& 3.- Completamos los datos pertinentes al síntoma\\*
 			\hline \textbf{Postcondición} & El usuario ya posee los datos del síntoma en la aplicación \\* 
-			\hline \textbf{Comentarios}   & Los valores de la fecha del síntoma y el nombre de la misma son obligatorios, en caso de no ser rellenados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
+			\hline \textbf{Comentarios}   & Los valores del nombre del síntoma y la descripción son obligatorios, en caso de no ser rellenados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
 			\hline
 		\end{tabular}
-		\caption{Personaje - Inserción}
+		\caption{Síntoma - Inserción}
 		\label{tabla:caso021}
 	\end{table}
 	
@@ -887,16 +934,23 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\hline\hline \textbf{Versión} & 1.0 \\*
 			\hline\hline \textbf{Fecha} & 27/07/2015 \\*
 			\hline\textbf{Actores} 	& Usuario\\*
-			\hline \textbf{Objetivo} & Editar una síntoma que ya posee el usuario\\* 			
-			\hline \textbf{Precondición} & La síntoma existe en la aplicación\\* 
+			\hline \textbf{Objetivo} & Consultar un síntoma que ya posee el usuario\\* 			
+			\hline \textbf{Precondición} & El síntoma existe en la aplicación\\* 
 			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
 			& 2.- Pulsamos la opción SÍNTOMA\\*	
-			& 3.- Pulsamos sobre los tres puntos a la derecha de la síntoma que queremos editar\\*	
-			& 4.- Seleccionamos la opción 'editar'\\*	
-			& 5.- Modificamos los datos pertinentes de la síntoma que queramos cambiar\\*	
-			\hline \textbf{Flujo alternativo} & No se contempla \\* 
-			\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados del síntoma en la aplicación \\* 
-			\hline \textbf{Comentarios}   & \\*
+			& 3.- Pulsamos sobre el síntoma que queremos consultar\\*	
+			\hline \textbf{Flujo alternativo} & \textbf{Partiendo de CU-005} en Inserción de datos de la cita\\* 
+			& 1.- Pulsamos el icono del síntoma ya asociado\\*	
+			& 2.- Seleccionamos la opción 'Ver síntoma'\\*
+			& \\*
+			& \textbf{Partiendo de CU-006} en Consulta de datos de la cita\\* 
+			& 1.- Pulsamos el icono del síntoma asociado a la cita\\*	
+			& \\*
+			& \textbf{Partiendo de CU-007} en Edición de datos de la cita\\* 
+			& 1.- Pulsamos el icono del síntoma ya asociado\\*	
+			& 2.- Seleccionamos la opción 'Ver síntoma'\\*
+			\hline \textbf{Postcondición} & El usuario ya ha accedido a la información sobre ese síntoma \\* 
+			\hline \textbf{Comentarios}   & El flujo alternativo requiere que el síntoma  este asociado previamente a la cita médica\\*
 			\hline
 		\end{tabular}
 		\caption{Síntoma - Consulta}
@@ -912,16 +966,16 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\hline\hline \textbf{Versión} & 1.0 \\*
 			\hline\hline \textbf{Fecha} & 27/07/2015 \\*
 			\hline\textbf{Actores} 	& Usuario\\*
-			\hline \textbf{Objetivo} & Editar una síntoma que ya posee el usuario\\* 			
-			\hline \textbf{Precondición} & La síntoma existe en la aplicación\\* 
+			\hline \textbf{Objetivo} & Editar un síntoma que ya posee el usuario\\* 			
+			\hline \textbf{Precondición} & El síntoma existe en la aplicación\\* 
 			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
 			& 2.- Pulsamos la opción SÍNTOMA\\*	
-			& 3.- Pulsamos sobre los tres puntos a la derecha de la síntoma que queremos editar\\*	
+			& 3.- Pulsamos sobre los tres puntos a la derecha del síntoma que queremos editar\\*	
 			& 4.- Seleccionamos la opción 'editar'\\*	
-			& 5.- Modificamos los datos pertinentes de la síntoma que queramos cambiar\\*	
-			\hline \textbf{Flujo alternativo} & No se contempla \\* 
-			\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados del síntoma en la aplicación \\* 
-			\hline \textbf{Comentarios}   & Los valores de la fecha del síntoma y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
+			& 5.- Modificamos los datos pertinentes del síntoma que queramos cambiar\\*	
+			\hline \textbf{Flujo alternativo} & No se contempla en esta versión de la aplicación\\*
+			\hline \textbf{Postcondición} & Se han modificado los datos del síntoma existente\\* 
+			\hline \textbf{Comentarios}   & Los valores del nombre del síntoma y la descripción son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
 			\hline
 		\end{tabular}
 		\caption{Síntoma - Edición}
@@ -939,15 +993,15 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\hline\hline \textbf{Versión} & 1.0 \\*
 			\hline\hline \textbf{Fecha} & 27/07/2015 \\*
 			\hline\textbf{Actores} 	& Usuario\\*
-			\hline \textbf{Objetivo} & Borrar una síntoma que ya posee el usuario\\* 			
-			\hline \textbf{Precondición} & La síntoma existe en la aplicación\\* 
+			\hline \textbf{Objetivo} & Borrar un síntoma que ya posee el usuario\\* 			
+			\hline \textbf{Precondición} & El síntoma existe en la aplicación\\* 
 			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
 			& 2.- Pulsamos la opción SÍNTOMA\\*	
 			& 3.- Pulsamos sobre los tres puntos a la derecha de la síntoma que queremos eliminar dentro del listado\\*	
 			& 4.- Seleccionamos la opción 'eliminar'\\*	
-			\hline \textbf{Flujo alternativo} & No se contempla \\* 
-			\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados del síntoma en la aplicación \\* 
-			\hline \textbf{Comentarios}   & \\*
+			\hline \textbf{Flujo alternativo} & No se contempla en esta versión de la aplicación \\* 
+			\hline \textbf{Postcondición} & El síntoma que se quería eliminar ya no existe en la aplicación \\* 
+			\hline \textbf{Comentarios}   & El síntoma que se ha eliminado desaparece de todas las citas médicas\\*
 			\hline
 		\end{tabular}
 		\caption{Síntoma - Borrado}
@@ -973,7 +1027,15 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			& 2.- Pulsamos la opción PRUEBA\\*	
 			& 3.- Pulsamos el icono +\\*	
 			& 4.- Completamos los datos pertinentes de la prueba\\*	
-			\hline \textbf{Flujo alternativo} & No se contempla \\* 
+			\hline \textbf{Flujo alternativo} & \textbf{Partiendo de CU-005} en Inserción de datos de la cita\\* 
+			& 1.- Pulsamos el icono + de la sección de pruebas\\*	
+			& 2.- Seleccionamos la opción 'Nueva prueba'\\*
+			& 3.- Completamos los datos pertinentes a la prueba\\*
+			& \\*
+			& \textbf{Partiendo de CU-007} en Edición de datos de la cita\\* 
+			& 1.- Pulsamos el icono + de la sección de pruebas\\*	
+			& 2.- Seleccionamos la opción 'Nueva prueba'\\*
+			& 3.- Completamos los datos pertinentes a la prueba\\*
 			\hline \textbf{Postcondición} & El usuario ya posee los datos de la prueba en la aplicación \\* 
 			\hline \textbf{Comentarios}   & Los valores de la fecha de la prueba y el nombre de la misma son obligatorios, en caso de no ser rellenados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
 			\hline
@@ -991,16 +1053,23 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\hline\hline \textbf{Versión} & 1.0 \\*
 			\hline\hline \textbf{Fecha} & 27/07/2015 \\*
 			\hline\textbf{Actores} 	& Usuario\\*
-			\hline \textbf{Objetivo} & Editar una prueba que ya posee el usuario\\* 			
+			\hline \textbf{Objetivo} & Consultar una prueba que ya posee el usuario\\* 			
 			\hline \textbf{Precondición} & La prueba existe en la aplicación\\* 
 			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
 			& 2.- Pulsamos la opción PRUEBA\\*	
-			& 3.- Pulsamos sobre los tres puntos a la derecha de la prueba que queremos editar\\*	
-			& 4.- Seleccionamos la opción 'editar'\\*	
-			& 5.- Modificamos los datos pertinentes de la prueba que queramos cambiar\\*	
-			\hline \textbf{Flujo alternativo} & No se contempla \\* 
-			\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la prueba en la aplicación \\* 
-			\hline \textbf{Comentarios}   & \\*
+			& 3.- Pulsamos sobre la prueba que queremos consultar\\*	
+			\hline \textbf{Flujo alternativo} & \textbf{Partiendo de CU-005} en Inserción de datos de la cita\\* 
+			& 1.- Pulsamos el icono de la prueba ya asociada\\*	
+			& 2.- Seleccionamos la opción 'Ver prueba'\\*
+			& \\*
+			& \textbf{Partiendo de CU-006} en Consulta de datos de la cita\\* 
+			& 1.- Pulsamos el icono de la prueba asociada a la cita\\*	
+			& \\*
+			& \textbf{Partiendo de CU-007} en Edición de datos de la cita\\* 
+			& 1.- Pulsamos el icono de la prueba ya asociada\\*	
+			& 2.- Seleccionamos la opción 'Ver prueba'\\*
+			\hline \textbf{Postcondición} & El usuario ha accedido a la información de la prueba en la aplicación \\* 
+			\hline \textbf{Comentarios}   & El flujo alternativo requiere que la prueba esté asociada previamente a la cita médica\\*
 			\hline
 		\end{tabular}
 		\caption{Prueba - Consulta}
@@ -1023,7 +1092,7 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			& 3.- Pulsamos sobre los tres puntos a la derecha de la prueba que queremos editar\\*	
 			& 4.- Seleccionamos la opción 'editar'\\*	
 			& 5.- Modificamos los datos pertinentes de la prueba que queramos cambiar\\*	
-			\hline \textbf{Flujo alternativo} & No se contempla \\* 
+			\hline \textbf{Flujo alternativo} & No se contempla en esta versión de la aplicación \\* 
 			\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la prueba en la aplicación \\* 
 			\hline \textbf{Comentarios}   & Los valores de la fecha de la prueba y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
 			\hline
@@ -1049,8 +1118,8 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			& 2.- Pulsamos la opción PRUEBA\\*	
 			& 3.- Pulsamos sobre los tres puntos a la derecha de la prueba que queremos eliminar dentro del listado\\*	
 			& 4.- Seleccionamos la opción 'eliminar'\\*	
-			\hline \textbf{Flujo alternativo} & No se contempla \\* 
-			\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la prueba en la aplicación \\* 
+			\hline \textbf{Flujo alternativo} & No se contempla en esta versión de la aplicación \\* 
+			\hline \textbf{Postcondición} & La prueba que se quería eliminar ya no existe en la aplicación \\* 
 			\hline \textbf{Comentarios}   & \\*
 			\hline
 		\end{tabular}
@@ -1062,278 +1131,221 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 	
 	\textbf{CU-029}	ORDENACIÓN DE LISTAS\\* 
 	
-		\begin{table}[H]
-			\centering
-			\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
-				\hline \textbf{CU-028} & \textbf{ORDENACIÓN DE LISTAS} \\*
-				\hline\hline \textbf{Versión} & 1.0 \\*
-				\hline\hline \textbf{Fecha} & 28/07/2015 \\*
-				\hline\textbf{Actores} 	& Usuario\\*
-				\hline \textbf{Objetivo} & Ordenar un listado de elementos\\* 			
-				\hline \textbf{Precondición} & La lista posee más de dos elementos ordenados de manera distinta a que se desea\\* 
-				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-				& 2.- Pulsamos cualquiera de las opciones CITA MÉDICA, RUTINA, MEDICAMENTO, PERSONAJE, SÍNTOMA, PRUEBA\\*	
-				& 3.- Pulsamos sobre el icono del engranaje del listado\\*	
-				& 4.- Seleccionamos el tipo de ordenación\\*	
-				\hline \textbf{Flujo alternativo} & Para cualquiera de los diferentes tipo de objetos es similar \\* 
-				\hline \textbf{Postcondición} & La lista los elementos ordenados de la manera deseada\\* 
-				\hline \textbf{Comentarios}   & Los modos de ordenación varían de un caso a otro\\*
-				\hline
-			\end{tabular}
-			\caption{Ordenación de listas}
-			\label{tabla:caso029}
-		\end{table}
+	\begin{table}[H]
+		\centering
+		\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
+			\hline \textbf{CU-029} & \textbf{ORDENACIÓN DE LISTAS} \\*
+			\hline\hline \textbf{Versión} & 1.0 \\*
+			\hline\hline \textbf{Fecha} & 28/07/2015 \\*
+			\hline\textbf{Actores} 	& Usuario\\*
+			\hline \textbf{Objetivo} & Ordenar un listado de elementos\\* 			
+			\hline \textbf{Precondición} & La lista posee más de dos elementos ordenados de manera distinta a que se desea\\* 
+			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
+			& 2.- Pulsamos cualquiera de las opciones CITA MÉDICA, RUTINA, MEDICAMENTO, PERSONAJE, SÍNTOMA o PRUEBA\\*	
+			& 3.- Pulsamos sobre el icono del engranaje del listado\\*	
+			& 4.- Seleccionamos el tipo de ordenación\\*	
+			\hline \textbf{Flujo alternativo} & Para cualquiera de los diferentes tipo de objetos es similar \\* 
+			\hline \textbf{Postcondición} & La lista los elementos ordenados ahora está de la manera deseada\\* 
+			\hline \textbf{Comentarios}   & Los modos de ordenación varían de un caso a otro\\*
+			\hline
+		\end{tabular}
+		\caption{Ordenación de listas}
+		\label{tabla:caso029}
+	\end{table}
 
 	\clearpage
 
 	\textbf{CU-030}	CONSULTA DE LISTAS\\* 
 	
-		\begin{table}[H]
-			\centering
-			\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
-				\hline \textbf{CU-028} & \textbf{ORDENACIÓN DE LISTAS} \\*
-				\hline\hline \textbf{Versión} & 1.0 \\*
-				\hline\hline \textbf{Fecha} & 28/07/2015 \\*
-				\hline\textbf{Actores} 	& Usuario\\*
-				\hline \textbf{Objetivo} & Ordenar un listado de elementos\\* 			
-				\hline \textbf{Precondición} & La lista posee más de dos elementos ordenados de manera distinta a que se desea\\* 
-				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-				& 2.- Pulsamos cualquiera de las opciones CITA MÉDICA, RUTINA, MEDICAMENTO, PERSONAJE, SÍNTOMA, PRUEBA\\*	
-				& 3.- Pulsamos sobre el icono del engranaje del listado\\*	
-				& 4.- Seleccionamos el tipo de ordenación\\*	
-				\hline \textbf{Flujo alternativo} & Para cualquiera de los diferentes tipo de objetos es similar \\* 
-				\hline \textbf{Postcondición} & La lista los elementos ordenados de la manera deseada\\* 
-				\hline \textbf{Comentarios}   & Los modos de ordenación varían de un caso a otro\\*
-				\hline
-			\end{tabular}
-			\caption{Ordenación de listas}
-			\label{tabla:caso030}
-		\end{table}
-		
-			
+	\begin{table}[H]
+		\centering
+		\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
+			\hline \textbf{CU-030} & \textbf{CONSULTA DE LISTAS} \\*
+			\hline\hline \textbf{Versión} & 1.0 \\*
+			\hline\hline \textbf{Fecha} & 28/07/2015 \\*
+			\hline\textbf{Actores} 	& Usuario\\*
+			\hline \textbf{Objetivo} & Consultar un listado de elementos\\* 			
+			\hline \textbf{Precondición} & Existe alguna lista de elementos\\* 
+			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
+			& 2.- Pulsamos cualquiera de las opciones CITA MÉDICA, RUTINA, MEDICAMENTO, PERSONAJE, SÍNTOMA, PRUEBA\\*	
+			\hline \textbf{Flujo alternativo} & Para cualquiera de los diferentes tipo de objetos es similar \\* 
+			\hline \textbf{Postcondición} & Se ha consultado algún listado\\* 
+			\hline \textbf{Comentarios}   & \\*
+			\hline
+		\end{tabular}
+		\caption{Consulta de listas}
+		\label{tabla:caso030}
+	\end{table}
 
 	\textbf{CU-031}	AÑADIR NOTIFICACIÓN - MEDICAMENTO\\*
-	
-			\begin{table}[H]
-				\centering
-				\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
-					\hline \textbf{CU-028} & \textbf{ORDENACIÓN DE LISTAS} \\*
-					\hline\hline \textbf{Versión} & 1.0 \\*
-					\hline\hline \textbf{Fecha} & 28/07/2015 \\*
-					\hline\textbf{Actores} 	& Usuario\\*
-					\hline \textbf{Objetivo} & Ordenar un listado de elementos\\* 			
-					\hline \textbf{Precondición} & La lista posee más de dos elementos ordenados de manera distinta a que se desea\\* 
-					\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-					& 2.- Pulsamos cualquiera de las opciones CITA MÉDICA, RUTINA, MEDICAMENTO, PERSONAJE, SÍNTOMA, PRUEBA\\*	
-					& 3.- Pulsamos sobre el icono del engranaje del listado\\*	
-					& 4.- Seleccionamos el tipo de ordenación\\*	
-					\hline \textbf{Flujo alternativo} & Para cualquiera de los diferentes tipo de objetos es similar \\* 
-					\hline \textbf{Postcondición} & La lista los elementos ordenados de la manera deseada\\* 
-					\hline \textbf{Comentarios}   & Los modos de ordenación varían de un caso a otro\\*
-					\hline
-				\end{tabular}
-				\caption{Ordenación de listas}
-				\label{tabla:caso031}
-			\end{table}
-	
+
+	\begin{table}[H]
+		\centering
+		\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
+			\hline \textbf{CU-031} & \textbf{AÑADIR NOTIFICACIÓN - MEDICAMENTO} \\*
+			\hline\hline \textbf{Versión} & 1.0 \\*
+			\hline\hline \textbf{Fecha} & 28/07/2015 \\*
+			\hline\textbf{Actores} 	& Usuario\\*
+			\hline \textbf{Objetivo} & Añadir alerta a un medicamento\\* 			
+			\hline \textbf{Precondición} & El medicamento no posee ninguna alerta\\* 
+			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
+			& 2.- Pulsamos la opción MEDICAMENTO\\*	
+			& 3.- Pulsamos sobre los tres puntos a la derecha del que queremos editar\\*	
+			& 4.- Seleccionamos la opción 'editar'\\*	
+			& 5.- Insertamos la fecha de inicio\\*
+			& 6.- Insertamos la hora de inicio\\*
+			& 7.- Insertamos la fecha de fin\\*
+			& 8.- Insertamos la hora de fin\\*
+			& 8.- Insertamos las horas entre dosis\\*
+			\hline \textbf{Flujo alternativo} & \textbf{Partiendo de CU-009} en Inserción de datos de la cita médica\\*  
+			& Cumplimentamos como en el flujo normal\\*
+			\hline \textbf{Postcondición} & El medicamento posee una alerta\\* 
+			\hline \textbf{Comentarios}   & El tono de la alerta se configurará en la opción AJUSTES\\*
+			\hline
+		\end{tabular}
+		\caption{Añadir notificación - Medicamento}
+		\label{tabla:caso031}
+	\end{table}		
+
 	\textbf{CU-032}	AÑADIR NOTIFICACIÓN - CITA\\*
 	
-			\begin{table}[H]
-				\centering
-				\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
-					\hline \textbf{CU-028} & \textbf{ORDENACIÓN DE LISTAS} \\*
-					\hline\hline \textbf{Versión} & 1.0 \\*
-					\hline\hline \textbf{Fecha} & 28/07/2015 \\*
-					\hline\textbf{Actores} 	& Usuario\\*
-					\hline \textbf{Objetivo} & Ordenar un listado de elementos\\* 			
-					\hline \textbf{Precondición} & La lista posee más de dos elementos ordenados de manera distinta a que se desea\\* 
-					\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-					& 2.- Pulsamos cualquiera de las opciones CITA MÉDICA, RUTINA, MEDICAMENTO, PERSONAJE, SÍNTOMA, PRUEBA\\*	
-					& 3.- Pulsamos sobre el icono del engranaje del listado\\*	
-					& 4.- Seleccionamos el tipo de ordenación\\*	
-					\hline \textbf{Flujo alternativo} & Para cualquiera de los diferentes tipo de objetos es similar \\* 
-					\hline \textbf{Postcondición} & La lista los elementos ordenados de la manera deseada\\* 
-					\hline \textbf{Comentarios}   & Los modos de ordenación varían de un caso a otro\\*
-					\hline
-				\end{tabular}
-				\caption{Ordenación de listas}
-				\label{tabla:caso032}
-			\end{table}
-			
+	\begin{table}[H]
+		\centering
+		\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
+			\hline \textbf{CU-032} & \textbf{AÑADIR NOTIFICACIÓN - CITA} \\*
+			\hline\hline \textbf{Versión} & 1.0 \\*
+			\hline\hline \textbf{Fecha} & 28/07/2015 \\*
+			\hline\textbf{Actores} 	& Usuario\\*
+			\hline \textbf{Objetivo} & Añadir alerta a una cita\\* 			
+			\hline \textbf{Precondición} & La cita no posee ninguna alerta\\* 
+			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
+			& 2.- Pulsamos la opción CITA MÉDICA\\*	
+			& 3.- Pulsamos sobre los tres puntos a la derecha de la cita médica que queremos editar\\*	
+			& 4.- Seleccionamos la opción 'editar'\\*	
+			& 5.- Insertamos la fecha de aviso\\*
+			& 6.- Insertamos la hora de aviso\\*
+			\hline \textbf{Flujo alternativo} & \textbf{Partiendo de CU-005} en Inserción de datos de la cita\\*  
+			& 1.- Insertamos la fecha de aviso\\*
+			& 2.- Insertamos la hora de aviso\\*
+			\hline \textbf{Postcondición} & La cita posee una alerta\\* 
+			\hline \textbf{Comentarios}   & El tono de la alerta se configurará en la opción AJUSTES\\*
+			\hline
+		\end{tabular}
+		\caption{Ordenación de listas}
+		\label{tabla:caso032}
+	\end{table}
+	
 	
 	\textbf{CU-033}	AÑADIR NOTIFICACIÓN - RUTINA\\*
 	
-			\begin{table}[H]
-				\centering
-				\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
-					\hline \textbf{CU-028} & \textbf{ORDENACIÓN DE LISTAS} \\*
-					\hline\hline \textbf{Versión} & 1.0 \\*
-					\hline\hline \textbf{Fecha} & 28/07/2015 \\*
-					\hline\textbf{Actores} 	& Usuario\\*
-					\hline \textbf{Objetivo} & Ordenar un listado de elementos\\* 			
-					\hline \textbf{Precondición} & La lista posee más de dos elementos ordenados de manera distinta a que se desea\\* 
-					\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-					& 2.- Pulsamos cualquiera de las opciones CITA MÉDICA, RUTINA, MEDICAMENTO, PERSONAJE, SÍNTOMA, PRUEBA\\*	
-					& 3.- Pulsamos sobre el icono del engranaje del listado\\*	
-					& 4.- Seleccionamos el tipo de ordenación\\*	
-					\hline \textbf{Flujo alternativo} & Para cualquiera de los diferentes tipo de objetos es similar \\* 
-					\hline \textbf{Postcondición} & La lista los elementos ordenados de la manera deseada\\* 
-					\hline \textbf{Comentarios}   & Los modos de ordenación varían de un caso a otro\\*
-					\hline
-				\end{tabular}
-				\caption{Ordenación de listas}
-				\label{tabla:caso033}
-			\end{table}
-			
+	\begin{table}[H]
+		\centering
+		\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
+			\hline \textbf{CU-033} & \textbf{AÑADIR NOTIFICACIÓN - RUTINA} \\*
+			\hline\hline \textbf{Versión} & 1.0 \\*
+			\hline\hline \textbf{Fecha} & 28/07/2015 \\*
+			\hline\textbf{Actores} 	& Usuario\\*
+			\hline \textbf{Objetivo} & Añadir alerta a una rutina\\* 			
+			\hline \textbf{Precondición} & La rutina no posee ninguna alerta\\* 
+			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
+			& 2.- Pulsamos la opción RUTINA\\*	
+			& 3.- Pulsamos sobre los tres puntos a la derecha de la cita médica que queremos editar\\*	
+			& 4.- Seleccionamos la opción 'editar'\\*	
+			& 5.- Insertamos la fecha de aviso\\*
+			& 6.- Insertamos la hora de aviso\\*
+			\hline \textbf{Flujo alternativo} & \textbf{Partiendo de CU-009} en Inserción de datos de la rutina\\*  
+			& 1.- Insertamos la fecha de aviso\\*
+			& 2.- Insertamos la hora de aviso\\*
+			\hline \textbf{Postcondición} & La rutina posee una alerta\\* 
+			\hline \textbf{Comentarios}   & El tono de la alerta se configurará en la opción AJUSTES\\*
+			\hline
+		\end{tabular}
+		\caption{Añadir notificación - Rutina}
+		\label{tabla:caso033}
+	\end{table}		
 	
-	\textbf{CU-034}	AÑADIR PERSONAJES A LA CITA\\*
-	
-			\begin{table}[H]
-				\centering
-				\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
-					\hline \textbf{CU-028} & \textbf{ORDENACIÓN DE LISTAS} \\*
-					\hline\hline \textbf{Versión} & 1.0 \\*
-					\hline\hline \textbf{Fecha} & 28/07/2015 \\*
-					\hline\textbf{Actores} 	& Usuario\\*
-					\hline \textbf{Objetivo} & Ordenar un listado de elementos\\* 			
-					\hline \textbf{Precondición} & La lista posee más de dos elementos ordenados de manera distinta a que se desea\\* 
-					\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-					& 2.- Pulsamos cualquiera de las opciones CITA MÉDICA, RUTINA, MEDICAMENTO, PERSONAJE, SÍNTOMA, PRUEBA\\*	
-					& 3.- Pulsamos sobre el icono del engranaje del listado\\*	
-					& 4.- Seleccionamos el tipo de ordenación\\*	
-					\hline \textbf{Flujo alternativo} & Para cualquiera de los diferentes tipo de objetos es similar \\* 
-					\hline \textbf{Postcondición} & La lista los elementos ordenados de la manera deseada\\* 
-					\hline \textbf{Comentarios}   & Los modos de ordenación varían de un caso a otro\\*
-					\hline
-				\end{tabular}
-				\caption{Ordenación de listas}
-				\label{tabla:caso034}
-			\end{table}
-			
+	\textbf{CU-034}	AÑADIR OBJETOS A LA CITA\\*
 
-	\textbf{CU-035}	AÑADIR MEDICAMENTOS A LA CITA\\*
-	
-			\begin{table}[H]
-				\centering
-				\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
-					\hline \textbf{CU-028} & \textbf{ORDENACIÓN DE LISTAS} \\*
-					\hline\hline \textbf{Versión} & 1.0 \\*
-					\hline\hline \textbf{Fecha} & 28/07/2015 \\*
-					\hline\textbf{Actores} 	& Usuario\\*
-					\hline \textbf{Objetivo} & Ordenar un listado de elementos\\* 			
-					\hline \textbf{Precondición} & La lista posee más de dos elementos ordenados de manera distinta a que se desea\\* 
-					\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-					& 2.- Pulsamos cualquiera de las opciones CITA MÉDICA, RUTINA, MEDICAMENTO, PERSONAJE, SÍNTOMA, PRUEBA\\*	
-					& 3.- Pulsamos sobre el icono del engranaje del listado\\*	
-					& 4.- Seleccionamos el tipo de ordenación\\*	
-					\hline \textbf{Flujo alternativo} & Para cualquiera de los diferentes tipo de objetos es similar \\* 
-					\hline \textbf{Postcondición} & La lista los elementos ordenados de la manera deseada\\* 
-					\hline \textbf{Comentarios}   & Los modos de ordenación varían de un caso a otro\\*
-					\hline
-				\end{tabular}
-				\caption{Ordenación de listas}
-				\label{tabla:caso035}
-			\end{table}
+	\begin{table}[H]
+		\centering
+		\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
+			\hline \textbf{CU-032} & \textbf{AÑADIR OBJETOS A LA CITA}\\*
+			\hline\hline \textbf{Versión} & 1.0 \\*
+			\hline\hline \textbf{Fecha} & 28/07/2015 \\*
+			\hline\textbf{Actores} 	& Usuario\\*
+			\hline \textbf{Objetivo} & Añadir objetos a una cita\\* 			
+			\hline \textbf{Precondición} & La cita no posee algun objeto de la aplicación\\* 
+			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
+			& 2.- Pulsamos la opción CITA MÉDICA\\*	
+			& 3.- Pulsamos sobre los tres puntos a la derecha de la cita médica que queremos editar\\*	
+			& 4.- Seleccionamos la opción 'editar'\\*	
+			& 5.- Pulsamos el icono + en alguna de las secciones de personajes, medicamentos, síntomas o pruebas\\*
+			& 6.- Pulsamos la opcion de menú 'Personaje, 'Medicamento', 'Síntoma' o Prueba' dependiendo de la sección\\*
+			& 7.- Seleccionamos de la lista el personaje, medicamento, síntoma o prueba dependiendo de la opción anterior seleccionada\\*
+			\hline \textbf{Flujo alternativo} & \textbf{Partiendo de CU-005} en Inserción de datos de la cita\\*  
+			& 1.- Pulsamos el icono + en alguna de las secciones de personajes, medicamentos, síntomas o pruebas\\*
+			& 2.- Pulsamos la opcion de menú 'Personaje, 'Medicamento', 'Síntoma' o Prueba' dependiendo de la sección\\*
+			\hline \textbf{Postcondición} & La cita posee un objeto de la aplicación que antes no tenía\\* 
+			\hline \textbf{Comentarios}   & Los objetos de los que hablamos son objetos persistentes de la aplicación personajes, medicamentos, síntomas y pruebas.\\*
+			\hline
+		\end{tabular}
+		\caption{Añadir objetos a la cita}
+		\label{tabla:caso034}
+	\end{table}
 			
+	\textbf{CU-035}	AÑADIR OBJETOS A LA RUTINA\\*
 
-	\textbf{CU-036}	AÑADIR PRUEBAS A LA CITA\\*
+	\begin{table}[H]
+		\centering
+		\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
+			\hline \textbf{CU-035} & \textbf{AÑADIR OBJETOS A LA RUTINA}\\*
+			\hline\hline \textbf{Versión} & 1.0 \\*
+			\hline\hline \textbf{Fecha} & 28/07/2015 \\*
+			\hline\textbf{Actores} 	& Usuario\\*
+			\hline \textbf{Objetivo} & Añadir objetos a una rutina\\* 			
+			\hline \textbf{Precondición} & La cita no posee algún personaje\\* 
+			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
+			& 2.- Pulsamos la opción RUTINA\\*	
+			& 3.- Pulsamos sobre los tres puntos a la derecha de la rutina que queremos editar\\*	
+			& 4.- Seleccionamos la opción 'editar'\\*	
+			& 5.- Pulsamos el icono + en la sección de personajes\\*
+			& 6.- Pulsamos la opción de menú 'Personaje\\*
+			& 7.- Seleccionamos de la lista el personaje que queramos añadir.\\*
+			\hline \textbf{Flujo alternativo} & \textbf{Partiendo de CU-009} en Inserción de datos de la rutina\\*  
+			& 1.- Pulsamos el icono + en la sección de personajes\\*
+			& 2.- Pulsamos la opción de menú 'Personaje\\*
+			& 3.- Seleccionamos de la lista el personaje que queramos añadir.\\*
+			\hline \textbf{Postcondición} & La rutina posee un personaje de la aplicación que antes no tenía\\* 
+			\hline \textbf{Comentarios}   & Los objetos que acepta la rutina son personajes.\\*
+			\hline
+		\end{tabular}
+		\caption{Añadir objetos a la rutina}
+		\label{tabla:caso035}
+	\end{table}
 	
-			\begin{table}[H]
-				\centering
-				\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
-					\hline \textbf{CU-028} & \textbf{ORDENACIÓN DE LISTAS} \\*
-					\hline\hline \textbf{Versión} & 1.0 \\*
-					\hline\hline \textbf{Fecha} & 28/07/2015 \\*
-					\hline\textbf{Actores} 	& Usuario\\*
-					\hline \textbf{Objetivo} & Ordenar un listado de elementos\\* 			
-					\hline \textbf{Precondición} & La lista posee más de dos elementos ordenados de manera distinta a que se desea\\* 
-					\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-					& 2.- Pulsamos cualquiera de las opciones CITA MÉDICA, RUTINA, MEDICAMENTO, PERSONAJE, SÍNTOMA, PRUEBA\\*	
-					& 3.- Pulsamos sobre el icono del engranaje del listado\\*	
-					& 4.- Seleccionamos el tipo de ordenación\\*	
-					\hline \textbf{Flujo alternativo} & Para cualquiera de los diferentes tipo de objetos es similar \\* 
-					\hline \textbf{Postcondición} & La lista los elementos ordenados de la manera deseada\\* 
-					\hline \textbf{Comentarios}   & Los modos de ordenación varían de un caso a otro\\*
-					\hline
-				\end{tabular}
-				\caption{Ordenación de listas}
-				\label{tabla:caso036}
-			\end{table}
-			
+	
+	\textbf{CU-036}	CONFIGURACIÓN DE LA APLICACIÓN\\*
 
-	\textbf{CU-037}	AÑADIR SÍNTOMAS A LA CITA\\*
-	
-			\begin{table}[H]
-				\centering
-				\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
-					\hline \textbf{CU-028} & \textbf{ORDENACIÓN DE LISTAS} \\*
-					\hline\hline \textbf{Versión} & 1.0 \\*
-					\hline\hline \textbf{Fecha} & 28/07/2015 \\*
-					\hline\textbf{Actores} 	& Usuario\\*
-					\hline \textbf{Objetivo} & Ordenar un listado de elementos\\* 			
-					\hline \textbf{Precondición} & La lista posee más de dos elementos ordenados de manera distinta a que se desea\\* 
-					\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-					& 2.- Pulsamos cualquiera de las opciones CITA MÉDICA, RUTINA, MEDICAMENTO, PERSONAJE, SÍNTOMA, PRUEBA\\*	
-					& 3.- Pulsamos sobre el icono del engranaje del listado\\*	
-					& 4.- Seleccionamos el tipo de ordenación\\*	
-					\hline \textbf{Flujo alternativo} & Para cualquiera de los diferentes tipo de objetos es similar \\* 
-					\hline \textbf{Postcondición} & La lista los elementos ordenados de la manera deseada\\* 
-					\hline \textbf{Comentarios}   & Los modos de ordenación varían de un caso a otro\\*
-					\hline
-				\end{tabular}
-				\caption{Ordenación de listas}
-				\label{tabla:caso037}
-			\end{table}
-			
-
-	\textbf{CU-038}	AÑADIR PERSONAJES A LA RUTINA\\*
-	
-			\begin{table}[H]
-				\centering
-				\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
-					\hline \textbf{CU-028} & \textbf{ORDENACIÓN DE LISTAS} \\*
-					\hline\hline \textbf{Versión} & 1.0 \\*
-					\hline\hline \textbf{Fecha} & 28/07/2015 \\*
-					\hline\textbf{Actores} 	& Usuario\\*
-					\hline \textbf{Objetivo} & Ordenar un listado de elementos\\* 			
-					\hline \textbf{Precondición} & La lista posee más de dos elementos ordenados de manera distinta a que se desea\\* 
-					\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-					& 2.- Pulsamos cualquiera de las opciones CITA MÉDICA, RUTINA, MEDICAMENTO, PERSONAJE, SÍNTOMA, PRUEBA\\*	
-					& 3.- Pulsamos sobre el icono del engranaje del listado\\*	
-					& 4.- Seleccionamos el tipo de ordenación\\*	
-					\hline \textbf{Flujo alternativo} & Para cualquiera de los diferentes tipo de objetos es similar \\* 
-					\hline \textbf{Postcondición} & La lista los elementos ordenados de la manera deseada\\* 
-					\hline \textbf{Comentarios}   & Los modos de ordenación varían de un caso a otro\\*
-					\hline
-				\end{tabular}
-				\caption{Ordenación de listas}
-				\label{tabla:caso038}
-			\end{table}
-			
-	
-	\textbf{CU-039}	AJUSTAR LA APLICACIÓN\\*
-	
-			\begin{table}[H]
-				\centering
-				\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
-					\hline \textbf{CU-028} & \textbf{ORDENACIÓN DE LISTAS} \\*
-					\hline\hline \textbf{Versión} & 1.0 \\*
-					\hline\hline \textbf{Fecha} & 28/07/2015 \\*
-					\hline\textbf{Actores} 	& Usuario\\*
-					\hline \textbf{Objetivo} & Ordenar un listado de elementos\\* 			
-					\hline \textbf{Precondición} & La lista posee más de dos elementos ordenados de manera distinta a que se desea\\* 
-					\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-					& 2.- Pulsamos cualquiera de las opciones CITA MÉDICA, RUTINA, MEDICAMENTO, PERSONAJE, SÍNTOMA, PRUEBA\\*	
-					& 3.- Pulsamos sobre el icono del engranaje del listado\\*	
-					& 4.- Seleccionamos el tipo de ordenación\\*	
-					\hline \textbf{Flujo alternativo} & Para cualquiera de los diferentes tipo de objetos es similar \\* 
-					\hline \textbf{Postcondición} & La lista los elementos ordenados de la manera deseada\\* 
-					\hline \textbf{Comentarios}   & Los modos de ordenación varían de un caso a otro\\*
-					\hline
-				\end{tabular}
-				\caption{Ordenación de listas}
-				\label{tabla:caso039}
-			\end{table}
+	\begin{table}[H]
+		\centering
+		\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
+			\hline \textbf{CU-028} & \textbf{CONFIGURACIÓN DE LA APLICACIÓN} \\*
+			\hline\hline \textbf{Versión} & 1.0 \\*
+			\hline\hline \textbf{Fecha} & 28/07/2015 \\*
+			\hline\textbf{Actores} 	& Usuario\\*
+			\hline \textbf{Objetivo} & Personalizar la aplicación al gusto del usuario\\* 			
+			\hline \textbf{Precondición} & Ajustes por defecto de la aplicación\\* 
+			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
+			& 2.- Pulsamos la opción AJUSTES\\*	
+			& 3.- Personalizamos la aplicación en la medida en la que esta nos lo permita\\*	
+			\hline \textbf{Flujo alternativo} & \\* 
+			\hline \textbf{Postcondición} & Ajustes personalizados del usuario\\* 
+			\hline \textbf{Comentarios}   & Letra, cancion a reproducir, notificaciones.\\*
+			\hline
+		\end{tabular}
+		\caption{Configuración de la aplicación}
+		\label{tabla:caso036}
+	\end{table}
 			
 
 
