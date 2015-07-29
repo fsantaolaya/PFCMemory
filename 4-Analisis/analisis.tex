@@ -1,6 +1,5 @@
 	\documentclass[../pfc.tex]{subfiles}
-	\usepackage{float}
-	
+		
 	\begin{document}
 	
 Para la fase de análisis dentro de las metodologías ágiles no existen preceptos firmes a cumplir, pero dado que se valora mucho la comunicación y las relaciones interpersonales, se establece que debería haber una serie de reuniones previas al inicio de los sprints para que el equipo pueda obtener contexto del proyecto y del dominio del mismo, así como ir escribiendo las historias de usuario y rellenar y priorizar el product backlog. En estas reuniones idealmente asistirían tanto el product owner, el scrum master y el equipo, pero con el prodcut owner, el scrum master y aquel del equipo que mejor pueda ayudar a escribir las historias puede ser suficiente, recordemos que no se está estimando, simplemente se escuchan las necesidades del product owner y estas se traducen en funcionalidades y estas a su vez en requisitos mediante historias de usuario. \\
@@ -12,11 +11,6 @@ Una vez las historias tienen una forma más o menos fija, recordemos que uno de 
 En el momento de redactar las historias de usuario conviene que de algún modo alguien, típicamente el scrum master o el product owner, se encargue de recordar los grandes objetivos del proyecto. Estos objetivos son los objetivos claros, concisos y lo mas sencillos posibles que mueven al cliente a dar comienzo al proyecto. Todas las historias de usuario, asi como las acciones que se lleven a cabo, deben alinearse con estos objetivos.
 
 Para llevar a cabo todo este proceso se llevaron a cabo varias reuniones con el personal de la AECC, se cruzaron correos con historias redactadas, se conversó vía Hangout, Skype, Whatsapp, etc se volvió a reunir las veces que hicieron falta, hasta que dicho personal, que en este caso hacía el papel de product owner,  se sintió lo suficientemente cómodo con el redactado inicial de las historias de usuario y su priorización, sabiendo que después estas podrían modificarse. 
-
- 
--Por una parte de las reuniones mantenidas con el cliente, en este caso la AECC.
-
--Por otra parte del libro que utiliza la AECC llamado \textbf{MIS CUIDADOS, DIARIO DE SALUD DE UN SUPERVIVIENTE DE CANCER} y que se utiliza de manera general sobre enfermos de cáncer que han superado esta enfermedad y sobre otros que todavía la siguen padeciendo.\\\\
 	
 
 	\section{Explicación detallada de las funcionalidades de la aplicación}
@@ -25,7 +19,7 @@ Este sería el proceso donde algún miembro del equipo ganaría contexto por par
 
 \textbf{USO SIN REGISTRO}
 
-En todo momento se debe poder usar la app sin hacer ningún tipo de registro previo. Solamente algunas funcionalidades especificas necesitarán del mismo. Para ello los datos serán almacenados en el dispositivo, sin perjuicio de que puedan una vez registrado ser compartidos en "la nube" y se carguen en varios dispositivos.\\
+En todo momento se debe poder usar la app sin hacer ningún tipo de registro previo. Solamente algunas funcionalidades especificas necesitarán del mismo. Para ello los datos serán almacenados en el dispositivo, sin perjuicio de que puedan una vez registrado ser compartidos en 'la nube' y se carguen en varios dispositivos.\\
 
 	\textbf{PRINCIPAL}
 	
@@ -42,328 +36,132 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 	\textbf{CITAS}
 	
 	Es una funcionalidad para introducir citas médicas en un calendario. En las mismas se podrá añadir al profesional que nos atiende si es que se conoce. 
-	Poco después de una cita se generará una notificación preguntando por la misma, en la que se preguntará si la cita ha generado nuevas citas, momento en que se pasará a la pantalla para crear una nueva cita, cambios en la medicación, yendo a la lista de medicamentos para añadir o cambiar la dosis de los mismos, 
+	Poco después de una cita se generará una notificación preguntando por la misma, en la que se preguntará si la cita ha generado nuevas citas, momento en que se pasará a la pantalla para crear una nueva cita, si ha habido cambios en la medicación, yendo a la lista de medicamentos para añadir o cambiar la dosis de los mismos.
+	Poco antes de la cita y siguiendo las pautas marcadas en el folleto se guiará al usuario en las actividades o como afrontar la cita.
 	Lista de citas Nombre de la cita, fecha y hora.
 	Desde el propio item de la lista se podran añadir medicamentos, personas, sintomas y/o pruebas, al pulsar sobre la opción correspondiente nos llevará al listado de estás opciones añadiendose así.
 	
-	Añadir cita, en esta pantalla se permite ver al pinchar sobre el propio item de la lista ,editar, o pulsando el botón añadir del final de la lista crear una nueva, 
-	dentro de la cita (añadir) se podrán añadir ubicación, personajes, medicamentos, pruebas y sintomas y asignar una alarma personalizable con fecha y hora (avisar) con antelacion.
-	se puede ver sin editar
-	
-	Deberíamos añadir duración?
-	
-	Valorar si deberiamos gestionar la repeticion de los eventos
-	
-	¿En la ubicación se podria comunicar con google maps?
-	
-	¿Deberiamos mostrar en el item de la cita si ya poseee personas, pruebas, sintomas o medicacion?
-
 	\textbf{AVATAR}
 	
-	Editar el perfil, Foto, nombre, apellidos, edad, cumpleaños... (1 pantalla), ¿Grupo sanguineo y alergenos tampoco estaría mal pero es informacion de otro nivel LOPD?
-	
-	PROYECTO AMPLIACION (asignar un agente personalizado para poder atender de manera personalizada al paciente Superviviente)\\
-	
-
-
-	
-
-	\textbf{HORARIO}
-
-	Vista dia, mes, con las actividades, citas, ¿Cumpleaños, aniverssario de enfermedad...?  
-	al pinchar en una hora, dia, se podrá añadir rutina o cita, iria a la correspondiente lista de creacion de una nueva (1 pantalla)
-	
-	Deberian aparecer las citas y rutinas ocupando el espacio destinado a la duracion de las mismas.
-	
-	Revisar esta página
-	https://code.google.com/p/yadview/\\
-	
+	En esta funcionalidad se permite crear un perfil de registro al usuario de la app para acceder a alguna funcionalidad mas, como compartir los datos entre dispositivos, mediante el uso de un servicio de back end que almacene los nuevos datos cuando se disponga de conectividad. El acceso a trarar con un agente com pate del piloto del proyecto, pudiendole dejar alguna pregunta que desde la parte servidora se encargara de responder.
 
 	\textbf{RUTINA}
-	Lista de rutinas, desde la propia vista se podrán añadir rutinas, al pulsar sobre la opción correspondiente nos llevará al listado de estás opciones añadiendose así.
-	
-	Se podra ordenar por fecha, asc y desc, duracion de la actividad asc y desc pero sobre todo se podrá ordenar por satisfaccion de la misma.
-	
-	Añadir rutina, , en esta pantalla se permite ver al pinchar sobre el propio item de la lista ,editar, o pulsando el botón añadir del final de la lista crear una nueva,
-	Valorar si deberiamos gestionar la repeticion de los elementos					
-	dentro de la rutina (añadir) se podrán añadir personajes y asignar una alarma personalizable (avisar) con antelacion, se puede ver sin editar(2 pantallas)
-	con una hora de aviso, hora de empiece de la actividad. Duración de las misma en horas, satisfaccion de 0 a 10
-	
-	Dentro se va a valorar tambien la satisfacción personal que se produce al hacer esto, podrá ser de 0 a 10
-	
-	AMPLIACION DE PROYECTO: Poder variar los avisos para que se hagan de manera repetitiva, por ejemplo repetir de manera semanal los jueves al estilo TICK TICK, llamarlo actividades en vez de Rutina\\ 
-	
-
-	\textbf{CITAS}
-	
-	Lista de citas Nombre de la cita, fecha y hora.
-	Desde el propio item de la lista se podran añadir medicamentos, personas, sintomas y/o pruebas, al pulsar sobre la opción correspondiente nos llevará al listado de estás opciones añadiendose así.
-	
-	Añadir cita, en esta pantalla se permite ver al pinchar sobre el propio item de la lista ,editar, o pulsando el botón añadir del final de la lista crear una nueva, 
-	dentro de la cita (añadir) se podrán añadir ubicación, personajes, medicamentos, pruebas y sintomas y asignar una alarma personalizable con fecha y hora (avisar) con antelacion.
-	se puede ver sin editar
-	
-	Deberíamos añadir duración?
-	
-	Valorar si deberiamos gestionar la repeticion de los eventos
-	
-	¿En la ubicación se podria comunicar con google maps?
-	
-	¿Deberiamos mostrar en el item de la cita si ya poseee personas, pruebas, sintomas o medicacion?
-	
-	PROYECTO AMPLIACION Poder exportar e importar a google maps, conectar la ubicacion con google maps para poder ir\\
-	
+	La rutina es una vista semanal de actividades programadas y de ritmo de vida. Se pueden introducir actividades reiterativas y en que consisten, si se hacen solo o en grupo y la satisfaccion que el usuario estima que producen. De vez en cuando apareceran notificaciones que pregunten si se realizo o no una actividad determinada, si esta causo satisfaccion etc. Puede marcarse en este horario la hora en la que el usuario se levanta y acuesta para excluir notificaciones en ese horario de descanso. 
+	Revisar esta página
+	https://code.google.com/p/yadview/\\
+		
 	
 	\textbf{MEDICACION}
-	Lista de medicamentos, lista de los medicamentos que tengamos con el boton de añadir al final y en la barra la posibilidad de ordenar en principio por orden ascendente o descendente,
-	al pinchar sobre el elemento se visualiza, en las opciones de cada elemento se puede añadir a la cita, editar y borrar (confirmacion para borrar)
-	
-	Añadir medicamento, , en esta pantalla se permite ver al pinchar sobre el propio item de la lista ,editar, o pulsando el botón añadir del final de la lista crear una nueva, 
-	dentro del medicamento (añadir) se podrá asignar una foto personalizable, o bien hacerla o añadirla de la galeria, viene una por defecto
-	nombre, descripcion, 
-	una alarma personalizable que avisar con antelacion, fecha inicio, hora inicio, fecha fin, hora fin, repetir cada tantas horas, dias, semanas, (esto se valorará)
+	Es un gestor de aquellos medicamentos que debe tomar el enfermo y en que cantidades, así como historico de las tomas de los mismo o de alguno que no tengan prescrito como pudieran ser analgesicos, antidepresivos, etc La app debe avisar con una notificacion de la necesidad de toma de aquellos medicamentos que se marquen como prescritos por el facultativo, a partir de la posologia indicada para el mismo. 
 
-	REVISAR LA FUNCION DE ALARMA EN ANDROID http://developer.android.com/reference/android/app/AlarmManager.html
-	boton guardar 
-	se puede ver sin editar, 
-	dentro de la edición y visionado se podra añadir a una cita
-	Se puede añadir el numero de medicamentos al drawer (se estudiará)
-	
-	PROYECTO AMPLIACION Llevar el stock de lo que lleva consumido el paciente y generar alertas para cuando se le acabe, duplicar tratamiento, para ahorrar trabajo, opciones de dosis.\\
-	
-	
-	
-	
-	
 	\textbf{PRUEBAS}
 	
-	Lista de personajes que tengamos con el boton de añadir al final y en la barra la posibilidad de ordenar en principio por orden de fecha ascendente o descendente,
-	al pinchar sobre el elemento se visualiza, 
-	en las opciones de cada elemento se puede añadir a la cita, editar y borrar confirmacion para borrar
-	
-	Añadir prueba, , en esta pantalla se permite ver al pinchar sobre el propio item de la lista ,editar, o pulsando el botón añadir del final de la lista crear una nueva, 
-	dentro de la prueba (añadir) se podrá asignar una foto personalizable, o bien hacerla o añadirla de la galeria, viene una por defecto
-	nombre, descripcion,
-	fecha y hora de la misma
-	se puede ver sin editar, dentro de la edición y visionado se podra añadir a una cita por ejemplo visita al oncólogo
-	Se puede añadir el numero al drawer
-	
-	PROYECTO AMPLIACION poder subir documentos tipo pdf para no depender de la fotografia solo, llevar estadísticas\\
+	Es una funcionalidad para llevar un registro de las pruebas que se han realizado al paciente clasificadas por tipos y llegado el caso hacer seguimiento de los valores clave en cada prueba diagnostica o analisis. Se podran adjuntar fotografias de los resultados en papel si es que se dispone de ellos para disponer de un pequeño "registro documental".
 	
 	
-	\textbf{SINTOMAS}
-	
-	Lista de síntomas que tengamos con el boton de añadir al final y en la barra la posibilidad de ordenar en principio por orden de fecha ascendente o descendente,
-	al pinchar sobre el elemento se visualiza, 
-	en las opciones de cada elemento se puede añadir a la cita, editar y borrar confirmacion para borrar
-	
-	Añadir sintoma, , en esta pantalla se permite ver al pinchar sobre el propio item de la lista ,editar, o pulsando el botón añadir del final de la lista crear una nueva, 
-	dentro de la prueba (añadir) se podrá asignar una foto personalizable, o bien hacerla o añadirla de la galeria, viene una por defecto
-	nombre, descripcion de los sintomas,
-	fecha y hora de la misma
-	se puede ver sin editar, dentro de la edición y visionado se podra añadir a una cita por ejemplo visita al oncólogo
-	Se puede añadir el numero al drawer
-	
-	PROYECTO AMPLIACION poder subir documentos tipo pdf para no depender de la fotografia solo, llevar estadísticas, poder conectar con los centros de salud, hospitales, \\
+	\textbf{SINTOMAS y ANOTACIONES}
+	Esta funcionalidad cubre anotaciones de sintomas, sensaciones y cualquier cosa que el paciente crea conveniente anotar. Antes de una cita le reocrdará que tiene anotaciones por si quisiese comentarselas al profesional y tambien permitira pasar una anotacion para la siguiente cita.
 	
 	
-	\textbf{RECURSOS}
-	Dentro de los resursos aparece meditacion con musica relajante e instrucciones para ello
-	consejos generales, de alimentacion, de vida, de salud...
-	telefonos de interés generales (DEBEMOS DECIDIR SI SE PUEDEN PERSONALIZAR)
-	Noticias (podemos añadir el blog de la AECC o la cuenta de twitter que no esta nada mal)
+	\textbf{INFORMACIÓN ÚTIL}
+	Una sección con los consejos de vida sana, meditación, relajacion etc que tambien disponen en el folleto. 
 	
+	\textbf{PARTE SERVIDORA}
+	El back end almacenara los datos que los usuarios registrados envien desde sus dispositivos y los devolverá hacia aquellos que no se encuentren sincronizados. Ademas permitira a un rol supervisor provincia asociar a un usuario registrado a un agente que desde ese momento velara por el. Dicho agente podra comunicarse con el usuario de manera directa y tambien respondiendo a sus preguntas.  
 	
-	\textbf{AJUSTES}
-	Editar el perfil, 
-	tamaño de letra, 	
-	tono para alertas de citas y rutinas, 
-	color del led de notificación, 
-	posibilidad de feedback,
-	quienes somos o motivaciones (¿? pantallas)\\\\
-
 	
 	\section{Documento de Análisis}
-	
-	Aunque utilizamos una metología ágil, hay puntos en los que no nos podemos separar de la metodología tradicional.
+
+	Como se ha comentado anteriormente es difícil capturar todos los requisitos y el contexto de la aplicación a partir de una reunión, en nuestro caso mantuvimos al menos cuatro reuniones presenciales y al menos casi otras tantas por medios telematicos al residir en provincias diferentes y además contamos con la ayuda del folleto que querian "digitalizar" "Mis Cuidados, diario de salud para supervivientes de cáncer"
+
 			
-	Es difícil capturar todos los requisitos a partir de unas cuantas reuniones, para nuestro caso, pudimos contar con la ayuda del libro "Mis Cuidados, diario de salud para supervivientes de cáncer"
+	Una de las ventajas de utilizar este primer tipo de metodología, es el de poder adaptar de una manera mucho más eficiente los recursos a las fechas y a los requisitos, y poder modificar estos requisitos de manera 'ágil' debido al panorama cambiante que podemos tener de cara al cliente.
 			
-	Una de las ventajas de utilizar este primer tipo de metodología, es el de poder adaptar de una manera mucho más eficiente los recursos a las fechas y a los requisitos, y poder modificar estos requisitos de manera "ágil" debido al panorama cambiante que podemos tener de cara al cliente.
-			
-	\begin{figure}
-		\centering
-		\includegraphics[width=0.5\linewidth]{../images/paradigmaRequisitos}
-		\caption{Paradigma captura de requisitos método tradicional vs. ágil}
-		\label{fig:paradigmaRequisitos}
-	\end{figure}
-			
-			
+		
 	\subsection{Descripción de objetivos de manera detallada}
 	
 	
-	\textbf{OBJ-001}	La aplicacion debera poder administrar un perfil de usuario\\*
+	\textbf{OBJ-001}	La aplicacion debera poder usarse en un dispositivo sin registro y sin conexión.\\*
 	
-		\begin{table}[H]
-			\centering
-			\begin{tabular}[t]{|l|l|}
-				\hline \textbf{OBJ-001} & \textbf{PERFIL DE USUARIO} \\*
-				\hline\hline \textbf{Versión} & 1.0 \\ *
-				\hline\textbf{Autores} 	& Fernando Santa Olaya Rodríguez \\*
-				& Rubén Toquero González\\*
-				\hline \textbf{Descripción} & La aplicacion debera poder administrar un perfil de usuario\\* 
-				\hline \textbf{Subobjetivos} & El usuario padrá introducir una foto, nombre, fecha de nacimiento \\* 
-				\hline \textbf{Importacia} & Importante \\* 			
-				\hline \textbf{Urgencia} & Inmediatamente \\* 
-				\hline \textbf{Estado} & En construcción \\* 
-				\hline \textbf{Estabilidad} & Estable \\* 
-				\hline \textbf{Comentarios} & En la cabecera del drawer aparecerá el nombre y la foto \\* 
-				\hline 
-			\end{tabular}
-			\caption{Menú drawer.}
-			\label{tabla:req001}
-		\end{table}
+	\textbf{OBJ-002}	La aplicacion debe ser facil de usar para usuarios no avanzados y mayores\\*
 	
-	\textbf{OBJ-002}	La aplicacion será facil de navegar para usuarios no avanzados\\*
+	\textbf{OBJ-003}	Cualquier opción que se pueda realizar en el folleto debe estar cubierta por alguna funcionalidad de la app\\*
 	
-	\textbf{OBJ-003}	La aplicacion facilitará la gestion de las actividades diarias de un usuario (medicas/rutinarias)\\*
-	
-	\textbf{OBJ-004}	La aplicacion permitirá gestionar de manera organizada las citas médicas de un usuario\\*
-	
-	\textbf{OBJ-005}	La aplicacion permitirá gestionar de manera organizada las rutinas diarias de un usuario\\*
-	
-	\textbf{OBJ-006}	La aplicacion permitirá gestionar de manera organizada los medicamentos asignados a un usuario\\*
-	
-	\textbf{OBJ-007}	La aplicacion permitirá gestionar de manera organizada los personajes que interactuan en las
-	 actividades de un usuario\\*
-	
-	\textbf{OBJ-008}La aplicacion permitirá gestionar de manera organizada los síntomas que acontecen a un usuario\\*
-	
-	\textbf{OBJ-009}	La aplicacion permitirá gestionar de manera organizada las pruebas médicas a las que se somete un
-	 usuario\\*
-	
-	\textbf{OBJ-010}	La aplicacion proporcionará recursos de ayuda para el bienestar del usuario\\*
-	
-	\textbf{OBJ-011}	La aplicación permitirá ajustes que mejoren la experiencia del usuario\\*
-	
-	\textbf{OBJ-012}	La aplicación deberá tener una base de datos para almacenar toda la informacion del usuario\\*
-	
-	\textbf{OBJ-013}	La aplicación deberá contar con un manual de usuario para facilitar su comprension y uso\\*
-	
-	\textbf{OBJ-014}	La aplicación soportará el mayor número de dispositivos android posibles\\*
-	
-	\textbf{OBJ-015}	La aplicación será de verdadera ayuda para usuarios incluidos dentro de la iniciativa de la AECC\\*
-	
-	\textbf{OBJ-016}	La aplicación se integrará perfectamente dentro de la iniciativa de la AECC\\*
-	
-	
+	\textbf{OBJ-004}	Se hará enfasis en que el registro proporciona grandes ventajas, a pesar de poder usarse sin el\\*
 
+	\textbf{OBJ-005}	El estilo gráfico de la app sera coherente con el marcado por el folleto de la AECC\\*
+	
+	\textbf{OBJ-006}	En definitiva la app será algo util por su funcionalidad pero tambien por su usabilidad y facilidad de manejo\\*
 	
 	
 	\subsection{Captura de Requisitos}
 	
 	Como consecuencia de las diferentes reuniones realizadas con el cliente se elabora un
 	documento de especificación de requisitos con el propósito de describir las funcionalidades
-	necesarias para poder validar el producto final.\\*
+	necesarias para poder validar el producto final. Estos requisitos se escriben aqui como historias de usuario con un id, un titulo y una descripción para ser implementadas. \\*
 	
-	\subsubsection{Requisitos de información}
+	\subsubsection{Historias de usuario}
 			
+	\textbf{Historia 1: Navegación}
+		Como usuario quiero poder acceder al menú de nevegación desde cualquier punto del primer nivel de la misma, mediante la pulsación en el icono de tres lineas en la izquierda de la pantalla, para poder navegar entre las distintas opciones de la app. Dejando en el resto de niveles de navegacion una flecha para volver al nivel 1.
+		
+	\textbf{Historia 2: Registro}	
+		Como usuario quiero poder registrarme, acceder y modificar mas tarde estos datos para poder acceder a las funcionalidades de sincronizacióm y consulta con agente.
 	
-	\subsubsection{Requisitos Funcionales}
-	
-	A continuación se describirán los requisitos para este proyecto. Se tendrán dos tipos de
-	requisitos: requisitos funcionales, que serán aquellos obtenidos a partir de los objetivos principales
-	y secundarios del apartado anterior; y requisitos no funcionales, obtenidos de las especificaciones
-	citadas a lo largo de la memoria y que precisen ser descritas como requisitos.\\*
-	
-	Este tipo de requisitos declaran los servicios que debe proporcionar la aplicación, como debe
-	reaccionar a una entrada particular y cómo se debe de comportar ante situaciones particulares.
-	Describen el funcionamiento dla aplicación.\\*
-	
-	Los requisitos de información llevarán un nombre descriptivo y un número para identificarlos.
-	Este número tendrá el formato IRQ - <id> donde id será el número del requisito de información.
-	Además se indicarán los requisitos asociados, una descripción y cualquier información que sea
-	relevante para una mayor claridad.\\*
-	
-	Los requisitos funcionales que debe cumplir la aplicación son los siguientes\\*
-	
-	
-	\textbf{FRQ-001}	El usuario podra acceder a un menú de navegación	\textbf{OBJ-002}\\*
 
-	\begin{table}[H]
-		\centering
-		\begin{tabular}[t]{|l|l|}
-			\hline \textbf{FRQ-001} & \textbf{DRAWER MENÚ} \\*
-			\hline\hline \textbf{Versión} & 1.0 \\ *
-			\hline\textbf{Autores} 	& Fernando Santa Olaya Rodríguez\\*
-			& Rubén Toquero González\\*
-			\hline \textbf{Dependencias} & OBJ-002\\* 			
-			\hline \textbf{Descripción} & El usuario podrá acceder a un menú de navegación \\* 
-			\hline \textbf{Importancia} & Vital \\* 
-			\hline \textbf{Urgencia} & Inmediatamente \\* 
-			\hline \textbf{Estado} & En construcción \\* 
-			\hline \textbf{Estabilidad} & Estable \\* 
-			\hline \textbf{Comentarios} & El menú será visible al desplazar el dedo de izquierda a derecha de la pantalla \\* 
-			\hline 
-		\end{tabular}
-		\caption{Menú drawer.}
-		\label{tabla:req001}
-	\end{table}
+	\textbf{Historia 3: Personas}	
+		Como usuario quiero poder añadir, consultar, modificar y borrar uno de los contactos de la lista de personas relacionadas desde la app y que estos cambios se reflejen tambien en la app de contactos para poder tener un listado de personas importantes.
+
 	
+	\textbf{Historia 4: Citas}	
+		Como usuario quiero poder añadir, consultar modificar y borrar citas medicas con los datos de lugar, fecha, hora, espcialista para poder tener un control de mis citas y que estas pasen a la app calendario del dispositivo. 
+		
+	\textbf{Historia 5: Notificaciones citas}	
+		Como usuario quiero que la app me avise de las citas proximas en la manera en la que el folleto lo indica para poder preparar la cita de cara a sacarle el máximo partido.
 	
-	\textbf{FRQ-002}	El usuario podrá introducir sus datos personales en la aplicación 	\textbf{OBJ-001}
+	\textbf{Historia 6: Principal}
+		Como usuario al entrar en la aplicación quiero que me muestre el siguiente evento hoy si lo hubiese de cada una de las categorias: citas, medicación, horarios, etc para poder tener una idea aproximada del día.
 	
-	\textbf{FRQ-003}	El usuario podra visualizar sus datos personales	\textbf{OBJ-001}
+	\textbf{Historia 7: Rutina}
+		Como usuario quiero poder añadir, consultar, modificar y borrar elementos en el calendario semanal de rutinas para poder planificar mis actividades semanales.
 	
-	\textbf{FRQ-004}	Es usuario podrá ver/editar sus datos personales	\textbf{OBJ-001}\\*
+	\textbf{Historia 8: Notificaciones Rutinas}
+		Como usuario quiero que me la app me avise de el comienzo de alguna actividad del horario semanal, así como que me pregunte por algunas de ellas para recabar información de mi estado de animo y como me favorece la rutina. 
 	
+	\textbf{Historia 9: Medicación}	La aplicación mostrará una vista del mes actual para las actividades del usuario de ese mes (citas y rutinas)	\textbf{OBJ-003}
 	
+	\textbf{Historia 10}	El usuario podrá añadir una cita desde cualquiera de las vistas mensual/diaria
 	
-	\textbf{FRQ-005}	El usuario al acceder a la aplicación podra visualizar de un vistazo su actividad para hoy 		\textbf{OBJ-003}
+	\textbf{Historia 11}	El usuario podrá añadir una rutina para ese dia desde cualquiera de las vistas mensual/diaria
 	
-	\textbf{FRQ-006}	El usuario podrá acceder desde la pantalla principal a sus citas medicas	\textbf{OBJ-003 OBJ-004}
+	\textbf{Historia 12}	El usuario podrá visualizar/editar la cita desde cualquiera de esas vistas
 	
-	\textbf{FRQ-007}	El usuario podrá acceder desde la pantalla principal a sus rutinas diarias	\textbf{OBJ-003}  \textbf{OBJ-005}\\*					
+
+	\textbf{Historia 13}	El usuario podrá visualizar/editar la rutina desde cualquiera de esas vistas\\*
+
 	
+	\textbf{Historia 14}	El usuario podrá acceder a la lista de citas medicas
 	
-	AFECTADAS POR EL OBJETIVO \textbf{OBJ-004}\\*
-	\textbf{FRQ-008}	La aplicación mostrará una vista del dia actual con actividades del usuario de ese dia (citas y rutinas)
+
+	\textbf{Historia 15}	El usuario podrá añadir desde la lista una nueva cita medica
 	
-	\textbf{FRQ-009}	La aplicación mostrará una vista del mes actual para las actividades del usuario de ese mes (citas y rutinas)	\textbf{OBJ-003}
+	\textbf{Historia 16}	El usuario podrá añadir alertas y notificaciones a una cita médica
 	
-	\textbf{FRQ-010}	El usuario podrá añadir una cita desde cualquiera de las vistas mensual/diaria
+	\textbf{Historia 17}	El usuario podrá añadir personajes a una cita medica
+
+	\textbf{Historia 18}	El usuario podrá añadir pruebas a una cita medica
 	
-	\textbf{FRQ-011}	El usuario podrá añadir una rutina para ese dia desde cualquiera de las vistas mensual/diaria
+
+	\textbf{Historia 19}	El usuario podrá añadir medicamentos a una cita medica
 	
-	\textbf{FRQ-012}	El usuario podrá visualizar/editar la cita desde cualquiera de esas vistas
+	\textbf{Historia 20}	El usuario podrá añadir duración a una cita médica
+
 	
-	\textbf{FRQ-013}	El usuario podrá visualizar/editar la rutina desde cualquiera de esas vistas\\*
+	\textbf{Historia 21}	El usuario podrá añadir síntomas a una cita medica
 	
+	\textbf{Historia 22}	El usuario podrá visualizar/editar la cita medica\\*
 	
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-004}\\*
-	
-	\textbf{FRQ-014}	El usuario podrá acceder a la lista de citas medicas
-	
-	\textbf{FRQ-015}	El usuario podrá añadir desde la lista una nueva cita medica
-	
-	\textbf{FRQ-016}	El usuario podrá añadir alertas y notificaciones a una cita médica
-	
-	\textbf{FRQ-017}	El usuario podrá añadir personajes a una cita medica
-	
-	\textbf{FRQ-018}	El usuario podrá añadir pruebas a una cita medica
-	
-	\textbf{FRQ-019}	El usuario podrá añadir medicamentos a una cita medica
-	
-	\textbf{FRQ-020}	El usuario podrá añadir duración a una cita médica
-	
-	\textbf{FRQ-021}	El usuario podrá añadir síntomas a una cita medica
-	
-	\textbf{FRQ-022}	El usuario podrá visualizar/editar la cita medica\\*
-	
-	
-	
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-005}\\*
-	\textbf{FRQ-023}	El usuario podrá acceder a la lista de rutinas
+	\textbf{Historia 23}	El usuario podrá acceder a la lista de rutinas
 	
 	\textbf{FRQ-024}	El usuario podrá añadir desde la lista una nueva rutina
 	
@@ -375,10 +173,6 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 	
 	\textbf{FRQ-028}	El usuario podrá visualizar/editar la rutina\\*
 	
-	
-	
-	
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-006}\\*
 	\textbf{FRQ-029}	El usuario podrá acceder a la lista de medicamentos
 	
 	\textbf{FRQ-030}	El usuario podrá añadir desde la lista un nuevo medicamento
@@ -389,14 +183,8 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 	
 	\textbf{FRQ-033}	El usuario podrá visualizar/editar el medicamento\\*
 	
-	
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-007}
-	
 	\textbf{FRQ-034 A FRQ-049}	Lo mismo con personajes, sintomas, pruebas\\*
 	
-	
-	
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-010}\\*
 	\textbf{FRQ-050}	El usuario podrá acceder a recursos relaccionados con el autocontrol y la meditacion
 	
 	\textbf{FRQ-051}	El usuario tendrá acceso a telefonos de interés
@@ -405,103 +193,32 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 	
 	\textbf{FRQ-053}	El usuario tendrá acceso a noticias relativas a la AECC\\*
 	
-	
-	
 	\textbf{FRQ-054}	La aplicación notificará al paciente a peticion citas y rutinas\\*
 	
 	\textbf{FRQ-055}	Las listas seran ordenable segun diferentes criterios\\*
 	
-	
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-011}\\*
 	\textbf{FRQ-056}	La aplicacion contendrá ajustes que faciliten su manejo al usuario\\*
 	
-	
-
-	\subsubsection{Requisitos No Funcionales}
-	
-	Este tipo de requisitos define las propiedades emergentes dla aplicación, tales como el tiempo de
-	respuesta, las necesidades de almacenamiento, la fiabilidad.\\*
-	
-	Pueden especificar también la utilización de una herramienta CASE en particular, un lenguaje
-	de programación o un método del desarrollo.\\*
-	
-	En este apartado se detalla el catálogo de requisitos no funcionales. Estos requisitos pueden
-	ser más críticos que los requisitos funcionales, ya que son a los que normalmente debe apuntar la
-	arquitectura y si estos no son cumplidos, el software puede no funcionar o el cliente simplemente
-	no acepta el producto.\\*
-	
-	Estos requisitos se puede decir que no están relacionados directamente con la funcionalidad
-	dla aplicación. Con esto no se pretende decir que no sean necesarios para la funcionalidad dla aplicación,
-	pero sí que no pueden asociarse a ningún caso de uso en particular. Hay distintas categorías y tipos
-	de requisitos no funcionales: hardware, plataforma software, comunicaciones, de interfaz, de
-	seguridad, de control de concurrencia, de persistencia…etc.\\*
-	
-	Los requisitos no funcionales llevarán un nombre descriptivo y un número para identificarlos.
-	Este número tendrá el formato NFRQ - <id> donde id será el número del requisito de información.
-	Además se indicará una descripción y cualquier información que sea relevante para una mayor
-	claridad.\\*
-	
-	Algunos requisitos no funcionales identificados para el desarrollo del presente proyecto son
-	los siguientes:\\*
-
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-015}\\*
-		
-	\textbf{NFRQ-001}		La aplicacion será un apoyo y una ayuda para el paciente\\*
-	
-	
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-016}\\*
-		
-	\textbf{NFRQ-002}		La aplicación debe ser coherente con el programa de Diario de Salud de la AECC.
-	
-	
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-013 OBJ-015}\\*		
-	\textbf{NFRQ-003}		La aplicacion sera amigable para usuarios no avanzados
-	
-	
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-016}\\*	
-	\textbf{NFRQ-004}		La aplicacion cumplira las guias de estilo fijadas por la AECC
-	
-	
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-015}\\*		
-	\textbf{NFRQ-005}		La aplicación proporcionará recursos de valor para los enfermos de cancer.
-	
-	
-		
-	\textbf{NFRQ-006}		La aplicación será mantenible y escalable a petición del cliente.
-
-
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-004}\\*	
-	\textbf{NFRQ-007}		La aplicación facilitara las visitas médicas
-
-
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-005}\\*			
-	\textbf{NFRQ-008}		La aplicacion incentivará la realizacion de actividades placenteras para el paciente
-
-
-	AFECTADOS POR EL OBJETIVO 	\textbf{OBJ-003}\\*		
-	\textbf{NFRQ-009}		La aplicacion facilitara la organizacion de los compromisos del usuario
-
 
 		
-	\textbf{NFRQ-010}		La aplicación será segura y confiable
-	
-	
-	\textbf{NFRQ-011}		La aplicación estará finalizada antes del dia 9 de septiembre
-
-	
 
 	\subsection{Identificación de actores}
 		
 	\subsection{Diagrama de casos de uso }
 		
-
+	Un caso de uso es una descripción de los pasos o las actividades que deberán realizarse para llevar a cabo algún proceso.\\*
+	
+	Los personajes o entidades que participarán en un caso de uso se denominan actores. En el contexto de ingeniería del software, un caso de uso es una secuencia de interacciones que se desarrollarán entre un sistema y sus actores en respuesta a un evento que inicia un actor principal sobre el propio sistema. Los diagramas de casos de uso sirven para especificar la comunicación y el comportamiento de un sistema mediante su interacción con los usuarios y/u otros sistemas. O lo que es igual, un diagrama que muestra la relación entre los actores y los casos de uso en un sistema. Una relación es una conexión entre los elementos del modelo, por ejemplo la especialización y la generalización son relaciones. Los diagramas de casos de uso se utilizan para ilustrar los requerimientos del sistema al mostrar cómo reacciona a eventos que se producen en su ámbito o en él mismo.\\*
+	
+	Los más comunes para la captura de requisitos funcionales, especialmente con el desarrollo del paradigma de la programación orientada a objetos, donde se originaron, si bien puede utilizarse con resultados igualmente satisfactorios con otros paradigmas de programación.\\*
+	
+	WIKIPEDIA
 
 
 	\subsection{Descripción de Casos de Uso}
 	
 	\textbf{CASOS DE USO}\\*
 	
-		
 	\textbf{CU-001} PERFIL DE USUARIO - Inserción de perfil\\*
 	
 	\begin{table}[H]
@@ -514,12 +231,12 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 				\hline \textbf{Objetivo} & Incluir en la aplicación los datos personales del usuario\\* 			
 				\hline \textbf{Precondición} & Los datos del usuario están sin completar \\* 
 				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-											 & 2.- Pulsamos el circulo que está al principio del menú \\*	
-											 & 3.- Rellenamos los datos personales del usuario\\*	
+											 & 2.- Pulsamos el círculo que está al principio del menú drawer \\*	
+											 & 3.- Completamos los datos personales del usuario\\*	
 				\hline \textbf{Flujo alternativo} & 1.- Desplegamos el menú drawer \\* 
- 												  & 2.- Pulsamos la opcion ajustes \\*	
-												  & 3.- Pulsamos la opción en pantalla "Perfil" \\*	
-												  & 3.- Rellenamos los datos personales del usuario \\*	
+ 												  & 2.- Pulsamos la opcion AJUSTES \\*	
+												  & 3.- Pulsamos la opción en pantalla 'Perfil' \\*	
+												  & 3.- Completamos los datos personales del usuario \\*	
 				\hline \textbf{Postcondición} & El usuario posee sus datos personales en la aplicación \\* 
 				\hline \textbf{Comentarios}   & A la hora de introducir la fotografía dentro de los datos personales, podrá elegir entre las que tenga en la galeria del propio terminal o acceder a la aplicación de cámara para hacer una nueva fotografía\\*
 				\hline
@@ -527,12 +244,8 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\caption{Prefil de usuario - Inserción}
 			\label{tabla:caso001}
 	\end{table}
-	
-	
-	
-	\textbf{CU-002}	PERFIL DE USUARIO - Consulta de perfil\\*
-	
-	La visualización del perfil pude ser un caso de uso que converge con el anterior, comparten pre y post condición, y el flujo de acceso es prácticamente el mismo (Se estudiará)\\*
+		
+	\textbf{CU-002}	PERFIL DE USUARIO - Consulta\\*
 	
 	\begin{table}[H]
 		\centering
@@ -543,22 +256,21 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\hline\textbf{Actores} 	& Usuario\\*
 			\hline \textbf{Objetivo} & Consultar en la aplicación los datos personales del usuario\\* 			
 			\hline \textbf{Precondición} & Los datos del usuario existen en la aplicación \\* 
-			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-			& 2.- Pulsamos el circulo que está al principio del menú \\*	
+			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer\\* 
+			& 2.- Pulsamos el círculo que está al principio del menú drawer\\*	
 			& 3.- Consultamos los datos personales del usuario\\*	
-			\hline \textbf{Flujo alternativo} & 1.- Desplegamos el menú drawer \\* 
-			& 2.- Pulsamos la opción ajustes \\*	
-			& 3.- Pulsamos la opción en pantalla "Perfil" \\*	
-			& 3.- Rellenamos los datos personales del usuario \\*	
+			\hline \textbf{Flujo alternativo} & 1.- Desplegamos el menú drawer\\* 
+			& 2.- Pulsamos la opción AJUSTES \\*	
+			& 3.- Pulsamos la opción en pantalla 'Perfil' \\*	
+			& 3.- Consultamos los datos personales del usuario \\*	
 			\hline \textbf{Postcondición} & El usuario ha consultado sus datos personales\\* 
-			\hline \textbf{Comentarios}   & Se pueden añadir aquí datos relativos a los campos que pueden existir en el perfil\\*
+			\hline \textbf{Comentarios}   & Se pueden consultar todos los datos referentes al perfil del usuario\\*
 			\hline
 		\end{tabular}
 		\caption{Perfil de usuario - Consulta}
 		\label{tabla:caso002}
 	\end{table}
 	
-		
 	\textbf{CU-003} PERFIL DE USUARIO - Edición de perfil\\*
 	
 	\begin{table}[H]
@@ -570,24 +282,23 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\hline\textbf{Actores} 	& Usuario\\*
 			\hline \textbf{Objetivo} & Modificar en la aplicación los datos personales del usuario\\* 			
 			\hline \textbf{Precondición} & Los datos del usuario existen en la aplicación \\* 
-			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-			& 2.- Pulsamos el circulo que está al principio del menú \\*	
-			& 3.- Rellenamos los datos personales del usuario\\*	
-			\hline \textbf{Flujo alternativo} & 1.- Desplegamos el menú drawer \\* 
+			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer\\* 
+			& 2.- Pulsamos el círculo que está al principio del menú drawer\\*	
+			& 3.- Completamos los datos personales del usuario que queramos cambiar\\*	
+			\hline \textbf{Flujo alternativo} & 1.- Desplegamos el menú drawer\\* 
 			& 2.- Pulsamos la opción ajustes \\*	
-			& 3.- Pulsamos la opción en pantalla "Perfil" \\*	
-			& 3.- Rellenamos los datos personales del usuario \\*	
+			& 3.- Pulsamos la opción en pantalla 'Perfil' \\*	
+			& 3.- Completamos los datos personales del usuario que queramos cambiar\\*	
 			\hline \textbf{Postcondición} & El usuario posee sus datos personales modificados\\* 
 			\hline \textbf{Comentarios}   & El usuario puede a su elección dejar los datos tal y como estuviesen en un principio\\*
 			\hline
 		\end{tabular}
 		\caption{Perfil de usuario - Edición}
 		\label{tabla:caso003}
+
 	\end{table}
-	
-	
 		
-	\textbf{CU-004}	PERFIL DE USUARIO - Borrado de perfil\\*
+	\textbf{CU-004}	PERFIL DE USUARIO - Borrado\\*
 
 	\begin{table}[H]
 		\centering
@@ -596,31 +307,29 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\hline\hline \textbf{Versión} & 1.0 \\ *
 			\hline\hline \textbf{Fecha} & 24/07/2015 \\ *
 			\hline\textbf{Actores} 	& Usuario\\*
-			\hline \textbf{Objetivo} & Borrar dla aplicación los datos personales del usuario\\* 			
+			\hline \textbf{Objetivo} & Borrar de la aplicación los datos personales del usuario\\* 			
 			\hline \textbf{Precondición} & Los datos del usuario existen en la aplicación \\* 
 			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-			& 2.- Pulsamos el circulo que está al principio del menú \\*	
-			& 3.- Rellenamos los datos personales del usuario\\*	
+			& 2.- Pulsamos el círculo que está al principio del menú drawer\\*	
+			& 3.- Eliminamos los datos personales del usuario\\*	
 			\hline \textbf{Flujo alternativo} & 1.- Desplegamos el menú drawer \\* 
-			& 2.- Pulsamos la opcion ajustes \\*	
-			& 3.- Pulsamos la opción en pantalla "Perfil" \\*	
-			& 3.- Rellenamos los datos personales del usuario \\*	
-			\hline \textbf{Postcondición} & El usuario ya NO posee sus datos personales en la aplicación \\* 
-			\hline \textbf{Comentarios}   &  \\*
+			& 2.- Pulsamos la opción ajustes \\*	
+			& 3.- Pulsamos la opción en pantalla 'Perfil' \\*	
+			& 3.- Eliminamos dos datos del usuario\\*	
+			\hline \textbf{Postcondición} & El usuario ha eliminado sus datos personales\\* 
+			\hline \textbf{Comentarios}   & El usuario puede a su elección dejar los datos tal y como estuviesen en un principio\\* 
 			\hline
 		\end{tabular}
 		\caption{Perfil de usuario - Borrado}
 		\label{tabla:caso004}
+
 	\end{table}
 	
 	
 	
-	
-	
-	
-	\textbf{CITA MEDICA}\\*
+	\textbf{CITA MÉDICA}\\*
 
-	\textbf{CU-005}	CITA MEDICA - Inserción de cita médica\\*
+	\textbf{CU-005}	CITA MÉDICA - Inserción\\*
 	
 	\begin{table}[H]
 		\centering
@@ -632,30 +341,28 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\hline \textbf{Objetivo} & Insertar en la aplicación una cita médica que tiene el usuario\\* 			
 			\hline \textbf{Precondición} & La cita médica no existe en la aplicación\\* 
 			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-			& 2.- Pulsamos la opción CITA MEDICA\\*	
+			& 2.- Pulsamos la opción CITA MÉDICA\\*	
 			& 3.- Pulsamos el icono +\\*	
-			& 4.- Rellenamos los datos pertinentes de la cita médica\\*	
+			& 4.- Completamos los datos pertinentes de la cita médica\\*	
 			\hline \textbf{Flujo alternativo} & 1a.- Desplegamos el menú drawer \\* 
-			& 2a.- Pulsamos la opción Principal \\*	
-			& 3a.- Elegimos la opción "añadir cita" al pulsar el icono +\\*	
+			& 2a.- Pulsamos la opción PRINCIPAL \\*	
+			& 3a.- Elegimos la opción 'añadir cita' al pulsar el icono +\\*	
 			& 4a.- Completamos los datos de la cita\\*	
 			& 1b.- Desplegamos el menú drawer \\* 
-			& 2b.- Pulsamos la opción Horario \\*	
-			& 3b.- Elegimos la opción "añadir cita" al pulsar el icono +\\*	
+			& 2b.- Pulsamos la opción HORARIO \\*	
+			& 3b.- Elegimos la opción 'AÑADIR CITA' al pulsar el icono +\\*	
 			& 4b.- Completamos los datos de la cita\\*	
-			& 5b.- Sobre la vista mensual se puede añadir una cita al pulsar sobre el dia del mes y continuando con el flujo anteriormente indicado\\*	
+			& 5b.- Sobre la vista mensual se puede añadir una cita al pulsar sobre el día del mes y continuando con el flujo anteriormente indicado\\*	
 			\hline \textbf{Postcondición} & El usuario ya posee los datos de la cita en la aplicación \\* 
 			\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser rellenados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
 			\hline
 		\end{tabular}
 		\caption{Cita médica - Inserción}
 		\label{tabla:caso005}
+
 	\end{table}
 
-
-
-
-	\textbf{CU-006}	CITA MEDICA - Consulta de cita médica\\*
+	\textbf{CU-006}	CITA MÉDICA - Consulta\\*
 	
 		\begin{table}[H]
 			\centering
@@ -667,14 +374,14 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 				\hline \textbf{Objetivo} & Editar una cita médica que ya posee el usuario\\* 			
 				\hline \textbf{Precondición} & La cita médica existe en la aplicación\\* 
 				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-				& 2.- Pulsamos la opción CITA MEDICA\\*	
+				& 2.- Pulsamos la opción CITA MÉDICA\\*	
 				& 3.- Pulsamos sobre los tres puntos a la derecha de la cita médica que queremos editar\\*	
 				& 4.- Seleccionamos la opción editar\\*	
 				& 5.- Modificamos los datos pertinentes de la cita médica que queramos cambiar\\*	
 				\hline \textbf{Flujo alternativo} & 1.- Desplegamos el menú drawer \\* 
 				& 2.- Pulsamos la opcion Horario \\*	
 				& 3.- Pulsamos sobre el icono de los tres puntos de cita que queramos modificar \\*	
-				& 4.- Elegimos la opcion "editar"\\*	
+				& 4.- Elegimos la opcion 'editar'\\*	
 				& 5.- Modificamos los datos de la cita\\*	
 				\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la cita en la aplicación \\* 
 				\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
@@ -684,10 +391,7 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\label{tabla:caso006}
 		\end{table}
 		
-	
-	
-	
-	\textbf{CU-007}	CITA MEDICA - Edición de cita médica\\*
+	\textbf{CU-007}	CITA MÉDICA - Edición\\*
 	
 		\begin{table}[H]
 			\centering
@@ -699,14 +403,14 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 				\hline \textbf{Objetivo} & Editar una cita médica que ya posee el usuario\\* 			
 				\hline \textbf{Precondición} & La cita médica existe en la aplicación\\* 
 				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-				& 2.- Pulsamos la opción CITA MEDICA\\*	
+				& 2.- Pulsamos la opción CITA MÉDICA\\*	
 				& 3.- Pulsamos sobre los tres puntos a la derecha de la cita médica que queremos editar\\*	
 				& 4.- Seleccionamos la opción editar\\*	
 				& 5.- Modificamos los datos pertinentes de la cita médica que queramos cambiar\\*	
 				\hline \textbf{Flujo alternativo} & 1.- Desplegamos el menú drawer \\* 
 				& 2.- Pulsamos la opcion Horario \\*	
 				& 3.- Pulsamos sobre el icono de los tres puntos de cita que queramos modificar \\*	
-				& 4.- Elegimos la opcion "editar"\\*	
+				& 4.- Elegimos la opcion 'editar'\\*	
 				& 5.- Modificamos los datos de la cita\\*	
 				\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la cita en la aplicación \\* 
 				\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
@@ -715,10 +419,8 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\caption{Cita médica - Edición}
 			\label{tabla:caso007}
 		\end{table}
-		
 	
-	
-	\textbf{CU-008}	CITA MEDICA - borrado de cita médica\\*
+	\textbf{CU-008}	CITA MÉDICA - Borrado\\*
 	
 		\begin{table}[H]
 			\centering
@@ -730,13 +432,13 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 				\hline \textbf{Objetivo} & Borrar una cita médica que ya posee el usuario\\* 			
 				\hline \textbf{Precondición} & La cita médica existe en la aplicación\\* 
 				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-				& 2.- Pulsamos la opción CITA MEDICA\\*	
+				& 2.- Pulsamos la opción CITA MÉDICA\\*	
 				& 3.- Pulsamos sobre los tres puntos a la derecha de la cita médica que queremos eliminar dentro del listado\\*	
 				& 4.- Seleccionamos la opción eliminar\\*	
 				\hline \textbf{Flujo alternativo} & 1.- Desplegamos el menú drawer \\* 
 				& 2.- Pulsamos la opción Horario \\*	
 				& 3.- Pulsamos sobre el icono de los tres puntos de cita que queramos eliminar \\*	
-				& 4.- Elegimos la opción "Eliminar"\\*	
+				& 4.- Elegimos la opción 'Eliminar'\\*	
 				& 5.- Modificamos los datos de la cita\\*	
 				\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la cita en la aplicación \\* 
 				\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
@@ -744,11 +446,9 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\end{tabular}
 			\caption{Cita médica - Edición}
 			\label{tabla:caso008}
+
 		\end{table}
-		
-		
-		
-		
+
 	
 	
 	\textbf{RUTINA DIARIA}\\*
@@ -767,14 +467,14 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
 				& 2.- Pulsamos la opción RUTINA\\*	
 				& 3.- Pulsamos el icono +\\*	
-				& 4.- Rellenamos los datos pertinentes de la rutina\\*	
+				& 4.- Completamos los datos pertinentes de la rutina\\*	
 				\hline \textbf{Flujo alternativo} & 1a.- Desplegamos el menú drawer \\* 
-				& 2a.- Pulsamos la opción Principal \\*	
-				& 3a.- Elegimos la opción "añadir rutina" al pulsar el icono +\\*	
+				& 2a.- Pulsamos la opción PRINCIPAL \\*	
+				& 3a.- Elegimos la opción 'añadir rutina' al pulsar el icono +\\*	
 				& 4a.- Completamos los datos de la rutina\\*	
 				& 1b.- Desplegamos el menú drawer \\* 
 				& 2b.- Pulsamos la opción Horario \\*	
-				& 3b.- Elegimos la opción "añadir rutina" al pulsar el icono +\\*	
+				& 3b.- Elegimos la opción 'añadir rutina' al pulsar el icono +\\*	
 				& 4b.- Completamos los datos de la rutina\\*	
 				& 5b.- Sobre la vista mensual se puede añadir una rutina al pulsar sobre el dia del mes y continuando con el flujo anteriormente indicado\\*	
 				\hline \textbf{Postcondición} & El usuario ya posee los datos de la rutina en la aplicación \\* 
@@ -784,9 +484,6 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\caption{Rutina - Inserción}
 			\label{tabla:caso009}
 		\end{table}
-		
-		
-		
 		
 	\textbf{CU-010}	RUTINA - Consulta\\*
 		
@@ -807,7 +504,7 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 				\hline \textbf{Flujo alternativo} & 1.- Desplegamos el menú drawer \\* 
 				& 2.- Pulsamos la opcion Horario \\*	
 				& 3.- Pulsamos sobre el icono de los tres puntos de rutina que queramos modificar \\*	
-				& 4.- Elegimos la opcion "editar"\\*	
+				& 4.- Elegimos la opcion 'editar'\\*	
 				& 5.- Modificamos los datos de la rutina\\*	
 				\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la rutina en la aplicación \\* 
 				\hline \textbf{Comentarios}   & Los valores de la fecha de la rutina y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
@@ -816,9 +513,6 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\caption{Rutina - Edición}
 			\label{tabla:caso010}
 		\end{table}
-		
-		
-		
 		
 	\textbf{CU-011}	RUTINA - Edición\\*
 		
@@ -839,7 +533,7 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 				\hline \textbf{Flujo alternativo} & 1.- Desplegamos el menú drawer \\* 
 				& 2.- Pulsamos la opcion Horario \\*	
 				& 3.- Pulsamos sobre el icono de los tres puntos de rutina que queramos modificar \\*	
-				& 4.- Elegimos la opcion "editar"\\*	
+				& 4.- Elegimos la opcion 'editar'\\*	
 				& 5.- Modificamos los datos de la rutina\\*	
 				\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la rutina en la aplicación \\* 
 				\hline \textbf{Comentarios}   & Los valores de la fecha de la rutina y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
@@ -848,8 +542,6 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\caption{Rutina - Edición}
 			\label{tabla:caso011}
 		\end{table}
-		
-		
 		
 	\textbf{CU-012}	RUTINA - Borrado\\*
 		
@@ -869,18 +561,15 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 				\hline \textbf{Flujo alternativo} & 1.- Desplegamos el menú drawer \\* 
 				& 2.- Pulsamos la opción Horario \\*	
 				& 3.- Pulsamos sobre el icono de los tres puntos de rutina que queramos eliminar \\*	
-				& 4.- Elegimos la opción "Eliminar"\\*	
+				& 4.- Elegimos la opción 'Eliminar'\\*	
 				& 5.- Modificamos los datos de la rutina\\*	
 				\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la rutina en la aplicación \\* 
 				\hline \textbf{Comentarios}   & Los valores de la fecha de la rutina y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
 				\hline
 			\end{tabular}
-			\caption{Rutina - Edición}
+			\caption{Rutina - Borrado}
 			\label{tabla:caso012}
 		\end{table}
-	
-	
-	
 		
 		
 		
@@ -900,7 +589,7 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
 				& 2.- Pulsamos la opción MEDICAMENTO\\*	
 				& 3.- Pulsamos el icono + \\*	
-				& 4.- Rellenamos los datos pertinentes al medicamento\\*	
+				& 4.- Completamos los datos pertinentes al medicamento\\*	
 				\hline \textbf{Flujo alternativo} & No se contempla \\* 
 				\hline \textbf{Postcondición} & El usuario ya posee los datos del medicamento en la aplicación \\* 
 				\hline \textbf{Comentarios}   & Los valores de la fecha del medicamento y el nombre de la misma son obligatorios, en caso de no ser rellenados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
@@ -909,9 +598,6 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\caption{MEDICAMENTO - Inserción}
 			\label{tabla:caso013}
 		\end{table}
-		
-		
-		
 		
 		\textbf{CU-014}	MEDICAMENTO - Consulta\\*
 		
@@ -938,9 +624,6 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\label{tabla:caso014}
 		\end{table}
 		
-		
-		
-		
 		\textbf{CU-015}	MEDICAMENTO - Edición\\*
 		
 		\begin{table}[H]
@@ -953,7 +636,7 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 				\hline \textbf{Objetivo} & Editar un medicamento que ya posee el usuario\\* 			
 				\hline \textbf{Precondición} & El medicamento existe en la aplicación\\* 
 				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-				& 2.- Pulsamos la opciónMEDICAMENTO\\*	
+				& 2.- Pulsamos la opción MEDICAMENTO\\*	
 				& 3.- Pulsamos sobre los tres puntos a la derecha del medicamento que queremos editar\\*	
 				& 4.- Seleccionamos la opción editar\\*	
 				& 5.- Modificamos los datos pertinentes del medicamento que queramos cambiar\\*	
@@ -966,8 +649,6 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\label{tabla:caso015}
 		\end{table}
 		
-		
-		
 		\textbf{CU-016}	MEDICAMENTO - Borrado\\*
 		
 		\begin{table}[H]
@@ -978,9 +659,9 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 				\hline\hline \textbf{Fecha} & 27/07/2015 \\ *
 				\hline\textbf{Actores} 	& Usuario\\*
 				\hline \textbf{Objetivo} & Borrar un medicamento que ya posee el usuario\\* 			
-				\hline \textbf{Precondición} & La cita médica existe en la aplicación\\* 
+				\hline \textbf{Precondición} & El medicamento existe en la aplicación\\* 
 				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-				& 2.- Pulsamos la opción CITA MEDICA\\*	
+				& 2.- Pulsamos la opción MEDICAMENTO\\*	
 				& 3.- Pulsamos sobre los tres puntos a la derecha del medicamento que queremos eliminar dentro del listado\\*	
 				& 4.- Seleccionamos la opción eliminar\\*	
 				\hline \textbf{Flujo alternativo} & No se contempla \\* 
@@ -991,9 +672,6 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\caption{MEDICAMENTO - Borrado}
 			\label{tabla:caso016}
 		\end{table}
-		
-		
-		
 		
 		
 		
@@ -1008,12 +686,12 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 				\hline\hline \textbf{Versión} & 1.0 \\ *
 				\hline\hline \textbf{Fecha} & 28/07/2015 \\ *
 				\hline\textbf{Actores} 	& Usuario\\*
-				\hline \textbf{Objetivo} & Insertar en la aplicación una rutina que tiene el usuario\\* 			
+				\hline \textbf{Objetivo} & Insertar en la aplicación un personaje que tiene el usuario\\* 			
 				\hline \textbf{Precondición} & La rutina no existe en la aplicación\\* 
 				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
 				& 2.- Pulsamos la opción PERSONAJE\\*	
 				& 3.- Pulsamos el icono +\\*	
-				& 4.- Rellenamos los datos pertinentes de la rutina\\*	
+				& 4.- Completamos los datos pertinentes de la rutina\\*	
 				\hline \textbf{Flujo alternativo} & No se contempla \\* 
 				\hline \textbf{Postcondición} & El usuario ya posee los datos de la rutina en la aplicación \\* 
 				\hline \textbf{Comentarios}   & Los valores de la fecha de la rutina y el nombre de la misma son obligatorios, en caso de no ser rellenados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
@@ -1022,9 +700,6 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\caption{Rutina - Inserción}
 			\label{tabla:caso017}
 		\end{table}
-		
-		
-		
 		
 		\textbf{CU-018}	PERSONAJE - Consulta\\*
 		
@@ -1035,26 +710,23 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 				\hline\hline \textbf{Versión} & 1.0 \\ *
 				\hline\hline \textbf{Fecha} & 27/07/2015 \\ *
 				\hline\textbf{Actores} 	& Usuario\\*
-				\hline \textbf{Objetivo} & Editar una cita médica que ya posee el usuario\\* 			
-				\hline \textbf{Precondición} & La cita médica existe en la aplicación\\* 
+				\hline \textbf{Objetivo} & Editar un personaje que ya posee el usuario\\* 			
+				\hline \textbf{Precondición} & El personaje existe en la aplicación\\* 
 				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-				& 2.- Pulsamos la opción CITA MEDICA\\*	
-				& 3.- Pulsamos sobre los tres puntos a la derecha de la cita médica que queremos editar\\*	
+				& 2.- Pulsamos la opción PERSONAJE\\*	
+				& 3.- Pulsamos sobre los tres puntos a la derecha del personaje que queremos editar\\*	
 				& 4.- Seleccionamos la opción editar\\*	
-				& 5.- Modificamos los datos pertinentes de la cita médica que queramos cambiar\\*	
+				& 5.- Modificamos los datos pertinentes del personaje que queramos cambiar\\*	
 				\hline \textbf{Flujo alternativo} & No se contempla \\* 
-				\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la cita en la aplicación \\* 
-				\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
+				\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados del personaje en la aplicación \\* 
+				\hline \textbf{Comentarios}   & Los valores de la fecha  y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
 				\hline
 			\end{tabular}
 			\caption{PERSONAJE - Consulta}
 			\label{tabla:caso018}
 		\end{table}
 		
-		
-		
-		
-		\textbf{CU-019}	PERSONAJE - Edición de rutina\\*
+		\textbf{CU-019}	PERSONAJE - Edición\\*
 		
 		\begin{table}[H]
 			\centering
@@ -1063,25 +735,23 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 				\hline\hline \textbf{Versión} & 1.0 \\ *
 				\hline\hline \textbf{Fecha} & 27/07/2015 \\ *
 				\hline\textbf{Actores} 	& Usuario\\*
-				\hline \textbf{Objetivo} & Editar una cita médica que ya posee el usuario\\* 			
-				\hline \textbf{Precondición} & La cita médica existe en la aplicación\\* 
+				\hline \textbf{Objetivo} & Editar un personaje que ya posee el usuario\\* 			
+				\hline \textbf{Precondición} & El personaje existe en la aplicación\\* 
 				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-				& 2.- Pulsamos la opción CITA MEDICA\\*	
-				& 3.- Pulsamos sobre los tres puntos a la derecha de la cita médica que queremos editar\\*	
+				& 2.- Pulsamos la opción PERSONAJE\\*	
+				& 3.- Pulsamos sobre los tres puntos a la derecha del personaje que queremos editar\\*	
 				& 4.- Seleccionamos la opción editar\\*	
-				& 5.- Modificamos los datos pertinentes de la cita médica que queramos cambiar\\*	
+				& 5.- Modificamos los datos pertinentes del personaje que queramos cambiar\\*	
 				\hline \textbf{Flujo alternativo} & No se contempla \\* 
-				\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la cita en la aplicación \\* 
-				\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
+				\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados del personaje en la aplicación \\* 
+				\hline \textbf{Comentarios}   & Los valores de la fecha de el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
 				\hline
 			\end{tabular}
-			\caption{Cita médica - Edición}
+			\caption{Personaje - Edición}
 			\label{tabla:caso019}
 		\end{table}
 		
-		
-		
-		\textbf{CU-020}	PERSONAJE - borrado de rutina\\*
+		\textbf{CU-020}	PERSONAJE - Borrado\\*
 		
 		\begin{table}[H]
 			\centering
@@ -1090,273 +760,297 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 				\hline\hline \textbf{Versión} & 1.0 \\ *
 				\hline\hline \textbf{Fecha} & 27/07/2015 \\ *
 				\hline\textbf{Actores} 	& Usuario\\*
-				\hline \textbf{Objetivo} & Borrar una cita médica que ya posee el usuario\\* 			
-				\hline \textbf{Precondición} & La cita médica existe en la aplicación\\* 
+				\hline \textbf{Objetivo} & Borrar un personaje que ya posee el usuario\\* 			
+				\hline \textbf{Precondición} & El personaje existe en la aplicación\\* 
 				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-				& 2.- Pulsamos la opción CITA MEDICA\\*	
-				& 3.- Pulsamos sobre los tres puntos a la derecha de la cita médica que queremos eliminar dentro del listado\\*	
+				& 2.- Pulsamos la opción PERSONAJE\\*	
+				& 3.- Pulsamos sobre los tres puntos a la derecha del personaje que queremos eliminar dentro del listado\\*	
 				& 4.- Seleccionamos la opción eliminar\\*	
 				\hline \textbf{Flujo alternativo} & No se contempla \\* 
-				\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la cita en la aplicación \\* 
-				\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
+				\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados del personaje en la aplicación \\* 
+				\hline \textbf{Comentarios}   & Los valores de la fechay el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
 				\hline
 			\end{tabular}
-			\caption{Cita médica - Borrado}
+			\caption{Personaje - Borrado}
 			\label{tabla:caso020}
 		\end{table}
 		
 		
 		
+	\textbf{SÍNTOMAS}\\*
+	
+	\textbf{CU-021}	SÍNTOMA - Inserción\\*
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
+			\hline \textbf{CU-021} & \textbf{SÍNTOMA - INSERCIÓN} \\*
+			\hline\hline \textbf{Versión} & 1.0 \\ *
+			\hline\hline \textbf{Fecha} & 27/07/2015 \\ *
+			\hline\textbf{Actores} 	& Usuario\\*
+			\hline \textbf{Objetivo} & Insertar en la aplicación una síntoma que tiene el usuario\\* 			
+			\hline \textbf{Precondición} & La síntoma no existe en la aplicación\\* 
+			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
+			& 2.- Pulsamos la opción SÍNTOMA\\*	
+			& 3.- Pulsamos el icono +\\*	
+			& 4.- Completamos los datos pertinentes de la síntoma\\*	
+			\hline \textbf{Flujo alternativo} & No se contempla \\* 
+			\hline \textbf{Postcondición} & El usuario ya posee los datos de la cita en la aplicación \\* 
+			\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser rellenados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
+			\hline
+		\end{tabular}
+		\caption{Personaje - Inserción}
+		\label{tabla:caso021}
+	\end{table}
+	
+	\textbf{CU-022}	SÍNTOMA - Consulta\\*
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
+			\hline \textbf{CU-022} & \textbf{SÍNTOMA - Consulta} \\*
+			\hline\hline \textbf{Versión} & 1.0 \\ *
+			\hline\hline \textbf{Fecha} & 27/07/2015 \\ *
+			\hline\textbf{Actores} 	& Usuario\\*
+			\hline \textbf{Objetivo} & Editar una síntoma que ya posee el usuario\\* 			
+			\hline \textbf{Precondición} & La síntoma existe en la aplicación\\* 
+			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
+			& 2.- Pulsamos la opción SÍNTOMA\\*	
+			& 3.- Pulsamos sobre los tres puntos a la derecha de la síntoma que queremos editar\\*	
+			& 4.- Seleccionamos la opción editar\\*	
+			& 5.- Modificamos los datos pertinentes de la síntoma que queramos cambiar\\*	
+			\hline \textbf{Flujo alternativo} & No se contempla \\* 
+			\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la cita en la aplicación \\* 
+			\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
+			\hline
+		\end{tabular}
+		\caption{Síntoma - Consulta}
+		\label{tabla:caso022}
+	\end{table}
+	
+	\textbf{CU-023}	SÍNTOMA - Edición\\*
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
+			\hline \textbf{CU-023} & \textbf{SÍNTOMA - Edición} \\*
+			\hline\hline \textbf{Versión} & 1.0 \\ *
+			\hline\hline \textbf{Fecha} & 27/07/2015 \\ *
+			\hline\textbf{Actores} 	& Usuario\\*
+			\hline \textbf{Objetivo} & Editar una síntoma que ya posee el usuario\\* 			
+			\hline \textbf{Precondición} & La síntoma existe en la aplicación\\* 
+			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
+			& 2.- Pulsamos la opción SÍNTOMA\\*	
+			& 3.- Pulsamos sobre los tres puntos a la derecha de la síntoma que queremos editar\\*	
+			& 4.- Seleccionamos la opción editar\\*	
+			& 5.- Modificamos los datos pertinentes de la síntoma que queramos cambiar\\*	
+			\hline \textbf{Flujo alternativo} & No se contempla \\* 
+			\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la cita en la aplicación \\* 
+			\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
+			\hline
+		\end{tabular}
+		\caption{Síntoma - Edición}
+		\label{tabla:caso023}
+	\end{table}
+	
+	\textbf{CU-024}	SÍNTOMA - Borrado\\*
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
+			\hline \textbf{CU-024} & \textbf{SÍNTOMA - Borrado} \\*
+			\hline\hline \textbf{Versión} & 1.0 \\ *
+			\hline\hline \textbf{Fecha} & 27/07/2015 \\ *
+			\hline\textbf{Actores} 	& Usuario\\*
+			\hline \textbf{Objetivo} & Borrar una síntoma que ya posee el usuario\\* 			
+			\hline \textbf{Precondición} & La síntoma existe en la aplicación\\* 
+			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
+			& 2.- Pulsamos la opción SÍNTOMA\\*	
+			& 3.- Pulsamos sobre los tres puntos a la derecha de la síntoma que queremos eliminar dentro del listado\\*	
+			& 4.- Seleccionamos la opción eliminar\\*	
+			\hline \textbf{Flujo alternativo} & No se contempla \\* 
+			\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la cita en la aplicación \\* 
+			\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
+			\hline
+		\end{tabular}
+		\caption{Síntoma - Borrado}
+		\label{tabla:caso024}
+	\end{table}
+	
+	
+	
+	\textbf{PRUEBAS}\\*
+	
+	\textbf{CU-025}	PRUEBA - Inserción\\*
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
+			\hline \textbf{CU-025} & \textbf{PRUEBA - INSERCIÓN} \\*
+			\hline\hline \textbf{Versión} & 1.0 \\ *
+			\hline\hline \textbf{Fecha} & 27/07/2015 \\ *
+			\hline\textbf{Actores} 	& Usuario\\*
+			\hline \textbf{Objetivo} & Insertar en la aplicación una prueba que tiene el usuario\\* 			
+			\hline \textbf{Precondición} & La prueba no existe en la aplicación\\* 
+			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
+			& 2.- Pulsamos la opción PRUEBA\\*	
+			& 3.- Pulsamos el icono +\\*	
+			& 4.- Completamos los datos pertinentes de la prueba\\*	
+			\hline \textbf{Flujo alternativo} & No se contempla \\* 
+			\hline \textbf{Postcondición} & El usuario ya posee los datos de la cita en la aplicación \\* 
+			\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser rellenados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
+			\hline
+		\end{tabular}
+		\caption{Prueba - Inserción}
+		\label{tabla:caso025}
+	\end{table}
+	
+	\textbf{CU-026}	PRUEBA - Consulta\\*
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
+			\hline \textbf{CU-026} & \textbf{PRUEBA - Consulta} \\*
+			\hline\hline \textbf{Versión} & 1.0 \\ *
+			\hline\hline \textbf{Fecha} & 27/07/2015 \\ *
+			\hline\textbf{Actores} 	& Usuario\\*
+			\hline \textbf{Objetivo} & Editar una prueba que ya posee el usuario\\* 			
+			\hline \textbf{Precondición} & La prueba existe en la aplicación\\* 
+			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
+			& 2.- Pulsamos la opción PRUEBA\\*	
+			& 3.- Pulsamos sobre los tres puntos a la derecha de la prueba que queremos editar\\*	
+			& 4.- Seleccionamos la opción editar\\*	
+			& 5.- Modificamos los datos pertinentes de la prueba que queramos cambiar\\*	
+			\hline \textbf{Flujo alternativo} & No se contempla \\* 
+			\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la cita en la aplicación \\* 
+			\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
+			\hline
+		\end{tabular}
+		\caption{Prueba - Consulta}
+		\label{tabla:caso026}
+	\end{table}
+	
+	\textbf{CU-027}	PRUEBA - Edición\\*
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
+			\hline \textbf{CU-027} & \textbf{PRUEBA - Edición} \\*
+			\hline\hline \textbf{Versión} & 1.0 \\ *
+			\hline\hline \textbf{Fecha} & 27/07/2015 \\ *
+			\hline\textbf{Actores} 	& Usuario\\*
+			\hline \textbf{Objetivo} & Editar una prueba que ya posee el usuario\\* 			
+			\hline \textbf{Precondición} & La prueba existe en la aplicación\\* 
+			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
+			& 2.- Pulsamos la opción PRUEBA\\*	
+			& 3.- Pulsamos sobre los tres puntos a la derecha de la prueba que queremos editar\\*	
+			& 4.- Seleccionamos la opción editar\\*	
+			& 5.- Modificamos los datos pertinentes de la prueba que queramos cambiar\\*	
+			\hline \textbf{Flujo alternativo} & No se contempla \\* 
+			\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la cita en la aplicación \\* 
+			\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
+			\hline
+		\end{tabular}
+		\caption{Prueba - Edición}
+		\label{tabla:caso027}
+	\end{table}
+	
+	\textbf{CU-028}	PRUEBA - Borrado\\*
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
+			\hline \textbf{CU-028} & \textbf{PRUEBA - Borrado} \\*
+			\hline\hline \textbf{Versión} & 1.0 \\ *
+			\hline\hline \textbf{Fecha} & 27/07/2015 \\ *
+			\hline\textbf{Actores} 	& Usuario\\*
+			\hline \textbf{Objetivo} & Borrar una prueba que ya posee el usuario\\* 			
+			\hline \textbf{Precondición} & La prueba existe en la aplicación\\* 
+			\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
+			& 2.- Pulsamos la opción PRUEBA\\*	
+			& 3.- Pulsamos sobre los tres puntos a la derecha de la prueba que queremos eliminar dentro del listado\\*	
+			& 4.- Seleccionamos la opción eliminar\\*	
+			\hline \textbf{Flujo alternativo} & No se contempla \\* 
+			\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la cita en la aplicación \\* 
+			\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
+			\hline
+		\end{tabular}
+		\caption{Prueba - Borrado}
+		\label{tabla:caso028}
+	\end{table}
 
 	
-		
-		
-		
-		\textbf{SÍNTOMAS}\\*
-		
-		\textbf{CU-021}	SÍNTOMA - Inserción\\*
-		
+	
+	\textbf{CU-029}	ORDENACIÓN DE LISTAS\\* 
+	
 		\begin{table}[H]
 			\centering
 			\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
-				\hline \textbf{CU-021} & \textbf{SÍNTOMA - INSERCIÓN} \\*
+				\hline \textbf{CU-028} & \textbf{ORDENACIÓN DE LISTAS} \\*
 				\hline\hline \textbf{Versión} & 1.0 \\ *
-				\hline\hline \textbf{Fecha} & 27/07/2015 \\ *
+				\hline\hline \textbf{Fecha} & 28/07/2015 \\ *
 				\hline\textbf{Actores} 	& Usuario\\*
-				\hline \textbf{Objetivo} & Insertar en la aplicación una cita médica que tiene el usuario\\* 			
-				\hline \textbf{Precondición} & La cita médica no existe en la aplicación\\* 
+				\hline \textbf{Objetivo} & Ordenar un listado de elementos\\* 			
+				\hline \textbf{Precondición} & La lista posee más de dos elementos ordenados de manera distinta a que se desea\\* 
 				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-				& 2.- Pulsamos la opción SÍNTOMA\\*	
-				& 3.- Pulsamos el icono +\\*	
-				& 4.- Rellenamos los datos pertinentes de la cita médica\\*	
-				\hline \textbf{Flujo alternativo} & No se contempla \\* 
-				\hline \textbf{Postcondición} & El usuario ya posee los datos de la cita en la aplicación \\* 
-				\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser rellenados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
+				& 2.- Pulsamos cualquiera de las opciones CITA MÉDICA, RUTINA, MEDICAMENTO, PERSONAJE, SÍNTOMA, PRUEBA\\*	
+				& 3.- Pulsamos sobre el icono del engranaje del listado\\*	
+				& 4.- Seleccionamos el tipo de ordenación\\*	
+				\hline \textbf{Flujo alternativo} & Para cualquiera de los diferentes tipo de objetos es similar \\* 
+				\hline \textbf{Postcondición} & La lista los elementos ordenados de la manera deseada\\* 
+				\hline \textbf{Comentarios}   & Los modos de ordenación varían de un caso a otro\\*
 				\hline
 			\end{tabular}
-			\caption{Cita médica - Inserción}
-			\label{tabla:caso021}
+			\caption{Ordenación de listas}
+			\label{tabla:caso029}
 		\end{table}
-		
-		
-		
-		
-		\textbf{CU-022}	SÍNTOMA - Consulta de rutina\\*
-		
+
+	\textbf{CU-030}	CONSULTA DE LISTAS\\* 
+	
 		\begin{table}[H]
 			\centering
 			\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
-				\hline \textbf{CU-022} & \textbf{SÍNTOMA - Consulta} \\*
+				\hline \textbf{CU-028} & \textbf{ORDENACIÓN DE LISTAS} \\*
 				\hline\hline \textbf{Versión} & 1.0 \\ *
-				\hline\hline \textbf{Fecha} & 27/07/2015 \\ *
+				\hline\hline \textbf{Fecha} & 28/07/2015 \\ *
 				\hline\textbf{Actores} 	& Usuario\\*
-				\hline \textbf{Objetivo} & Editar una cita médica que ya posee el usuario\\* 			
-				\hline \textbf{Precondición} & La cita médica existe en la aplicación\\* 
+				\hline \textbf{Objetivo} & Ordenar un listado de elementos\\* 			
+				\hline \textbf{Precondición} & La lista posee más de dos elementos ordenados de manera distinta a que se desea\\* 
 				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-				& 2.- Pulsamos la opción SÍNTOMA\\*	
-				& 3.- Pulsamos sobre los tres puntos a la derecha de la cita médica que queremos editar\\*	
-				& 4.- Seleccionamos la opción editar\\*	
-				& 5.- Modificamos los datos pertinentes de la cita médica que queramos cambiar\\*	
-				\hline \textbf{Flujo alternativo} & No se contempla \\* 
-				\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la cita en la aplicación \\* 
-				\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
+				& 2.- Pulsamos cualquiera de las opciones CITA MÉDICA, RUTINA, MEDICAMENTO, PERSONAJE, SÍNTOMA, PRUEBA\\*	
+				& 3.- Pulsamos sobre el icono del engranaje del listado\\*	
+				& 4.- Seleccionamos el tipo de ordenación\\*	
+				\hline \textbf{Flujo alternativo} & Para cualquiera de los diferentes tipo de objetos es similar \\* 
+				\hline \textbf{Postcondición} & La lista los elementos ordenados de la manera deseada\\* 
+				\hline \textbf{Comentarios}   & Los modos de ordenación varían de un caso a otro\\*
 				\hline
 			\end{tabular}
-			\caption{Cita médica - Consulta}
-			\label{tabla:caso022}
+			\caption{Ordenación de listas}
+			\label{tabla:caso030}
 		\end{table}
 		
-		
-		
-		
-		\textbf{CU-023}	SÍNTOMA - Edición\\*
-		
-		\begin{table}[H]
-			\centering
-			\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
-				\hline \textbf{CU-023} & \textbf{SÍNTOMA - Edición} \\*
-				\hline\hline \textbf{Versión} & 1.0 \\ *
-				\hline\hline \textbf{Fecha} & 27/07/2015 \\ *
-				\hline\textbf{Actores} 	& Usuario\\*
-				\hline \textbf{Objetivo} & Editar una cita médica que ya posee el usuario\\* 			
-				\hline \textbf{Precondición} & La cita médica existe en la aplicación\\* 
-				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-				& 2.- Pulsamos la opción CITA MEDICA\\*	
-				& 3.- Pulsamos sobre los tres puntos a la derecha de la cita médica que queremos editar\\*	
-				& 4.- Seleccionamos la opción editar\\*	
-				& 5.- Modificamos los datos pertinentes de la cita médica que queramos cambiar\\*	
-				\hline \textbf{Flujo alternativo} & No se contempla \\* 
-				\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la cita en la aplicación \\* 
-				\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
-				\hline
-			\end{tabular}
-			\caption{Cita médica - Edición}
-			\label{tabla:caso023}
-		\end{table}
-		
-		
-		
-		\textbf{CU-024}	SÍNTOMA - Borrado\\*
-		
-		\begin{table}[H]
-			\centering
-			\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
-				\hline \textbf{CU-024} & \textbf{SÍNTOMA - Borrado} \\*
-				\hline\hline \textbf{Versión} & 1.0 \\ *
-				\hline\hline \textbf{Fecha} & 27/07/2015 \\ *
-				\hline\textbf{Actores} 	& Usuario\\*
-				\hline \textbf{Objetivo} & Borrar una cita médica que ya posee el usuario\\* 			
-				\hline \textbf{Precondición} & La cita médica existe en la aplicación\\* 
-				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-				& 2.- Pulsamos la opción CITA MEDICA\\*	
-				& 3.- Pulsamos sobre los tres puntos a la derecha de la cita médica que queremos eliminar dentro del listado\\*	
-				& 4.- Seleccionamos la opción eliminar\\*	
-				\hline \textbf{Flujo alternativo} & No se contempla \\* 
-				\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la cita en la aplicación \\* 
-				\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
-				\hline
-			\end{tabular}
-			\caption{Cita médica - Borrado}
-			\label{tabla:caso024}
-		\end{table}
-		
-		
-		
+			
+
+	\textbf{CU-031}	AÑADIR NOTIFICACIÓN - MEDICAMENTO\\*
 	
+	\textbf{CU-032}	AÑADIR NOTIFICACIÓN - CITA\\*
 	
+	\textbf{CU-033}	AÑADIR NOTIFICACIÓN - RUTINA\\*
 	
-		
-		
-		
-		\textbf{PRUEBAS}\\*
-		
-		\textbf{CU-025}	PRUEBA - Inserción\\*
-		
-		\begin{table}[H]
-			\centering
-			\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
-				\hline \textbf{CU-025} & \textbf{PRUEBA - INSERCIÓN} \\*
-				\hline\hline \textbf{Versión} & 1.0 \\ *
-				\hline\hline \textbf{Fecha} & 27/07/2015 \\ *
-				\hline\textbf{Actores} 	& Usuario\\*
-				\hline \textbf{Objetivo} & Insertar en la aplicación una cita médica que tiene el usuario\\* 			
-				\hline \textbf{Precondición} & La cita médica no existe en la aplicación\\* 
-				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-				& 2.- Pulsamos la opción CITA MEDICA\\*	
-				& 3.- Pulsamos el icono +\\*	
-				& 4.- Rellenamos los datos pertinentes de la cita médica\\*	
-				\hline \textbf{Flujo alternativo} & No se contempla \\* 
-				\hline \textbf{Postcondición} & El usuario ya posee los datos de la cita en la aplicación \\* 
-				\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser rellenados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
-				\hline
-			\end{tabular}
-			\caption{Cita médica - Inserción}
-			\label{tabla:caso025}
-		\end{table}
-		
-		
-		
-		
-		\textbf{CU-026}	PRUEBA - Consulta\\*
-		
-		\begin{table}[H]
-			\centering
-			\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
-				\hline \textbf{CU-026} & \textbf{PRUEBA - Consulta} \\*
-				\hline\hline \textbf{Versión} & 1.0 \\ *
-				\hline\hline \textbf{Fecha} & 27/07/2015 \\ *
-				\hline\textbf{Actores} 	& Usuario\\*
-				\hline \textbf{Objetivo} & Editar una cita médica que ya posee el usuario\\* 			
-				\hline \textbf{Precondición} & La cita médica existe en la aplicación\\* 
-				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-				& 2.- Pulsamos la opción CITA MEDICA\\*	
-				& 3.- Pulsamos sobre los tres puntos a la derecha de la cita médica que queremos editar\\*	
-				& 4.- Seleccionamos la opción editar\\*	
-				& 5.- Modificamos los datos pertinentes de la cita médica que queramos cambiar\\*	
-				\hline \textbf{Flujo alternativo} & No se contempla \\* 
-				\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la cita en la aplicación \\* 
-				\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
-				\hline
-			\end{tabular}
-			\caption{Cita médica - Consulta}
-			\label{tabla:caso026}
-		\end{table}
-		
-		
-		
-		
-		\textbf{CU-027}	PRUEBA - Edición\\*
-		
-		\begin{table}[H]
-			\centering
-			\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
-				\hline \textbf{CU-027} & \textbf{PRUEBA - Edición} \\*
-				\hline\hline \textbf{Versión} & 1.0 \\ *
-				\hline\hline \textbf{Fecha} & 27/07/2015 \\ *
-				\hline\textbf{Actores} 	& Usuario\\*
-				\hline \textbf{Objetivo} & Editar una cita médica que ya posee el usuario\\* 			
-				\hline \textbf{Precondición} & La cita médica existe en la aplicación\\* 
-				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-				& 2.- Pulsamos la opción CITA MEDICA\\*	
-				& 3.- Pulsamos sobre los tres puntos a la derecha de la cita médica que queremos editar\\*	
-				& 4.- Seleccionamos la opción editar\\*	
-				& 5.- Modificamos los datos pertinentes de la cita médica que queramos cambiar\\*	
-				\hline \textbf{Flujo alternativo} & No se contempla \\* 
-				\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la cita en la aplicación \\* 
-				\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
-				\hline
-			\end{tabular}
-			\caption{Cita médica - Edición}
-			\label{tabla:caso027}
-		\end{table}
-		
-		
-		
-		\textbf{CU-028}	PRUEBA - borrado de rutina\\*
-		
-		\begin{table}[H]
-			\centering
-			\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
-				\hline \textbf{CU-028} & \textbf{PRUEBA - Borrado} \\*
-				\hline\hline \textbf{Versión} & 1.0 \\ *
-				\hline\hline \textbf{Fecha} & 27/07/2015 \\ *
-				\hline\textbf{Actores} 	& Usuario\\*
-				\hline \textbf{Objetivo} & Borrar una cita médica que ya posee el usuario\\* 			
-				\hline \textbf{Precondición} & La cita médica existe en la aplicación\\* 
-				\hline \textbf{Flujo normal} & 1.- Desplegamos el menú drawer \\* 
-				& 2.- Pulsamos la opción PRUEBA\\*	
-				& 3.- Pulsamos sobre los tres puntos a la derecha de la cita médica que queremos eliminar dentro del listado\\*	
-				& 4.- Seleccionamos la opción eliminar\\*	
-				\hline \textbf{Flujo alternativo} & No se contempla \\* 
-				\hline \textbf{Postcondición} & El usuario ya posee los nuevos datos modificados de la cita en la aplicación \\* 
-				\hline \textbf{Comentarios}   & Los valores de la fecha de la cita y el nombre de la misma son obligatorios, en caso de no ser completados, la aplicación avisará con un mensaje de error y no se podrá guardar la misma.\\*
-				\hline
-			\end{tabular}
-			\caption{Cita médica - Borrado}
-			\label{tabla:caso028}
-		\end{table}
-		
-		
-		
+	\textbf{CU-034}	AÑADIR PERSONAJES A LA CITA\\*
+
+	\textbf{CU-035}	AÑADIR MEDICAMENTOS A LA CITA\\*
+
+	\textbf{CU-036}	AÑADIR PRUEBAS A LA CITA\\*
+
+	\textbf{CU-037}	AÑADIR SÍNTOMAS A LA CITA\\*
+
+	\textbf{CU-038}	AÑADIR PERSONAJES A LA RUTINA\\*
 	
+	\textbf{CU-039}	AJUSTAR LA APLICACIÓN\\*
+
+
 	
-	
-	\textbf{CU-029}	ORDENAR LISTAS\\*
-	
-	
-	
-	\textbf{CU-030}	VISUALIZAR LISTAS\\*
-	
-	
-	
-	\textbf{CU-031}	CONFIGURAR NOTIFICACIONES\\*
-	
-	
-	
-	\textbf{CU-032}	AJUSTAR LA APLICACION\\*
-	
-	
-		
 	\subsection{Diagrama de clases de análisis}
 		
 	\subsection{Diagrama Entidad-Relación de la base de datos}
