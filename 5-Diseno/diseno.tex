@@ -1,7 +1,6 @@
 	\documentclass[../pfc.tex]{subfiles}
-	
+
 	\begin{document}
-	
 	
 	\section{Parte App móvil}
 	
@@ -12,7 +11,7 @@
 	Estas herramientas pueden incluir plugins del IDE que hagan análisis estático de código y pueden advertirnos sobre puntuales problemas dentro de una clase, pero poco hay a nivel de las relaciones entre las mismas, fuera del uso de patrones de diseño conocidos, y aun en las relaciones entre estos patrones que son bloques más grandes de código. Es por eso que creemos que hay que establecer unas líneas base al principio del proyecto sobre la arquitectura de la propia aplicación. En principio serán ciertamente vaguedades y lugares comunes sobre el desarrollo en capas, aislamiento de las mismas etc, pero si a través de los sprints reservamos un poco de tiempo en la reunión de sprint planning para conversar sobre las historias del propio sprint, en que capa encajan, como deberían hablar las capas entre sí si son mas de una las involucradas en la historia, etc ademas de con las historias de deuda técnica si fuesen necesarias creemos que puede solventarse en gran medida esa falta de bueno diseño y arquitectura que se achaca a las metodologías ágiles.\\
 	
 	
-		\begin{figure}[h]
+		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.8\linewidth]{../images/CleanArchitecture}
 			\caption{Arquitectura 'limpia' propuesta por Robert Martin}
@@ -153,142 +152,234 @@
 		
 		\subsection{Pantallas Principales}
 		
-			Pantallas iniciales y flujo de la aplicación que de manera inicial hemos planteado para la misma.
-			No es la versión final de la aplicación pero si se aproxima y nos da una idea clara de lo que debería ser o a lo que debería parecerse.\\*
-			
-			Estos prototipos, sirven para orientarnos a la hora de construir la aplicación
-			
-			\textbf{Pantalla Principal y Drawer menú}
-			El usuario, al ejecutar la aplicación accede a una pantalla cuyo contenido es el listado de las actividades próximas a realizar, ya sea una cita médica o una rutina.
-			El drawer nos permite navegar entre actividades, desde la pantalla principal podemos añadir citas y acceder de manera individual a las mismas.\\*
-			 
-			
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.7\linewidth]{../images/principal_2}
-				\caption[Drawer menú y Pantalla principal]{Descripción de la pantalla principal y Drawer menú}
-				\label{fig:principal}
-			\end{figure}
-			
-			
-			\textbf{Pantallas referentes a la programación de actividades}
-			Desde estás pantallas tenemos una visión de la ocupación diaria del paciente y de la ocupación mensual, desde la vista mensual al menos se podrán añadir nuevas citas médicas o rutinas para ese paciente.\\*
-
-			
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.7\linewidth]{../images/horario_2}
-				\caption{Pantallas con los horarios y ocupación del paciente}
-				\label{fig:horario_2}
-			\end{figure}
-			
-			
-			\textbf{Pantallas referentes a la rutina diaria}
-			Listado de las rutinas diarias que tiene ese paciente y representación de la introducción de una nueva rutina para ese paciente.\\*
-			Dentro de la introducción de la rutina se podrán añadir nuevos personajes que acompañarán a ese paciente y le harán más fácil recordar con quien quedó y para qué.\\*
-
-			
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.7\linewidth]{../images/rutina}
-				\caption{Pantalla con la interfaz para las rutinas}
-				\label{fig:rutina}
-			\end{figure}
-						
-			
-			\textbf{Pantallas referentes a las citas médicas}
-			Listado de las citas medicas de ese paciente e introducción de la cita en si de manera individual.\\*
-			De funcionamiento similar a las pantallas anteriores pero con diferencias sustanciales en la funcionalidad de la introducción de información, se pueden añadir personajes, síntomas, medicamentos y pruebas, de manera que el paciente cuando acuda a la cita lleve de manera ordenada toda esta información.\\*
-			
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.7\linewidth]{../images/citas}
-				\caption{Pantalla con la actividad de las citas}
-				\label{fig:citas}
-			\end{figure}
-			
-			
-			\textbf{Pantallas referentes a la medicación}
-			El usuario introduce los medicamentos que toma, de manera que puede añadir alertas a los mismos para que se le avise de que ha llegad la hora de la dosis con una notificación.
-			Se podrán introducir otros datos del medicamento como pueden ser los intervalos entre dosis, indicaciones...\\*
-			
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.7\linewidth]{../images/medicacion}
-				\caption{Pantalla con la actividad de la medicación}
-				\label{fig:medicacion}
-			\end{figure}
-			
-			
-			\textbf{Pantallas de gestión de personajes}
-			El usuario puede añadir a la aplicación su lista de amigos, personal médico que le atiende, asistentes, etc, con sus datos personales, de manera que a la hora de hacer una rutina (actividad) o acudir a una cita, puedan ser añadidos.\\*
-			
-			
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.7\linewidth]{../images/personajes}
-				\caption{Pantalla con la actividad de los personajes}
-				\label{fig:personajes}
-			\end{figure}
-			
-			
-			\textbf{Pantallas de gestión de pruebas médicas}
-			Se facilita el poder llevar las pruebas médicas en forma de archivo fotográfico para poder consultarse en alguna de las citas medicas a las que acuda, tales como revisiones, visitas al fisio, a la enfermera. Listado del mismo.\\*
-			
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.7\linewidth]{../images/pruebas}
-				\caption{Pantalla con la actividad de las pruebas}
-				\label{fig:pruebas}
-			\end{figure}
-			
-			
-			\textbf{Pantallas de gestión de los síntomas}
-			El usuario puede tomar nota de los síntomas, molestias, efectos secundarios negativos o positivos que le acontecen, para poder asignarles después a una cita médica y poder completar de manera más eficiente las mismas, pudiendo aportar información adicional que ayude a su médico a mejorar el diagnóstico.\\*
-			
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.7\linewidth]{../images/sintomas}
-				\caption{Pantalla con la actividad de los síntomas}
-				\label{fig:sintomas}
-			\end{figure}
-			
-			
-			\textbf{Pantallas de Recursos}
-			Estas pantallas están pensadas para que el paciente disponga de ayuda adicional, y una serie de recursos de fácil acceso así como una sección de noticias de la AECC para que puedan ser consultadas por el paciente.
-			Sección de meditación, consejos generales que le puedan ser de ayuda, noticias y teléfonos de interés. \\*
-			
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.7\linewidth]{../images/recursos}
-				\caption{Pantalla con la actividad de los recursos}
-				\label{fig:recursos}
-			\end{figure}
-			
-			
-			\textbf{Pantalla de perfil de usuario}
-			El usuario podrá introducir sus datos personales para que la aplicación pueda tratarle de manera personalizada.\\*
-			
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.7\linewidth]{../images/perfil_2}
-				\caption{Pantalla con la actividad conf del perfil}
-				\label{fig:perfil_2}
-			\end{figure}
-			
-			
-			\textbf{Otros: Pantalla de presentación y carga}
-			Pantalla inicial de carga, se utiliza para aportar más identidad a la aplicación y a modo de pequeña intro.\\*
-			
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.3\linewidth]{../images/flasher_pantalla_carga}
-				\caption{Pantalla con la actividad de las citas}
-				\label{fig:flasher_pantalla_carga}
-			\end{figure}
-			
-			
+		Pantallas iniciales y flujo de la aplicación que de manera inicial hemos planteado para la misma.
+		No es la versión final de la aplicación pero si se aproxima y nos da una idea clara de lo que debería ser o a lo que debería parecerse.\\*
 		
+		Estos prototipos, sirven para orientarnos a la hora de construir la aplicación y sirven para que el cliente o product owner se haga una idea de hacia donde irá el desarrollo de la misma. Muchas de las pantallas proceden de una adaptación del libro que se utiliza en la AECC 'MIS CUIDADOS, diario de salud para supervivientes de cáncer'.\\*
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.4\linewidth]{../folleto/001_corto}
+			\caption{Iniciativa de la AECC}
+			\label{fig:001corto}
+		\end{figure}
+		
+		Otras de las pantallas y funcionalidades, se han adaptado para facilitar el uso, adaptarse a los requerimientos del cliente y ampliar el rango de acción de este libro y hacerlo más lógico a nuestro entender.\\*
+		
+		
+		
+		\textbf{Pantalla Principal y Drawer menú}
+		
+		El usuario, al ejecutar la aplicación accede a una pantalla cuyo contenido es el listado de las actividades próximas a realizar, ya sea una cita médica o una rutina. En ausencia de las mismas, nos mostrará un mensaje alentándonos a realizar alguna rutina.\\*
+		
+		El drawer nos permite navegar entre actividades, desde la pantalla principal podemos añadir citas y acceder de manera individual a las mismas.\\*
+	 
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.8\linewidth]{../images/principal_2}
+			\caption[Drawer menú y Pantalla principal]{Descripción de la pantalla principal y Drawer menú}
+			\label{fig:principal}
+		\end{figure}
+		
+		
+		\textbf{Pantallas referentes a la programación de actividades}
+		
+		En la iniciativa de la asociación, se proporciona un cuadro para poder controlar las actividades que realizamos de manera rutinaria a lo largo de los días de la semana, ampliamos esta funcionalidad para que las citas se representen también el el horario.\\*
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\linewidth]{../folleto/007_corto}
+				\caption{Vista de los días en el folleto}
+				\label{fig:horario_corto}
+			\end{figure}
+		
+		
+		Desde estás pantallas tenemos una visión de la ocupación diaria del paciente y de la ocupación mensual, desde la vista mensual al menos se podrán añadir nuevas citas médicas o rutinas para ese paciente.\\*
+
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\linewidth]{../images/horario_2}
+			\caption[Horario de actividades]{Pantallas con los horarios y ocupación del paciente}
+			\label{fig:horario_2}
+		\end{figure}
+		
+		
+		\textbf{Pantallas referentes a la rutina diaria}
+		
+		Estas funcionalidades descienden directamente del libro proporcionado por la AECC, en el que como usuario integrado en el programa de mejora de la calidad de vida del superviviente de cáncer se le insta a realizar actividades que le produzcan cierta satisfacción y a realizarlas con asiduidad, sea en compañía o solo. En resumen se recomienda hacer actividades que nos hagan felices y nos animan a puntuarlas con el grado de satisfacción que nos producen las mismas. En el estracto del libro podemos apuntar la actividad, la fecha en la que la vamos a realizar, indicar quien nos acompaña, grado de satisfacción que nos produce y repetir.
+		
+		
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\linewidth]{../folleto/006_corto}
+			\caption{Cuadro de actividades a realizar}
+			\label{fig:006}
+		\end{figure}
+
+		
+		Para la adaptación y mejora de las especificaciones del libro utilizado en la iniciativa, se ha diseñado un listado de las rutinas diarias que tiene ese paciente y representación de la introducción de una nueva rutina para ese paciente.\\*
+		Dentro de la introducción de la rutina se podrán añadir nuevos personajes que acompañarán a ese paciente y le harán más fácil recordar con quien quedó y para qué.\\*
+
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\linewidth]{../images/rutina}
+			\caption{Pantalla con la interfaz para las rutinas}
+			\label{fig:rutina}
+		\end{figure}
+					
+		
+		\textbf{Pantallas referentes a las citas médicas}
+		
+		Las páginas referentes a las citas médicas se basan en una serie de recomendaciones sobre como afrontar la visita al hospital, centro de salud, oncólogo y demás especialistas. Nos aporta una lista de cosas que deberíamos preguntar al especialista para rebajar la ansiedad ante la misma y sacar el máximo partido a la misma.\\*
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\linewidth]{../folleto/015_corto_a}
+			\caption{Página con información a completar en la cita médica}
+			\label{fig:preguntas}
+		\end{figure}
+		
+		
+		Listado de las citas medicas de ese paciente e introducción de la cita en si de manera individual.\\*
+		De funcionamiento similar a las pantallas anteriores pero con diferencias sustanciales en la funcionalidad de la introducción de información, se pueden añadir personajes, síntomas, medicamentos y pruebas, de manera que el paciente cuando acuda a la cita lleve de manera ordenada toda esta información.\\*
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\linewidth]{../images/citas}
+			\caption{Pantalla con la actividad de las citas}
+			\label{fig:citas}
+		\end{figure}
+		
+		
+		\textbf{Pantallas referentes a la medicación}
+		
+		El libro nos proporciona un cuadro para el control de los medicamentos, nos permite apuntar el nombre sus indicaciones y parte de la posología del mismo, pero a nuestro modo de ver es algo insuficiente y se puede completar con notificaciones y más información que le permita ser identificado facilmente.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\linewidth]{../folleto/014_corto}
+			\caption{Medicación y posología de los medicamentos}
+			\label{fig:medicamentacion_libro}
+		\end{figure}
+				
+		
+		El usuario introduce los medicamentos que toma, de manera que puede añadir alertas a los mismos para que se le avise de que ha llegad la hora de la dosis con una notificación.
+		Se podrán introducir otros datos del medicamento como pueden ser los intervalos entre dosis, indicaciones...\\*
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\linewidth]{../images/medicacion}
+			\caption{Pantalla con la actividad de la medicación}
+			\label{fig:medicacion}
+		\end{figure}
+		
+		
+		\textbf{Pantallas de gestión de personajes}
+		El usuario puede añadir a la aplicación su lista de amigos, personal médico que le atiende, asistentes, etc, con sus datos personales, de manera que a la hora de hacer una rutina (actividad) o acudir a una cita, puedan ser añadidos.\\*
+		
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\linewidth]{../images/personajes}
+			\caption{Pantalla con la actividad de los personajes}
+			\label{fig:personajes}
+		\end{figure}
+		
+		
+		\textbf{Pantallas de gestión de pruebas médicas}
+		Se facilita el poder llevar las pruebas médicas en forma de archivo fotográfico para poder consultarse en alguna de las citas medicas a las que acuda, tales como revisiones, visitas al fisio, a la enfermera. Listado del mismo.\\*
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\linewidth]{../images/pruebas}
+			\caption{Pantalla con la actividad de las pruebas}
+			\label{fig:pruebas}
+		\end{figure}
+		
+		
+		\textbf{Pantallas de gestión de los síntomas}
+		
+		Los síntomas se apuntan en la misma ficha que los datos de la cita médica, con lo cual sería interesante que toda esa información se viese representada en la aplicacíon, hay que tenerla en cuenta en el flujo.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\linewidth]{../folleto/015_corto_a}
+			\caption{Cuadro de los síntomas en el libro}
+			\label{fig:sintomas_libro}
+		\end{figure}
+				
+				
+
+		El usuario puede tomar nota de los síntomas, molestias, efectos secundarios negativos o positivos que le acontecen, para poder asignarles después a una cita médica y poder completar de manera más eficiente las mismas, pudiendo aportar información adicional que ayude a su médico a mejorar el diagnóstico.\\*
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\linewidth]{../images/sintomas}
+			\caption{Pantalla con la actividad de los síntomas}
+			\label{fig:sintomas}
+		\end{figure}
+		
+		
+		\textbf{Pantallas de Recursos}
+		
+		A parte de todos los consejos que se dan el el libro sobre como afrontar la fase posterior a la enfermedad, se hace especial incapié en la meditación, necesaria para proporcionar un estado relajado al superviviente, ante citas medicas importantes y que le generen tensión.\\*
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\linewidth]{../folleto/008_corto}
+			\caption{Ejercicios de meditación}
+			\label{fig:meditacion}
+		\end{figure}
+		
+		Otra parte importante del libro es un listín telefónico en el que se pueden apuntar los contactos importantes, dirección, y números de teléfono. Toda esta parte se contempla en nuestra aplicación a través de los personajes y de los teléfonos de interés de la sección de recursos. 
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.5\linewidth]{../folleto/016_corto}
+			\caption{Contactos importantes a tener en cuenta}
+			\label{fig:contactos}
+		\end{figure}
+		
+		
+		
+		Estas pantallas están pensadas para que el paciente disponga de ayuda adicional, y una serie de recursos de fácil acceso así como una sección de noticias de la AECC para que puedan ser consultadas por el paciente.
+		Sección de meditación, consejos generales que le puedan ser de ayuda, noticias y teléfonos de interés. \\*
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\linewidth]{../images/recursos}
+			\caption{Pantalla con la actividad de los recursos}
+			\label{fig:recursos}
+		\end{figure}
+		
+		
+		\textbf{Pantalla de perfil de usuario}
+		El usuario podrá introducir sus datos personales para que la aplicación pueda tratarle de manera personalizada.\\*
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\linewidth]{../images/perfil_2}
+			\caption{Pantalla con la actividad conf del perfil}
+			\label{fig:perfil_2}
+		\end{figure}
+		
+		
+		\textbf{Otros: Pantalla de presentación y carga}
+		Pantalla inicial de carga, se utiliza para aportar más identidad a la aplicación y a modo de pequeña intro.\\*
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.3\linewidth]{../images/flasher_pantalla_carga}
+			\caption{Pantalla con la actividad de las citas}
+			\label{fig:flasher_pantalla_carga}
+		\end{figure}
+		
+		
+	
 	\section{Flujo de navegación}
 	
 	
