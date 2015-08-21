@@ -3,19 +3,36 @@
 \begin{document}
 
 	
-	\section{Construcción y Pruebas}
+	\section{Construcción}
 	
-	Para la implementación en un principio las metodologías ágiles no marcaban ninguna pauta más allá de que todo lo que no está terminado al 100\% no está terminado y por otro lado que siempre hay que entregar con la máxima calidad posible, aunque quizá la más importante fue que la propiedad del código es colectiva, ya no hay más código mio o código tuyo y tenemos responsabilidades y atribuciones sobre nuestras parcelas, el código es del equipo entero y todo miembro puede y debe mejorar el mismo si observa y detecta un error. \\*
-	Después de un tiempo de maduración de las mismas surgieron técnicas y disciplinas, algunas en el seno de alguna de estas metodologías (XP sobre todo) y algunas se incorporaron rápidamente desde el movimiento Craftmanship software \cite{manifestocraft} que tiene una filosofía similar aunque más cercana y centrada en el proceso de construcción en sí que en el resto del proceso de desarrollo del proyecto o producto. Estas técnicas son Pair Programming, TDD, Code Reviews y algunas centradas en la mejora del equipo en todos los proyectos como puedan ser Code Retreats, Katas, Koans, etc(citas a gogo). todas estas técnicas y disciplinas hoy en día se consideran tan apegadas a las metodologías ágiles que prácticamente se confunden con las mismas cuando hablamos del proceso de implementación.
+	Para la implementación en un principio las metodologías ágiles no marcaban ninguna pauta más allá de que todo lo que no está terminado al 100\% no está terminado y por otro lado que siempre hay que entregar con la máxima calidad posible, aunque quizá la más importante fue que la propiedad del código es colectiva, ya no hay más código mio o código tuyo y tenemos responsabilidades y atribuciones sobre nuestras parcelas, el código es del equipo entero y todo miembro puede y debe mejorar el mismo si observa y detecta un error.\\*
 	
-	Lo que si existe es la idea del visual management, o tener algún tipo de respaldo visual del estado de un proyecto. Para esto existen pizarras en las que mediante el uso de tarjetas, imanes, post its, imágenes e incluso avatares de los miembros del equipo. Esto permite que cualquier persona interesada en el proyecto con solamente dar un vistazo a la pizarra vea el estado del sprint actual, en que trabaja cada miembro del equipo, el estado del backlog, las historias completadas, y demás información que cada equipo adapta a sus necesidades. Recordemos que la idea es que el equipo y el product owner se sientan cómodos con la metodología y la adapten a sus necesidades o idiosincrasia, teniendo en cuenta que no hay balas de plata que sirvan para todo y arreglen los problemas de la noche a la mañana.\\ 
+	Después de un tiempo de maduración de las mismas surgieron técnicas y disciplinas, algunas en el seno de alguna de estas metodologías (XP sobre todo) y algunas se incorporaron rápidamente desde el movimiento Craftmanship software \cite{manifestocraft} que tiene una filosofía similar aunque más cercana y centrada en el proceso de construcción en sí que en el resto del proceso de desarrollo del proyecto o producto. Estas técnicas son Pair Programming, TDD, Code Reviews y algunas centradas en la mejora del equipo en todos los proyectos como puedan ser Code Retreats, Katas, Koans, etc(citas a gogo). todas estas técnicas y disciplinas hoy en día se consideran tan apegadas a las metodologías ágiles que prácticamente se confunden con las mismas cuando hablamos del proceso de implementación.\\*
 	
-	Existen también multitud de utilidades de software que permiten esto mismo para equipos remotos o para aquellos que no les es posible disponer de una pizarra física. Esta ha sido la opción utilizada por nosotros a través de la aplicación web Trello. Esta app permite el uso de la pantalla como si de una pizarra electrónica se tratase. Para nuestro propósito la dividimos en diferentes columnas  que representarán los estados de una historia de usuario y además algunas zonas para colocar una imagen del burndown, el estado de animo del equipo y del product owner.\\
+	Lo que si existe es la idea del visual management, o tener algún tipo de respaldo visual del estado de un proyecto. Para esto existen pizarras en las que mediante el uso de tarjetas, imanes, post its, imágenes e incluso avatares de los miembros del equipo. Esto permite que cualquier persona interesada en el proyecto con solamente dar un vistazo a la pizarra vea el estado del sprint actual, en que trabaja cada miembro del equipo, el estado del backlog, las historias completadas, y demás información que cada equipo adapta a sus necesidades. Recordemos que la idea es que el equipo y el product owner se sientan cómodos con la metodología y la adapten a sus necesidades o idiosincrasia, teniendo en cuenta que no hay balas de plata que sirvan para todo y arreglen los problemas de la noche a la mañana.\\* 
+	
+	Existen también multitud de utilidades de software que permiten esto mismo para equipos remotos o para aquellos que no les es posible disponer de una pizarra física. Esta ha sido la opción utilizada por nosotros a través de la aplicación web Trello.\\*
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\linewidth]{../images/TrelloLogo}
+		\caption{Logo de la aplicación Trello}
+		\label{fig:trello}
+	\end{figure}
+	
+	Esta app permite el uso de la pantalla como si de una pizarra electrónica se tratase. Para nuestro propósito la dividimos en diferentes columnas  que representarán los estados de una historia de usuario y además algunas zonas para colocar una imagen del burndown, el estado de animo del equipo y del product owner.\\*
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\linewidth]{../images/trello_completo}
+		\caption{Trello permite scrum de manera fácil}
+		\label{fig:trello}
+	\end{figure}
 	
 	Las columnas que definimos como estados para las historias de usuario fueron:
 	
 	\begin{itemize} 
-		\item Product Backlog es el backlog de la aplicación del que se habló en el Capitulo 3. Debe estar priorizado para que el equipo tenga una visión aproximada de los intereses del product owner en futuros sprints pero, el equipo ha de ser consciente de que esto puede ser modificado por el prodcut owner.
+		\item Product Backlog es el backlog de la aplicación del que se habló en el Capitulo 3. Debe estar priorizado para que el equipo tenga una visión aproximada de los intereses del product owner en futuros sprints pero, el equipo ha de ser consciente de que esto puede ser modificado por el product owner.
 		\item Sprint Backlog o ToDo son las tareas del sprint en curso o por hacer. Pueden estar priorizadas por el product owner para que el equipo tenga cierta idea de lo que es más valioso para el, pero el equipo es libre del orden de implementación de las historias en un sprint. 
 		\item Doing es la columna de las historias que actualmente se encuentran en proceso de implementación por algún miembro del equipo.
 		\item Done o ToTest tareas que el equipo ha dado por terminadas con sus test unitarios y prueba de aceptación o deinition of done completado, pero no por alguien ajeno al desarrollo de la misma. 
@@ -23,6 +40,21 @@
 		\item ToShip historias que se han probado por aquieten ajena a quien la desarrolló y pero que aun no han sido entregadas o desplegadas para demo o validación por el product owner.
 		\item Shipped historias que fueron entregadas o desplegadas en otros sprints o en una demo, idealmente no deberían salir de esta columna ya que como se dice han sido validadas por el product owner, pero pudiera ser que se presenten errores en test de regresión al añadir nueva funcionalidad. En ese caso pasarían al Product Backlog para el siguiente sprint como historia de defecto, tal y como esté acordado por el equipo.
 	\end{itemize}
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\linewidth]{../images/tarea}
+			\caption{Implementación de las Historias de usuario}
+			\label{fig:tareaTrello}
+		\end{figure}
+		
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\linewidth]{../images/sprints2}
+			\caption{Agrupación de tareas por sprints}
+			\label{fig:sprints}
+		\end{figure}
 
 	
 	\section{Estructura de la aplicación}
@@ -77,11 +109,11 @@
 	Una vez desarrollada la app es necesario hacer un testing profundo de todas las partes del mismo. El testeo se puede dividir en:
 	-Testeo funcional: para asegurar que la aplicación trabaja como debería y sigue todos los flujos debidos.
 	-Testeo de rendimiento: para comprobar que el comportamiento de la aplicación bajo ciertas condiciones (múltiples peticiones de acceso simultáneas, poca cobertura, poca batería...) es el correcto.
-	-Comprobaciones de fugas de memoria, cruciales en móviles pues los recursos son mucho más limitados que en programas para ordenadores de sobremesa. Para esta tarea se utilizan habitualmente programas automatizadores de tareas y programas que reportan el código de error, además del testeo manual intensivo.\\
+	-Comprobaciones de fugas de memoria, cruciales en móviles pues los recursos son mucho más limitados que en programas para ordenadores de sobremesa. Para esta tarea se utilizan habitualmente programas automatizadores de tareas y programas que reportan el código de error, además del testeo manual intensivo.\\*
 	
 	\textbf{Distribución pre-lanzamiento}
 	
-	Previo a la subida a los markets de aplicaciones móviles se pueden hacer distribuciones de las aplicaciones móviles. En Android se puede hacer utilizando el entorno beta de desarrollo  Android disponible en la consola de desarrollador.\\
+	Previo a la subida a los markets de aplicaciones móviles se pueden hacer distribuciones de las aplicaciones móviles. En Android se puede hacer utilizando el entorno beta de desarrollo  Android disponible en la consola de desarrollador.\\*
 	
 	\textbf{Implantación y distribución}
 	
@@ -93,11 +125,11 @@
 	\section{Versionado y Sincronización}
 	Partiendo de la base de que formamos un equipo que no se encuentra en el mismo espacio de trabajo y que debemos sincronizarnos de alguna manera para avanzar a la vez y no pisarnos los cambios, surgió la necesidad de utilizar algún sistema de control de versiones y alojamiento de repositorios para poder avanzar más rápido y sin discrepancias entre las versiones de la aplicación y de la memoria que manejábamos uno y otro.\\*
 	
-	Así mismo necesitambamos una red ded salvamento por si alguno de los integrantes del equipo tenía que volver atrás en la versión de la aplicación que estaba manejando, crear una nueva version de la aplicación e incluso desestimar todos sus cambios y volver a una version más estable anterior y empezar desde ahí.\\*
+	Así mismo necesitamos una red ded salvamento por si alguno de los integrantes del equipo tenía que volver atrás en la versión de la aplicación que estaba manejando, crear una nueva version de la aplicación e incluso desestimar todos sus cambios y volver a una version más estable anterior y empezar desde ahí.\\*
 		
 	Queríamos algo gratuito, que nos ofreciese suficientes garantías, tuviera una gran comunidad detrás y que pudiera integrarse de manera sencilla y compatible con Android Studio. 
 	
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.4\linewidth]{../images/VCS}
 		\caption{Integración de Git en Android Studio}
@@ -115,7 +147,7 @@
 	
 	Otros sistemas como podrían ser subversión, (utilizamos este ejemplo por ser bastante conocido) realizan copia de los archivos versionados cada vez que se cambia algo, sin embargo, el sistema de git, hace que sea más del estilo a una fotografía, donde se cambian los archivos nuevos o modificados pero sin embrago mantiene sin modificaciones los que no se han tocado, haciendo su uso bastante más eficiente\cite{funcgit2}.\\*
 	
-	\begin{figure}[h]
+	\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{../images/funcionamiento_git}
 	\caption{Funcionamiento de git en el versionado}
@@ -123,7 +155,7 @@
 	\end{figure}
 
 
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.7\linewidth]{../images/powershellcommit}
 		\caption{PowerShell para windows}
@@ -132,7 +164,7 @@
 	
 
 
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.7\linewidth]{../images/powerShell}
 		\caption{PowerShell para windows}
@@ -140,17 +172,17 @@
 	\end{figure}
 
 	
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.7\linewidth]{../images/githubdesktopAplication}
+		\includegraphics[width=1\linewidth]{../images/githubdesktopAplication}
 		\caption{Github desktop, repositorio de la aplicación}
 		\label{fig:ghdesktopA}
 	\end{figure}
 
 	
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.7\linewidth]{../images/githubdesktopmemory}
+		\includegraphics[width=1\linewidth]{../images/githubdesktopmemory}
 		\caption{Github desktop, repositorio de la aplicación}
 		\label{fig:ghdesktopM}
 	\end{figure}
@@ -159,28 +191,10 @@
 	\section{Plan de trabajo y comunicaciones}
 
 	
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.7\linewidth]{../images/trellogeneral}
-		\caption{Trello permite scrum de manera fácil}
-		\label{fig:trello}
-	\end{figure}
+	
 
 	
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.7\linewidth]{../images/tarea}
-		\caption{Implementación de las Historias de usuario}
-		\label{fig:tareaTrello}
-	\end{figure}
 
-	
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.7\linewidth]{../images/sprints2}
-		\caption{Agrupación de tareas por sprints}
-		\label{fig:sprints}
-	\end{figure}
 	
 	
 	\section{Pruebas}
