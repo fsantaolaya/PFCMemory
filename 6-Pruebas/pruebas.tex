@@ -1,5 +1,5 @@
 \documentclass[../pfc.tex]{subfiles}
-	
+
 \begin{document}
 
 	
@@ -26,38 +26,60 @@
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.8\linewidth]{../images/trello_completo}
-		\caption{Trello permite scrum de manera sencilla}
-		\label{fig:trello}
+		\includegraphics[width=1\linewidth]{../images/trellocomphorizontal}
+		\caption{Vista general de la columnas de scrum en Trello}
+		\label{fig:trelloComp}
 	\end{figure}
 	
-	Las columnas que definimos como estados para las historias de usuario fueron:
+	Las columnas que definimos como estados para las historias de usuario fueron:\\*
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\linewidth]{../images/pbacklog_todo}
+		\caption{Detalle de las columnas product backlog y ToDo}
+		\label{fig:trelloBackDo}
+	\end{figure}
 	
 	\begin{itemize} 
 		\item Product Backlog, es el backlog de la aplicación del que se habló en el Capitulo 3. Debe estar priorizado para que el equipo tenga una visión aproximada de los intereses del product owner en futuros sprints, pero el equipo ha de ser consciente de que esto puede ser modificado por el product owner en cualquier momento. La priorización de las historias y dada la facilidad con la que trello nos permite mover las tareas en la misma columna y entre columnas se realizo de la siguiente manera, la más prioritaria es la que ocupa el primer lugar en esa columna, y es con la que se empezará una vez se le asigne un sprint.
 		\item Sprint Backlog o ToDo, son las tareas del sprint en curso o por hacer. Pueden estar priorizadas por el product owner (del modo que hemos comentado antes) para que el equipo tenga cierta idea de lo que es más valioso para el, pero el equipo es libre del orden de implementación de las historias en un sprint, en esta columna en un principio se encuentran todas las tareas que forman parte de ese sprint, y será el principal punto de entrada a la hora de asignar tareas al equipo. 
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1\linewidth]{../images/do_done}
+			\caption{Detalle de las columnas Doing, Done, Tested y To Ship}
+			\label{fig:trelloDDTT}
+		\end{figure}
+		
 		\item Doing, es la columna de las historias que actualmente se encuentran en proceso de implementación por algún miembro del equipo.
 		\item Done o ToTest, tareas que el equipo ha dado por terminadas con sus test unitarios y prueba de aceptación o definition of done completado, pero no por alguien ajeno al desarrollo de la misma, suele ser el mismo miembro del equipo asignado a la tarea el que la pasa a esta columna. 
 		\item Tested, alguien ajeno al desarrollo de la historia de usuario ha testado el criterio de aceptación de la historia, esto puede ser llevado a cabo por el scrum master o algún miembro del equipo designado para ello, al estar nuestro equipo formado por dos personas solemos cruzar la comprobación de las mismas. 
 		\item ToShip, historias que se han probado por alguien ajeno a quien la desarrolló, pero que aun no han sido entregadas o desplegadas para demo o validación por el product owner, hay funcionalidades que se acaban pero que por alguna razón no se quieren llevar a la demo en curso y permanecen en esa columna durante algún tiempo.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.5\linewidth]{../images/shipped}
+			\caption{Detalle de la columna Shipped}
+			\label{fig:trelloSipped}
+		\end{figure}
+		
 		\item Shipped, historias que fueron entregadas o desplegadas en otros sprints o en una demo, idealmente no deberían salir de esta columna ya que como se dice han sido validadas por el product owner, pero pudiera ser que se presenten errores en test de regresión al añadir nueva funcionalidad. En ese caso pasarían al Product Backlog para el siguiente sprint como historia de defecto, tal y como esté acordado por el equipo.
 		
 	\end{itemize}
 	
-	\clearpage
-		
 	La transición de las historias que se escriben en tarjetas físicas a las historias virtuales con las que trabajamos en trello se ha realizado de una forma sencilla.
 	La tarjeta consta de varias partes como son el título, los puntos de Historia que le asignamos tras previa votación (debajo se encuentran los que ha llevado acabarla una vez este hecha), el miembro del equipo o los miembros que se van a encargar de su elaboración, la descripción, Subtareas que se pueden añadir en forma de checks, comentarios,...\\*
 	
-	Los puntos de historia estimados y los completados, nos ayudan a la hora de estimar el "¿Como vamos?" ya que nos va haciendo un recuento sobre la columna de los que quedan y los que se han hecho. Tambien se le puede añadir a la tarea una fecha de vencimiento a modo de "Dead Line", para fijar una fecha de antemano en la que esa tarea debería estar completada y en la columna "ToShip".\\*
+	Los puntos de historia estimados y los completados, nos ayudan a la hora de estimar el ¿Cómo vamos? ya que nos va haciendo un recuento sobre la columna de los que quedan y los que se han hecho. Tambien se le puede añadir a la tarea una fecha de vencimiento a modo de "Dead Line", para fijar una fecha de antemano en la que esa tarea debería estar completada y en la columna "ToShip".\\*
 	 
+	\clearpage
 	
 	Otra de las funcionalidades que nos aporta trello, es la suscripción, algo muy útil a la hora de recibir un email con su resolución, o cambio de columna y que facilita el flujo de trabajo sobremanera.\\*
-	El etiquetado lo utilizamos sobre todo para indicar a que sprint pertenece la tarea y a la hora de realizar búsquedas por la misma etiqueta las agrupa, permitiendo revisar las que pertenecen al mismo.\\*
+	El etiquetado lo utilizamos sobre todo para indicar a que sprint pertenece la tarea y a la hora de realizar búsquedas por la misma etiqueta las agrupa, permitiendo revisar las que pertenecen al mismo.
 	
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.7\linewidth]{../images/tarea}
+			\includegraphics[width=1\linewidth]{../images/tarea2}
 			\caption{Implementación de las Historias de usuario en trello}
 			\label{fig:tareaTrello}
 		\end{figure}
@@ -66,7 +88,7 @@
 		
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.7\linewidth]{../images/sprints2}
+			\includegraphics[width=1\linewidth]{../images/sprints2}
 			\caption{Agrupación de tareas por sprints}
 			\label{fig:sprints}
 		\end{figure}
@@ -135,12 +157,12 @@
 	A la finalización del desarrollo, el último paso será subirlo a los markets correspondientes. Para este último paso habrá que firmar digitalmente las apps con la cuenta de desarrollador, compilar el paquete y subirlo a Google Play, así como preparar el resto de requisitos necesarios tales como las imágenes, logos, descripciones etc. Requeridos por los markets de apps.\\*
 	A partir de este momento comienza la etapa de mantenimiento de la aplicación, y su escalabilidad, dependiendo de los requerimientos y necesidades futuras de los usuarios o del propio cliente en  nuestro caso de la AECC.
 	
-	Esperamos que aclare las dudas que podáis tener cuando penséis en desarrollar una aplicación móvil.\\*
+	Esperamos que aclare las dudas que podáis tener cuando penséis en desarrollar una aplicación móvil.
 	
 	\section{Versionado y Sincronización}
 	Partiendo de la base de que formamos un equipo que no se encuentra en el mismo espacio de trabajo y que debemos sincronizarnos de alguna manera para avanzar a la vez y no pisar los cambios los cambios que vamos haciendo en la aplicación, surgió la necesidad de utilizar algún sistema de control de versiones y alojamiento de repositorios para poder avanzar más rápido y sin discrepancias entre las versiones de la aplicación y de la memoria que manejábamos uno y otro.\\*
 	
-	Así mismo necesitamos una red ded salvamento por si alguno de los integrantes del equipo tenía que volver atrás en la versión de la aplicación que estaba manejando, crear una nueva version de la aplicación e incluso desestimar todos sus cambios y volver a una version más estable anterior y empezar desde ahí.\\*
+	Así mismo necesitamos una red de salvamento por si alguno de los integrantes del equipo tenía que volver atrás en la versión de la aplicación que estaba manejando, crear una nueva version de la aplicación e incluso desestimar todos sus cambios y volver a una version más estable anterior y empezar desde ahí.\\*
 		
 	Queríamos algo gratuito, que nos ofreciese suficientes garantías, tuviera una gran comunidad detrás y que pudiera integrarse de manera sencilla y compatible con Android Studio. 
 	
@@ -155,9 +177,7 @@
 	Git es un sistema de control de versiones distribuido, con Git tenemos repositorios de software. GitHub es un servicio para hacer hosting de repositorios de software que se administra con Git. Digamos que en GitHub mantienes una copia de tus repositorios en la nube, que además puedes hacer disponible para otros desarrolladores\cite{gitexplicacion}.\\* 
 	
 	Posteriormente decidimos incluir también la propia memoria en GitHub, ya que otras soluciones de documentación en la nube nos convencían menos (De esto se hablará más adelante).\\*
-	
-	
-	
+			
 	Al adoptar git, abrazamos este sistema con todas sus virtudes y sus defectos, al principio si ya has trabajado con otros sistemas de control de versiones, debes desechar estos conocimientos, ya que tienen que ver muy poco con el funcionamiento que tiene git a la hora de llevar el control sobre los archivos versionados.\\*
 	
 	Otros sistemas como podrían ser subversión, (utilizamos este ejemplo por ser bastante conocido) realizan copia de los archivos versionados cada vez que se cambia algo, sin embargo, el sistema de git, hace que sea más del estilo a una fotografía, donde se cambian los archivos nuevos o modificados pero sin embrago mantiene sin modificaciones los que no se han tocado, haciendo su uso bastante más eficiente\cite{funcgit2}.\\*
@@ -171,50 +191,70 @@
 
 	Dado que los dos utilizamos windows y para tratar de manera más sencilla los archivos que ibamos cambiando y subiendo a la aplicacion, nos creamos dos repositorios en gitHub, uno para la memoria y otro para la aplicación.
 	
-	Sabemos que no es muy habitual que la documentación de un proyecto se realice a traves de un sistema distribuido, sin embargo nos facilió enormemente la tarea de llevar los cambios al día, ya que para la memoria hemos utilizado Latex.\\*
+	Sabemos que no es muy habitual que la documentación de un proyecto se realice a través de un sistema distribuido, sin embargo nos facilitó enormemente la tarea de llevar los cambios al día.
 	
-
+	Para poder trabajar de una manera más óptima sobre la documentacion con git, partimos el documento inicial de la memoria en capítulos, cada uno se convierte en un .tex diferente, lo cual nos permite trabajar de manera independiente sobre cada cápitulo y a la hora de subir los cambios minimizar el número de errores que se nos pudiesen dar al trabajar los miembros del equipo sobre esos mismos archivos.\\*
+	
+	Las divisiones que se hicieron en el documento, los situan en carpetas diferentes, con lo cual tenemos un .tex principal que es el que soporta toda la esctructura de carpetas y archivos y es el que los configura (posee la mayor parte de los paquetes utilizados para tratar la estructura y aspecto del documento) y une, de manera que al compilar el archivo principal, se acaban compilando el resto de los archivos .tex que cuelgan de el.\\*
+	
+	Utilizamos PowerShell para windows, que es una implementacion de un interprete de comandos para windows enfocado hacia Git, es decir que nos proporciona un entorno para que podamos escribir nuestras ordenes por linea de comandos y tratar de esa manera con nuestro repositorio git.
+	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.7\linewidth]{../images/powershellcommit}
-		\caption{PowerShell para windows}
+		\includegraphics[width=0.9\linewidth]{../images/powershellcommit}
+		\caption{PowerShell para windows.}
 		\label{fig:powershellcommit}
 	\end{figure}
 	
-
-
+	Windows powershell y en general git, requieren un tiempo de aprendizaje, ya que la linea de comandos y los comandos en general no suelen ser demasiado amistosos con el usuario, y trabajar con ellos acarrea dificultades.
+	
+	No siempre todo lo que subimos encaja a la perfección y se pueden dar conflictos entre los archivos, de manera que hay que solucionarlos para dejar el repositorio estable.
+	Estos conflictos se  pueden resolver de varias maneras posibles, puede ser a traves de un merge, aceptando o eliminando los cambios locales, o modificando el resultado de lo que se va a subir, unificando el archivo que se va a quedar en el repositorio, se puede crear una nueva rama del proyecto (branch), o incluso se pueden apartar los cambios para seguir trabajando sobre la rama principal y hacer el commit de los mismos más tarde o desecharlos.
+	
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.7\linewidth]{../images/powerShell}
-		\caption{PowerShell para windows}
+		\caption{Power shell con los comandos más habituales a la hora de operar.}
 		\label{fig:powershell}
 	\end{figure}
-
 	
+	Como complemento a PowerShell, utilizamos como apoyo gráfico GitHub desktop, una aplicación gratuita que nos proporciona GitHub, y nos permite observar desde el propio windows el estado del repositorio, los cambios que se han realizado, quien los ha realizado, etc.\\*
+	
+	Por contra, aunque sea muy visual y nos permita de un vistazo ver cuales son los archivos que se han modificado en el último commit, no tiene demasiadas opciones a la hora de imteractuar con el repositorio, permite hacer un commit, deshechar los cambios, hacer un revert (volver hacia atras) y poco más.
+	
+	Es útil porque permite tener varios repositorios asociados y pasar de uno a otro es cosa de un click.
+	
+
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=1\linewidth]{../images/githubdesktopAplication}
-		\caption{Github desktop, repositorio de la aplicación}
+		\includegraphics[width=1\linewidth]{../images/repositoriosGitHub}
+		\caption{Github desktop, repositorios de la aplicación y de la memoria}
 		\label{fig:ghdesktopA}
 	\end{figure}
 
-	
+	Por ultimo vamos a hablar de las ventajas que nos reporta tener nuestra aplicación y memoria en GitHub, 
+	\begin{itemize}
+		\item Podemmos decidir si el codigo va a ser publico o privado.
+		\item Tiene un visor de codigo bastante avanzado, donde consultar en un instante el contenido de un determinado fichero, con su resaltado de sintaxis correspondiente para el lenguaje en el que esté escrito.
+		Además de poder ver las diferentes versiones del mismo que se han subido, e incluso copiar porciones de código, etc.
+		\item Dispone de bastantes herramientas que nos hacen muy facil el trabajo en equipo, posibilidad de descargar el proyecto como un zip, una wiki, poder meter comentarios dentro del código, Una herramienta de revisión de código, donde se pueden añadir anotaciones en cualquier punto de un fichero, visor de ramas,...
+		\item Herramienta de revisión de código, es decir puedes pedir modificar el código de los demás... o pueden mejorar tu propio código.
+		\item Y por último y no menos importante, es gratis (siempre que sea codigo open source).
+	\end{itemize}
+
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=1\linewidth]{../images/githubdesktopmemory}
-		\caption{Github desktop, repositorio de la aplicación}
-		\label{fig:ghdesktopM}
+		\includegraphics[width=1\linewidth]{../images/githubDiarioSuperviviente}
+		\caption{Repositorio de GitHub desde la propia página web }
+		\label{fig:ghweb}
 	\end{figure}
+
+	\clearpage
+	
+	
 
 	
 	\section{Plan de trabajo y comunicaciones}
-
-	
-	
-
-	
-
-	
 	
 	\section{Pruebas}
 	

@@ -38,7 +38,7 @@
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.8\linewidth]{usomoviles}
+		\includegraphics[width=0.8\linewidth]{../images/usomoviles}
 		\caption{Gráfico sobre el uso actual de SO móviles internacional en Marzo de 2015.}
 		\label{fig:usomoviles}
 	\end{figure}
@@ -82,5 +82,63 @@
 	Se le ofrecerá al agente los contactos de cada enfermo que tenga asignado para en el caso de que necesitase conversare de alguna manera con alguno de ellos, bien sean familiares o el oncólogo si por ejemplo se encuentra en algún ensayo poder contrastar información\\*
 	
 	En relación a esto ultimo la parte servidora dispondrá de un chat que permita comunicar directamente al agente con el enfermo, bajo ciertas premisas.\\* 
+	
+	\clearpage
+	
+	\section{Generación de la Documentación}
+	
+	Para la realización de la memoria, hemos elegido latex y el editor TexStudio.
+	
+	LaTeX es un sistema de composición de textos de alta calidad; que incluye características diseñadas para la producción de documentación técnica y científica.
+	
+	LaTeX es el estándar de facto para la comunicación y publicación de documentos científicos y está disponible como software libre.
+	
+	Texstudio es un entorno de escritura integrado para la creación de documentos LaTeX. 
+	
+	TexStudio hace la escritura LaTeX facil y cómoda, tiene numerosas características como el resaltado de sintaxis, visor integrado, verificación de referencias y varios asistentes que hacen que introducir imagenes , tablas y diagramas sea sencillo. 
+	
+	Texstudio es de código abierto y está disponible para los principales sistemas operativos.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\linewidth]{../images/texstructura}
+		\caption{Vista general de Texstudio}
+		\label{fig:texstudio}
+	\end{figure}
+	
+	TexStudio y Latex en general requieren de un aprendizaje, no es tan inmediata la generación de documentos con los formatos deseados como podría serlo Word, o incluso editores de texto online, des estilo a googleDocs, sin embargo, una vez que tienes el documento creado con las características deseadas, no es tan dificil de operar.\\*
+	
+	\clearpage
+
+	TexStudio, utiliza por debajo de todo esto miktex que es una aplicación que se encarga de mantener actualizados todos estos paquetes a la última version y proporciona las funcionalidades que permiten que texStudio genere los documentos.
+	
+	Aquí podemos ver la configuración del documento, paquetes necesarios, margenes, librerías de idioma,...
+	
+
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\linewidth]{../images/texstudiopack}
+		\caption{Vista general de Texstudio}
+		\label{fig:texstudioPaQ}
+	\end{figure}
+	
+	Una de las ventajas que nos han proporcionado Latex y TexStudio sobre el resto de los procesadores de texto ha sido el poder añadir sus archivos al repositorio, y poder tratar estos archivos de la misma manera que trataríamos cualquier archivo con una clase java o de otro tipo similar.\\*
+	
+	En principio el documento constaba de un .tex donde se realizaban todos los cambios para la generación del documento, sin embargo a medida que surgían los conflictos entre las versiones que subiamos al repositorio Git, decidimos particionar el .tex original en otros archivos del mismo tipo que fuesen llamados por el primero y que mantuviesen el formato y la configuración inicial.\\*
+	
+	Cada capítulo del libro pasó a ser un .tex independiente que se pudiese editar en texStudio por separado y así minimizar los conflictos que iban surgiendo por la edición de la misma linea.\\*
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\linewidth]{../images/texstudiochapters}
+		\caption{Vista general de Texstudio}
+		\label{fig:texstudioCHAP}
+	\end{figure}
+	
+	El documento inicial con las configuraciones y paquetes necesarios para la generación del documento junto a los capítulos del libro, Bibliografia y Glosario, forman el total del documento que es la memoria del proyecto.\\*
+	
+	
+
 	
 \end{document}
