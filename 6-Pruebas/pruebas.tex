@@ -5,11 +5,13 @@
 	
 	\section{Construcción}
 	
-	Para la implementación en un principio las metodologías ágiles no marcaban ninguna pauta más allá de que todo lo que no está terminado al 100\% no está terminado y por otro lado que siempre hay que entregar con la máxima calidad posible, aunque quizá la más importante fue que la propiedad del código es colectiva, ya no hay más código mio o código tuyo y tenemos responsabilidades y atribuciones sobre nuestras parcelas, el código es del equipo entero y todo miembro puede y debe mejorar el mismo si observa y detecta un error.\\*
+	Para la implementación en un principio las metodologías ágiles no marcaban ninguna pauta más allá de que todo lo que no está terminado al 100\% no está terminado y por otro lado que siempre hay que entregar al cliente un trabajo con la máxima calidad posible, aunque quizá la más importante fue que la propiedad del código es colectiva, ya no hay más código mio o código tuyo y tenemos responsabilidades y atribuciones sobre nuestras parcelas, el código es del equipo entero y todo miembro puede y debe mejorar el mismo si observa y detecta un error. Seguimos la regla del boy scoutt de Clean Code\cite{cleancode}, que nos dice "Deja el campamento más limpio de como lo encontraste".\\*
 	
-	Después de un tiempo de maduración de las mismas surgieron técnicas y disciplinas, algunas en el seno de alguna de estas metodologías (XP sobre todo) y algunas se incorporaron rápidamente desde el movimiento Craftmanship software \cite{manifestocraft} que tiene una filosofía similar aunque más cercana y centrada en el proceso de construcción en sí que en el resto del proceso de desarrollo del proyecto o producto. Estas técnicas son Pair Programming, TDD, Code Reviews y algunas centradas en la mejora del equipo en todos los proyectos como puedan ser Code Retreats, Katas, Koans, etc(citas a gogo). todas estas técnicas y disciplinas hoy en día se consideran tan apegadas a las metodologías ágiles que prácticamente se confunden con las mismas cuando hablamos del proceso de implementación.\\*
+	Después de un tiempo de maduración de las mismas surgieron técnicas y disciplinas, algunas en el seno de estas metodologías (XP sobre todo) y otras se incorporaron rápidamente desde el movimiento Craftmanship software \cite{manifestocraft} que tiene una filosofía similar aunque más cercana y centrada en el proceso de construcción en sí que en el resto del proceso de desarrollo del proyecto o producto. Estas técnicas son Pair Programming, TDD, Code Reviews y algunas centradas en la mejora del equipo en todos los proyectos como puedan ser Code Retreats, Katas, Koans, etc(citas a gogo). todas estas técnicas y disciplinas hoy en día se consideran tan apegadas a las metodologías ágiles que prácticamente se confunden con las mismas cuando hablamos del proceso de implementación.\\*
 	
-	Lo que si existe es la idea del visual management, o tener algún tipo de respaldo visual del estado de un proyecto. Para esto existen pizarras en las que mediante el uso de tarjetas, imanes, post its, imágenes e incluso avatares de los miembros del equipo. Esto permite que cualquier persona interesada en el proyecto con solamente dar un vistazo a la pizarra vea el estado del sprint actual, en que trabaja cada miembro del equipo, el estado del backlog, las historias completadas, y demás información que cada equipo adapta a sus necesidades. Recordemos que la idea es que el equipo y el product owner se sientan cómodos con la metodología y la adapten a sus necesidades o idiosincrasia, teniendo en cuenta que no hay balas de plata que sirvan para todo y arreglen los problemas de la noche a la mañana.\\* 
+	Lo que si existe es la idea del visual management, o tener algún tipo de respaldo visual del estado de un proyecto. Para esto existen pizarras en las que mediante el uso de tarjetas, imanes, post its, imágenes e incluso avatares de los miembros del equipo, permiten que cualquier persona interesada en el proyecto con solamente dar un vistazo a la pizarra vea el estado del sprint actual, en que trabaja cada miembro del equipo, el estado del backlog, las historias completadas, y demás información que cada equipo adapta a sus necesidades.\\*
+	
+	Recordemos que la idea es que el equipo y el product owner se sientan cómodos con la metodología y la adapten a sus necesidades o idiosincrasia, teniendo en cuenta que no hay balas de plata que sirvan para todo y arreglen los problemas de la noche a la mañana.\\* 
 	
 	Existen también multitud de utilidades de software que permiten esto mismo para equipos remotos o para aquellos que no les es posible disponer de una pizarra física. Esta ha sido la opción utilizada por nosotros a través de la aplicación web Trello.\\*
 	
@@ -20,34 +22,47 @@
 		\label{fig:trello}
 	\end{figure}
 	
-	Esta app permite el uso de la pantalla como si de una pizarra electrónica se tratase. Para nuestro propósito la dividimos en diferentes columnas  que representarán los estados de una historia de usuario y además algunas zonas para colocar una imagen del burndown, el estado de animo del equipo y del product owner.\\*
+	Esta app permite el uso de la pantalla como si de una pizarra electrónica se tratase, no es necesario compartir un espacio físico para ello y de manera sencilla se puede compartir con todos los miembros que forman parte del equipo. Para nuestro propósito la dividimos en diferentes columnas que representarán los estados de una historia de usuario y además algunas zonas para colocar una imagen del burndown, el estado de animo del equipo y del product owner. La explicación de las columnas y como adaptamos nuestra manera de desarrollar y de llevar scrum a trello se hace más abajo.\\*
 	
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.8\linewidth]{../images/trello_completo}
-		\caption{Trello permite scrum de manera fácil}
+		\caption{Trello permite scrum de manera sencilla}
 		\label{fig:trello}
 	\end{figure}
 	
 	Las columnas que definimos como estados para las historias de usuario fueron:
 	
 	\begin{itemize} 
-		\item Product Backlog es el backlog de la aplicación del que se habló en el Capitulo 3. Debe estar priorizado para que el equipo tenga una visión aproximada de los intereses del product owner en futuros sprints pero, el equipo ha de ser consciente de que esto puede ser modificado por el product owner.
-		\item Sprint Backlog o ToDo son las tareas del sprint en curso o por hacer. Pueden estar priorizadas por el product owner para que el equipo tenga cierta idea de lo que es más valioso para el, pero el equipo es libre del orden de implementación de las historias en un sprint. 
-		\item Doing es la columna de las historias que actualmente se encuentran en proceso de implementación por algún miembro del equipo.
-		\item Done o ToTest tareas que el equipo ha dado por terminadas con sus test unitarios y prueba de aceptación o deinition of done completado, pero no por alguien ajeno al desarrollo de la misma. 
-		\item Tested alguien ajeno al desarrollo de la historia de usuario ha testado el criterio de aceptación de la historia, esto puede ser  llevado a cabo por el scrum master o algún miembro del equipo. 
-		\item ToShip historias que se han probado por aquieten ajena a quien la desarrolló y pero que aun no han sido entregadas o desplegadas para demo o validación por el product owner.
-		\item Shipped historias que fueron entregadas o desplegadas en otros sprints o en una demo, idealmente no deberían salir de esta columna ya que como se dice han sido validadas por el product owner, pero pudiera ser que se presenten errores en test de regresión al añadir nueva funcionalidad. En ese caso pasarían al Product Backlog para el siguiente sprint como historia de defecto, tal y como esté acordado por el equipo.
+		\item Product Backlog, es el backlog de la aplicación del que se habló en el Capitulo 3. Debe estar priorizado para que el equipo tenga una visión aproximada de los intereses del product owner en futuros sprints, pero el equipo ha de ser consciente de que esto puede ser modificado por el product owner en cualquier momento. La priorización de las historias y dada la facilidad con la que trello nos permite mover las tareas en la misma columna y entre columnas se realizo de la siguiente manera, la más prioritaria es la que ocupa el primer lugar en esa columna, y es con la que se empezará una vez se le asigne un sprint.
+		\item Sprint Backlog o ToDo, son las tareas del sprint en curso o por hacer. Pueden estar priorizadas por el product owner (del modo que hemos comentado antes) para que el equipo tenga cierta idea de lo que es más valioso para el, pero el equipo es libre del orden de implementación de las historias en un sprint, en esta columna en un principio se encuentran todas las tareas que forman parte de ese sprint, y será el principal punto de entrada a la hora de asignar tareas al equipo. 
+		\item Doing, es la columna de las historias que actualmente se encuentran en proceso de implementación por algún miembro del equipo.
+		\item Done o ToTest, tareas que el equipo ha dado por terminadas con sus test unitarios y prueba de aceptación o definition of done completado, pero no por alguien ajeno al desarrollo de la misma, suele ser el mismo miembro del equipo asignado a la tarea el que la pasa a esta columna. 
+		\item Tested, alguien ajeno al desarrollo de la historia de usuario ha testado el criterio de aceptación de la historia, esto puede ser llevado a cabo por el scrum master o algún miembro del equipo designado para ello, al estar nuestro equipo formado por dos personas solemos cruzar la comprobación de las mismas. 
+		\item ToShip, historias que se han probado por alguien ajeno a quien la desarrolló, pero que aun no han sido entregadas o desplegadas para demo o validación por el product owner, hay funcionalidades que se acaban pero que por alguna razón no se quieren llevar a la demo en curso y permanecen en esa columna durante algún tiempo.
+		\item Shipped, historias que fueron entregadas o desplegadas en otros sprints o en una demo, idealmente no deberían salir de esta columna ya que como se dice han sido validadas por el product owner, pero pudiera ser que se presenten errores en test de regresión al añadir nueva funcionalidad. En ese caso pasarían al Product Backlog para el siguiente sprint como historia de defecto, tal y como esté acordado por el equipo.
+		
 	\end{itemize}
+	
+	\clearpage
+		
+	La transición de las historias que se escriben en tarjetas físicas a las historias virtuales con las que trabajamos en trello se ha realizado de una forma sencilla.
+	La tarjeta consta de varias partes como son el título, los puntos de Historia que le asignamos tras previa votación (debajo se encuentran los que ha llevado acabarla una vez este hecha), el miembro del equipo o los miembros que se van a encargar de su elaboración, la descripción, Subtareas que se pueden añadir en forma de checks, comentarios,...\\*
+	
+	Los puntos de historia estimados y los completados, nos ayudan a la hora de estimar el "¿Como vamos?" ya que nos va haciendo un recuento sobre la columna de los que quedan y los que se han hecho. Tambien se le puede añadir a la tarea una fecha de vencimiento a modo de "Dead Line", para fijar una fecha de antemano en la que esa tarea debería estar completada y en la columna "ToShip".\\*
+	 
+	
+	Otra de las funcionalidades que nos aporta trello, es la suscripción, algo muy útil a la hora de recibir un email con su resolución, o cambio de columna y que facilita el flujo de trabajo sobremanera.\\*
+	El etiquetado lo utilizamos sobre todo para indicar a que sprint pertenece la tarea y a la hora de realizar búsquedas por la misma etiqueta las agrupa, permitiendo revisar las que pertenecen al mismo.\\*
 	
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.7\linewidth]{../images/tarea}
-			\caption{Implementación de las Historias de usuario}
+			\caption{Implementación de las Historias de usuario en trello}
 			\label{fig:tareaTrello}
 		\end{figure}
 		
+	Las etiquetas bajo las que señalamos el sprint en el que se encuentra la tarea, nos ayudan a la hora de realizar las búsquedas y son útiles para repasar los puntos de historia que se han completado en ese sprint y poder planificar de manera más eficiente los siguientes. Ya que con la finalización de cada sprint, hay una DEMO y esta debería incluir todas las funcionalidades que en principio se plantearon incluir.
 		
 		\begin{figure}[H]
 			\centering
@@ -117,13 +132,13 @@
 	
 	\textbf{Implantación y distribución}
 	
-	A la finalización del desarrollo, el último paso será subirlo a los markets correspondientes. Para este último paso habrá que firmar digitalmente las apps con la cuenta de desarrollador, compilar el paquete y subirlo a Google Play, así como preparar el resto de requisitos necesarios tales como las imágenes, logos, descripciones etc. Requeridos por los markets de apps.\\
+	A la finalización del desarrollo, el último paso será subirlo a los markets correspondientes. Para este último paso habrá que firmar digitalmente las apps con la cuenta de desarrollador, compilar el paquete y subirlo a Google Play, así como preparar el resto de requisitos necesarios tales como las imágenes, logos, descripciones etc. Requeridos por los markets de apps.\\*
 	A partir de este momento comienza la etapa de mantenimiento de la aplicación, y su escalabilidad, dependiendo de los requerimientos y necesidades futuras de los usuarios o del propio cliente en  nuestro caso de la AECC.
 	
 	Esperamos que aclare las dudas que podáis tener cuando penséis en desarrollar una aplicación móvil.\\*
 	
 	\section{Versionado y Sincronización}
-	Partiendo de la base de que formamos un equipo que no se encuentra en el mismo espacio de trabajo y que debemos sincronizarnos de alguna manera para avanzar a la vez y no pisarnos los cambios, surgió la necesidad de utilizar algún sistema de control de versiones y alojamiento de repositorios para poder avanzar más rápido y sin discrepancias entre las versiones de la aplicación y de la memoria que manejábamos uno y otro.\\*
+	Partiendo de la base de que formamos un equipo que no se encuentra en el mismo espacio de trabajo y que debemos sincronizarnos de alguna manera para avanzar a la vez y no pisar los cambios los cambios que vamos haciendo en la aplicación, surgió la necesidad de utilizar algún sistema de control de versiones y alojamiento de repositorios para poder avanzar más rápido y sin discrepancias entre las versiones de la aplicación y de la memoria que manejábamos uno y otro.\\*
 	
 	Así mismo necesitamos una red ded salvamento por si alguno de los integrantes del equipo tenía que volver atrás en la versión de la aplicación que estaba manejando, crear una nueva version de la aplicación e incluso desestimar todos sus cambios y volver a una version más estable anterior y empezar desde ahí.\\*
 		
@@ -150,10 +165,14 @@
 	\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{../images/funcionamiento_git}
-	\caption{Funcionamiento de git en el versionado}
+	\caption{Funcionamiento de git en el versionado de archivos}
 	\label{fig:funcionamiento_git}
 	\end{figure}
 
+	Dado que los dos utilizamos windows y para tratar de manera más sencilla los archivos que ibamos cambiando y subiendo a la aplicacion, nos creamos dos repositorios en gitHub, uno para la memoria y otro para la aplicación.
+	
+	Sabemos que no es muy habitual que la documentación de un proyecto se realice a traves de un sistema distribuido, sin embargo nos facilió enormemente la tarea de llevar los cambios al día, ya que para la memoria hemos utilizado Latex.\\*
+	
 
 	\begin{figure}[H]
 		\centering
