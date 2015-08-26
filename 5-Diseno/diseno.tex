@@ -130,13 +130,40 @@
 	
 	\section{Diagrama de Clases}
 	
-	Como se ha comentado la
+	Como se ha comentado la arquitectura de la aplicación divide a esta entres capas que saben lo minimo unas de otras y que se comunican por interfaces, a modo de contrato para ocultar tras esto la implementación de las clases que cumpliran dicho contrato.
 	
 	\subsection{Capa de Datos}
 	
+	La capa de datos se comunica con el dominio implementando las clases Repository de cada entidad, que marcan las operaciones a realizar con las mismas. Tras implementar dicho interfaz, aplica un a su vez un patrón repository para definir las operaciones con las entidades y auxiliares. Mediante una factoria de DataStores decidiremos la estrategia para acceder o guardar las entidades, por ejemplo podriamos establecer una implementación mediante caché, si el elemento esta en caché la factoria devolverá un CacheDataStore y si por contra no se encuentra en caché, devolvera un DatabaseDataStore para traerlo de la base de datos, actualizando la caché. Esta capa maneja las entidades Entity que transforma en entidades de dominio cuando le solicitan operaciones. 
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\linewidth]{../images/DataClasesDiagram}
+		\caption{Diagrama de clases de la capa de datos}
+		\label{fig:Clases de la capa Data}
+	\end{figure}
+	
 	\subsection{Capa de Dominio}
 	
+	La capa de dominio esta basada en los casos de uso de la aplicación. Estos son interfaces que heredan de Interactor, que implementa Runable. De esta manera las implementaciones de los mismos contienen un ThreadExecutor implementado por JobExecutor en la capa de datos, al que se envian a sí mismos para ejecutar la acción del caso de uso. Por el otro lado, son los diferentes presenters de la aplicación, quienes implementan los diferentes casos de uso. 
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.8\linewidth]{../images/DomainClasesDiagram}
+			\caption{Diagrama de clases de la capa de dominio}
+			\label{fig:Clases de la capa Domain}
+		\end{figure}
+	
 	\subsection{Capa de Presentación}
+	
+	Esta capa se relaciona con el dominio mediante los presenters, que contienen las operaciones de los diferentes casos de uso que se relacionan en su vista. Ademas contienen interfaces sobre las clases de vista para que estas soporten los metodos que los propios presenters necesitan.
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.8\linewidth]{../images/PresentationClasesDiagram}
+			\caption{Diagrama de clases de la capa de presentación}
+			\label{fig:Clases de la capa Presentation}
+		\end{figure}
 	
 	\section{Diseño de la base de datos}
 	
