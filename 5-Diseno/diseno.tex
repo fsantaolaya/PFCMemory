@@ -133,7 +133,62 @@
 	
 	\section{Diagrama de Clases}
 	
-	\section{Diseño de la base de datos}
+	\section{Diagrama E/R de la base de datos}
+	
+	Para el diseño de la base de datos incluida dentro de la aplicación y que va a utilizarse para tratar la información introducida por el usuario, hemos recreado un diagrama sencillo de tipo Entidad-Relación en el que se muestran las entidades que serán llevadas a tablas y sobre las que se realizarán las típicas operaciones de creación, lectura, actualización y borrado (CRUD).
+	
+		\subsection{Diagrama}
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1\linewidth]{../images/diagrama_e_r}
+			\caption{Diagrama entidad relación de la base de datos local}
+			\label{fig:diagramaer}
+		\end{figure}
+		
+		\subsection{Descripción}
+		
+		El diagrama de la figura anterior\cite{diagramaer} es el diseño en papel de la base de datos local, la que tendrá el usuario en su móvil en la aplicación.
+		
+		Consta de varias entidades fuertes o formales:
+		
+		\begin{itemize}
+			\item Cita médica; Sus atributos son id (PK), nombre, lugar, descripción, día de cita, hora de cita, día a notificar , hora a notificar, duración e imagen.
+			
+			\item Rutina; Sus atributos son id (PK), nombre, lugar, descripción, día de rutina, hora de rutina, día a notificar, hora a notificar, duración, satisfacción e imagen.
+			
+			\item Personaje; Sus atributos son id (PK), nombre, apellidos, dirección,  teléfono, relación, imagen.
+			
+			\item Medicamento; Sus atributos son id (PK), nombre, descripción, día inicio, hora inicio, día fin, hora fin, intervalo, imagen.
+			
+			\item Síntoma; Sus atributos son id (PK), nombre, descripción, día, hora, imagen.
+			
+			\item Prueba; Sus atributos son id (PK), nombre, descripción, día, hora, imagen.
+			
+		\end{itemize}
+		
+		
+		
+		También encontramos en el mismo varias entidades débiles:
+			
+		\begin{itemize}
+			\item Notificación medicamento; Sus atributos son id (PK), id del medicamento (FK), día, hora, descripción
+			
+			\item Notificación cita; Sus atributos son id (PK), id de la cita (FK), día, hora, descripción
+			
+			\item Notificación rutina; Sus atributos son id (PK), id de la rutina (FK), día, hora, descripción
+		\end{itemize}
+		
+		Las relaciones que se producen entre las distintas entidades, son las siguientes:\\*
+		
+		Una cita médica puede contener algún o ningún Medicamento, Prueba, Personaje, Síntoma.
+		Una rutina puede contener algún o ningún Personaje.
+		Síntomas, personajes, pruebas, medicamentos pueden estar contenidos en varias citas o en ninguna.
+		Los personajes pueden estar contenidos en citas o rutinas.
+		
+		Las citas, rutinas y los medicamentos pueden generar o no notificaciones.
+		
+		
 	
 	\section{Prototipado}
 	
@@ -372,13 +427,47 @@
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.3\linewidth]{../images/flasher_pantalla_carga}
-			\caption{Pantalla con la actividad de las citas}
+			\caption{Pantalla de presentación de la aplicación}
 			\label{fig:flasher_pantalla_carga}
 		\end{figure}
 		
 		
 	
-	\section{Flujo de navegación}
+	\section{Iconografía y otros cambios}
+	
+	A petición del Product Owner y dado que estamos trabajando con una metodología agil, los cambios y las adaptaciones en el diseño no son una excepción, los prototipos han ido variando en el tiempo con los cambios propuestos por el cliente y se ha adaptado para proporcionar una imagen más 'corporativa' y en consonancia con la iniciativa en la que está situado.
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.5\linewidth]{../images/icon_aecc}
+			\caption{Icono de la aplicación principal}
+			\label{fig:icono}
+		\end{figure}
+	
+	
+	La imagen visible de la aplicación, incluso antes de acceder a la misma, va a ser su icono, este nos tiene que dejar entrever parte de la intención de la aplicación y ser fácilmente identificable entre el resto de los iconos de las aplicaciones instaladas.
+	
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\linewidth]{../images/iconografia}
+				\caption{Conjunto de iconos de apoyo para las pantallas de las entidades}
+				\label{fig:iconografia}
+			\end{figure}	
+	
+	
+	Se diseñaron gran parte de los iconos que forman parte de las pantallas, con un aspecto que recuerda al del libro y con un estilo acorde al que se utiliza en el mismo folleto, para que el usuario tengo una experiencia de uso que le muestre continuidad.
+	
+	Por último, se re-diseñaron algunas de las pantallas principales para hacerlas más fácilmente identificables con el libro de la iniciativa de la asociación y mantener la coherencia visual del proyecto.
+	
+	  
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=1\linewidth]{../images/new_prot}
+				\caption{Nuevo diseño de las pantallas }
+				\label{fig:rediseno}
+			\end{figure}
+	
+	
 	
 	
 \end{document}
