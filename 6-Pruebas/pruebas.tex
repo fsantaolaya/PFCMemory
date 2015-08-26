@@ -272,6 +272,13 @@ tarea compleja, o usando la técnica de pair programming.
 	
 	Es por ello que hoy en día la técnica de desarrollo que más adeptos consigue es el TDD (por su siglas en inglés de Test Driven Development) o Desarrollo Dirigido por Pruebas, en el cual ante una funcionalidad el desarrollador lo primero que ha de hacer es pensar en un test unitario y automatico que falle. Despues modificar el código todo lo rápido que pueda para hacer que dicho test automatico pase a ser aprobado por la aplicación y por último refactorizar el software para mejorar el código antes escrito, eliminar duplicación, etc para volver al punto anterior en un proceso iterativo que acumulará test unitarios en estado de aprobación.\\* 
 	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1\linewidth]{../images/tdd_1}
+			\caption{Ciclo de TDD con breves tips de cada una}
+			\label{fig:Ciclo de TDD}
+		\end{figure}
+	
 	De esta manera podemos obtener una confianza en que nuestro código sigue manteniendo la corrección, mientras vamos añadiendo funcionalidades a nuestra aplicación.\\*
 	
 	A tener en cuenta sobre esta técnica son los siguientes puntos:
@@ -293,7 +300,21 @@ tarea compleja, o usando la técnica de pair programming.
 	
 	BDD es otro proceso de testeo que se denomina así por sus siglas en inglés Behaviour Driven Developent, o desarrollo dirigido por comportamiento, es un proceso similar al de ATDD pero con la fundamental diferencia de que el lenguaje empleado en los test es el del dominio de la aplicación, y por lo tanto mucho mas cercano al product owner. Ews por eso mucho más natural para él el tener que pensar en escribir un test que valide el comportamiento de una historia de usuario, aunque después este test sea más complicado de trasladar al TDD. El ciclo de BDD seria el mismo que el del TDD solamente que en cada iteración sobre un test de comportamiento implicaría varios ciclos de iteración sobre test de funcionalidad unitaria. Es deseable que estos test tambien esten automatizados y se lancen en el menor tiempo posible antes de cada compilación del código de la aplicación. Con estos ciclos de iteración a más alto nivel se consigue testar el comportamiento de la aplicación en algo evaluable y valioso para el prodcut owner y forzar el refactorizado de codigo a más alto nivel para mejorar el diseño arquitectural de grandes bloques en principio menos interrelacionados que los que llevan a cabo los N test unitarios que subyacen al test de comportamiento.\\*
 	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1\linewidth]{../images/bdd1}
+			\caption{Ciclos integrados de TDD y BDD }
+			\label{fig:Ciclo de BDD y TDD}
+		\end{figure}
+	
 	Esta cercania al lenguaje de dominio de la aplicación hace que hoy día estos sean unos test muy apreciados por el product owner y que al equipo de desarrollo le obligan a testar no solo unitariamente el sftware de la aplicación, sino el comportamiento de los casos de uso descritos en la misma.\\* 
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\linewidth]{../images/bdd2}
+		\caption{Otra imagen de los ciclos integrados de TDD y BDD }
+		\label{fig:Ciclo de BDD y TDD otro ejemplo}
+	\end{figure}
 		
 	\subsection{Pruebas en el dispositivo}
 	
