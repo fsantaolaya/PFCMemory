@@ -220,7 +220,7 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 	\textbf{AGENTE DE LA AECC}
 	Este actor representa a los agentes de la AECC destinados a hacer un seguimiento de los usuarios registrados en la aplicación, tendrá acceso a la información facilitada por estos últimos y podrá dar una atención personalizada a aquellos a los que tutele.\\*
 		
-	\subsection{Diagrama de casos de uso }
+	\subsection{Casos de uso }
 		
 	Un caso de uso es una descripción de los pasos o las actividades que deberán realizarse para llevar a cabo algún proceso.\\*
 	
@@ -231,6 +231,17 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 	Pudiera parecer que las metodologías ágiles no valoran los casos de uso, nada más lejos de la realidad, los casos de uso son el guión de lo que una o varias funcionalidades deben realizar. Es por tanto el nexo de unión entre varias historias, es el guión de test automáticos de validación, es quien atesora las reglas de negocio que deben gobernar en nuestra implementación, y es quien conoce las operaciones y entidades que son necesarias en la aplicación. Por eso para los procesos de pruebas, documentación, elaboración de historias, e implementación son una pieza básica que no debemos perder de vista. Tanto es así que es la piedra sobre la que se erige la aplicación para lograr una arquitectura desacoplada y de calidad. 
 	
 	WIKIPEDIA
+	
+	Dado el número de casos de uso existente y que estos quedan descritos por el siguiente apartado, ponemos un ejemplo de uno de ellos, referente a la parte de la medicación.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\linewidth]{../images/casodeuso}
+		\caption{CRUD de medicamento (caso de uso)}
+		\label{fig:casodeusocrud}
+	\end{figure}
+	
+	 
 	
 	\clearpage
 
@@ -677,6 +688,8 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\label{tabla:caso013}
 		\end{table}
 		
+		\clearpage
+		
 		\textbf{CU-014}	MEDICAMENTO - Consulta\\*
 		
 		\begin{table}[H]
@@ -709,6 +722,8 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\label{tabla:caso014}
 		\end{table}
 		
+		\clearpage
+		
 		\textbf{CU-015}	MEDICAMENTO - Edición\\*
 		
 		\begin{table}[H]
@@ -734,7 +749,6 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\label{tabla:caso015}
 		\end{table}
 		
-		\clearpage
 		
 		\textbf{CU-016}	MEDICAMENTO - Borrado\\*
 		
@@ -760,7 +774,7 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\label{tabla:caso016}
 		\end{table}
 		
-		
+		\clearpage
 		
 		\textbf{PERSONAJE}\\*
 		
@@ -848,6 +862,8 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\label{tabla:caso018}
 		\end{table}
 		
+		\clearpage
+		
 		\textbf{CU-019}	PERSONAJE - Edición\\*
 		
 		\begin{table}[H]
@@ -897,7 +913,7 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 			\label{tabla:caso020}
 		\end{table}
 		
-		
+	\clearpage
 		
 	\textbf{SÍNTOMA}\\*
 	
@@ -967,6 +983,8 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 		\label{tabla:caso022}
 	\end{table}
 	
+	\clearpage
+	
 	\textbf{CU-023}	SÍNTOMA - Edición\\*
 	
 	\begin{table}[H]
@@ -992,7 +1010,6 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 		\label{tabla:caso023}
 	\end{table}
 	
-	\clearpage
 	
 	\textbf{CU-024}	SÍNTOMA - Borrado\\*
 	
@@ -1018,7 +1035,7 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 		\label{tabla:caso024}
 	\end{table}
 	
-	
+	\clearpage
 	
 	\textbf{PRUEBA}\\*
 	
@@ -1054,6 +1071,8 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 		\label{tabla:caso025}
 	\end{table}
 	
+	\clearpage
+	
 	\textbf{CU-026}	PRUEBA - Consulta\\*
 	
 	\begin{table}[H]
@@ -1085,6 +1104,8 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 		\caption{Prueba - Consulta}
 		\label{tabla:caso026}
 	\end{table}
+	
+	\clearpage
 	
 	\textbf{CU-027}	PRUEBA - Edición\\*
 	
@@ -1215,7 +1236,9 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 		\end{tabular}
 		\caption{Añadir notificación - Medicamento}
 		\label{tabla:caso031}
-	\end{table}		
+	\end{table}	
+	
+	\clearpage	
 
 	\textbf{CU-032}	AÑADIR NOTIFICACIÓN - CITA\\*
 	
@@ -1273,13 +1296,15 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 		\caption{Añadir notificación - Rutina}
 		\label{tabla:caso033}
 	\end{table}		
-	
+
+	\clearpage	
+
 	\textbf{CU-034}	AÑADIR OBJETOS A LA CITA\\*
 
 	\begin{table}[H]
 		\centering
 		\begin{tabular}[t]{|p{3cm}|p{9.5cm}|}
-			\hline \textbf{CU-032} & \textbf{AÑADIR OBJETOS A LA CITA}\\*
+			\hline \textbf{CU-034} & \textbf{AÑADIR OBJETOS A LA CITA}\\*
 			\hline\hline \textbf{Versión} & 1.0 \\*
 			\hline\hline \textbf{Fecha} & 28/07/2015 \\*
 			\hline\textbf{Actores} 	& Usuario\\*
@@ -1302,7 +1327,9 @@ En todo momento se debe poder usar la app sin hacer ningún tipo de registro pre
 		\caption{Añadir objetos a la cita}
 		\label{tabla:caso034}
 	\end{table}
-			
+
+	\clearpage
+				
 	\textbf{CU-035}	AÑADIR OBJETOS A LA RUTINA\\*
 
 	\begin{table}[H]
