@@ -2,8 +2,6 @@
 
 	\begin{document}
 	
-	\section{Parte App móvil}
-	
 	\section{Arquitectura}
 	
 	Como se ha comentado antes en este documento Scrum y las tecnologías ágiles, por su forma de enfocar las tareas y el propio desarrollo en un equipo con un nivel técnico que no sea excelente, si no se introducen medidas paliativas que corrijan esto, suelen obtener diseños arquitecturales de clases un poco pobres, tendentes al acoplamiento y poco cohesionado. Para paliar esto se suelen introducir historias de usuario de reducción de deuda técnica, o de refactorización de todo el código existente, así como herramientas que detecten code smells\cite{refactoring} o malas practicas de desarrollo.\\ 
@@ -43,7 +41,7 @@
 	
 	En particular, un objeto debe evitar invocar métodos de un objeto miembro devuelto por otro método. Para muchos lenguajes orientados a objetos modernos que usan un punto como identificador de campo, la ley puede se puede resumir simplemente como "usar sólo un punto". Es decir, el a.b.Method() rompe la ley mientras que a.Method() no lo hace. Como analogía, cuando uno quiere que un perro ande, no se ordena a las patas del perro a caminar directamente, sino que se manda al perro que luego manda sus propias piernas.\\
 		
-	Con esto en mente en mente construiremos tres grandes capas que serán las típicas de vista, dominio y datos. Cada capa despues tendrá sus propios patrones o entidades de patrones, y alguna subcapa. Lo importante es que cada capa ofrezca un interfaz a las capas que tienen que interactuar con ella y que estas solamente conocerán dicho interfaz.  \\
+	Con esto en mente en mente construiremos tres grandes capas que serán las típicas de vista, dominio y datos. Cada capa después tendrá sus propios patrones o entidades de patrones, y alguna subcapa. Lo importante es que cada capa ofrezca un interfaz a las capas que tienen que interactuar con ella y que estas solamente conocerán dicho interfaz.  \\
 	
 	Como frontera entre la vista y el dominio pondremos un patrón de MVP o Modelo-Vista-Presentador, este patrón es una modificación del Modelo-Vista-Controlador que sirve para separar de la vista y representación gráfica de nuestros objetos de modelo, de la representación de estos. En este modelo la vista es lo más "tonta" o simple posible de manera que no merezca la pena testarse. Y los eventos sobre la misma se los comunicará al presentador que será el encargado de lidiar con el modelo de los objetos de negocio de la aplicación.  
 	
@@ -128,16 +126,16 @@
 	
 	¿Cómo resolvemos esta última parte?. Con la inyección de dependencias, que es una técnica que como ya hemos dicho se usa para obtener la Inversión de Dependencias.\\
 	
-	Como se ha comentado la arquitectura de la aplicación divide a esta entres capas que saben lo minimo unas de otras y que se comunican por interfaces, a modo de contrato para ocultar tras esto la implementación de las clases que cumpliran dicho contrato.
+	Como se ha comentado la arquitectura de la aplicación divide a esta entres capas que saben lo mínimo unas de otras y que se comunican por interfaces, a modo de contrato para ocultar tras esto la implementación de las clases que cumplirán dicho contrato.
 	
 	\section{Diagrama de Clases}
 	
-		Como se ha comentado la arquitectura de la aplicación divide a esta entres capas que saben lo minimo unas de otras y que se comunican por interfaces, a modo de contrato para ocultar tras esto la implementación de las clases que cumpliran dicho contrato.
+		Como se ha comentado la arquitectura de la aplicación divide a esta entres capas que saben lo mínimo unas de otras y que se comunican por interfaces, a modo de contrato para ocultar tras esto la implementación de las clases que cumplirán dicho contrato.
 		
 	
 	\subsection{Capa de Datos}
 	
-	La capa de datos se comunica con el dominio implementando las clases Repository de cada entidad, que marcan las operaciones a realizar con las mismas. Tras implementar dicho interfaz, aplica un a su vez un patrón repository para definir las operaciones con las entidades y auxiliares. Mediante una factoria de DataStores decidiremos la estrategia para acceder o guardar las entidades, por ejemplo podriamos establecer una implementación mediante caché, si el elemento esta en caché la factoria devolverá un CacheDataStore y si por contra no se encuentra en caché, devolvera un DatabaseDataStore para traerlo de la base de datos, actualizando la caché. Esta capa maneja las entidades Entity que transforma en entidades de dominio cuando le solicitan operaciones. 
+	La capa de datos se comunica con el dominio implementando las clases Repository de cada entidad, que marcan las operaciones a realizar con las mismas. Tras implementar dicho interfaz, aplica un a su vez un patrón repository para definir las operaciones con las entidades y auxiliares. Mediante una factoría de DataStores decidiremos la estrategia para acceder o guardar las entidades, por ejemplo podríamos establecer una implementación mediante caché, si el elemento esta en caché la factoría devolverá un CacheDataStore y si por contra no se encuentra en caché, devolverá un DatabaseDataStore para traerlo de la base de datos, actualizando la caché. Esta capa maneja las entidades Entity que transforma en entidades de dominio cuando le solicitan operaciones. 
 		
 		\begin{figure}[H]
 			\centering
@@ -148,22 +146,22 @@
 		
 	\subsection{Capa de Dominio}
 	
-	La capa de dominio esta basada en los casos de uso de la aplicación. Estos son interfaces que heredan de Interactor, que implementa Runable. De esta manera las implementaciones de los mismos contienen un ThreadExecutor implementado por JobExecutor en la capa de datos, al que se envian a si mismos para ejecutar la acción del caso de uso. Por el otro lado, son los diferentes presenters de la aplicación, quienes implementan los diferentes casos de uso. 
+	La capa de dominio esta basada en los casos de uso de la aplicación. Estos son interfaces que heredan de Interactor, que implementa Runable. De esta manera las implementaciones de los mismos contienen un ThreadExecutor implementado por JobExecutor en la capa de datos, al que se envían a si mismos para ejecutar la acción del caso de uso. Por el otro lado, son los diferentes presenters de la aplicación, quienes implementan los diferentes casos de uso. 
 		
 			\begin{figure}[H]
 				\centering
-				\includegraphics[width=0.8\linewidth]{../images/DomainClasesDiagram}
+				\includegraphics[width=1\linewidth]{../images/DomainClasesDiagram}
 				\caption{Diagrama de clases de la capa de dominio}
 				\label{fig:Clases de la capa Domain}
 			\end{figure}
 		
 	\subsection{Capa de Presentación}
 	
-	Esta capa se relaciona con el dominio mediante los presenters, que contienen las operaciones de los diferentes casos de uso que se relacionan en su vista. Ademas contienen interfaces sobre las clases de vista para que estas soporten los metodos que los propios presenters necesitan.
+	Esta capa se relaciona con el dominio mediante los presenters, que contienen las operaciones de los diferentes casos de uso que se relacionan en su vista. Ademas contienen interfaces sobre las clases de vista para que estas soporten los métodos que los propios presenters necesitan.
 	
 			\begin{figure}[H]
 				\centering
-				\includegraphics[width=0.8\linewidth]{../images/PresentationClasesDiagram}
+				\includegraphics[width=1\linewidth]{../images/PresentationClasesDiagram}
 				\caption{Diagrama de clases de la capa de presentación}
 				\label{fig:Clases de la capa Presentation}
 			\end{figure}
@@ -189,7 +187,7 @@
 		
 		\subsection{Descripción}
 		
-		El diagrama de la figura anterior\cite{diagramaer} es el diseño en papel de la base de datos local, la que tendrá el usuario en su móvil en la aplicación.
+		El diagrama de la figura anterior es el diseño en papel de la base de datos local, la que tendrá el usuario en su móvil en la aplicación.
 		
 		Consta de varias entidades fuertes o formales:
 		
@@ -233,7 +231,7 @@
 
 	\subsection{Capa de Datos}
 	
-	La capa de datos se comunica con el dominio implementando las clases Repository de cada entidad, que marcan las operaciones a realizar con las mismas. Tras implementar dicho interfaz, aplica un a su vez un patrón repository para definir las operaciones con las entidades y auxiliares. Mediante una factoria de DataStores decidiremos la estrategia para acceder o guardar las entidades, por ejemplo podriamos establecer una implementación mediante caché, si el elemento esta en caché la factoria devolverá un CacheDataStore y si por contra no se encuentra en caché, devolvera un DatabaseDataStore para traerlo de la base de datos, actualizando la caché. Esta capa maneja las entidades Entity que transforma en entidades de dominio cuando le solicitan operaciones. 
+	La capa de datos se comunica con el dominio implementando las clases Repository de cada entidad, que marcan las operaciones a realizar con las mismas. Tras implementar dicho interfaz, aplica un a su vez un patrón repository para definir las operaciones con las entidades y auxiliares. Mediante una factoría de DataStores decidiremos la estrategia para acceder o guardar las entidades, por ejemplo podríamos establecer una implementación mediante caché, si el elemento esta en caché la factoría devolverá un CacheDataStore y si por contra no se encuentra en caché, devolverá un DatabaseDataStore para traerlo de la base de datos, actualizando la caché. Esta capa maneja las entidades Entity que transforma en entidades de dominio cuando le solicitan operaciones. 
 	
 	\begin{figure}[H]
 		\centering
@@ -244,22 +242,22 @@
 	
 	\subsection{Capa de Dominio}
 	
-	La capa de dominio esta basada en los casos de uso de la aplicación. Estos son interfaces que heredan de Interactor, que implementa Runable. De esta manera las implementaciones de los mismos contienen un ThreadExecutor implementado por JobExecutor en la capa de datos, al que se envian a sí mismos para ejecutar la acción del caso de uso. Por el otro lado, son los diferentes presenters de la aplicación, quienes implementan los diferentes casos de uso. 
+	La capa de dominio esta basada en los casos de uso de la aplicación. Estos son interfaces que heredan de Interactor, que implementa Runable. De esta manera las implementaciones de los mismos contienen un ThreadExecutor implementado por JobExecutor en la capa de datos, al que se envían a sí mismos para ejecutar la acción del caso de uso. Por el otro lado, son los diferentes presenters de la aplicación, quienes implementan los diferentes casos de uso. 
 	
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.8\linewidth]{../images/DomainClasesDiagram}
+			\includegraphics[width=1\linewidth]{../images/DomainClasesDiagram}
 			\caption{Diagrama de clases de la capa de dominio}
 			\label{fig:Clases de la capa Domain}
 		\end{figure}
 	
 	\subsection{Capa de Presentación}
 	
-	Esta capa se relaciona con el dominio mediante los presenters, que contienen las operaciones de los diferentes casos de uso que se relacionan en su vista. Ademas contienen interfaces sobre las clases de vista para que estas soporten los metodos que los propios presenters necesitan.
+	Esta capa se relaciona con el dominio mediante los presenters, que contienen las operaciones de los diferentes casos de uso que se relacionan en su vista. Ademas contienen interfaces sobre las clases de vista para que estas soporten los métodos que los propios presenters necesitan.
 	
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.8\linewidth]{../images/PresentationClasesDiagram}
+			\includegraphics[width=1\linewidth]{../images/PresentationClasesDiagram}
 			\caption{Diagrama de clases de la capa de presentación}
 			\label{fig:Clases de la capa Presentation}
 		\end{figure}
@@ -272,13 +270,15 @@
 	En la fase de diseño, el propósito del prototipo es obtener una primera versión de la apariencia de la interfaz de usuario así como de la funcionalidad incluida (mostrar las ventanas, su navegación, interacción, controles y botones). Con esto se pretende que el cliente tenga una primera toma de contacto con la futura aplicación antes de su desarrollo final, para así reducir o eliminar todas aquellas disconformidades y cambios en fases futuras.
 	
 		\subsection{Material Design}
-		Material Design es la nueva metáfora visual de Matias Duarte para el sistema operativo móvil Android, en su version 5.0 y posteriores, y todo el ecosistema Google en web y supone una pequeña ruptura con la anterior metáfora de Android llamada Holo. \\*
+		Material Design es la nueva metáfora visual de Matías Duarte para el sistema operativo móvil Android, en su version 5.0 y posteriores, y todo el ecosistema Google en web y supone una pequeña ruptura con la anterior metáfora de Android llamada Holo. \\*
 		
 		Es un diseño donde la profundidad, las superficies, los bordes, las sombras y los colores juegan un papel principal.
 		
 		Precisamente este diseño basado en objetos es una manera de intentar aproximarse a la realidad, algo que en un mundo donde todo es táctil y virtual es difícil. Material Design quiere guiarse por las leyes de la física, donde las animaciones sean lógicas, los objetos se superpongan pero no puedan atravesarse el uno al otro y demás.\\*
 		
 		Material Design es un diseño con una tipografía clara, casillas bien ordenadas, colores e imágenes llamativos para no perder el foco y un sentido del orden y la jerarquía muy marcado. Estas ideas ya se aplican en muchos diseños, pero en Material Design Google ha creado unas normas muy claras de como llevarlo a la práctica.\\*
+		
+		\clearpage
 		
 		\subsection{Pantallas Principales}
 		
@@ -338,7 +338,7 @@
 		
 		\textbf{Pantallas referentes a la rutina diaria}
 		
-		Estas funcionalidades descienden directamente del libro proporcionado por la AECC, en el que como usuario integrado en el programa de mejora de la calidad de vida del superviviente de cáncer se le insta a realizar actividades que le produzcan cierta satisfacción y a realizarlas con asiduidad, sea en compañía o solo. En resumen se recomienda hacer actividades que nos hagan felices y nos animan a puntuarlas con el grado de satisfacción que nos producen las mismas. En el estracto del libro podemos apuntar la actividad, la fecha en la que la vamos a realizar, indicar quien nos acompaña, grado de satisfacción que nos produce y repetir.
+		Estas funcionalidades descienden directamente del libro proporcionado por la AECC, en el que como usuario integrado en el programa de mejora de la calidad de vida del superviviente de cáncer se le insta a realizar actividades que le produzcan cierta satisfacción y a realizarlas con asiduidad, sea en compañía o solo. En resumen se recomienda hacer actividades que nos hagan felices y nos animan a puntuarlas con el grado de satisfacción que nos producen las mismas. En el extracto del libro podemos apuntar la actividad, la fecha en la que la vamos a realizar, indicar quien nos acompaña, grado de satisfacción que nos produce y repetir.
 		
 		
 		
@@ -387,7 +387,7 @@
 		
 		\textbf{Pantallas referentes a la medicación}
 		
-		El libro nos proporciona un cuadro para el control de los medicamentos, nos permite apuntar el nombre sus indicaciones y parte de la posología del mismo, pero a nuestro modo de ver es algo insuficiente y se puede completar con notificaciones y más información que le permita ser identificado facilmente.
+		El libro nos proporciona un cuadro para el control de los medicamentos, nos permite apuntar el nombre sus indicaciones y parte de la posología del mismo, pero a nuestro modo de ver es algo insuficiente y se puede completar con notificaciones y más información que le permita ser identificado fácilmente
 		
 		\begin{figure}[H]
 			\centering
@@ -433,7 +433,7 @@
 		
 		\textbf{Pantallas de gestión de los síntomas}
 		
-		Los síntomas se apuntan en la misma ficha que los datos de la cita médica, con lo cual sería interesante que toda esa información se viese representada en la aplicacíon, hay que tenerla en cuenta en el flujo.
+		Los síntomas se apuntan en la misma ficha que los datos de la cita médica, con lo cual sería interesante que toda esa información se viese representada en la aplicación, hay que tenerla en cuenta en el flujo.
 		
 		\begin{figure}[H]
 			\centering
@@ -512,7 +512,7 @@
 	
 	\section{Iconografía y otros cambios}
 	
-	A petición del Product Owner y dado que estamos trabajando con una metodología agil, los cambios y las adaptaciones en el diseño no son una excepción, los prototipos han ido variando en el tiempo con los cambios propuestos por el cliente y se ha adaptado para proporcionar una imagen más 'corporativa' y en consonancia con la iniciativa en la que está situado.
+	A petición del Product Owner y dado que estamos trabajando con una metodología ágil, los cambios y las adaptaciones en el diseño no son una excepción, los prototipos han ido variando en el tiempo con los cambios propuestos por el cliente y se ha adaptado para proporcionar una imagen más 'corporativa' y en consonancia con la iniciativa en la que está situado.
 	
 		\begin{figure}[H]
 			\centering

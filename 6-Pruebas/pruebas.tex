@@ -13,7 +13,7 @@
 	
 	Recordemos que la idea es que el equipo y el product owner se sientan cómodos con la metodología y la adapten a sus necesidades o idiosincrasia, teniendo en cuenta que no hay balas de plata que sirvan para todo y arreglen los problemas de la noche a la mañana.\\* 
 	
-	Existen también multitud de utilidades de software que permiten esto mismo para equipos remotos o para aquellos que no les es posible disponer de una pizarra física. Esta ha sido la opción utilizada por nosotros a través de la aplicación web Trello, debido a la composición distribuida tanto del equipo, como de cada uno de los diferentes product owner de parte de la AEEC\\*
+	Existen también multitud de utilidades de software que permiten esto mismo para equipos remotos o para aquellos que no les es posible disponer de una pizarra física. Esta ha sido la opción utilizada por nosotros a través de la aplicación web Trello, debido a la composición distribuida tanto del equipo, como de cada uno de los diferentes product owner de parte de la AECC\\*
 	
 	\begin{figure}[H]
 		\centering
@@ -35,7 +35,7 @@
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.7\linewidth]{../images/pbacklog_todo}
+		\includegraphics[width=0.6\linewidth]{../images/pbacklog_todo}
 		\caption{Detalle de las columnas product backlog y ToDo}
 		\label{fig:trelloBackDo}
 	\end{figure}
@@ -72,8 +72,6 @@
 	
 	Los puntos de historia estimados y los completados, nos ayudan a la hora de estimar el ¿Cómo vamos? ya que nos va haciendo un recuento sobre la columna de los que quedan y los que se han hecho. También se le puede añadir a la tarea una fecha de vencimiento a modo de "Dead Line", para fijar una fecha de antemano en la que esa tarea debería estar completada y en la columna "ToShip".\\*
 	 
-	\clearpage
-	
 	Otra de las funcionalidades que nos aporta Trello, es la suscripción, algo muy útil a la hora de recibir un email con su resolución, o cambio de columna y que facilita el flujo de trabajo sobremanera.\\*
 	El etiquetado lo utilizamos sobre todo para indicar a que sprint pertenece la tarea y a la hora de realizar búsquedas por la misma etiqueta las agrupa, permitiendo revisar las que pertenecen al mismo.
 	
@@ -162,7 +160,7 @@
 	
 	\section{Versionado y Sincronización}
 
-	El control de cambios y la gestión de la configuración son piezas claves en  el desarrollo de hoy en dia, y los equipos deben poder confiar en un sistema que salvaguarde los cambios del código y que les permita compartir dichos cambios realizados en el ordenador local de cada integrante del equipo.\\*
+	El control de cambios y la gestión de la configuración son piezas claves en  el desarrollo de hoy en día, y los equipos deben poder confiar en un sistema que salvaguarde los cambios del código y que les permita compartir dichos cambios realizados en el ordenador local de cada integrante del equipo.\\*
 	
 	Es por esto que los sistemas de control de versiones y de gestión de la configuración han sido uno de los puntos claves en las infraestructuras de las empresas dedicadas a la producción de código. \\*
 	
@@ -186,9 +184,9 @@
 	
 	Posteriormente decidimos incluir también la construcción de la propia memoria en GitHub, ya que otras soluciones de documentación en la nube nos convencían menos de modo que cada uno de los integrantes del equipo pudiese avanzar en el desarrollo del software o de la documentación asociada.\\*
 	
-	Al adoptar git, abrazamos este sistema con todas sus virtudes y sus defectos, al principio si ya has trabajado con otros sistemas de control de versiones, debes desechar estos conocimientos, ya que tienen que ver muy poco con el funcionamiento que tiene git a la hora de llevar el control sobre los archivos versionados, debiado a su concepción distribuida y a que cada integrante tiene una copia local del repositorio, y solamente es esto lo que comparte, el estado de los repositorios locales, pudiendo compartirlos con uno o varios de lo que se viene a llamar remotos, que no son mas que otros repositorios de los que se tiene referencia.\\*
+	Al adoptar git, abrazamos este sistema con todas sus virtudes y sus defectos, al principio si ya has trabajado con otros sistemas de control de versiones, debes desechar estos conocimientos, ya que tienen que ver muy poco con el funcionamiento que tiene Git a la hora de llevar el control sobre los archivos versionados, debido a su concepción distribuida y a que cada integrante tiene una copia local del repositorio, y solamente es esto lo que comparte, el estado de los repositorios locales, pudiendo compartirlos con uno o varios de lo que se viene a llamar remotos, que no son mas que otros repositorios de los que se tiene referencia.\\*
 	
-	Otros sistemas como podrían ser subversión, (utilizamos este ejemplo por ser bastante conocido) realizan copia de los archivos versionados cada vez que se cambia algo, sin embargo, el sistema de git, hace que sea más del estilo a una fotografía, donde se cambian los archivos nuevos o modificados pero sin embrago mantiene sin modificaciones los que no se han tocado, haciendo su uso bastante más eficiente\cite{funcgit2}.\\*
+	Otros sistemas como podrían ser subversión, (utilizamos este ejemplo por ser bastante conocido) realizan copia de los archivos versionados cada vez que se cambia algo, sin embargo, el sistema de Git, hace que sea más del estilo a una fotografía, donde se cambian los archivos nuevos o modificados pero sin embrago mantiene sin modificaciones los que no se han tocado, haciendo su uso bastante más eficiente\cite{funcgit2}.\\*
 	
 	Como estrategia de desarrollo hemos utilizado la denominada gitflow, que para desarrollo de productos de software sin fecha de fin determinada es una estrategia de ramas, fusiones, etc muy recomendable. Que consiste en dos lineas infinitas de desarrollo, "Desarrollo" donde se encuentran los siguientes cambios que pasarán a la siguiente versión que se publique. "Producción" que contiene el software que actualmente se encuentra disponible para el uso del público general.\\*
 	
@@ -225,9 +223,11 @@
 	No siempre todo lo que subimos encaja a la perfección y se pueden dar conflictos entre los archivos, de manera que hay que solucionarlos para dejar el repositorio estable.
 	Estos conflictos se  pueden resolver de varias maneras posibles, puede ser a través de un merge, aceptando o eliminando los cambios locales, o modificando el resultado de lo que se va a subir, unificando el archivo que se va a quedar en el repositorio, se puede crear una nueva rama del proyecto (branch), o incluso se pueden apartar los cambios para seguir trabajando sobre la rama principal y hacer el commit de los mismos más tarde o desecharlos.
 	
+	\clearpage
+	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.7\linewidth]{../images/powerShell}
+		\includegraphics[width=0.8\linewidth]{../images/powerShell}
 		\caption{PowerShell con los comandos más habituales a la hora de operar.}
 		\label{fig:powershell}
 	\end{figure}
@@ -267,7 +267,7 @@
 	
 	\section{Pruebas}
 	
-	Hoy en día no se concibe un desarrollo de software sin disponer de pruebas o tester para poder asegurar la calidad del software y que este realiza las tareas para las que fue concebido correctamente y sin efectos laterales. Todo esto debido a que la complejidad del software desarrollado hoy dia es de un orden de magnitud muy grande comparada con la de hace simplemente unos años.
+	Hoy en día no se concibe un desarrollo de software sin disponer de pruebas o tester para poder asegurar la calidad del software y que este realiza las tareas para las que fue concebido correctamente y sin efectos laterales. Todo esto debido a que la complejidad del software desarrollado hoy día es de un orden de magnitud muy grande comparada con la de hace simplemente unos años.
 	
 
 	Es por ello que hoy en día la técnica de desarrollo que más adeptos consigue es el TDD (por su siglas en inglés de Test Driven Development) o Desarrollo Dirigido por Pruebas, en el cual ante una funcionalidad el desarrollador lo primero que ha de hacer es pensar en un test unitario y automático que falle. Después modificar el código todo lo rápido que pueda para hacer que dicho test automático pase a ser aprobado por la aplicación y por último refactorizar el software para mejorar el código antes escrito, eliminar duplicación, etc para volver al punto anterior en un proceso iterativo que acumulará test unitarios en estado de aprobación.\\* 
@@ -300,7 +300,7 @@
 		
 	\subsection{BDD}
 	
-	BDD es otro proceso de testeo que se denomina así por sus siglas en inglés Behaviour Driven Developent, o desarrollo dirigido por comportamiento, es un proceso similar al de ATDD pero con la fundamental diferencia de que el lenguaje empleado en los test es el del dominio de la aplicación, y por lo tanto mucho mas cercano al product owner. Es por eso mucho más natural para él el tener que pensar en escribir un test que valide el comportamiento de una historia de usuario, aunque después este test sea más complicado de trasladar al TDD. El ciclo de BDD seria el mismo que el del TDD solamente que en cada iteración sobre un test de comportamiento implicaría varios ciclos de iteración sobre test de funcionalidad unitaria. Es deseable que estos test también estén automatizados y se lancen en el menor tiempo posible antes de cada compilación del código de la aplicación. Con estos ciclos de iteración a más alto nivel se consigue testar el comportamiento de la aplicación en algo evaluable y valioso para el prodcut owner y forzar el refactorizado de codigo a más alto nivel para mejorar el diseño arquitectural de grandes bloques en principio menos interrelacionados que los que llevan a cabo los N test unitarios que subyacen al test de comportamiento.\\*
+	BDD es otro proceso de testeo que se denomina así por sus siglas en inglés Behaviour Driven Developent, o desarrollo dirigido por comportamiento, es un proceso similar al de ATDD pero con la fundamental diferencia de que el lenguaje empleado en los test es el del dominio de la aplicación, y por lo tanto mucho mas cercano al product owner. Es por eso mucho más natural para él el tener que pensar en escribir un test que valide el comportamiento de una historia de usuario, aunque después este test sea más complicado de trasladar al TDD. El ciclo de BDD seria el mismo que el del TDD solamente que en cada iteración sobre un test de comportamiento implicaría varios ciclos de iteración sobre test de funcionalidad unitaria. Es deseable que estos test también estén automatizados y se lancen en el menor tiempo posible antes de cada compilación del código de la aplicación. Con estos ciclos de iteración a más alto nivel se consigue testar el comportamiento de la aplicación en algo evaluable y valioso para el product owner y forzar el refactorizado de código a más alto nivel para mejorar el diseño arquitectural de grandes bloques en principio menos interrelacionados que los que llevan a cabo los N test unitarios que subyacen al test de comportamiento.\\*
 	
 		\begin{figure}[H]
 			\centering
@@ -337,7 +337,7 @@
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=1\linewidth]{../images/consola_apk}
-		\caption{Consola de Play Store, mostrando gestion de APK y versiones beta y alpha }
+		\caption{Consola de Play Store, mostrando gestión de APK y versiones beta y alpha }
 		\label{fig:Consola de Play Store: APK}
 	\end{figure}
 	
